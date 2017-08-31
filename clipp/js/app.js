@@ -3534,3 +3534,25 @@ $('.js-burger').on('click', function () {
         MyMap.init();
     }
 })();
+
+// history
+(function () {
+    var history = $('.js-history'),
+        nav = history.find('.js-history-item'),
+        col = history.find('.js-history-col'),
+        info = history.find('.js-history-info');
+    nav.on('click', function (e) {
+        e.preventDefault();
+
+        var thisNav = $(this),
+            indexNav = thisNav.index();
+        nav.removeClass('active');
+        thisNav.addClass('active');
+        info.hide();
+        info.eq(indexNav).fadeIn();
+
+        $('html, body').animate({
+            scrollTop: col.offset().top
+        }, 400);
+    });
+})();

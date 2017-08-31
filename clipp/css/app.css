@@ -102,10 +102,22 @@ html {
   fill: initial;
 }
 
+.icon-date {
+  width: 1em;
+  height: 1em;
+  fill: #1A1919;
+}
+
 .icon-dollar {
   width: 1em;
   height: 1em;
   fill: #c29b6e;
+}
+
+.icon-email {
+  width: 1.33em;
+  height: 1em;
+  fill: #1A1919;
 }
 
 .icon-enter {
@@ -210,6 +222,18 @@ html {
   fill: initial;
 }
 
+.icon-password {
+  width: 0.74em;
+  height: 1em;
+  fill: #0A0B09;
+}
+
+.icon-paypal {
+  width: 3.76em;
+  height: 1em;
+  fill: #000;
+}
+
 .icon-pencil {
   width: 1em;
   height: 1em;
@@ -228,16 +252,46 @@ html {
   fill: #1a1919;
 }
 
+.icon-plus {
+  width: 1em;
+  height: 1em;
+  fill: #FFF;
+}
+
+.icon-print {
+  width: 1.1em;
+  height: 1em;
+  fill: #0A0B09;
+}
+
+.icon-promo {
+  width: 1em;
+  height: 1em;
+  fill: #1A1919;
+}
+
 .icon-review {
   width: 1.18em;
   height: 1em;
   fill: initial;
 }
 
+.icon-reward {
+  width: 1em;
+  height: 1em;
+  fill: #1A1919;
+}
+
 .icon-search {
   width: 1em;
   height: 1em;
   fill: #1a1919;
+}
+
+.icon-security {
+  width: 0.84em;
+  height: 1em;
+  fill: #0A0B09;
 }
 
 .icon-share {
@@ -270,10 +324,28 @@ html {
   fill: #1a1919;
 }
 
+.icon-tick {
+  width: 1.09em;
+  height: 1em;
+  fill: #FFF;
+}
+
 .icon-tw {
   width: 1.19em;
   height: 1em;
   fill: #434352;
+}
+
+.icon-user {
+  width: 1em;
+  height: 1em;
+  fill: #1A1919;
+}
+
+.icon-visa {
+  width: 1.81em;
+  height: 1em;
+  fill: #000;
 }
 
 /**
@@ -1160,7 +1232,7 @@ button {
   align-items: center;
 }
 
-.review__ava {
+.review__user {
   margin-right: 30px;
   font-size: 0;
 }
@@ -1939,6 +2011,11 @@ button {
   background-color: #2483aa;
 }
 
+.btn_def {
+  min-width: 120px;
+  text-transform: none;
+}
+
 .place {
   display: -ms-flexbox;
   display: flex;
@@ -2103,7 +2180,7 @@ button {
   padding-left: 15px;
 }
 
-.details__clipp {
+.details__clipp, .details__ava {
   -ms-flex: 0 0 320px;
   flex: 0 0 320px;
 }
@@ -2641,6 +2718,27 @@ button {
   font-size: 10px;
 }
 
+.user {
+  width: 309px;
+  margin: 10px auto 15px;
+}
+
+.user__preview {
+  margin-bottom: 28px;
+}
+
+.user__pic {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.user__name {
+  font-family: 'AvertaSemibold', serif;
+  font-size: 22px;
+  text-align: center;
+}
+
 .clipp__ball {
   display: -ms-flexbox;
   display: flex;
@@ -2834,6 +2932,446 @@ button {
 
 .price__pic {
   width: 100%;
+}
+
+.settings__list {
+  margin-bottom: 60px;
+  padding-top: 25px;
+}
+
+.settings__item {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 0;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.settings__icon {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 30px;
+  margin-right: 20px;
+  -ms-flex: 0 0 60px;
+  flex: 0 0 60px;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.settings__icon .icon {
+  font-size: 28px;
+}
+
+.settings__icon .icon-email {
+  font-size: 21px;
+}
+
+.settings__icon .icon-password {
+  font-size: 27px;
+}
+
+.pay__head {
+  margin-bottom: 13px;
+}
+
+.pay__title {
+  margin-bottom: 6px;
+  font-family: 'AvertaSemibold', serif;
+  font-size: 15px;
+}
+
+.pay__text {
+  font-size: 14px;
+}
+
+.pay__row {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.pay__col {
+  margin: 0 12px 14px 0;
+  -ms-flex: 0 0 173px;
+  flex: 0 0 173px;
+}
+
+.pay__card {
+  display: block;
+  position: relative;
+}
+
+.pay__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.pay__input:checked + .pay__wrap,
+.pay__input:checked + .pay__wrap .pay__preview,
+.pay__input:checked + .pay__wrap .pay__tick {
+  opacity: 1;
+}
+
+.pay__input:checked + .pay__wrap {
+  box-shadow: 0 0 0 1px #F9AF4B inset, 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pay__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  min-height: 109px;
+  padding: 20px 10px 10px;
+  background: #333335;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.18);
+  text-align: center;
+  transition: color .2s, box-shadow .2s;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pay__preview {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 7px;
+  font-size: 0;
+  opacity: .18;
+  transition: opacity .2s;
+}
+
+.pay__icon .icon {
+  font-size: 36px;
+  fill: white;
+}
+
+.pay__icon .icon-paypal {
+  font-size: 24px;
+}
+
+.pay__tick {
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -11px;
+  left: -11px;
+  width: 22px;
+  height: 22px;
+  background: #F9AF4B;
+  border-radius: 50%;
+  font-size: 0;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.pay__tick .icon {
+  font-size: 11px;
+  fill: white;
+}
+
+.pay__name {
+  display: block;
+  margin-bottom: 3px;
+  font-family: 'AvertaSemibold', serif;
+  text-transform: uppercase;
+}
+
+.pay__number {
+  display: block;
+}
+
+.pay__security {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 109px;
+  padding: 5px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pay__security .pay__icon {
+  margin-bottom: 8px;
+}
+
+.pay__security .pay__icon .icon {
+  font-size: 25px;
+  fill: #1c3840;
+}
+
+.pay__add {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 109px;
+  padding: 15px 10px 5px;
+  background: #333335;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.pay__add .pay__preview {
+  margin-bottom: 2px;
+  opacity: 1;
+}
+
+.pay__add .pay__name {
+  line-height: 1;
+}
+
+.pay__plus {
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-bottom: 6px;
+  padding: 4px 0 0 4px;
+  border: 1px solid #979797;
+  border-radius: 50%;
+}
+
+.pay__plus .icon {
+  display: block;
+  font-size: 12px;
+}
+
+.history__title {
+  margin-bottom: 11px;
+  font-family: 'AvertaSemibold', serif;
+  font-size: 15px;
+}
+
+.history__row {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -20px;
+}
+
+.history__col:first-child {
+  padding-right: 30px;
+  -ms-flex: 0 0 56%;
+  flex: 0 0 56%;
+}
+
+.history__col:last-child {
+  -ms-flex: 0 0 44%;
+  flex: 0 0 44%;
+}
+
+.history__item {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  background: #E3E3E3;
+  border: 1px solid #E3E3E3;
+  opacity: .7;
+  transition: border-color .2s, opacity .2s;
+}
+
+.history__item.active {
+  border-color: #8bc24a;
+  opacity: 1;
+}
+
+.history__preview {
+  -ms-flex: 0 0 126px;
+  flex: 0 0 126px;
+}
+
+.history__pic {
+  display: block;
+  max-width: 100%;
+}
+
+.history__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 10px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex: 0 0 calc(100% - 126px);
+  flex: 0 0 calc(100% - 126px);
+}
+
+.history__head {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #434352;
+}
+
+.history__place {
+  margin-right: 10px;
+}
+
+.history__date {
+  margin-left: auto;
+}
+
+.history__foot {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: auto;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.history__info {
+  display: none;
+}
+
+.history__price {
+  font-family: 'AvertaSemibold', serif;
+  font-size: 16px;
+}
+
+.history__card {
+  margin-left: auto;
+  opacity: .37;
+  text-align: center;
+}
+
+.history__icon {
+  margin-bottom: 3px;
+  font-size: 0;
+}
+
+.history__icon .icon {
+  font-size: 20px;
+  fill: #434352;
+}
+
+.history__name {
+  font-family: 'AvertaSemibold', serif;
+  font-size: 10px;
+  color: #434352;
+  text-transform: uppercase;
+}
+
+.stats {
+  margin-bottom: 13px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #C8C8C8;
+}
+
+.stats__title {
+  margin-bottom: 3px;
+  font-family: 'AvertaSemibold', serif;
+  font-size: 18px;
+}
+
+.stats__text {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.stats__actions {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 11px;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.stats__action {
+  margin-right: 10px;
+  font-size: 0;
+}
+
+.stats__action .icon {
+  font-size: 17px;
+}
+
+.stats__action .icon-print {
+  font-size: 20px;
+}
+
+.points__title {
+  margin-bottom: 15px;
+  font-family: 'AvertaSemibold', serif;
+  font-size: 15px;
+}
+
+.points__text {
+  margin-bottom: 12px;
+}
+
+.points__text p:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.points__btn {
+  width: 100%;
+  max-width: 252px;
+  margin-bottom: 23px;
+}
+
+.points__wrap {
+  margin: 0 -20px 25px;
+  padding: 15px 20px 25px;
+  background: rgba(139, 194, 74, 0.2);
+}
+
+.points__wrap .points__title {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.points__wrap .points__text {
+  max-width: 475px;
+  margin: 0;
+}
+
+.points__actions {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.points__action {
+  display: block;
+  text-align: center;
+}
+
+.points__action:not(:last-child) {
+  margin-right: 40px;
+}
+
+.points__icon {
+  margin-bottom: 10px;
+  font-size: 0;
+}
+
+.points__icon .icon {
+  font-size: 34px;
+  fill: #1c3840;
+}
+
+.points__action .points__text {
+  margin: 0;
 }
 
 @media only screen and (max-width: 1450px) {
@@ -3195,7 +3733,7 @@ button {
     flex: 0 0 100%;
   }
 
-  .details__clipp {
+  .details__clipp, .details__ava {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     margin-bottom: 30px;
@@ -4056,6 +4594,19 @@ button {
     width: auto;
     max-width: 100%;
   }
+
+  .history__row {
+    display: block;
+    margin: 0;
+  }
+
+  .history__col:first-child {
+    padding: 0;
+  }
+
+  .points__wrap {
+    margin: 0 -10px 25px;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -4104,7 +4655,7 @@ button {
     flex-direction: column;
   }
 
-  .review__ava {
+  .review__user {
     margin: 0 0 20px 0;
   }
 
