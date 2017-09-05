@@ -186,6 +186,12 @@ html {
   fill: #434352;
 }
 
+.icon-info {
+  width: 1em;
+  height: 1em;
+  fill: #1A1919;
+}
+
 .icon-instagram {
   width: 1em;
   height: 1em;
@@ -214,6 +220,12 @@ html {
   width: 0.66em;
   height: 1em;
   fill: #1a1919;
+}
+
+.icon-minus-circle {
+  width: 1em;
+  height: 1em;
+  fill: #4A4A4A;
 }
 
 .icon-note {
@@ -250,6 +262,12 @@ html {
   width: 1em;
   height: 1em;
   fill: #1a1919;
+}
+
+.icon-plus-circle {
+  width: 1em;
+  height: 1em;
+  fill: #4A4A4A;
 }
 
 .icon-plus {
@@ -298,6 +316,18 @@ html {
   width: 1.11em;
   height: 1em;
   fill: initial;
+}
+
+.icon-smile-happy {
+  width: 1em;
+  height: 1em;
+  fill: #0A0B09;
+}
+
+.icon-smile {
+  width: 1em;
+  height: 1em;
+  fill: none;
 }
 
 .icon-sports {
@@ -3095,6 +3125,17 @@ button {
   display: block;
 }
 
+.pay__bonus {
+  background: #F9AF4B;
+  max-width: 134px;
+  margin: 0 auto;
+  padding: 6px 7px 7px;
+  border-radius: 0 0 8px 8px;
+  font-family: 'AvertaSemibold', serif;
+  font-size: 13px;
+  color: #434352;
+}
+
 .pay__security {
   display: -ms-flexbox;
   display: flex;
@@ -3156,6 +3197,16 @@ button {
 .pay__plus .icon {
   display: block;
   font-size: 12px;
+}
+
+.pay_center .pay__row {
+  margin: 0;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pay_center .pay__col {
+  margin: 0 5px 10px;
 }
 
 .history__title {
@@ -3372,6 +3423,170 @@ button {
 
 .points__action .points__text {
   margin: 0;
+}
+
+.msg {
+  padding: 31px 45px 52px;
+  background: rgba(248, 231, 28, 0.37);
+}
+
+.msg__title {
+  margin-bottom: 22px;
+  font-family: 'AvertaSemibold', serif;
+  font-size: 18px;
+  color: #1C3840;
+}
+
+.msg__icon {
+  width: 78px;
+  margin: 26px auto -91px;
+  padding: 15px;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0;
+}
+
+.msg__icon .icon {
+  font-size: 48px;
+  fill: #102025;
+}
+
+.msg_simple {
+  padding-bottom: 32px;
+}
+
+.msg_simple .msg__title {
+  margin-bottom: 10px;
+}
+
+.msg_green {
+  background: rgba(184, 233, 134, 0.7);
+}
+
+.spend {
+  margin-bottom: 44px;
+}
+
+.spend__title {
+  margin-bottom: 18px;
+  font-family: 'AvertaSemibold', serif;
+  font-size: 18px;
+  color: #1C3840;
+}
+
+.spend__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 13px;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.spend__action {
+  font-size: 0;
+}
+
+.spend__action .icon {
+  font-size: 48px;
+  fill: #102025;
+}
+
+.spend__value {
+  min-width: 206px;
+  margin: 0 42px;
+  padding: 20px;
+  background: #EEE;
+  font-family: 'AvertaSemibold', serif;
+  font-size: 45px;
+}
+
+.spend__label {
+  margin-bottom: 40px;
+  font-family: 'AvertaSemibold', serif;
+  font-size: 18px;
+  color: #4B626C;
+}
+
+.spend__btn {
+  min-width: 180px;
+  padding: 16px 20px;
+  border: 1px solid #515151;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.help {
+  max-width: 355px;
+  margin: 0 auto 18px;
+  text-align: center;
+}
+
+.help__icon {
+  margin-bottom: 20px;
+  font-size: 0;
+}
+
+.help__icon .icon {
+  font-size: 48px;
+}
+
+.help__text {
+  font-size: 15px;
+}
+
+.help_sm .help__icon {
+  margin-bottom: 11px;
+}
+
+.help_sm .help__icon .icon {
+  font-size: 36px;
+}
+
+.workflow {
+  padding: 21px 0 44px;
+  text-align: center;
+}
+
+.workflow__title {
+  margin-bottom: 27px;
+  font-family: 'AvertaBold', serif;
+  font-size: 36px;
+  color: #1C3840;
+}
+
+.workflow__steps {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.workflow__step {
+  margin: 0 18px;
+  font-family: 'AvertaSemibold', serif;
+  font-size: 18px;
+  color: #4B626C;
+  text-transform: uppercase;
+  opacity: .17;
+  transition: opacity .2s;
+}
+
+.workflow__step.active {
+  opacity: 1;
+}
+
+.workflow__msg {
+  max-width: 445px;
+  margin: 31px auto 44px;
+}
+
+.workflow__btn {
+  margin-top: 20px;
+  min-width: 185px;
 }
 
 @media only screen and (max-width: 1450px) {
@@ -4606,6 +4821,17 @@ button {
 
   .points__wrap {
     margin: 0 -10px 25px;
+  }
+
+  .spend__value {
+    min-width: 0;
+    margin: 0 15px;
+    padding: 10px 15px;
+    font-size: 36px;
+  }
+
+  .workflow__title {
+    font-size: 28px;
   }
 }
 
