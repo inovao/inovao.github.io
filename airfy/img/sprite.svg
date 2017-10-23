@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-arrow-down" viewBox="0 0 6 6">
+    <path fill-rule="evenodd" d="M1.927 4.779c.592.936 1.55.939 2.145 0l1.632-2.583C6.297 1.26 5.88.5 4.772.5H1.227C.119.5-.3 1.257.294 2.196L1.927 4.78z"/>
+</symbol><symbol id="icon-minus" viewBox="0 0 8 2">
+    <rect width="8" height="1.4" y="3.3" fill-rule="evenodd" rx=".5" transform="translate(0 -3)"/>
+</symbol><symbol id="icon-plus" viewBox="0 0 8 8">
+    <path fill-rule="evenodd" d="M3.3 3.3H.5c-.27 0-.5.226-.5.505v.39c0 .286.224.505.5.505h2.8v2.8c0 .27.226.5.505.5h.39a.498.498 0 0 0 .505-.5V4.7h2.8c.27 0 .5-.226.5-.505v-.39a.498.498 0 0 0-.5-.505H4.7V.5c0-.27-.226-.5-.505-.5h-.39A.498.498 0 0 0 3.3.5v2.8z"/>
+</symbol><symbol id="icon-tick" viewBox="0 0 8 6">
+    <path d="M.148 2.54l.243-.245c.197-.2.51-.2.702-.006l1.882 1.907L6.908.228a.5.5 0 0 1 .704.005l.242.245c.197.2.193.521-.005.722L3.343 5.765a.5.5 0 0 1-.712.006L.148 3.257a.507.507 0 0 1 0-.717z"/>
+</symbol></svg>
