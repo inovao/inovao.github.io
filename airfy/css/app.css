@@ -141,8 +141,16 @@ b {
   font-family: 'AvenirNext-DemiBold', serif;
 }
 
+button {
+  background: none;
+}
+
 a {
   text-decoration: none;
+}
+
+.body {
+  margin-bottom: 40px;
 }
 
 .text-center {
@@ -385,7 +393,7 @@ a {
 
 .field__label {
   position: absolute;
-  top: 15px;
+  top: 13px;
   left: 9px;
   max-width: 100%;
   padding: 0 4px;
@@ -613,6 +621,21 @@ a.btn {
   color: #3d6375;
   text-align: center;
   line-height: 1.6;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .center {
+    padding: 0 15px;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .block {
+    padding: 16px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
