@@ -197,6 +197,10 @@ a {
   text-align: center;
 }
 
+.align-right {
+  text-align: right;
+}
+
 .center {
   max-width: 1332px;
   margin: 0 auto;
@@ -357,6 +361,11 @@ a {
   font-family: 'AvenirNext-Regular', serif;
   line-height: 1.6;
   transition: color .2s;
+}
+
+.switch__text {
+  display: block;
+  margin: 8px 0 0 -24px;
 }
 
 .switch_radio .switch__icon,
@@ -783,6 +792,11 @@ a {
   padding: 6px 16px 5px;
 }
 
+.btn_white {
+  background: white;
+  color: #609BB7;
+}
+
 a.btn {
   display: inline-block;
 }
@@ -857,6 +871,11 @@ a.btn {
 
 .block:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.block_blue {
+  background: #609BB7;
+  color: white;
 }
 
 .foot {
@@ -1482,6 +1501,11 @@ a.btn {
   right: 0;
   font-size: 10px;
   line-height: 1.6;
+}
+
+.fieldset {
+  max-width: 296px;
+  margin: 0 auto 8px;
 }
 
 .regular {
