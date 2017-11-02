@@ -147,6 +147,7 @@ html {
 }
 
 body {
+  min-width: 320px;
   background: #2C3235;
   font-family: 'AvenirNext-DemiBold', serif;
   font-size: 15px;
@@ -1039,9 +1040,11 @@ a.btn {
 }
 
 .steps__item {
-  margin: 0 8px;
-  -ms-flex: 0 0 128px;
-  flex: 0 0 128px;
+  position: relative;
+  max-width: 144px;
+  padding: 0 8px;
+  -ms-flex: 0 0 144px;
+  flex: 0 0 144px;
 }
 
 .steps__item.current .steps__number {
@@ -1062,26 +1065,25 @@ a.btn {
 }
 
 .steps__item:nth-child(2).current .steps__number:after {
-  width: 168px;
+  width: calc(100% + 24px);
 }
 
 .steps__item:nth-child(3).current .steps__number:after,
 .steps__item:nth-child(3).active .steps__number:after {
-  width: 312px;
+  width: calc(200% + 24px);
 }
 
 .steps__item:nth-child(4).current .steps__number:after,
 .steps__item:nth-child(4).active .steps__number:after {
-  width: 456px;
+  width: calc(300% + 24px);
 }
 
 .steps__item:nth-child(5).current .steps__number:after,
 .steps__item:nth-child(5).active .steps__number:after {
-  width: 600px;
+  width: calc(400% + 24px);
 }
 
 .steps__number {
-  position: relative;
   width: 16px;
   height: 16px;
   margin: 0 auto 8px;
@@ -1096,11 +1098,13 @@ a.btn {
   content: "";
   position: absolute;
   top: -4px;
-  right: -4px;
+  right: 50%;
   width: 24px;
   height: 24px;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.04);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
   z-index: -2;
 }
 
@@ -1622,38 +1626,21 @@ a.btn {
   }
 
   .steps {
-    display: block;
+    margin: 0 -2px 32px;
   }
 
   .steps__item {
-    margin: 0 0 16px;
+    padding: 0 2px;
+    -ms-flex: 1 0 20%;
+    flex: 1 0 20%;
   }
 
-  .steps__item.current .steps__number:after,
-  .steps__item.active .steps__number:after {
-    -ms-transform-origin: calc(100% - 24px) 24px;
-    transform-origin: calc(100% - 24px) 24px;
-    -ms-transform: translateY(-100%) rotate(90deg);
-    transform: translateY(-100%) rotate(90deg);
+  .steps__number {
+    margin-bottom: 12px;
   }
 
-  .steps__item:nth-child(2).current .steps__number:after {
-    width: 80px;
-  }
-
-  .steps__item:nth-child(3).current .steps__number:after,
-  .steps__item:nth-child(3).active .steps__number:after {
-    width: 136px;
-  }
-
-  .steps__item:nth-child(4).current .steps__number:after,
-  .steps__item:nth-child(4).active .steps__number:after {
-    width: 192px;
-  }
-
-  .steps__item:nth-child(5).current .steps__number:after,
-  .steps__item:nth-child(5).active .steps__number:after {
-    width: 248px;
+  .steps__title {
+    font-size: 9px;
   }
 
   .phone__help {

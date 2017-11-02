@@ -2295,3 +2295,18 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         });
     }
 })();
+
+// input
+(function () {
+    var input = $('.field__input');
+    input.each(function () {
+        var _this = $(this);
+        _this.blur(function () {
+            if (_this.val() != '') {
+                _this.addClass('focus');
+            } else {
+                _this.removeClass('focus');
+            }
+        });
+    });
+})();
