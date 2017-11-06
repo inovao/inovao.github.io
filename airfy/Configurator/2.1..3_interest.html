@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>3_log-in Page</title>
+    <title>2.1..3_interest Page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
@@ -30,35 +30,20 @@
   <body>
     <div class="out">
       <div class="body">
-        <div class="center center_sm">
-          <div class="logo"><svg class="icon icon-airfy"><use xlink:href="../img/sprite.svg#icon-airfy"></use></svg></div>
-          <div class="block">
-            <div class="title align-center">Login to your Airfy account</div>
-            <div class="fieldset">
-              <div class="field">
-                <div class="field__wrap"><input class="field__input" type="text" />
-                  <div class="field__label">E-mail</div>
-                </div>
-              </div>
-              <div class="field mb-xs">
-                <div class="field__wrap"><input class="field__input" type="text" />
-                  <div class="field__label">Password</div>
-                </div>
-              </div>
-              <div class="text text_sm align-right mb-0"><a href="#">Reset passwoord</a></div>
-            </div>
-            <div class="foot mt-0"><button class="foot__btn btn">Login</button></div>
-          </div>
-          <div class="block block_blue">
-            <div class="align-center">
-              <div class="title mb-sm">Don’t have an account?</div>
-              <div class="text">Register your account today and see a live demo of Airfy.</div>
-            </div>
-            <div class="foot"><button class="foot__btn btn btn_white">Register new account</button></div>
+        <div class="bg">
+          <div class="center center_sm">
+            <div class="block">
+              <div class="title align-center mb-lg">What are you interested in?</div><label class="switch switch_radio"><input class="switch__input" type="radio" name="interest"/><span class="switch__wrap"><span class="switch__icon"><svg class="icon icon-tick"><use xlink:href="../img/sprite.svg#icon-tick"></use></svg></span><span class="switch__content">I just want to offer WiFi to my guests and optinally also use the booking feature (smallest Plan)</span></span></label>
+              <label
+                class="switch switch_radio"><input class="switch__input" type="radio" name="interest" /><span class="switch__wrap"><span class="switch__icon"><svg class="icon icon-tick"><use xlink:href="../img/sprite.svg#icon-tick"></use></svg></span><span class="switch__content">I want to have good guest WiFi and want to have Surveys and other features like that + Booking (Middle Plan)</span></span>
+                </label><label class="switch switch_radio"><input class="switch__input" type="radio" name="interest"/><span class="switch__wrap"><span class="switch__icon"><svg class="icon icon-tick"><use xlink:href="../img/sprite.svg#icon-tick"></use></svg></span><span class="switch__content">I want to use Airfy Marketing and all other features (Biggest Plan)</span></span></label>
+                <div
+                  class="foot"><button class="foot__btn btn">Next</button><button class="foot__btn btn-def">Back</button></div>
           </div>
           <div class="hotline">Support Hotline: call us at <a href="tel:08006661337">0800-666-1337</a> or e-mail at <a href="mailto:support@airfy.com">support@airfy.com</a></div>
         </div>
       </div>
+    </div>
     </div>
     <script type="text/javascript" src="../js/app.js"></script>
   </body>
