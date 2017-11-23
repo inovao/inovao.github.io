@@ -804,7 +804,7 @@ textarea.field__input {
   color: white;
   letter-spacing: .8px;
   text-transform: uppercase;
-  transition: background .2s, border-color .2s;
+  transition: background .2s, border-color .2s, color .2s;
 }
 
 .btn:not(:disabled):hover {
@@ -829,6 +829,11 @@ textarea.field__input {
 .btn_white {
   background: white;
   color: #609BB7;
+}
+
+.btn_white:not(:disabled):hover {
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.76);
 }
 
 .btn_stroke {
