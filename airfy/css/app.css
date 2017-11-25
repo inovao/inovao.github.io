@@ -937,12 +937,12 @@ a.btn {
 }
 
 .foot {
-  margin-top: 32px;
+  margin: 32px 0 -8px;
   text-align: center;
 }
 
 .foot__btn {
-  margin: 0 8px;
+  margin: 0 8px 8px;
 }
 
 .hotline {
