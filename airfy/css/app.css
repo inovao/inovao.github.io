@@ -905,6 +905,21 @@ a.btn {
   border-top: none;
 }
 
+.row_location {
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.row_location .row__col {
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.row_location .row__col:last-child {
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
 .row .field,
 .row .panel,
 .row .amount {
