@@ -561,7 +561,13 @@ a {
   color: rgba(44, 50, 53, 0.32);
 }
 
-.field__input:hover {
+.field__input[data-el] {
+  font-family: 'AvenirNext-Regular', serif;
+  line-height: 46px;
+  cursor: pointer;
+}
+
+.field__input:hover, .field__input.hover {
   border-color: #609BB7;
 }
 
@@ -575,7 +581,8 @@ textarea.field__input {
   padding: 13px 12px;
 }
 
-.field__input:hover + .field__label {
+.field__input:hover + .field__label,
+.field__input.hover + .field__label {
   opacity: .64;
 }
 

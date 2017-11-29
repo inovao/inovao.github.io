@@ -2275,23 +2275,35 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 drop = _this.find('.js-field-drop'),
                 option = _this.find('.js-field-option');
 
-            input.on('keypress', function () {
-                if ($(this).val().length > 0) {
+            if (!input.attr('data-el')) {
+                input.on('keypress', function () {
+                    if ($(this).val().length > 0) {
+                        drop.show();
+                    }
+                });
+
+                input.on('blur', function () {
+                    var _this = $(this);
+
+                    drop.hide();
+
+                    if (_this.val().length > 0) {
+                        _this.addClass('focus');
+                    } else {
+                        _this.removeClass('focus');
+                    }
+                });
+            } else {
+                input.on('click', function () {
+                    input.addClass('hover');
                     drop.show();
-                }
-            });
-
-            input.on('blur', function () {
-                var _this = $(this);
-
-                drop.hide();
-
-                if (_this.val().length > 0) {
-                    _this.addClass('focus');
-                } else {
-                    _this.removeClass('focus');
-                }
-            });
+                });
+                option.on('click', function () {
+                    input.addClass('focus');
+                    input.text($(this).text());
+                    drop.hide();
+                });
+            }
         });
     }
 })();
