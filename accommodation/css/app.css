@@ -343,6 +343,10 @@ html {
   font-style: normal;
 }
 
+* {
+  box-shadow: 0 0 0 1px red;
+}
+
 body {
   font-family: 'CarosSoftLight', serif;
   font-size: 14px;
@@ -367,6 +371,10 @@ input {
 
 a {
   text-decoration: none;
+}
+
+.out {
+  overflow: hidden;
 }
 
 .center {
@@ -411,6 +419,14 @@ a {
   display: block;
   font-size: 22px;
   fill: white;
+}
+
+.social_color .social__title {
+  color: #EE5823;
+}
+
+.social_color .social__link .icon {
+  fill: #3F2C4E;
 }
 
 .btn {
