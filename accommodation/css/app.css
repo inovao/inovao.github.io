@@ -636,12 +636,24 @@ a {
   line-height: 1.2;
 }
 
+.wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -68px;
+  height: 186px;
+  background: url(../img/wave.svg) no-repeat 0 0/100% 100%;
+  pointer-events: none;
+}
+
 .main {
+  position: relative;
   min-height: 900px;
   margin-top: -147px;
   padding: 220px 0 200px;
   background: url(../img/bg-1.jpg) no-repeat 50% 50%/cover;
   color: white;
+  overflow: hidden;
 }
 
 .main__content {
@@ -731,21 +743,8 @@ a {
 }
 
 .offer {
-  position: relative;
   padding: 40px 0 200px;
   background: white;
-  z-index: 2;
-}
-
-.offer__wave {
-  position: absolute;
-  top: -120px;
-  left: 0;
-  right: 0;
-  height: 186px;
-  background: url(../img/wave.svg) no-repeat 0 0/100% 100%;
-  pointer-events: none;
-  z-index: -2;
 }
 
 .offer__title {
@@ -839,10 +838,6 @@ a {
   border: 1px solid #E7E7E7;
   border-radius: 47px;
   font-size: 12px;
-}
-
-.field__input {
-  padding: 0 32px;
 }
 
 .field__input::-webkit-input-placeholder {
@@ -969,6 +964,16 @@ a {
   padding: 50px 80px 33px;
 }
 
+.signup__head {
+  margin-bottom: 40px;
+  font-family: 'CarosSoftBold', serif;
+  color: #85C9D1;
+}
+
+.signup__fieldset {
+  margin-bottom: 20px;
+}
+
 .signup__right {
   text-align: right;
 }
@@ -1003,6 +1008,31 @@ a {
   line-height: 47px;
   -ms-flex: 0 0 47px;
   flex: 0 0 47px;
+}
+
+.signup_apply {
+  margin-top: -2px;
+  padding: 190px 0 205px;
+}
+
+.signup_apply .signup__content {
+  padding-bottom: 30px;
+}
+
+.signup_apply .signup__body {
+  padding-bottom: 55px;
+}
+
+.signup_apply .signup__text {
+  padding-top: 60px;
+}
+
+.signup_apply .signup__text:before {
+  top: 32px;
+}
+
+.signup_apply .signup__text .torq {
+  max-width: 300px;
 }
 
 .exclusive {
@@ -1092,6 +1122,103 @@ a {
   margin-bottom: 20px;
 }
 
+.promo {
+  position: relative;
+  min-height: 930px;
+  margin: -147px 0 0;
+  padding: 215px 0 100px;
+  overflow: hidden;
+}
+
+.promo:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: url(../img/bg-2.jpg) no-repeat 50% 50%/cover;
+  z-index: -2;
+}
+
+.promo__row {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -30px;
+}
+
+.promo__col {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 30px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+
+.promo__col:first-child {
+  min-height: 400px;
+}
+
+.promo__content {
+  padding-top: 20px;
+}
+
+.promo__content .promo__text {
+  padding-top: 70px;
+  font-family: 'CarosSoftMedium', serif;
+  font-size: 34px;
+  color: white;
+  line-height: 1.23529;
+}
+
+.promo__content .promo__text:before {
+  top: 40px;
+  background: white;
+}
+
+.promo__title {
+  color: white;
+}
+
+.promo__list {
+  max-width: 425px;
+  margin-left: auto;
+}
+
+.promo__item {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.promo__preview {
+  -ms-flex: 0 0 178px;
+  flex: 0 0 178px;
+}
+
+.promo__pic {
+  max-width: 100%;
+}
+
+.promo__type {
+  margin-bottom: 12px;
+  font-family: 'CarosSoftMedium', serif;
+  font-size: 14px;
+  color: #3F2C4E;
+}
+
+.promo__desc {
+  padding-right: 20px;
+  color: #A7A7A7;
+  line-height: 1.14286;
+}
+
+.promo__wave {
+  background-image: url(../img/wave-bg.svg);
+}
+
 .mob-show {
   display: none;
 }
@@ -1102,15 +1229,13 @@ a {
 
 @media only screen and (max-width: 1240px) {
 
-  .offer__wave {
-    top: 0;
+  .wave {
+    bottom: 0;
     height: auto;
     background-size: 115% auto;
-    -ms-transform: translateY(-99%);
-    transform: translateY(-99%);
   }
 
-  .offer__wave:before {
+  .wave:before {
     content: '';
     display: block;
     height: 0;
@@ -1121,6 +1246,10 @@ a {
     right: auto;
     left: 40px;
     margin: 0;
+  }
+
+  .signup_apply {
+    padding-top: 90px;
   }
 
   .join__col:first-child {
@@ -1175,6 +1304,10 @@ a {
     padding: 0;
   }
 
+  .signup_apply {
+    padding-top: 40px;
+  }
+
   .exclusive__col:first-child {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -1187,6 +1320,41 @@ a {
 
   .exclusive__content {
     padding: 0;
+  }
+
+  .promo {
+    padding-bottom: 120px;
+  }
+
+  .promo:before {
+    width: 100%;
+    height: 615px;
+  }
+
+  .promo__row {
+    display: block;
+  }
+
+  .promo__col {
+    display: block;
+  }
+
+  .promo__content {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .promo__content .promo__text:before {
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .promo__list {
+    max-width: 100%;
+    margin-top: 50px;
   }
 }
 
@@ -1207,6 +1375,10 @@ a {
 
   .social__link:not(:last-child) {
     margin-right: 30px;
+  }
+
+  .social_color .social__link .icon {
+    fill: white;
   }
 
   .header {
@@ -1300,7 +1472,8 @@ a {
 
   .main {
     min-height: 605px;
-    padding: 215px 0 105px;
+    margin-top: -66px;
+    padding: 135px 0 105px;
   }
 
   .main__content {
@@ -1378,6 +1551,10 @@ a {
     margin: 0 7px;
   }
 
+  .field__input, .field__select {
+    padding: 0 20px;
+  }
+
   .signup {
     padding: 40px 0 45px;
   }
@@ -1398,12 +1575,25 @@ a {
     padding: 22px 22px 19px;
   }
 
+  .signup__head {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
   .signup__btn {
     min-width: 130px;
   }
 
   .signup__foot {
     padding: 16px 24px 17px;
+  }
+
+  .signup_apply .signup__content {
+    padding: 0;
+  }
+
+  .signup_apply .signup__body {
+    padding-bottom: 24px;
   }
 
   .exclusive {
@@ -1458,6 +1648,57 @@ a {
   .join__btn {
     min-width: 135px;
     margin: 0;
+  }
+
+  .promo {
+    margin-top: -66px;
+    padding: 135px 0 80px;
+  }
+
+  .promo:before {
+    height: 385px;
+  }
+
+  .promo__col:first-child {
+    min-height: 252px;
+  }
+
+  .promo__content {
+    max-width: 300px;
+  }
+
+  .promo__content .promo__text {
+    padding-top: 52px;
+    font-size: 14px;
+    line-height: 1.42857;
+  }
+
+  .promo__content .promo__text:before {
+    top: 30px;
+  }
+
+  .promo__list {
+    margin-top: 40px;
+  }
+
+  .promo__item {
+    margin-bottom: 30px;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .promo__preview {
+    -ms-flex: 0 0 170px;
+    flex: 0 0 170px;
+  }
+
+  .promo__type {
+    margin-bottom: 15px;
+  }
+
+  .promo__desc {
+    font-size: 12px;
+    line-height: 1.25;
   }
 
   .mob-show {
