@@ -32,8 +32,29 @@ $(function(){
 
 	//form styler
     if($('.styler').length){
-        $('.styler').styler();
+    	var _dropdown;
+		var settings = {autoReinitialise: true};
+
+        $('.styler').styler({
+			onSelectOpened: function() { 
+			 $(this).find(".jq-selectbox__dropdown ul").jScrollPane();
+			 }
+			// onFormStyled: function(){
+			//  _dropdown = $('.jq-selectbox__dropdown');
+
+			// },
+   //      	onSelectOpened: function() { 
+   //      		var _ul = $(this).find('.jq-selectbox__dropdown ul');
+			// 	var height = _ul.height();
+			// 	_ul.addClass('scrollbar-rail');
+			// 	_ul.scrollbar();
+ 		// 		$('.scroll-element.scroll-y').show();
+ 		// 	}
+        });
     };
+
+    
+	
 
     //click like
     $('.like').click(function(){
@@ -43,6 +64,18 @@ $(function(){
     	} else if (like.hasClass('icon-like-actiive') == true ) {
 			$(this).find('.icon-like-actiive').removeClass('icon-like-actiive').addClass('icon-like')
     	}
+    	
+    });
+
+    $('.kik-page__link').click(function(){
+    	$('.kik-page__text').show();
+    	$(this).parent().hide();
+
+    })
+
+    //click like
+    $('.mark').click(function(){
+    	$(this).toggleClass('active')
     	
     });
 
@@ -58,9 +91,11 @@ $(function(){
     })
 
     //scrollbar
-	if($('.scrollbar-rail').length){
+	if($('.jScrollPane').length){
 
-		jQuery('.scrollbar-rail').scrollbar();
+		jQuery('.jScrollPane').jScrollPane({
+			horizontalDragMaxWidth: '47',
+		});
 	};
     
     
@@ -129,16 +164,14 @@ $(function(){
       event.stopPropagation();
     });
 
-   
-    //  Tabs
-   	$('.replays-tabs a').click(function(){
-		$(this).parents('.replays-tab-wrap').find('.replays-tab-cont').addClass('hide');
-		$(this).parent().siblings().removeClass('active');
-		var id = $(this).attr('href');
-		$(id).removeClass('hide');
-		$(this).parent().addClass('active');
-		return false
+    $('.accordion__head').on('click', function(){
+		var el = $(this);
+		el.next('.accordion__body').slideToggle();
+		el.toggleClass('open');
+		return false;
 	});
+   
+
 
 	//  Tabs
    	$('.tabs a').click(function(){
@@ -169,6 +202,35 @@ $(function(){
 
 	    };
     };
+    $( '.slideshow' ).slick({
+    	slidesToShow: 1,
+    	centerMode: true,
+    	centerPadding: '500px',
+    	prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
+		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
+    	responsive: [
+    		{
+    			breakpoint: 1700,
+    			settings: {
+    				centerPadding: '400px',
+    			}
+    		},
+    		{
+    			breakpoint: 1400,
+    			settings: {
+    				centerPadding: '300px',
+    			}
+    		}
+    	]
+    });
+
+
+    $(".js-channel-list ul li").click(function(){
+        
+        slideIndex = $(this).index();
+
+        $('.slideshow').slick('slickGoTo', slideIndex);
+    });
 });
 
    

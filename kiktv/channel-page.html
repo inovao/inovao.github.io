@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/jsscrollpanel.css">
+	<link rel="stylesheet" href="css/jsscrollpanel.css">
 	<link rel="stylesheet" type="text/css" href="css/icomoon.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.0" />		
 			
@@ -2578,580 +2578,556 @@
 		<section class="box-inner-header">
 			<div class="wrapper">
 				<div class="inner-header">
-					<h1 class="inner-header__title">REPLAYS</h1> 
-					<p class="inner-header__text">Regardez les replays de les programm télévision</p>
+					<h1 class="inner-header__title">
+						<img src="img/5-extra-lg.png" alt="" class="inner-header__channel">
+						<select class="styler inner-header__select" data-visible-options="10">
+							<option value="">FRANCE 5</option>
+							<option value="">TF1</option>
+							<option value="">France 2</option>
+							<option value="">France 3</option>
+							<option value="" class="disabled">FRANCE 5</option>
+							<option value="">Canal +</option>
+							<option value="">M6</option>
+							<option value="">Arte</option>
+							<option value="">C8</option>
+							<option value="">W9</option>
+							<option value="">M6</option>
+							<option value="">Arte</option>
+							<option value="">C8</option>
+							<option value="">W9</option>
+						</select>
+					</h1> 
+					<span class="like">
+						<span class="icon-like"></span>
+					</span>
+					<p class="inner-header__text">Regardez TV program and replays de TF1 dans un kik.tv</p>
 				</div>
 			</div>
 		</section>
-		<div class="wrapper">
-			<ul class="channel-list show">
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link js-sliding">
-						<span class="icon-grid"></span>
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link active">
-						<img src="img/tfi.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/2.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/3.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/canal.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/5.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/m.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/arte.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/c8.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/w9.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/tmc.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/nt1.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/nrj.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/cstar.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/6ter.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/4.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/gull.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/rmc.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/cherie.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/23.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/4.png" alt="">
-					</a>
-				</li>
+		<div class="tab-wrap">
+			<div class="raplays-filter">
+				<div class="wrapper">
+					<ul class="filter-nav tabs">
+						
+						<li class="filter-nav__item active">
+							<a href="#channel_tv1" class="filter-nav__link ">TV PROGRAMME</a>
+						</li>
+						<li class="filter-nav__item">
+							<a href="#channel_tv2" class="filter-nav__link">REPLAYS</a>
+						</li>
+						<li class="filter-nav__item">
+							<a href="#channel_tv3" class="filter-nav__link">EN DIRECT</a>
+						</li>
+						<li class="filter-nav__item">
+							<a href="#channel_tv4" class="filter-nav__link">INFORMATION</a>
+						</li>
 
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/m.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link ">
-						<img src="img/tfi.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/2.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/3.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/canal.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/5.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/m.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/arte.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/c8.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/w9.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/tmc.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/nt1.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/nrj.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/cstar.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/6ter.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/4.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/gull.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/rmc.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/cherie.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/23.png" alt="">
-					</a>
-				</li>
-				<li class="channel-list__item">
-					<a href="#" class="channel-list__link">
-						<img src="img/4.png" alt="">
-					</a>
-				</li>
-			</ul>
-		</div>
-		
-		<div class="raplays-filter">
-			<div class="wrapper">
-				<ul class="filter-nav">
-					<li class="filter-nav__item filter-search">
-						<button class="toggle-filter-search">
-							<span class="icon-search2"></span>
-							<span class="icon-close"></span>
-						</button>
-						<div class="filter-search-wrap">
-							<form action="#">
-								<input type="text" class="filter-search__input" placeholder="Recherchez lez replays">
-								<button type="submit"  class="filter-search__button"><span class="icon-search2"></span></button>
-							</form>
-						</div>
-					</li>
-					<li class="filter-nav__item">
-						<a href="#" class="filter-nav__link ">RECENT</a>
-					</li>
-					<li class="filter-nav__item">
-						<a href="#" class="filter-nav__link active">SERIES & FICTIONS</a>
-					</li>
-					<li class="filter-nav__item">
-						<a href="#" class="filter-nav__link">EMISSION</a>
-					</li>
-					<li class="filter-nav__item">
-						<a href="#" class="filter-nav__link">FILMS</a>
-					</li>
-					<li class="filter-nav__item">
-						<a href="#" class="filter-nav__link">INFORMATION</a>
-					</li>
-					<li class="filter-nav__item">
-						<a href="#" class="filter-nav__link">JeunessE</a>
-					</li>
-					<li class="filter-nav__item">
-						<a href="#" class="filter-nav__link">SPORTS</a>
-					</li>
-				</ul>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div class="kik-tabs-main section--grey">
-			<div class="wrapper">
-				<div class="kik-tabs-left">
+			<div class="tv-programme">
+				<div class="tab-cont" id="channel_tv1">
+					<div class="kik-tabs-main">
+						<div class="wrapper">
+							<div class="kik-tabs-left">
+								<div class="tv-programme-header">
+									<div class="filter">
+										<div class="filter-left">
+											
+											<select class="styler filter__select sec-2">
+												<option value="">Aujuord’hui, <span>en ce moment</span></option>
+												<option value="">En ce moment</option>
+												<option value="">Ce matin</option>
+												<option value="">A midi</option>
+												<option value="">Ce soir</option>
+											</select>
+											<button class="filter__button">
+												<span>Demain</span>
+											</button>
+											<button class="filter__button">
+												<span>20, Su</span>
+											</button>
+											<button class="filter__button">
+												<span>21, Mo</span>
+											</button>
+											<button class="filter__button">
+												<span>22, Tu</span>
+											</button>
+											<select class="styler filter__select sec-3">
+												<option value="">Plus</option>
+												<option value="">23, We</option>
+												<option value="">24, Th</option>
+												<option value="">25, Fr</option>
+												<option value="">26, Sa</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<ul class=" tv-programme-list">
+									<li class="tv-programme-list__item">
+										
+										<div class="tv-programme-list__left">
+											<div class="time">21:45</div>
+											<span class="cn-badge">en direct</span>
+										</div>
+										
+										<div class="tv-programme-list__details">
+											<div class="tv-programme-list__header">
+												<h5 class="trend__title"><a href="#">Demain Nous Appartient</a></h5>
+												<p class="trend__descr">Season 3, Episode 27 </p>
+												<div class="tags">
+													<a href="#" class="tags__link">series et fictions</a>
+												</div>
+												<span class="eighteen">18+</span>
+												<div class="mark">
+													<span class="icon-bookmark-light"></span>
+												</div>
+											</div>
+											<div class="tv-programme-list__content">
+												<p class="trend__descr">
+													Demain nous appartient est un feuilleton télévisé français, créé par Frédéric Chansel, Laure de Colbert, Nicolas Durand-Zouky, Eline Le Fur ainsi que Fabienne Lesieur et diffusé depuis le 17 juillet 2017 sur TF1 en France à 19 h 201, ainsi que sur La Deux en Belgique à 18 h 202 et sur RTS Un en Suisse romande à 11 h 453.
+												</p>
+												<div class="grey-line">
+													<div class="yellow-line" style="width: 40%;"></div>
+												</div>
+											</div>
+										</div>		
+									</li>
+									<li class="tv-programme-list__item">
+										
+										<div class="tv-programme-list__left">
+											<div class="time">23:10</div>
+											
+										</div>
+										
+										<div class="tv-programme-list__details">
+											<div class="tv-programme-list__header">
+												<h5 class="trend__title"><a href="#">Le Jouet</a></h5>
+												
+												<div class="tags">
+													<a href="#" class="tags__link">FILMS</a>
+												</div>
+												<span class="eighteen">18+</span>
+												<div class="mark">
+													<span class="icon-bookmark-light"></span>
+												</div>
+											</div>
+										</div>		
+									</li>
+									<li class="tv-programme-list__item">
+										
+										<div class="tv-programme-list__left">
+											<div class="time">00:50</div>
+											
+										</div>
+										
+										<div class="tv-programme-list__details">
+											<div class="tv-programme-list__header">
+												<h5 class="trend__title"><a href="#">Japan - Tokyo, La ville phoenix </a></h5>
+												
+												<p class="trend__descr">Season 3, Episode 27 </p>
+												<div class="tags">
+													<a href="#" class="tags__link">series et fictions</a>
+												</div>
+												<div class="mark">
+													<span class="icon-bookmark-light"></span>
+												</div>
+											</div>
+										</div>		
+									</li>
+									<li class="tv-programme-list__item">
+										
+										<div class="tv-programme-list__left">
+											<div class="time">02:30</div>
+											
+										</div>
+										
+										<div class="tv-programme-list__details">
+											<div class="tv-programme-list__header">
+												<h5 class="trend__title"><a href="#">5th Element</a></h5>
+												
+												<div class="tags">
+													<a href="#" class="tags__link">FILMS</a>
+												</div>
+												<div class="mark">
+													<span class="icon-bookmark-light"></span>
+												</div>
+											</div>
+										</div>		
+									</li>
+									<li class="tv-programme-list__item">
+										
+										<div class="tv-programme-list__left">
+											<div class="time">00:50</div>
+											
+										</div>
+										
+										<div class="tv-programme-list__details">
+											<div class="tv-programme-list__header">
+												<h5 class="trend__title"><a href="#">Japan - Tokyo, La ville phoenix </a></h5>
+												
+												<p class="trend__descr">Season 3, Episode 27 </p>
+												<div class="tags">
+													<a href="#" class="tags__link">series et fictions</a>
+												</div>
+												<div class="mark">
+													<span class="icon-bookmark-light"></span>
+												</div>
+											</div>
+										</div>		
+									</li>
+									<li class="tv-programme-list__item">
+										
+										<div class="tv-programme-list__left">
+											<div class="time">02:30</div>
+											
+										</div>
+										
+										<div class="tv-programme-list__details">
+											<div class="tv-programme-list__header">
+												<h5 class="trend__title"><a href="#">5th Element</a></h5>
+												
+												<div class="tags">
+													<a href="#" class="tags__link">FILMS</a>
+												</div>
+												<div class="mark">
+													<span class="icon-bookmark-light"></span>
+												</div>
+											</div>
+										</div>		
+									</li>
+									<li class="tv-programme-list__item">
+										
+										<div class="tv-programme-list__left">
+											<div class="time">00:50</div>
+											
+										</div>
+										
+										<div class="tv-programme-list__details">
+											<div class="tv-programme-list__header">
+												<h5 class="trend__title"><a href="#">Japan - Tokyo, La ville phoenix </a></h5>
+												
+												<p class="trend__descr">Season 3, Episode 27 </p>
+												<div class="tags">
+													<a href="#" class="tags__link">series et fictions</a>
+												</div>
+												<div class="mark">
+													<span class="icon-bookmark-light"></span>
+												</div>
+											</div>
+										</div>		
+									</li>
+									<li class="tv-programme-list__item">
+										
+										<div class="tv-programme-list__left">
+											<div class="time">02:30</div>
+											
+										</div>
+										
+										<div class="tv-programme-list__details">
+											<div class="tv-programme-list__header">
+												<h5 class="trend__title"><a href="#">5th Element</a></h5>
+												
+												<div class="tags">
+													<a href="#" class="tags__link">FILMS</a>
+												</div>
+												<div class="mark">
+													<span class="icon-bookmark-light"></span>
+												</div>
+											</div>
+										</div>		
+									</li>
+								</ul>
+								<a href="#" class="plus">Plus</a>			
+							</div>
+							<div class="kik-tabs-banner">
+								<div class="banner">
+									<a href="#" target="_blank"><img src="img/banner-240x400.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-cont hide" id="channel_tv2">
+					<div class="kik-tabs-main section--grey">
+						<div class="wrapper">
+							<div class="kik-tabs-left">
+								<ul class="replays-tag">
+									<li class="replays-tag__item">
+										<a href="#" class="replays-tag__link active">#Game of Thrones</a>
+									</li>
+									<li class="replays-tag__item">
+										<a href="#" class="replays-tag__link">#Demain Nous appartient</a>
+									</li>
+									<li class="replays-tag__item">
+										<a href="#" class="replays-tag__link">#Koh-Lanta</a>
+									</li>
+									<li class="replays-tag__item">
+										<a href="#" class="replays-tag__link">#Quotidienne</a>
+									</li>
+									<li class="replays-tag__item">
+										<a href="#" class="replays-tag__link">#NBA</a>
+									</li>
+								</ul>
+								<div class="kik-replays">
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">TF1</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/trend-img1.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Quatidiene avec Yann Barthes </a></h5>
+											<p class="trend__descr">Joséphine dans les années folles: Cluedo, Charleston et ...</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">CANAL+</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/trend-img2.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Quand je serai grande, je te tuerai</a></h5>
+											<p class="trend__descr">Laëtitia Milot, de retour dans le rôle d'une femme en quête ...</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">TF1</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/treining1.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Les experts: Miami</a></h5>
+											<p class="trend__descr">Saison 5 episode 7</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">TMC</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/treining11.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Hercule Poirot</a></h5>
+											<p class="trend__descr">Burn out - Saison 8 episode 9</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">TF1</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/treining12.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Elle s’appelait Sarah</a></h5>
+											<p class="trend__descr">Joséphine dans les années folles: Cluedo, Charleston et ...</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">FRANCE3</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/treining13.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Koh-Lanta</a></h5>
+											<p class="trend__descr">Denis Brogniart le jeu de confort des planches dans...</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">TF1</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/treining14.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Les enquetes de Murdoch</a></h5>
+											<p class="trend__descr">Saison10 episode14</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">C8</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/treining15.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Hercule Poirot</a></h5>
+											<p class="trend__descr">Burn out - Saison 8 episode 9</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">TF1</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/trend-img1.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Quatidiene avec Yann Barthes </a></h5>
+											<p class="trend__descr">Joséphine dans les années folles: Cluedo, Charleston et ...</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">CANAL+</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/trend-img2.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Quand je serai grande, je te tuerai</a></h5>
+											<p class="trend__descr">Laëtitia Milot, de retour dans le rôle d'une femme en quête ...</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">TF1</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/treining1.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Les experts: Miami</a></h5>
+											<p class="trend__descr">Saison 5 episode 7</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">TMC</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/treining11.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Hercule Poirot</a></h5>
+											<p class="trend__descr">Burn out - Saison 8 episode 9</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">TF1</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/treining12.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Elle s’appelait Sarah</a></h5>
+											<p class="trend__descr">Joséphine dans les années folles: Cluedo, Charleston et ...</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">FRANCE3</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/treining13.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Koh-Lanta</a></h5>
+											<p class="trend__descr">Denis Brogniart le jeu de confort des planches dans...</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">TF1</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/treining14.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Les enquetes de Murdoch</a></h5>
+											<p class="trend__descr">Saison10 episode14</p>
+										</div>
+									</div>
+									<div class="trend trend--empty trend--sm">
+										<div class="trend__img">
+											<a href="#">
+												<span class="badge">C8</span>
+												<span class="trend-play"><span class="icon-play-button"></span></span>
+												<img src="img/treining15.png" alt="">
+											</a>
+										</div>
+										<div class="trend__info">
+											<h5 class="trend__title"><a href="#">Hercule Poirot</a></h5>
+											<p class="trend__descr">Burn out - Saison 8 episode 9</p>
+										</div>
+									</div>
+									
+								</div>
+								<div class="kik-loader">
+									<span class="icon-spinner"></span>
+								</div>
+							</div>
+							<div class="kik-tabs-banner">
+								<div class="banner">
+									<a href="#" target="_blank"><img src="img/banner-240x400.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-cont hide" id="channel_tv3">
+					<div class="kik-tabs-main">
+						<div class="wrapper">
+							<div class="kik-tabs-left">
+											
+								3
+							</div>
+							<div class="kik-tabs-banner">
+								<div class="banner">
+									<a href="#" target="_blank"><img src="img/banner-240x400.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-cont hide" id="channel_tv4">
+					<div class="kik-tabs-main">
+						<div class="wrapper">
+							<div class="kik-tabs-left">
+									4		
 								
-					
-					<div class="kik-replays">
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">FRANCE 2</span>
-									<img src="img/treining1.png" alt="">
-								</a>
 							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Tout le monde prendre sa place </a></h5>
-								<p class="trend__descr">236 videos | 20.10.17 | 45 min</p>
+							<div class="kik-tabs-banner">
+								<div class="banner">
+									<a href="#" target="_blank"><img src="img/banner-240x400.png" alt=""></a>
+								</div>
 							</div>
 						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TF1</span>
-									<img src="img/trend-img1.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Danse avec les stars </a></h5>
-								<p class="trend__descr">111 videos | 20.10.17 | 65 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TF1</span>
-									<img src="img/trend-img13.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Terre de passions</a></h5>
-								<p class="trend__descr">16 videos | 20.10.17 | 87 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TMC</span>
-									<img src="img/trend-img14.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Un soupcon de magie </a></h5>
-								<p class="trend__descr">26 videos | 20.10.17 | 65 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">FRANCE 2</span>
-									<img src="img/treining1.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Tout le monde prendre sa place </a></h5>
-								<p class="trend__descr">236 videos | 20.10.17 | 45 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TF1</span>
-									<img src="img/trend-img1.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Danse avec les stars </a></h5>
-								<p class="trend__descr">111 videos | 20.10.17 | 65 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TF1</span>
-									<img src="img/trend-img13.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Terre de passions</a></h5>
-								<p class="trend__descr">16 videos | 20.10.17 | 87 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TMC</span>
-									<img src="img/trend-img14.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Un soupcon de magie </a></h5>
-								<p class="trend__descr">26 videos | 20.10.17 | 65 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">FRANCE 2</span>
-									<img src="img/treining1.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Tout le monde prendre sa place </a></h5>
-								<p class="trend__descr">236 videos | 20.10.17 | 45 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TF1</span>
-									<img src="img/trend-img1.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Danse avec les stars </a></h5>
-								<p class="trend__descr">111 videos | 20.10.17 | 65 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TF1</span>
-									<img src="img/trend-img13.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Terre de passions</a></h5>
-								<p class="trend__descr">16 videos | 20.10.17 | 87 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TMC</span>
-									<img src="img/trend-img14.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Un soupcon de magie </a></h5>
-								<p class="trend__descr">26 videos | 20.10.17 | 65 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">FRANCE 2</span>
-									<img src="img/treining1.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Tout le monde prendre sa place </a></h5>
-								<p class="trend__descr">236 videos | 20.10.17 | 45 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TF1</span>
-									<img src="img/trend-img1.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Danse avec les stars </a></h5>
-								<p class="trend__descr">111 videos | 20.10.17 | 65 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TF1</span>
-									<img src="img/trend-img13.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Terre de passions</a></h5>
-								<p class="trend__descr">16 videos | 20.10.17 | 87 min</p>
-							</div>
-						</div>
-						<div class="trend trend--empty trend--sm">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TMC</span>
-									<img src="img/trend-img14.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Un soupcon de magie </a></h5>
-								<p class="trend__descr">26 videos | 20.10.17 | 65 min</p>
-							</div>
-						</div>
-					</div>
-					<div class="kik-loader">
-						<span class="icon-spinner"></span>
-					</div>
-							</div>
-				<div class="kik-tabs-banner">
-					<div class="banner">
-						<a href="#" target="_blank"><img src="img/banner-240x400.png" alt=""></a>
 					</div>
 				</div>
+				
 			</div>
 		</div>
-	
 
 		
-		<section class="section recent-replays">
-			<div class="wrapper">
-				<h2 class="content-title">
-					<span class="content-title__icon"><i class="ic ic--arrows-left"></i></span>
-					<span class="content-title__text">Les replays tv mis en ligne récemment</span>
-					<a href="#" class="content-title__link">TOUS LES REPLAYS <span class="icon-right-arrow"></span></a>
-				</h2>
-				<div class="trend-slider">
-					<div>
-						<div class="trend">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TF1</span>
-									<span class="trend-play"><span class="icon-play-button"></span></span>
-									<img src="img/trend-img8.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Demain nous appartient</a></h5>
-								<p class="trend__descr">Demain nous appartient du 3 octobre 2017 - Episode 5</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="trend">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">CANAL+</span>
-									<span class="trend-play"><span class="icon-play-button"></span></span>
-									<img src="img/trend-img2.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Quand je serai grande, je te tuerai</a></h5>
-								<p class="trend__descr">Laëtitia Milot, de retour dans le rôle d'une femme en quête de vérité dès lundi 9 ...</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="trend">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">FRANCE 2</span>
-									<span class="trend-play"><span class="icon-play-button"></span></span>
-									<img src="img/trend-img3.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Profilage</a></h5>
-								<p class="trend__descr">Burn out - Saison 8 épisode 9</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="trend">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">FRANCE 3</span>
-									<span class="trend-play"><span class="icon-play-button"></span></span>
-									<img src="img/trend-img7.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Danse avec les stars</a></h5>
-								<p class="trend__descr">Nicolas Archambault, un nouveau juge qui n'a pas froid aux yeux</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="trend">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TF1</span>
-									<span class="trend-play"><span class="icon-play-button"></span></span>
-									<img src="img/trend-img1.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Danse avec les stars</a></h5>
-								<p class="trend__descr">Le jury est déjà au taquet !</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="trend">
-							<div class="trend__img">
-								<a href="#">
-									<span class="badge">TF1</span>
-									<span class="trend-play"><span class="icon-play-button"></span></span>
-									<img src="img/trend-img1.png" alt="">
-								</a>
-							</div>
-							<div class="trend__info">
-								<h5 class="trend__title"><a href="#">Danse avec les stars</a></h5>
-								<p class="trend__descr">Le jury est déjà au taquet !</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		
 
 		<section class="section section--grey actu">
 			<div class="wrapper">
