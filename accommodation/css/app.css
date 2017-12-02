@@ -816,7 +816,7 @@ a {
   align-items: center;
 }
 
-.field_row .field__label {
+.field_row .field__title {
   margin-right: 25px;
 }
 
@@ -825,10 +825,14 @@ a {
   flex: 1 0 auto;
 }
 
-.field__label {
+.field__title {
   font-family: 'CarosSoftBold', serif;
   font-size: 12px;
   color: #3F2C4E;
+}
+
+.field__wrap {
+  position: relative;
 }
 
 .field__input, .field__select {
@@ -840,22 +844,27 @@ a {
   font-size: 12px;
 }
 
-.field__input::-webkit-input-placeholder {
-  color: #AFAFAF;
-}
-
-.field__input:-ms-input-placeholder {
-  color: #AFAFAF;
-}
-
-.field__input::placeholder {
-  color: #AFAFAF;
-}
-
 .field__select {
   background: white url(../img/arrow-select.svg) no-repeat calc(100% - 22px) 50%/8px 6px;
   -webkit-appearance: none;
   cursor: pointer;
+}
+
+.field__label {
+  position: absolute;
+  top: 16px;
+  left: 28px;
+  padding: 0 5px;
+  background: white;
+  font-size: 12px;
+  color: #AFAFAF;
+  transition: transform .2s;
+}
+
+.field__input:focus + .field__label,
+.field__input.focus + .field__label {
+  -ms-transform: translateY(-23px);
+  transform: translateY(-23px);
 }
 
 .switch {
