@@ -126,7 +126,8 @@
 				<!-- BEGIN NAVBAR -->
 				<nav class="navbar">
 					<ul class="navbar-menu">
-						<li class="navbar-menu__item">
+
+						<li class="navbar-menu__item navbar-menu__item--dropdown">
 							<a href="#" class="navbar-menu__link">TV PROGRAMME <span class="icon icon-down-arrow"></span></a>
 							<div class="kik-dropdown tab-wrap" >
 								<div class="kik-dropdown-flex">
@@ -1574,13 +1575,13 @@
 								</div>
 							</div>
 						</li>
-						<li class="navbar-menu__item">
+						<li class="navbar-menu__item navbar-menu__item--dropdown">
 							<a href="#" class="navbar-menu__link">DIRECT <span class="icon icon-down-arrow"></span></a>
 							<div class="kik-dropdown kik-dropdown--center">
 								<div class="wrapper">
-									<div class="kik-dropdown-flex">
+									<div class="kik-dropdown-flex direct-tab-wrap">
 										<div class="kik-dropdown-aside">
-											<div class="trend">
+											<div class="trend direct-tab-cont" id="direct_trend_1">
 												<div class="channel-title channel-title-lg">
 													<span>CANAL + <span class="cn-badge">en direct</span></span>
 												</div>
@@ -1596,13 +1597,61 @@
 													<h5 class="trend__title"><a href="#">24 Heures en questions de Samedi</a></h5>
 												</div>
 											</div>
+											<div class="trend direct-tab-cont hide" id="direct_trend_2">
+												<div class="channel-title channel-title-lg">
+													<span>FRANCE 3 <span class="cn-badge">en direct</span></span>
+												</div>
+												<div class="trend__img">
+													<a href="#">
+														
+														<span class="trend-play"><span class="icon-play-button"></span></span>
+														<img src="img/trend-img2.png" alt="">
+													</a>
+												</div>
+												<div class="trend__info">
+													<div class="trend__time">13:50</div>
+													<h5 class="trend__title"><a href="#">Les douz coupe de mini</a></h5>
+												</div>
+											</div>
+											<div class="trend direct-tab-cont hide" id="direct_trend_3">
+												<div class="channel-title channel-title-lg">
+													<span>CANAL + <span class="cn-badge">en direct</span></span>
+												</div>
+												<div class="trend__img">
+													<a href="#">
+														
+														<span class="trend-play"><span class="icon-play-button"></span></span>
+														<img src="img/trend-img3.png" alt="">
+													</a>
+												</div>
+												<div class="trend__info">
+													<div class="trend__time">13:50</div>
+													<h5 class="trend__title"><a href="#">24 Heures en questions Le Samedi</a></h5>
+												</div>
+											</div>
+											<div class="trend direct-tab-cont hide" id="direct_trend_4">
+												<div class="channel-title channel-title-lg">
+													<span>FRANCE 5</span>
+												</div>
+												<div class="trend__img">
+													<a href="#">
+														
+														<span class="trend-play"><span class="icon-play-button"></span></span>
+														<img src="img/trend-img2.png" alt="">
+													</a>
+												</div>
+												<div class="trend__info">
+													<div class="trend__time">13:50</div>
+													<h5 class="trend__title"><a href="#">Peur a domicile</a></h5>
+												</div>
+											</div>
 											<a href="#" class="btn btn-grill"><span class="icon-grid"></span> Tous les chaines <span class="icon-right-arrow"></span></a>
 											
 										</div>
 										<div class="kik-dropdown-content">
 											<div class="direct-list">
 												<div class="direct-list__item">
-													<a href="#" class="cover"></a>
+													<a href="#direct_trend_1" class="cover"></a>
 													<div class="direct-list__col1">
 														<div class="channel-title">
 															<img src="img/tfi.png" alt="">
@@ -1626,7 +1675,7 @@
 													</div>
 												</div>
 												<div class="direct-list__item">
-													<a href="#" class="cover"></a>
+													<a href="#direct_trend_2" class="cover"></a>
 													<div class="direct-list__col1">
 														<div class="channel-title">
 															<img src="img/3.png" alt="">
@@ -1650,7 +1699,7 @@
 													</div>
 												</div>
 												<div class="direct-list__item">
-													<a href="#" class="cover"></a>
+													<a href="#direct_trend_3" class="cover"></a>
 													<div class="direct-list__col1">
 														<div class="channel-title">
 															<img src="img/canal.png" alt="">
@@ -1674,7 +1723,7 @@
 													</div>
 												</div>
 												<div class="direct-list__item">
-													<a href="#" class="cover"></a>
+													<a href="#direct_trend_4" class="cover"></a>
 													<div class="direct-list__col1">
 														<div class="channel-title">
 															<img src="img/5.png" alt="">
@@ -1705,7 +1754,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="navbar-menu__item">
+						<li class="navbar-menu__item navbar-menu__item--dropdown">
 							<a href="#" class="navbar-menu__link">REPLAY <span class="icon icon-down-arrow"></span></a>
 							<div class="kik-dropdown tab-wrap">
 								<div class="kik-dropdown-flex">
@@ -2563,6 +2612,7 @@
 						<li class="navbar-menu__item navbar-menu__item--button">
 							<a href="#" class="navbar-menu__link"><span class="icon icon-share-symbol"></span> Se connecter</a>
 						</li>
+						<li class="overlay"></li>
 					</ul>
 				</nav>
 				<!-- NAVBAR EOF -->
@@ -2581,23 +2631,21 @@
 					<div class="kik-page-details">
 						<div class="kik-page-details__top">
 							<div class="tags">
-								<a href="#" class="tags__link">series et fictions</a>
+								<a href="#" class="tags__link">FILM</a>
 							</div>
-							<span class="eighteen">18+</span>
-							<p class="kik-page__date">Etats-Unis - 1999-2016</p>
+							<p class="kik-page__date">France - 1983</p>
 						</div>
-						<h1>Demain nous appartient</h1>
+						<h1>Le jouet</h1>
 						
-						<p class="kik-page__text">Regardez ce dimanche 20 août sur TF1 à 20:55 le programme "Coup de foudre à Notting Hill" produit en Etats-Unis en 1999. D'une durée de 120 min ce programme est adapté à tous publics. Regardez ce dimanche 20 août sur ARTE à 20:55 le programme "Coup de foudre à Notting Hill" produit en... <a href="#" class="kik-page__link">Lisez-le complètement</a></p>
-						<p class="kik-page__text" style="display: none;">Regardez ce dimanche 20 août sur TF1 à 20:55 le programme "Coup de foudre à Notting Hill" produit en Etats-Unis en 1999. D'une durée de 120 min ce programme est adapté à tous publics. Regardez ce dimanche 20 août sur ARTE à 20:55 le programme "Coup de foudre à Notting Hill" produit en. Regardez ce dimanche 20 août sur TF1 à 20:55 le programme "Coup de foudre à Notting Hill" produit en Etats-Unis en 1999. D'une durée de 120 min ce programme est adapté à tous publics. Regardez ce dimanche 20 août sur ARTE à 20:55 le programme "Coup de foudre à Notting Hill" produit en </p>
+						<p class="kik-page__text">François Perrin, journaliste au chômage, parvient enfin à trouver un travail chez France Hebdo, journal dirigé par Pierre Rambal-Cochet. Homme d’affaires milliardaire et impitoyable, il n’a qu’un seul point faible, Eric, son fils de 9 ans, pour qui il est prêt à tout. En reportage dans un des magasins de jouets que détient nnaissance d’Eric...<a href="#" class="kik-page__link">Lisez-le complètement</a></p>
+						<p class="kik-page__text" style="display: none;">François Perrin, journaliste au chômage, parvient enfin à trouver un travail chez France Hebdo, journal dirigé par Pierre Rambal-Cochet. Homme d’affaires milliardaire et impitoyable, il n’a qu’un seul point faible, Eric, son fils de 9 ans, pour qui il est prêt à tout. En reportage dans un des magasins de jouets que détient nnaissance d’Eric François Perrin, journaliste au chômage, parvient enfin à trouver un travail chez France Hebdo, journal dirigé par Pierre Rambal-Cochet. <br> <br>Homme d’affaires milliardaire et impitoyable, il n’a qu’un seul point faible, Eric, son fils de 9 ans, pour qui il est prêt à tout. En reportage dans un des magasins de jouets que détient nnaissance d’Eric </p>
 
 						<div class="btn-group">
-							
-							<a href="#" class="btn btn--default btn--lg"><span class="icon-rss-symbol btn-icon-left"></span> Follow the show <span class="icon-right-arrow btn-icon-right"></span></a>
+							<a href="#" class="btn btn--default btn--lg mark"><span class="icon-bookmark-light"></span></a>
 						</div>
 					</div>
 					<div class="kik-page-img">
-						<img src="img/layer-830.png" alt="">
+						<img src="img/layer-538.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -2633,87 +2681,38 @@
 										
 										<div class="tv-programme-list__left">
 											<div class="time">21:45</div>
-											<span class="cn-badge">en direct</span>
 										</div>
 										
 										<div class="tv-programme-list__details">
 											<div class="tv-programme-list__header">
-												<h5 class="trend__title"><a href="#">Demain Nous Appartient</a></h5>
-												<p class="trend__descr">Season 3, Episode 27 </p>
-												<div class="tags">
-													<a href="#" class="tags__link">series et fictions</a>
-												</div>
-												<span class="eighteen">18+</span>
+												<h5 class="trend__title"><a href="#">Le Jouet</a></h5>
+												
 												<div class="mark">
 													<span class="icon-bookmark-light"></span>
 												</div>
 											</div>
 											<div class="tv-programme-list__content">
-												<p class="trend__descr">
-													Demain nous appartient est un feuilleton télévisé français, créé par Frédéric Chansel, Laure de Colbert, Nicolas Durand-Zouky, Eline Le Fur ainsi que Fabienne Lesieur et diffusé depuis le 17 juillet 2017 sur TF1 en France à 19 h 201, ainsi que sur La Deux en Belgique à 18 h 202 et sur RTS Un en Suisse romande à 11 h 453.
-												</p>
-												<div class="grey-line">
-													<div class="yellow-line" style="width: 40%;"></div>
-												</div>
+												<p class="trend__descr">François Perrin, journaliste au chômage, parvient enfin à trouver un travail chez France Hebdo, journal dirigé par Pierre Rambal-Cochet. Homme d’affaires milliardaire et impitoyable, il n’a qu’un seul point faible, Eric, son fils de 9 ans, pour qui il est prêt à tout. En reportage dans un des magasins de jouets que détient Rambal-Cochet, Perrin fait la connaissance d’Eric. Ce dernier, amusé par l’attitude maladroite de Perrin, décide d’en faire son jouet.</p>
+
 											</div>
 										</div>		
 									</li>
 									<li class="tv-programme-list__item">
-										<div class="date">Demain, 23 Aout, 2017</div>
+										<div class="date">24 Aout, 2017</div>
 									</li>
 									<li class="tv-programme-list__item">
 										
 										<div class="tv-programme-list__left">
-											<div class="time">00:50</div>
+											<div class="time">23:10</div>
 											
 										</div>
 										
 										<div class="tv-programme-list__details">
 											<div class="tv-programme-list__header">
-												<h5 class="trend__title"><a href="#">Demain Nous Appartient</a></h5>
-												<p class="trend__descr">Season 3, Episode 28 </p>
+												<h5 class="trend__title"><a href="#">Le Jouet</a></h5>
+												
 												<div class="tags">
-													<a href="#" class="tags__link">SERIES ET FICTIONS</a>
-												</div>
-												<div class="mark">
-													<span class="icon-bookmark-light"></span>
-												</div>
-											</div>
-										</div>		
-									</li>
-									<li class="tv-programme-list__item">
-										
-										<div class="tv-programme-list__left">
-											<div class="time">20:30</div>
-											
-										</div>
-										
-										<div class="tv-programme-list__details">
-											<div class="tv-programme-list__header">
-												<h5 class="trend__title"><a href="#">Demain Nous Appartient</a></h5>
-												<p class="trend__descr">Season 3, Episode 28 </p>
-												<div class="tags">
-													<a href="#" class="tags__link">SERIES ET FICTIONS</a>
-												</div>
-												<div class="mark">
-													<span class="icon-bookmark-light"></span>
-												</div>
-											</div>
-										</div>		
-									</li>
-									<li class="tv-programme-list__item">
-										
-										<div class="tv-programme-list__left">
-											<div class="time">21:45</div>
-											
-										</div>
-										
-										<div class="tv-programme-list__details">
-											<div class="tv-programme-list__header">
-												<h5 class="trend__title"><a href="#">Demain Nous Appartient</a></h5>
-												<p class="trend__descr">Season 3, Episode 28 </p>
-												<div class="tags">
-													<a href="#" class="tags__link">SERIES ET FICTIONS</a>
+													<a href="#" class="tags__link">FILMS</a>
 												</div>
 												<div class="mark">
 													<span class="icon-bookmark-light"></span>
@@ -2723,17 +2722,9 @@
 									</li>
 									
 								</ul>
-								<a href="#" class="plus">Plus</a>	
+								
 
-								<div class="tv-programme-info">
-									<h2 class="content-title">
-										<span class="content-title__icon"><i class="ic ic--info"></i></span>
-										<span class="content-title__text">INFO</span>
-										
-									</h2>
-									<p>Regardez ce dimanche 20 août sur ARTE à 20:55 le programme "Coup de foudre à Notting Hill" produit en Etats-Unis en 1999. D'une durée de 120 min ce programme est adapté à tous publics.</p>
-									<p>William vit à Notting Hill, à l'ouest de Londres. Divorcé, ce trentenaire mène une existence paisible entre sa librairie et la maison qu'il partage avec Spike, un ami. Lorsqu'un matin, la belle Anna Scott, l'actrice la plus célèbre d'Hollywood, pousse la porte de sa boutique, William ignore que débute une grande aventure. Ils tombent amoureux mais la vie les éloigne l'un de l'autre. Quelques mois plus tard, Anna, traquée par la presse, se réfugie chez William. Ils garderont un tendre souvenir de ces jours en tête à tête mais la Une des journaux à scandales les surprend. Anna, se croyant trahie, quitte William</p>
-								</div>		
+									
 							</div>
 							<div class="kik-tabs-banner">
 								<div class="banner">

@@ -126,7 +126,8 @@
 				<!-- BEGIN NAVBAR -->
 				<nav class="navbar">
 					<ul class="navbar-menu">
-						<li class="navbar-menu__item">
+
+						<li class="navbar-menu__item navbar-menu__item--dropdown">
 							<a href="#" class="navbar-menu__link">TV PROGRAMME <span class="icon icon-down-arrow"></span></a>
 							<div class="kik-dropdown tab-wrap" >
 								<div class="kik-dropdown-flex">
@@ -1574,13 +1575,13 @@
 								</div>
 							</div>
 						</li>
-						<li class="navbar-menu__item">
+						<li class="navbar-menu__item navbar-menu__item--dropdown">
 							<a href="#" class="navbar-menu__link">DIRECT <span class="icon icon-down-arrow"></span></a>
 							<div class="kik-dropdown kik-dropdown--center">
 								<div class="wrapper">
-									<div class="kik-dropdown-flex">
+									<div class="kik-dropdown-flex direct-tab-wrap">
 										<div class="kik-dropdown-aside">
-											<div class="trend">
+											<div class="trend direct-tab-cont" id="direct_trend_1">
 												<div class="channel-title channel-title-lg">
 													<span>CANAL + <span class="cn-badge">en direct</span></span>
 												</div>
@@ -1596,13 +1597,61 @@
 													<h5 class="trend__title"><a href="#">24 Heures en questions de Samedi</a></h5>
 												</div>
 											</div>
+											<div class="trend direct-tab-cont hide" id="direct_trend_2">
+												<div class="channel-title channel-title-lg">
+													<span>FRANCE 3 <span class="cn-badge">en direct</span></span>
+												</div>
+												<div class="trend__img">
+													<a href="#">
+														
+														<span class="trend-play"><span class="icon-play-button"></span></span>
+														<img src="img/trend-img2.png" alt="">
+													</a>
+												</div>
+												<div class="trend__info">
+													<div class="trend__time">13:50</div>
+													<h5 class="trend__title"><a href="#">Les douz coupe de mini</a></h5>
+												</div>
+											</div>
+											<div class="trend direct-tab-cont hide" id="direct_trend_3">
+												<div class="channel-title channel-title-lg">
+													<span>CANAL + <span class="cn-badge">en direct</span></span>
+												</div>
+												<div class="trend__img">
+													<a href="#">
+														
+														<span class="trend-play"><span class="icon-play-button"></span></span>
+														<img src="img/trend-img3.png" alt="">
+													</a>
+												</div>
+												<div class="trend__info">
+													<div class="trend__time">13:50</div>
+													<h5 class="trend__title"><a href="#">24 Heures en questions Le Samedi</a></h5>
+												</div>
+											</div>
+											<div class="trend direct-tab-cont hide" id="direct_trend_4">
+												<div class="channel-title channel-title-lg">
+													<span>FRANCE 5</span>
+												</div>
+												<div class="trend__img">
+													<a href="#">
+														
+														<span class="trend-play"><span class="icon-play-button"></span></span>
+														<img src="img/trend-img2.png" alt="">
+													</a>
+												</div>
+												<div class="trend__info">
+													<div class="trend__time">13:50</div>
+													<h5 class="trend__title"><a href="#">Peur a domicile</a></h5>
+												</div>
+											</div>
 											<a href="#" class="btn btn-grill"><span class="icon-grid"></span> Tous les chaines <span class="icon-right-arrow"></span></a>
 											
 										</div>
 										<div class="kik-dropdown-content">
 											<div class="direct-list">
 												<div class="direct-list__item">
-													<a href="#" class="cover"></a>
+													<a href="#direct_trend_1" class="cover"></a>
 													<div class="direct-list__col1">
 														<div class="channel-title">
 															<img src="img/tfi.png" alt="">
@@ -1626,7 +1675,7 @@
 													</div>
 												</div>
 												<div class="direct-list__item">
-													<a href="#" class="cover"></a>
+													<a href="#direct_trend_2" class="cover"></a>
 													<div class="direct-list__col1">
 														<div class="channel-title">
 															<img src="img/3.png" alt="">
@@ -1650,7 +1699,7 @@
 													</div>
 												</div>
 												<div class="direct-list__item">
-													<a href="#" class="cover"></a>
+													<a href="#direct_trend_3" class="cover"></a>
 													<div class="direct-list__col1">
 														<div class="channel-title">
 															<img src="img/canal.png" alt="">
@@ -1674,7 +1723,7 @@
 													</div>
 												</div>
 												<div class="direct-list__item">
-													<a href="#" class="cover"></a>
+													<a href="#direct_trend_4" class="cover"></a>
 													<div class="direct-list__col1">
 														<div class="channel-title">
 															<img src="img/5.png" alt="">
@@ -1705,7 +1754,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="navbar-menu__item">
+						<li class="navbar-menu__item navbar-menu__item--dropdown">
 							<a href="#" class="navbar-menu__link">REPLAY <span class="icon icon-down-arrow"></span></a>
 							<div class="kik-dropdown tab-wrap">
 								<div class="kik-dropdown-flex">
@@ -2563,6 +2612,7 @@
 						<li class="navbar-menu__item navbar-menu__item--button">
 							<a href="#" class="navbar-menu__link"><span class="icon icon-share-symbol"></span> Se connecter</a>
 						</li>
+						<li class="overlay"></li>
 					</ul>
 				</nav>
 				<!-- NAVBAR EOF -->
@@ -2696,7 +2746,7 @@
 						<div class="wrapper">
 							<div class="kik-tabs-left">
 								<div class="tv-programme-header">
-									<h2 class="h1">Demain Nous Appartient <span class="cn-badge">en direct</span></h2>
+									<h2 class="h1">Demain Nous Appartient <span class="cn-badge cn-badge--lg">en direct</span></h2>
 									<div class="channel-title channel-title-lg">
 										<a href="#">
 											<img src="img/tf1-extra-lg.png" alt=""> 

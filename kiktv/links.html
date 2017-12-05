@@ -18,7 +18,7 @@
 <style>
 	body {
 		background: #2e4767;
-		
+		color: #d3d3d3;
 	}
 	.wrapper {
 		width: 1200px;
@@ -26,6 +26,8 @@
 		min-height: 100vh;
 		margin: 0 auto;
 		display: flex;
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 		-ms-align-items: center;
 		align-items: center;
 
@@ -36,10 +38,12 @@
 	ul {
 		list-style: none;
 		margin-bottom: 30px;
-		flex: 1;
+		width: 33.33%;
 	}
 	.ul-wrap {
 		display: flex;
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 		-ms-align-items: flex-start;
 		align-items: flex-start;
 	}
@@ -64,11 +68,18 @@
 	}
 
 	h2 {
+		width: 100%;
+
 		font-size: 50px;
 		line-height: 60px;
 		color: #fff;
 		text-align: center;
 		padding: 20px 0 40px;
+	}
+	h4 {
+		color: #fff;
+		padding: 10px 0;
+		font-size: 23px;
 	}
 </style>
 
@@ -79,18 +90,28 @@
 		<h2>Links</h2>
 		<div class="ul-wrap">
 			<ul>
+				<li><h4>Home page</h4></li>
 				<li><a href="index.html">index.html</a></li>
 				<li><a href="grill-page.html">grill-page.html</a></li>
-				<li class="caret"></li>
+			</ul>
+			<ul>
+				<li><h4>Replays</h4></li>
 				<li><a href="replays.html">replays.html</a></li>
 				<li><a href="replays-series.html">replays-series.html</a></li>
-				<li class="caret"></li>
+				<li><a href="replays-series.html">replays-page.html</a></li>
+			</ul>
+			<ul>
+				<li><h4>Direct</h4></li>
 				<li><a href="direct.html">direct.html</a></li>
 				<li><a href="direct-page.html">direct-page.html</a></li>
-				<li class="caret"></li>
+			</ul>
+			<ul>
+				<li><h4>Actu</h4></li>
 				<li><a href="actu.html">actu.html</a></li>
 				<li><a href="actu_page.html">actu_page.html</a></li>
-				<li class="caret"></li>
+			</ul>
+			<ul>
+				<li><h4>Channel page</h4></li>
 				<li><a href="channel-page.html">channel-page.html</a></li>
 			</ul>
 
@@ -99,9 +120,11 @@
 				<li><a href="tv-programme-grill.html">tv-programme-grill.html</a></li>
 			</ul>
 			<ul>
-				<li><a href="programme-page.html">programme-page.html</a></li>
+				<li><h4>Programme page</h4></li>
+				
+				<li><a href="programm-page-of-the-show.html">programm-page-of-the-show.html</a></li>
 				<li><a href="programme-page_01.html">programme-page_01.html</a></li>
-				<li><a href="programme-page_films.html">programme-page_films.html</a></li>
+				<li><a href="programm-page-serial.html">programm-page-serial.html</a></li>
 			</ul>
 		</div>
 	</div>

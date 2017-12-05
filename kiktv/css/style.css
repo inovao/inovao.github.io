@@ -200,6 +200,7 @@ body { color: #393f44; font: 400 14px "Open Sans", Arial, sans-serif; line-heigh
 .wrapper { max-width: 1280px; padding: 0 40px 0 40px; margin: 0 auto; }
 
 h1, .h1 { padding: 10px 0 10px 0; margin: 0; color: #393f44; font-family: "Open Sans"; font-size: 42px; font-weight: 700; line-height: 54px; }
+h1 .cn-badge, .h1 .cn-badge { margin-left: 25px; }
 
 h2 { padding: 15px 0 15px 0; margin: 0; color: #393f44; font-size: 21px; font-weight: 700; line-height: 28px; text-transform: uppercase; }
 
@@ -241,13 +242,14 @@ span { display: inline-block; }
 .crumbs__item { display: inline-block; vertical-align: middle; margin-right: 5px; }
 .crumbs__link { display: block; color: #9b9fa3; font-size: 13px; font-weight: 400; line-height: 21px; text-transform: uppercase; }
 .crumbs__link [class*="icon"] { font-size: 10px; color: #c8d2da; margin-left: 5px; }
+.crumbs__link:hover { color: #393f44; }
 
 /* Tabs */
 .hide { position: absolute; left: 0; top: 0; height: 0; width: 0; overflow: hidden; z-index: -1; opacity: 0; }
 
-.tab-cont, .tab-wrap-cont { opacity: 1; width: 100%; -webkit-transition: opacity 0.4s; -o-transition: opacity 0.4s; transition: opacity 0.4s; }
+.tab-cont, .tab-wrap-cont, .direct-tab-cont { opacity: 1; width: 100%; -webkit-transition: opacity 0.4s; -o-transition: opacity 0.4s; transition: opacity 0.4s; }
 
-.tab-cont.hide, .tab-wrap-cont.hide { opacity: 0; }
+.tab-cont.hide, .tab-wrap-cont.hide, .direct-tab-cont.hide { opacity: 0; }
 
 /* loader */
 .loaded .main-wrapper { visibility: hidden; opacity: 0; -webkit-transition: opacity 0.3s; -o-transition: opacity 0.3s; transition: opacity 0.3s; }
@@ -363,10 +365,12 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
 /* Navbar */
 .navbar { margin-left: auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 .navbar-menu { margin: -9px 0; list-style: none; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.navbar-menu .overlay:after { content: ""; display: block; position: absolute; top: 100%; left: 0; right: 0; height: 0; background: rgba(6, 17, 31, 0.83); }
 .navbar-menu__item { padding: 9px 0; white-space: nowrap; }
 .navbar-menu__item:before { content: ""; display: inline-block; vertical-align: middle; font-size: 0px; width: 1px; height: 32px; margin: 0 4px 0 8px; background-color: #354f6f; }
-.navbar-menu__item:not(.navbar-menu__item--button):hover .kik-dropdown { opacity: 1; top: 100%; z-index: 3; left: 0; margin-top: 0; }
-.navbar-menu__item:not(.navbar-menu__item--button):hover .navbar-menu__link { background-color: #354f6f; }
+.navbar-menu__item--dropdown:hover .kik-dropdown { opacity: 1; top: 100%; z-index: 3; left: 0; margin-top: 0; }
+.navbar-menu__item--dropdown:hover .navbar-menu__link { background-color: #354f6f; }
+.navbar-menu__item--dropdown:hover ~ .overlay:after { height: 100vh; }
 .navbar-menu__item:first-child:before, .navbar-menu__item--button:before { display: none; }
 .navbar-menu__item--button { margin-left: 49px; }
 .navbar-menu__item--button .navbar-menu__link { background-color: #354f6f; }
@@ -485,7 +489,6 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
 .tv-programme-header { border-top: 1px solid #f4f5f7; padding: 20px 0; margin-bottom: 0; }
 .tv-programme-header > div { margin-bottom: 0; }
 .tv-programme-header .h1, .tv-programme-header h1 { padding: 0 0 20px; text-transform: none; }
-.tv-programme-header .h1 .cn-badge, .tv-programme-header h1 .cn-badge { line-height: 28px; font-size: 15px; padding: 0 10px; margin-left: 25px; }
 .tv-programme-header .channel-title { min-height: 1px; }
 .tv-programme-header .channel-title span { font-size: 24px; line-height: 24px; }
 .tv-programme-list { list-style: none; margin-bottom: 35px; }
@@ -608,7 +611,7 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
 .recent-replays .trend-slider { position: static; }
 
 /* actu */
-.box-actu { border-top-width: 2px; }
+.box-actu .kik-tabs-main { border-top-width: 2px; }
 .box-actu-info figure { margin: 20px 0 45px; }
 .box-actu-info p { padding-bottom: 30px; }
 .box-actu .publier { padding-bottom: 15px; }
@@ -635,6 +638,11 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
 
 .kik-replays { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: 20px; margin: 0 -10px; }
 .kik-replays .trend { width: calc(25% - 20px); margin-right: 10px; margin-left: 10px; margin-bottom: 20px; }
+
+.kik-plays { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: 20px; margin: 0 -10px; }
+.kik-plays .trend { width: calc(20% - 20px); margin-right: 10px; margin-left: 10px; margin-bottom: 20px; }
+
+.season { font-size: 24px; line-height: 26px; padding-bottom: 25px; }
 
 /* Trend */
 .trend { /*trend empty */ }
@@ -673,14 +681,15 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
 .channel-title .like { margin-left: 8px; }
 .channel-title-lg span { font-size: 16px; font-weight: 700; line-height: 18px; }
 
-.channel-list { list-style: none; height: auto; overflow: hidden; -webkit-transition: height 0.4s; -o-transition: height 0.4s; transition: height 0.4s; height: auto; }
-.channel-list.show { height: 49px; overflow: hidden; }
+.channel-list { list-style: none; height: auto; padding: 1px; overflow: hidden; -webkit-transition: height 0.4s; -o-transition: height 0.4s; transition: height 0.4s; height: auto; }
+.channel-list.show { overflow: hidden; }
 .channel-list__item { display: inline-block; vertical-align: top; margin-right: 3px; margin-bottom: 10px; }
 .channel-list__item:last-child { margin-right: 0; }
 .channel-list__link { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; width: 48px; height: 48px; font-size: 24px; color: #d6e1e9; border-radius: 5px; border: 1px solid #d6e1e9; text-align: center; }
 .channel-list__link img { -webkit-box-flex: 0; -webkit-flex: none; -ms-flex: none; flex: none; display: inline-block; vertical-align: middle; }
 .channel-list__link:hover { border-color: #c4cfd7; color: #c4cfd7; }
 .channel-list__link.active { border-color: #def300; -webkit-box-shadow: 0 0 1px 1px #def300; box-shadow: 0 0 1px 1px #def300; }
+.channel-list__link.js-sliding.active .icon-grid:before { content: ""; }
 .channel-list__text { color: #334b5e; font-family: "Arial Narrow", sans-serif; font-size: 11px; font-weight: 700; text-decoration: underline; text-transform: uppercase; }
 
 .channel-wrap { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 -15px; }
@@ -703,6 +712,14 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
 .badge { position: absolute; left: 0; top: 0; z-index: 1; color: #393f44; font-size: 14px; font-weight: 700; text-transform: uppercase; line-height: 30px; padding: 0 9px; background-color: rgba(242, 242, 242, 0.8); }
 
 .cn-badge { color: #393f44; padding: 0 8px; white-space: nowrap; vertical-align: middle; font-size: 11px !important; line-height: 22px; font-weight: 400 !important; border-radius: 3px; background-color: #def300; }
+.cn-badge--info { background-color: #2e4767; color: #fff; }
+.cn-badge--lg { line-height: 28px; font-size: 15px !important; padding: 0 12px; }
+
+/* Replays Page */
+.box-replays { border: none; padding-top: 0; padding-bottom: 0; }
+.box-replays-details { width: calc(100% - 356px); }
+.box-replays-details .channel-title { margin-bottom: 25px; }
+.box-replays-details .channel-title span { font-size: 24px; }
 
 /* kik Page */
 .kik-page { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; padding: 15px 0; }
@@ -823,7 +840,7 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
   .channel-wrap__item { padding-left: 10px; padding-right: 10px; }
   .channel-wrap-list__item h5 br { display: none; }
   .cn-badge { padding: 0 6px; }
-  .tv-programme-header .h1 .cn-badge, .tv-programme-header h1 .cn-badge { margin-left: 10px; }
+  .h1 .cn-badge, h1 .cn-badge { margin-left: 10px; }
   .following__text { font-size: 13px; }
   .following .separator { margin-right: 12px; margin-left: 10px; }
   .following .btn { margin-left: 12px; padding-left: 12px; padding-right: 12px; }

@@ -20,6 +20,19 @@ $(function(){
 
 	$(window).bind('load resize', hf);
 
+	var channelList = $('.channel-list.show').height();
+	$('.channel-list.show').css('height', '50px');
+
+	$('.js-sliding').toggle(function(){
+    	$(this).addClass('active');
+    	$(this).parents('.channel-list').animate({height: channelList - 8}, 300);
+    	return false;
+    }, function (){
+		$(this).removeClass('active');
+    	$(this).parents('.channel-list').animate({height: 50}, 300);
+    	return false;
+    })
+
 
 	//Click event to scroll to top
 	$('.up').click(function() {
@@ -68,17 +81,7 @@ $(function(){
     	
     });
 
-    $('.js-sliding').click(function(){
-    	$(this).toggleClass('active');
-    	$(this).parents('.channel-list').toggleClass('show');
-  //   	var el = $('.channel-list');
-		    
-		// el.animate({
-  //           height: '100%'
-  //       }, 400);
-    	return false;
-
-    })
+    
 
      $('.toggle-filter-search').click(function(){
     	$(this).parents('.filter-search').find('.filter-search-wrap').toggleClass('show');
@@ -193,6 +196,16 @@ $(function(){
       
       event.stopPropagation();
     });
+
+
+    $('.direct-list a').hover(function(){
+		$(this).parents('.direct-tab-wrap').find('.direct-tab-cont').addClass('hide');
+		$(this).parent().siblings().removeClass('active');
+		var id = $(this).attr('href');
+		$(id).removeClass('hide');
+		$(this).parent().addClass('active');
+		return false
+	});
 
     $('.tabs-g a').click(function(){
 		$(this).parents('.tab-wrap-g').find('.tab-wrap-cont').addClass('hide');
