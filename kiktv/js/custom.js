@@ -34,6 +34,16 @@ $(function(){
     })
 
 
+	$('.js-remove-ms-list').click(function(){
+		$(this).parents('.my-shows-list__item').fadeOut(1000, function(){$(this).remove()});
+		return false;
+	});
+
+	$('.js-remove-f-list').click(function(){
+		$(this).parents('.favoris-list__item').fadeOut(1000, function(){$(this).remove()});
+		return false;
+	});
+
 	//Click event to scroll to top
 	$('.up').click(function() {
 	    $('html, body').animate({
