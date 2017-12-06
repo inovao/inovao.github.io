@@ -5489,7 +5489,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 	if (carouselOffer.length) {
 		carouselOffer.owlCarousel({
 			items: 1,
-			smartSpeed: 500
+			smartSpeed: 800,
+			autoplay: true
 		});
 	}
 })();
