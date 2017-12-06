@@ -772,6 +772,7 @@ a {
 .offer__preview {
   -ms-flex: 0 0 48%;
   flex: 0 0 48%;
+  text-align: center;
 }
 
 .offer__pic {
