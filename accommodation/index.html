@@ -137,11 +137,24 @@
                 <div class="signup__body">
                   <div class="field field_row">
                     <div class="field__title">I’m registering as a </div>
-                    <div class="field__wrap"><select class="field__select"><option>Landlord</option><option>Landlord 1</option><option>Landlord 2</option><option>Landlord 3</option></select></div>
+                    <div class="field__wrap">
+                      <div class="field__select js-select">
+                        <div class="field__head js-select-head"><input class="field__input js-select-input" type="text" readonly>
+                          <div class="field__label">Select</div>
+                          <div class="field__arrow"><svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg></div>
+                        </div>
+                        <div class="field__drop">
+                          <div class="field__option js-select-option">Landlord</div>
+                          <div class="field__option js-select-option">Landlord 1</div>
+                          <div class="field__option js-select-option">Landlord 2</div>
+                          <div class="field__option js-select-option">Landlord 3</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="field">
-                    <div class="field__wrap"><input class="field__input js-field-input" type="text">
-                      <div class="field__label">Your Name</div>
+                    <div class="field__wrap"><input class="field__input js-field-input" type="text" value="Lorem@ipsum.com">
+                      <div class="field__label">Your Email</div>
                     </div>
                   </div>
                   <div class="field">

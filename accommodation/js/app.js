@@ -2317,12 +2317,47 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     var input = $('.js-field-input');
     input.each(function () {
         var _this = $(this);
+
+        if (_this.val() != '') {
+            _this.addClass('focus');
+        }
+
+        _this.focus(function () {
+            _this.addClass('focus');
+        });
+
         _this.blur(function () {
             if (_this.val() != '') {
                 _this.addClass('focus');
             } else {
                 _this.removeClass('focus');
             }
+        });
+    });
+})();
+
+// select
+(function () {
+    var select = $('.js-select');
+    select.each(function () {
+        var _this = $(this),
+            head = _this.find('.js-select-head'),
+            input = _this.find('.js-select-input'),
+            option = _this.find('.js-select-option');
+
+        head.on('click', function (e) {
+            e.preventDefault();
+            _this.toggleClass('open');
+        });
+
+        option.on('click', function (e) {
+            e.preventDefault();
+            _this.addClass('selected').removeClass('open');
+
+            var _thisOption = $(this);
+            input.val(_thisOption.text());
+            option.removeClass('active');
+            _thisOption.addClass('active');
         });
     });
 })();
