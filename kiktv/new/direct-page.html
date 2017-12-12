@@ -31,6 +31,9 @@
 						<a href="#"><img src="img/logo.png?ver1.0" alt=""></a>
 					</div>
 					<!-- BEGIN SEARCH -->
+					<button class="open-search js-open-search">
+						<span class="icon-search2"></span>
+					</button>
 					<div class="search">
 						<form action="#">
 							<div class="search-inner">
@@ -126,6 +129,14 @@
 
 					<!-- BEGIN NAVBAR -->
 					<nav class="navbar">
+						<button class="open-menu js-open-menu">
+							<span class="menu-burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+							<span class="only-text">Menu</span>
+						</button>
 						<ul class="navbar-menu">
 
 							<li class="navbar-menu__item navbar-menu__item--dropdown">
@@ -2542,7 +2553,7 @@
 			<div class="wrapper">
 				<div class="inner-header">
 					<h1 class="inner-header__title">TF1 EN DIRECT</h1>
-					<select class="styler js-channel-list" data-visible-options="10">
+					<select class="styler js-channel-list " data-visible-options="10">
 						<option value="" class="tfi">TF1</option>
 						<option value="" class="f2">France 2</option>
 						<option value="" class="f3">France 3</option>
@@ -2551,7 +2562,11 @@
 						<option value="" class="c8">c8</option>
 						<option value="" class="w9">w9</option>
 					</select>
+					<span class="cn-badge">en direct</span>
 					<p class="inner-header__text">Regardez TF1 en direct dans kik.tv</p>
+					<span class="like">
+						<span class="icon-like"></span>
+					</span>
 				</div>
 			</div>
 		</section>
@@ -2636,7 +2651,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="tab-wrap">
+		<div class="tab-wrap hidden-ipad">
 			<div class="raplays-filter">
 				<div class="wrapper">
 					<ul class="filter-nav tabs">
@@ -2896,12 +2911,15 @@
 
 		<section class="section section--grey">
 			<div class="wrapper">
-				<h2 class="content-title">
+				<div class="banner-ipad mb18">
+					<a href="#"><img src="img/adv-banner-2.png" alt=""></a>
+				</div>
+				<h2 class="content-title hidden-ipad">
 					<span class="content-title__icon"><i class="ic ic--play"></i></span>
 					<span class="content-title__text">EN CE MOMENT A LA TELE</span>
 					<a href="#" class="content-title__link">VOIR LE GRILL <span class="icon-right-arrow"></span></a>
 				</h2>
-				<div class="kik-row">
+				<div class="kik-row hidden-ipad">
 					<div class="trend trend--empty col-4">
 						<div class="trend__img">
 							<a href="#" >
@@ -3168,13 +3186,277 @@
 						</div>
 					</div>
 				</div>
+				<div class="channel-wrap hidden-desktop">
+					<div class="channel-wrap__item">
+						<div class="channel-title channel-title-lg">
+							<a href="#">
+								<img src="img/tfi-big.png" alt=""> 
+								<span>TF1</span>
+							</a>
+							<span class="like">
+								<span class="icon-like-actiive"></span>
+							</span>
+						</div>
+						<div class="channel-wrap-img">
+							<a href="#"><img src="img/layer-2279.png" alt=""></a>
+							<div class="onl-time">
+								<div class="onl-time-line" style="width: 70%;"></div>
+							</div>
+						</div>
+						<ul class="channel-wrap-list">
+							<li class="channel-wrap-list__item active">
+								<div class="time">12:00</div>
+								<h5><a href="#">Les 12 coupes de midi <span class="cn-badge">en direct</span></a></h5>
+								<p>Season 14 episode 8</p>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="channel-wrap__item">
+						<div class="channel-title channel-title-lg">
+							<a href="#">
+								<img src="img/2-big.png" alt=""> 
+								<span>FRANCE 2</span>
+							</a>
+							<span class="like">
+								<span class="icon-like-actiive"></span>
+							</span>
+						</div>
+						<div class="channel-wrap-img">
+							<a href="#"><img src="img/layer-49-copy.png" alt=""></a>
+							<div class="onl-time">
+								<div class="onl-time-line" style="width: 70%;"></div>
+							</div>
+						</div>
+						<ul class="channel-wrap-list">
+							<li class="channel-wrap-list__item active">
+								<div class="time">12:00</div>
+								<h5><a href="#">Tout le monde a son mot <br>a dire  <span class="cn-badge">en direct</span></a></h5>
+								<p>Season 14 episode 8</p>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="channel-wrap__item">
+						<div class="channel-title channel-title-lg">
+							<a href="#">
+								<img src="img/5-big.png" alt=""> 
+								<span>FRANCE 5</span>
+							</a>
+							<span class="like">
+								<span class="icon-like-actiive"></span>
+							</span>
+						</div>
+						<div class="channel-wrap-img">
+							<a href="#"><img src="img/layer-2280.png" alt=""></a>
+							<div class="onl-time">
+								<div class="onl-time-line" style="width: 70%;"></div>
+							</div>
+						</div>
+						<ul class="channel-wrap-list">
+							<li class="channel-wrap-list__item active">
+								<div class="time">12:00</div>
+								<h5><a href="#">Nos pires voisins 2</a></h5>
+								<p>Season 14 episode 8</p>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="banner-iphone">
+						<a href="#"><img src="img/banner-iphone.png" alt=""></a>
+					</div>
+					<div class="channel-wrap__item">
+						<div class="channel-title channel-title-lg">
+							<a href="#">
+								<img src="img/canal-big.png" alt=""> 
+								<span>CANAL+</span>
+							</a>
+							<span class="like">
+								<span class="icon-like-actiive"></span>
+							</span>
+						</div>
+						<div class="channel-wrap-img">
+							<a href="#"><img src="img/layer-2281.png" alt=""></a>
+							<div class="onl-time">
+								<div class="onl-time-line" style="width: 70%;"></div>
+							</div>
+						</div>
+						<ul class="channel-wrap-list">
+							<li class="channel-wrap-list__item active">
+								<div class="time">12:00</div>
+								<h5><a href="#">La semaine de Catherine et Lilian</a></h5>
+								<p>Season 14 episode 8</p>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="channel-wrap__item">
+						<div class="channel-title channel-title-lg">
+							<a href="#">
+								<img src="img/3-big.png" alt=""> 
+								<span>FRANCE 3</span>
+							</a>
+							<span class="like">
+								<span class="icon-like"></span>
+							</span>
+						</div>
+						<div class="channel-wrap-img">
+							<a href="#"><img src="img/layer-2279.png" alt=""></a>
+							<div class="onl-time">
+								<div class="onl-time-line" style="width: 70%;"></div>
+							</div>
+						</div>
+						<ul class="channel-wrap-list">
+							<li class="channel-wrap-list__item active">
+								<div class="time">12:00</div>
+								<h5><a href="#">Le jouet <span class="cn-badge">en direct</span></a></h5>
+								<p>Season 14 episode 8</p>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="channel-wrap__item">
+						<div class="channel-title channel-title-lg">
+							<a href="#">
+								<img src="img/m6-big.png" alt=""> 
+								<span>M6</span>
+							</a>
+							<span class="like">
+								<span class="icon-like"></span>
+							</span>
+						</div>
+						<div class="channel-wrap-img">
+							<a href="#"><img src="img/layer-49-copy.png" alt=""></a>
+							<div class="onl-time">
+								<div class="onl-time-line" style="width: 70%;"></div>
+							</div>
+						</div>
+						<ul class="channel-wrap-list">
+							<li class="channel-wrap-list__item active">
+								<div class="time">12:00</div>
+								<h5><a href="#">Les 12 coupes de midi <span class="cn-badge">en direct</span></a></h5>
+								<p>Season 14 episode 8</p>
+							</li>
+							
+						</ul>
+					</div>
+					
+				</div>
+				<div class="banner-ipad">
+					<a href="#"><img src="img/adv-banner-2.png" alt=""></a>
+				</div>
 				<div class="kik-loader">
 					<span class="icon-spinner"></span>
 				</div>
 			</div>
 		</section>
 
-		<section class="section recent-replays">
+		<section class="section recent-replays section--grey hidden-desktop">
+			<div class="wrapper">
+				<h2 class="content-title">
+					<span class="content-title__icon"><i class="ic ic--arrows-left"></i></span>
+					<span class="content-title__text">replays</span>
+					
+				</h2>
+				<div class="trend-slider2">
+					<div>
+						<div class="trend trend--empty trend--sm">
+							<div class="trend__img">
+								<a href="#">
+									<span class="badge">TF1</span>
+									<span class="trend-play"><span class="icon-play-button"></span></span>
+									<img src="img/trend-img1.png" alt="">
+								</a>
+							</div>
+							<div class="trend__info">
+								<h5 class="trend__title"><a href="#">Quotidiene avec Yann Barthes </a></h5>
+								<p class="trend__descr">Joséphine dans les années folles: Cluedo, Charleston et ...</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="trend trend--empty trend--sm">
+							<div class="trend__img">
+								<a href="#">
+									<span class="badge">TF1</span>
+									<span class="trend-play"><span class="icon-play-button"></span></span>
+									<img src="img/trend-img1.png" alt="">
+								</a>
+							</div>
+							<div class="trend__info">
+								<h5 class="trend__title"><a href="#">Quotidiene avec Yann Barthes </a></h5>
+								<p class="trend__descr">Joséphine dans les années folles: Cluedo, Charleston et ...</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="trend trend--empty trend--sm">
+							<div class="trend__img">
+								<a href="#">
+									<span class="badge">TF1</span>
+									<span class="trend-play"><span class="icon-play-button"></span></span>
+									<img src="img/trend-img8.png" alt="">
+								</a>
+							</div>
+							<div class="trend__info">
+								<h5 class="trend__title"><a href="#">Demain nous appartient</a></h5>
+								<p class="trend__descr">Demain nous appartient du 3 octobre 2017 - Episode 5</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="trend trend--empty trend--sm">
+							<div class="trend__img">
+								<a href="#">
+									<span class="badge">CANAL+</span>
+									<span class="trend-play"><span class="icon-play-button"></span></span>
+									<img src="img/trend-img2.png" alt="">
+								</a>
+							</div>
+							<div class="trend__info">
+								<h5 class="trend__title"><a href="#">Quand je serai grande, je te tuerai</a></h5>
+								<p class="trend__descr">Laëtitia Milot, de retour dans le rôle d'une femme en quête de vérité dès lundi 9 ...</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="trend trend--empty trend--sm">
+							<div class="trend__img">
+								<a href="#">
+									<span class="badge">FRANCE 2</span>
+									<span class="trend-play"><span class="icon-play-button"></span></span>
+									<img src="img/trend-img3.png" alt="">
+								</a>
+							</div>
+							<div class="trend__info">
+								<h5 class="trend__title"><a href="#">Profilage</a></h5>
+								<p class="trend__descr">Burn out - Saison 8 épisode 9</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="trend trend--empty trend--sm">
+							<div class="trend__img">
+								<a href="#">
+									<span class="badge">FRANCE 3</span>
+									<span class="trend-play"><span class="icon-play-button"></span></span>
+									<img src="img/trend-img7.png" alt="">
+								</a>
+							</div>
+							<div class="trend__info">
+								<h5 class="trend__title"><a href="#">Danse avec les stars</a></h5>
+								<p class="trend__descr">Nicolas Archambault, un nouveau juge qui n'a pas froid aux yeux</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="btn-ipad">
+					<a href="#" class="btn btn--info">Tous les replays <span class="icon-right-arrow btn-icon-right"></span></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section recent-replays hidden-ipad">
 			<div class="wrapper">
 				<h2 class="content-title">
 					<span class="content-title__icon"><i class="ic ic--arrows-left"></i></span>
@@ -3275,7 +3557,6 @@
 				</div>
 			</div>
 		</section>
-		
 
 		<section class="section section--grey actu">
 			<div class="wrapper">
@@ -3313,7 +3594,7 @@
 							<p class="trend__descr">En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre ordinateur, qu'il soit un PC ...</p>
 						</div>
 					</div>
-					<div class="trend trend--empty trend--big">
+					<div class="trend trend--empty trend--big hidden-ipad">
 						<div class="trend__img">
 							<a href="#">
 								<img src="img/trend-empty2.png" alt="">
@@ -3371,7 +3652,7 @@
 							<p class="trend__descr">En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre.</p>
 						</div>
 					</div>
-					<div class="trend trend--empty">
+					<div class="trend trend--empty  hidden-ipad">
 						<div class="trend__img">
 							<a href="#">
 								<img src="img/trend-empty6.png" alt="">
@@ -3386,10 +3667,13 @@
 						</div>
 					</div>
 				</div>
+				<div class="btn-ipad">
+					<a href="#" class="btn btn--info">Tous les replays <span class="icon-right-arrow btn-icon-right"></span></a>
+				</div>
 			</div>
 		</section>
 
-		<section class="section section--text">
+		<section class="section section--text hidden-iphone">
 			<div class="wrapper">
 				<p>En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre ordinateur, qu'il soit un PC ou un Mac d'Apple, et sur votre smartphone, qu'il soit un Android ou un iPhone, voire même sur votre tablette iPad. L'accès à ce service de télévision en live est gratuit et illimité pour tous les internautes. La visualisation de la télé en streaming se fait online et requiert donc une connexion internet de qualité. Sur notre site, tout est en direct et le restera!  C'est pourquoi nous ne proposons pas de logiciel à télécharger pour regarder la télévision, que de visionnage tv direct et en replay sur notre plateforme web. En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre ordinateur, qu'il soit un PC ou un Mac d'Apple, et sur votre smartphone, qu'il soit un Android ou un iPhone, voire même sur votre tablette iPad. L'accès à ce service de télévision en live est gratuit et illimité pour tous les internautes. La visualisation de la télé en streaming se fait online et requiert donc une connexion internet de qualité. Sur notre site, tout est en direct et le restera!  C'est pourquoi nous ne proposons pas de logiciel à télécharger pour regarder la télévision, que de visionnage tv direct et en replay sur notre plateforme web.</p>
 			</div>

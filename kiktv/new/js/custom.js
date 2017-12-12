@@ -28,9 +28,6 @@ $(function(){
     	return false;
     });
 
-
-
-
 	$('.js-remove-ms-list').click(function(){
 		$(this).parents('.my-shows-list__item').fadeOut(1000, function(){$(this).remove()});
 		return false;
@@ -40,6 +37,13 @@ $(function(){
 		$(this).parents('.favoris-list__item').fadeOut(1000, function(){$(this).remove()});
 		return false;
 	});
+
+	$('.js-open-search').click(function(){
+    	$(this).toggleClass('active');
+    	$('.search').slideToggle(400)
+    	return false;
+    });
+	
 
 	//Click event to scroll to top
 	$('.up').click(function() {
@@ -143,6 +147,29 @@ $(function(){
 					slidesToShow: 2,
 
 				}
+			},
+			{
+				breakpoint: 920,
+				settings: {
+					slidesToShow: 1,
+
+				}
+			},
+			{
+				breakpoint: 720,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 560,
+				settings: {
+					variableWidth: false,
+					slidesToShow: 1,
+					arrows: false,
+					adaptiveHeight: true,
+				}
 			}
 			
 		]
@@ -155,19 +182,7 @@ $(function(){
 		infinite: false,
 		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
-		responsive: [
 
-			{
-				breakpoint: 1360,
-				settings: {
-					
-					slidesToShow: 2,
-					variableWidth: true,
-
-				}
-			}
-			
-		]
     });
 
     //Trend slider
@@ -180,11 +195,20 @@ $(function(){
 		responsive: [
 
 			{
-				breakpoint: 1360,
+				breakpoint: 1279,
 				settings: {
 					
-					slidesToShow: 2,
+					slidesToShow: 3,
 					variableWidth: true,
+				}
+			},
+			{
+				breakpoint: 720,
+				settings: {
+					
+					slidesToShow: 1,
+					variableWidth: true,
+
 
 				}
 			}
@@ -202,6 +226,58 @@ $(function(){
 		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
     });
+
+    $('.channel-list-slider').slick({
+		slidesToShow: 12,
+		slidesToScroll: 12,
+		infinite: false,
+		variableWidth: true,
+		responsive: [
+
+			{
+				breakpoint: 720,
+				settings: {
+					
+					slidesToShow: 5,
+					slidesToScroll: 5,
+				}
+			}
+			
+		]
+    });
+
+    
+
+    $slick_slider = $('.kik-tabs-list');
+	settings = {
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<button class="slick-arrow slick-prev"></button>',
+		nextArrow: '<button class="slick-arrow slick-next"></button>',
+	}
+	$slick_slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+	    $(this).parents('.tab-wrap-g').find('.tab-wrap-cont').addClass('hide');
+		$(this).find('.slick-current').siblings().removeClass('active');
+		var id = $(this).find('.slick-current a').attr('href');
+		$(id).removeClass('hide');
+		$(this).find('.slick-current').addClass('active');
+		
+	});
+	$slick_slider.slick(settings);
+
+		// reslick only if it's not slick()
+	$(window).on('resize load', function() {
+		if ($(window).width() > 720) {
+		  if ($slick_slider.hasClass('slick-initialized')) {
+		    $slick_slider.slick('unslick');
+		  }
+		  return
+		}
+
+		if (!$slick_slider.hasClass('slick-initialized')) {
+		  return $slick_slider.slick(settings);
+		}
+	});
 
     //SearchBar
     $("#search-input-js").on("change keyup", function() {
@@ -235,6 +311,8 @@ $(function(){
 		var id = $(this).attr('href');
 		$(id).removeClass('hide');
 		$(this).parent().addClass('active');
+		$('.channel-list-slider').slick('setPosition');
+		
 		return false
 	});
 	//  Tabs
@@ -271,7 +349,12 @@ $(function(){
     	prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
     	responsive: [
-
+    		{
+    			breakpoint: 1280,
+    			settings: {
+    				centerPadding: '60px',
+    			}
+    		}
     	]
     });
 
