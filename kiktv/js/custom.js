@@ -20,19 +20,13 @@ $(function(){
 
 	$(window).bind('load resize', hf);
 
-	var channelList = $('.channel-list.show').height();
-	$('.channel-list.show').css('height', '50px');
 
-	$('.js-sliding').toggle(function(){
-    	$(this).addClass('active');
-    	$(this).parents('.channel-list').animate({height: channelList - 8}, 300);
-    	return false;
-    }, function (){
-		$(this).removeClass('active');
-    	$(this).parents('.channel-list').animate({height: 50}, 300);
-    	return false;
-    })
 
+	$('.js-sliding').click(function(){
+    	$(this).toggleClass('active');
+    	$(this).parents('.channel-content').find('.js-channel-list-hide').slideToggle(400)
+    	return false;
+    });
 
 	$('.js-remove-ms-list').click(function(){
 		$(this).parents('.my-shows-list__item').fadeOut(1000, function(){$(this).remove()});
@@ -43,6 +37,13 @@ $(function(){
 		$(this).parents('.favoris-list__item').fadeOut(1000, function(){$(this).remove()});
 		return false;
 	});
+
+	$('.js-open-search').click(function(){
+    	$(this).toggleClass('active');
+    	$('.search').slideToggle(400)
+    	return false;
+    });
+	
 
 	//Click event to scroll to top
 	$('.up').click(function() {
@@ -128,7 +129,7 @@ $(function(){
     $('.kik-top-slider').slick({
 		infinite: false,
 		speed: 300,
-		slidesToShow: 4,
+		slidesToShow: 3,
 		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
 		variableWidth: true,
@@ -146,6 +147,29 @@ $(function(){
 					slidesToShow: 2,
 
 				}
+			},
+			{
+				breakpoint: 920,
+				settings: {
+					slidesToShow: 1,
+
+				}
+			},
+			{
+				breakpoint: 720,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 560,
+				settings: {
+					variableWidth: false,
+					slidesToShow: 1,
+					arrows: false,
+					adaptiveHeight: true,
+				}
 			}
 			
 		]
@@ -153,26 +177,38 @@ $(function(){
 
 	//Trend slider
     $('.trend-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		infinite: false,
+		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
+		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
+
+    });
+
+    //Trend slider
+    $('.trend-slider2').slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		infinite: false,
 		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
-		variableWidth: true,
 		responsive: [
-		    {
-				breakpoint: 1600,
-				settings: {
-					slidesToShow: 3,
 
+			{
+				breakpoint: 1279,
+				settings: {
+					
+					slidesToShow: 3,
+					variableWidth: true,
 				}
 			},
 			{
-				breakpoint: 1360,
+				breakpoint: 720,
 				settings: {
 					
-					slidesToShow: 2,
+					slidesToShow: 1,
 					variableWidth: true,
+
 
 				}
 			}
@@ -190,6 +226,59 @@ $(function(){
 		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
     });
+
+    $('.channel-list-slider').slick({
+		slidesToShow: 12,
+		slidesToScroll: 12,
+		infinite: false,
+		variableWidth: true,
+		arrows: false,
+		responsive: [
+
+			{
+				breakpoint: 720,
+				settings: {
+					
+					slidesToShow: 5,
+					slidesToScroll: 5,
+				}
+			}
+			
+		]
+    });
+
+    
+
+    $slick_slider = $('.kik-tabs-list');
+	settings = {
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<button class="slick-arrow slick-prev"></button>',
+		nextArrow: '<button class="slick-arrow slick-next"></button>',
+	}
+	$slick_slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+	    $(this).parents('.tab-wrap-g').find('.tab-wrap-cont').addClass('hide');
+		$(this).find('.slick-current').siblings().removeClass('active');
+		var id = $(this).find('.slick-current a').attr('href');
+		$(id).removeClass('hide');
+		$(this).find('.slick-current').addClass('active');
+		
+	});
+	$slick_slider.slick(settings);
+
+		// reslick only if it's not slick()
+	$(window).on('resize load', function() {
+		if ($(window).width() > 719) {
+		  if ($slick_slider.hasClass('slick-initialized')) {
+		    $slick_slider.slick('unslick');
+		  }
+		  return
+		}
+
+		if (!$slick_slider.hasClass('slick-initialized')) {
+		  return $slick_slider.slick(settings);
+		}
+	});
 
     //SearchBar
     $("#search-input-js").on("change keyup", function() {
@@ -223,6 +312,8 @@ $(function(){
 		var id = $(this).attr('href');
 		$(id).removeClass('hide');
 		$(this).parent().addClass('active');
+		$('.channel-list-slider').slick('setPosition');
+		
 		return false
 	});
 	//  Tabs
@@ -255,38 +346,55 @@ $(function(){
     $( '.slideshow' ).slick({
     	slidesToShow: 1,
     	centerMode: true,
-    	centerPadding: '500px',
+    	centerPadding: '287px',
     	prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
+    	asNavFor: '.slideshow-info',
     	responsive: [
     		{
-    			breakpoint: 1700,
+    			breakpoint: 1280,
     			settings: {
-    				centerPadding: '400px',
+    				centerPadding: '60px',
     			}
     		},
     		{
-    			breakpoint: 1400,
+    			breakpoint: 720,
     			settings: {
-    				centerPadding: '300px',
-    			}
-    		},
-    		{
-    			breakpoint: 1200,
-    			settings: {
-    				centerPadding: '200px',
+    				centerPadding: '0px',
     			}
     		}
     	]
     });
 
-
-    $(".js-channel-list ul li").click(function(){
-        
-        slideIndex = $(this).index();
-
-        $('.slideshow').slick('slickGoTo', slideIndex);
+    $('.slideshow-info').slick({
+    	slidesToShow: 1,
+    	centerMode: true,
+    	centerPadding: '287px',
+    	arrows: false,
+    	asNavFor: '.slideshow',
+    	adaptiveHeight: true,
+    	responsive: [
+    		{
+    			breakpoint: 1280,
+    			settings: {
+    				centerPadding: '60px',
+    			}
+    		},
+    		{
+    			breakpoint: 720,
+    			settings: {
+    				centerPadding: '0px',
+    			}
+    		}
+    	]
     });
+
+    // $(".js-channel-list ul li").click(function(){
+        
+    //     slideIndex = $(this).index();
+
+    //     $('.slideshow').slick('slickGoTo', slideIndex);
+    // });
 
 
 
