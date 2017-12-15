@@ -941,7 +941,11 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
   /*  Programme Page  */
   .kik-page-img { width: 400px; margin-left: 60px; }
   .btn-group .btn { padding-left: 15px; padding-right: 15px; }
-  .devtols-details { width: calc(100% - 169px); } }
+  .devtols-details { width: calc(100% - 169px); }
+  .tv-programme-header { padding: 16px 0; }
+  .filter-left { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .filter__select, .filter__button { margin-bottom: 4px; margin-top: 4px; }
+  .tv-programme-list__content { padding-right: 0; } }
 @media screen and (max-width: 1026px) { .navbar-menu__item { margin-right: 8px; }
   .navbar-menu__item--button { margin-right: 0; }
   .navbar-menu__item:before { display: none; }
@@ -993,7 +997,9 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
   .inner-header { position: relative; }
   .inner-header__title { font-size: 24px; line-height: 28px; }
   .inner-header__text { font-size: 14px; line-height: 18px; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
-  .inner-header .like { position: absolute; right: 0; top: 50%; -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); }
+  .inner-header__channel { max-height: 30px; max-width: 60px; margin-right: 13px; }
+  .inner-header .like { position: absolute; right: 0; top: 50%; font-size: 20px; -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); }
+  .inner-header__select .jq-selectbox__select { font-size: 24px; line-height: 28px; height: 30px; padding-right: 30px; }
   /* Kik Top Slider */
   .kik-top-slider { padding-left: 5px; padding-bottom: 10px; }
   .kik-top-slider .slick-slide { padding: 9px; }
@@ -1009,11 +1015,33 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
   .tv-programme .kik-tabs-main { border-bottom-color: #f4f5f7; border-top: 9px solid #f4f5f7; }
   #kik-tabs_1 .kik-tabs-main { background-color: #f4f5f7; }
   .banner-ipad img { width: 100%; }
-  .mb18 { margin-bottom: 18px; }
+  .actu .banner-ipad { padding-top: 10px; margin-bottom: 18px; }
+  /* Tv Programme */
+  .tv-programme-list { margin-left: -16px; margin-right: -16px; }
+  .tv-programme-list__item { padding: 18px 50px; }
+  .tv-programme-list__item.active { background-color: #f4f5f7; }
+  .tv-programme-list__item.active .time { font-weight: 700; }
+  .tv-programme-list__item.active .trend__title { font-weight: 700; }
+  .tv-programme-list__item.active .tags, .tv-programme-list__item.active .eighteen { display: inline-block; }
+  .tv-programme-list__item.active .trend__descr { margin-top: 4px; margin-bottom: 6px; }
+  .tv-programme-list__item .time { display: block; font-weight: 400; color: #0059ae; }
+  .tv-programme-list__item .cn-badge { margin-top: 10px; display: none; }
+  .tv-programme-list__item .tags, .tv-programme-list__item .eighteen, .tv-programme-list__item .mark { display: none; }
+  .tv-programme-list__item .grey-line { margin-bottom: -18px; margin-left: -50px; margin-right: -50px; width: auto; max-width: 200%; height: 6px; }
+  .tv-programme-list__item .grey-line .yellow-line { height: 6px; }
+  .tv-programme-list__left { width: 60px; }
+  .tv-programme-list__header { display: block; }
+  .tv-programme-list__header .trend__title { margin-bottom: 0; margin-right: 0; font-weight: 400; width: auto; }
+  .tv-programme-list__header .trend__descr { margin-bottom: 0px; font-size: 13px; color: #999999; }
+  .tv-programme-list__content { margin-left: -60px; padding-right: 0; }
+  .tv-programme-list__text { padding-bottom: 0; font-size: 13px; }
+  .tv-programme-list__text span { display: inline-block; border-bottom: 1px solid #def300; }
+  .plus-programme-list { font-weight: 700; margin-left: 34px; color: #0059ae; margin-bottom: 20px; font-size: 16px; }
   /* Filter */
   .filter { margin-bottom: 22px; }
   .filter__button { height: 38px; font-size: 12px; line-height: 16px; }
   .filter__button span { border-bottom: none; }
+  .raplays-filter { padding: 14px 0; }
   .jq-selectbox__select { height: 38px; font-size: 12px; line-height: 38px; padding-left: 14px; padding-right: 30px; }
   .jq-selectbox__trigger { width: 24px; }
   /* Channel */
@@ -1102,7 +1130,7 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
   .inner-header__title { font-size: 21px; line-height: 25px; }
   .inner-header__text { display: none; }
   .inner-header .cn-badge { margin-left: 15px; }
-  .inner-header__select .jq-selectbox__select { font-size: 21px; line-height: 36px; padding-right: 30px; }
+  .inner-header__select .jq-selectbox__select { font-size: 21px; line-height: 30px; padding-right: 30px; }
   .cn-badge { font-size: 10px; border-radius: 2px; }
   .kik-tabs-list { margin: 0 -16px 18px; padding: 16px 45px 8px; background-color: #f4f5f7; }
   .kik-tabs-list__item { margin-bottom: 10px; }
@@ -1113,12 +1141,26 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
   .kik-tabs-list .slick-next { right: 16px; }
   .kik-tabs-list .slick-next:before { content: ""; display: block; width: 0px; height: 0px; border-style: solid; border-width: 16.5px 0 16.5px 16px; border-color: transparent transparent transparent #c8d2da; }
   .kik-tabs-main { padding-top: 0; padding-bottom: 0; }
+  #channel_tv1 .kik-tabs-main { border-top: none; }
   .raplays-filter { padding: 13px 0; }
   .filter__select.sec-1, .filter__select.sec-2 { width: 138px; margin-right: 8px; }
   .filter__select.sec-2, .filter__select + .filter__select { margin-right: 0; }
   /* Channel */
   .channel-wrap { display: block; margin: 0; }
   .channel-wrap__item { width: auto; margin: 0 -16px 6px; -webkit-box-shadow: none; box-shadow: none; border: none; border-radius: 0; }
+  /* Tv Programme */
+  .tv-programme-header { border-top: none; }
+  .tv-programme-list { margin-bottom: 25px; }
+  .tv-programme-list__item { padding: 15px 16px; }
+  .tv-programme-list__item .grey-line { margin-left: -16px; margin-right: -16px; }
+  .tv-programme-list__item .trend__title, .tv-programme-list__item .time { font-size: 14px; line-height: 22px; }
+  .tv-programme-list__item .tags__link { line-height: 18px; font-size: 9px; vertical-align: middle; display: inline-block; }
+  .tv-programme-list__item .eighteen { line-height: 20px; font-size: 9px; vertical-align: middle; }
+  .tv-programme-list__item .trend__descr { font-size: 13px; line-height: 17px; }
+  .plus-programme-list { margin: 0px 0 25px; text-align: center; }
+  .plus-programme-list .btn { min-width: 125px; }
+  .plus-programme-list .btn [class*="icon"] { font-size: 12px; position: relative; top: 2px; }
+  .btn-icon-right, a.btn-icon-right { margin-left: 8px; }
   /* trend */
   .trend-slider2 .slick-arrow { display: none !important; }
   .trend--big { border-top: none; padding: 0 16px 15px; }
@@ -1149,6 +1191,7 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
   .plus { color: #0059ae; font-size: 13px; }
   /* Actu */
   .actu { padding-bottom: 22px; }
+  .actu .banner-iphone { margin-top: 0; padding-top: 10px; margin-bottom: 20px; }
   .actu-wrap { margin: 0 -16px; display: block; }
   .actu-wrap .trend { width: auto; margin: 0; border: none; -webkit-box-shadow: none; box-shadow: none; border-radius: 0; border-top: 1px solid #f4f5f7; }
   .actu-wrap .trend:not(.trend--big) { padding-top: 15px; }
