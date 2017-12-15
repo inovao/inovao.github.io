@@ -3110,18 +3110,19 @@
 						<div class="filter-left">
 							<select class="styler filter__select sec-1" >
 								<option value="">Tous les chaines</option>
-								<option value="">Series et fictions</option>
-								<option value="">Emissions</option>
-								<option value="">Films</option>
-								<option value="">Information</option>
-								<option value="">Jeunesse</option>
-							</select>
-							<select class="styler filter__select ">
-								<option value="">Recent replays</option>
 								<option value="">En ce moment</option>
 								<option value="">Ce matin</option>
 								<option value="">A midi</option>
 								<option value="">Ce soir</option>
+							</select>
+							<select class="styler filter__select js-replays-tab">
+								<option value="" data-href="#t-replays_1">Recent replays</option>
+								<option value="" data-href="#t-replays_2">Series et fictions</option>
+								<option value="" data-href="#t-replays_3">Emissions</option>
+								<option value="" data-href="#t-replays_4">Films</option>
+								<option value="" data-href="#t-replays_5">Information</option>
+								<option value="" data-href="#t-replays_6">Jeunesse</option>
+								<option value="" data-href="#t-replays_7">Sports</option>
 							</select>
 							
 						</div>
@@ -3135,7 +3136,7 @@
 						<div class="wrapper">
 							<div class="kik-tabs-left">
 											
-								<ul class="replays-tag hidden-ipad">
+								<ul class="replays-tag hidden-iphone">
 									<li class="replays-tag__item">
 										<a href="#" class="replays-tag__link active">#Game of Thrones</a>
 									</li>
@@ -3685,13 +3686,22 @@
 										</div>
 									</div>
 								</div>
+								<div class="btn-ipad">
+									<a href="#" class="btn btn--info">Plus des series <span class="icon-down-arrow btn-icon-right"></span></a>
+								</div>
 								<div class="kik-loader">
 									<span class="icon-spinner"></span>
 								</div>
-										</div>
+							</div>
 							<div class="kik-tabs-banner">
-								<div class="banner">
+								<div class="banner hidden-ipad">
 									<a href="#" target="_blank"><img src="img/banner-240x400.png" alt=""></a>
+								</div>
+								<div class="banner-ipad">
+									<a href="#"><img src="img/adv-banner-2.png" alt=""></a>
+								</div>
+								<div class="banner-iphone">
+									<a href="#"><img src="img/banner-iphone.png" alt=""></a>
 								</div>
 							</div>
 						</div>
@@ -3704,7 +3714,15 @@
 								3
 							</div>
 							<div class="kik-tabs-banner">
-								<img src="img/banner-240x400.png" alt="">
+								<div class="banner hidden-ipad">
+									<a href="#" target="_blank"><img src="img/banner-240x400.png" alt=""></a>
+								</div>
+								<div class="banner-ipad">
+									<a href="#"><img src="img/adv-banner-2.png" alt=""></a>
+								</div>
+								<div class="banner-iphone">
+									<a href="#"><img src="img/banner-iphone.png" alt=""></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -3716,7 +3734,15 @@
 								4
 							</div>
 							<div class="kik-tabs-banner">
-								<img src="img/banner-240x400.png" alt="">
+								<div class="banner hidden-ipad">
+									<a href="#" target="_blank"><img src="img/banner-240x400.png" alt=""></a>
+								</div>
+								<div class="banner-ipad">
+									<a href="#"><img src="img/adv-banner-2.png" alt=""></a>
+								</div>
+								<div class="banner-iphone">
+									<a href="#"><img src="img/banner-iphone.png" alt=""></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -3728,7 +3754,15 @@
 								5
 							</div>
 							<div class="kik-tabs-banner">
-								<img src="img/banner-240x400.png" alt="">
+								<div class="banner hidden-ipad">
+									<a href="#" target="_blank"><img src="img/banner-240x400.png" alt=""></a>
+								</div>
+								<div class="banner-ipad">
+									<a href="#"><img src="img/adv-banner-2.png" alt=""></a>
+								</div>
+								<div class="banner-iphone">
+									<a href="#"><img src="img/banner-iphone.png" alt=""></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -3740,7 +3774,15 @@
 								6
 							</div>
 							<div class="kik-tabs-banner">
-								<img src="img/banner-240x400.png" alt="">
+								<div class="banner hidden-ipad">
+									<a href="#" target="_blank"><img src="img/banner-240x400.png" alt=""></a>
+								</div>
+								<div class="banner-ipad">
+									<a href="#"><img src="img/adv-banner-2.png" alt=""></a>
+								</div>
+								<div class="banner-iphone">
+									<a href="#"><img src="img/banner-iphone.png" alt=""></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -3752,7 +3794,15 @@
 								7
 							</div>
 							<div class="kik-tabs-banner">
-								<img src="img/banner-240x400.png" alt="">
+								<div class="banner hidden-ipad">
+									<a href="#" target="_blank"><img src="img/banner-240x400.png" alt=""></a>
+								</div>
+								<div class="banner-ipad">
+									<a href="#"><img src="img/adv-banner-2.png" alt=""></a>
+								</div>
+								<div class="banner-iphone">
+									<a href="#"><img src="img/banner-iphone.png" alt=""></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -4288,15 +4338,15 @@
 
 
 <div class="icon-load"></div>
-<script type="text/javascript" src="js/jquery-1.11.0.min.js?ver1.0"></script>
-<script type="text/javascript" src="js/jquery-migrate.min.js?ver1.0"></script>
-<script type="text/javascript" src="js/jquery.formstyler.min.js?ver1.0"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="js/jquery.matchHeight.js"></script>
-<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="js/jsscrollpanel.js"></script>
-<script type="text/javascript" src="js/jquery.autocomplete.js"></script>
-<script type="text/javascript" src="js/custom.js?ver1.0"></script>
+<script src="js/jquery-3.2.1.min.js?ver1.0"></script>
+<script src="js/jquery-migrate.min.js?ver1.0"></script>
+<script src="js/jquery.formstyler.min.js?ver1.0"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.matchHeight.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jsscrollpanel.js"></script>
+<script src="js/jquery.autocomplete.js"></script>
+<script src="js/custom.js?ver1.0"></script>
 
 </body>
 </html>

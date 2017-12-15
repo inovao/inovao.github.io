@@ -1,26 +1,23 @@
-$(window).load(function(){
+$(window).on('load', function(){
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 		$('body').addClass('ios');
 	};
 	$('body').removeClass('loaded'); 
 });
+//fixed header and footer
+var hf = function(){
+	var h_header = $('header').height();
+	var h_footer = $('footer').height();
+	$('.content').css({
+		'paddingTop': h_header,
+		'paddingBottom': h_footer
+	});
+
+}
+
+$(window).on('load resize', hf);
 
 $(function(){
-
-	//fixed header and footer
-	var hf = function(){
-		var h_header = $('header').height();
-		var h_footer = $('footer').height();
-		$('.content').css({
-			'paddingTop': h_header,
-			'paddingBottom': h_footer
-		});
-
-	}
-
-	$(window).bind('load resize', hf);
-
-
 
 	$('.js-sliding').click(function(){
     	$(this).toggleClass('active');
@@ -247,38 +244,6 @@ $(function(){
 		]
     });
 
-    
-
-    $slick_slider = $('.kik-tabs-list');
-	settings = {
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		prevArrow: '<button class="slick-arrow slick-prev"></button>',
-		nextArrow: '<button class="slick-arrow slick-next"></button>',
-	}
-	$slick_slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
-	    $(this).parents('.tab-wrap-g').find('.tab-wrap-cont').addClass('hide');
-		$(this).find('.slick-current').siblings().removeClass('active');
-		var id = $(this).find('.slick-current a').attr('href');
-		$(id).removeClass('hide');
-		$(this).find('.slick-current').addClass('active');
-		
-	});
-	$slick_slider.slick(settings);
-
-		// reslick only if it's not slick()
-	$(window).on('resize load', function() {
-		if ($(window).width() > 719) {
-		  if ($slick_slider.hasClass('slick-initialized')) {
-		    $slick_slider.slick('unslick');
-		  }
-		  return
-		}
-
-		if (!$slick_slider.hasClass('slick-initialized')) {
-		  return $slick_slider.slick(settings);
-		}
-	});
 
     //SearchBar
     $("#search-input-js").on("change keyup", function() {
@@ -416,8 +381,44 @@ $(function(){
         noSuggestionNotice: 'Sorry, no matching results',
         groupBy: 'category'
     });
+
+    $('.js-replays-tab li').click(function(){
+    	$(this).parents('.tab-wrap').find('.tab-cont').addClass('hide');
+		var id = $(this).attr('data-href');
+		$(id).removeClass('hide');
+
+    })
 });
 
+
    
+$slick_slider = $('.kik-tabs-list');
+settings = {
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	prevArrow: '<button class="slick-arrow slick-prev"></button>',
+	nextArrow: '<button class="slick-arrow slick-next"></button>',
+}
+$slick_slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+    $(this).parents('.tab-wrap-g').find('.tab-wrap-cont').addClass('hide');
+	$(this).find('.slick-current').siblings().removeClass('active');
+	var id = $(this).find('.slick-current a').attr('href');
+	$(id).removeClass('hide');
+	$(this).find('.slick-current').addClass('active');
+	
+});
+$slick_slider.slick(settings);
 
+	// reslick only if it's not slick()
+$(window).on('load resize', function() {
+	if ($(window).width() > 719) {
+	  if ($slick_slider.hasClass('slick-initialized')) {
+	    $slick_slider.slick('unslick');
+	  }
+	  return
+	}
 
+	if (!$slick_slider.hasClass('slick-initialized')) {
+	  return $slick_slider.slick(settings);
+	}
+});
