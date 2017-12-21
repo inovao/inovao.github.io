@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    @include box-sizing(border-box);
+}
+
+ul, ol {list-style: none;}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2.title {
+    font: bold 53px 'HelveticaNeueCyr', sans-serif;
+    color: #fff;
+    @include flex();
+    @include justify-content(center);
+    @include align-items(center);
+    height: 156px;
+    background: #1569ff url(../img/bg-title.jpg) no-repeat center;
+}
+
+body {
+    font: 18px 'HelveticaNeueCyr', sans-serif;
+    font-weight: 300;
+}
+
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.box {margin-top: 157px;}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table;
+}
+.clearfix:after {clear: both;}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-center {text-align: center;}
+
+.hidden {visibility: hidden;}
+
+.container {
+    margin: 0 auto;
+}
+
+/* VIDEO PLAYER
+----------------------------------------- */
+.video-player {
+    max-width: 850px;
+    margin: 0 auto;
+} 
+
+/* VIDEO PLAYER
+----------------------------------------- */
+.form-contacts {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 67px 0 60px 0;
+
+    .container {
+        @include flex();
+        .left, .right {
+            width: 50%;
+        }
+        .left {margin-right: 50px;}
+        .right {margin-left: 50px;}
+    }
+
+    label, input, textarea {
+        display: block;
+    }
+
+    input, textarea {
+        width: 100%;
+        height: 57px;
+        background: #f6f6f6;
+        border-radius: 4px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        outline: none;
+        margin-bottom: 40px;
+        font: 17px 'HelveticaNeueCyr Roman', sans-serif;
+        color: #535353;
+        border-bottom: 1px solid #efefef;
+        padding: 0 45px 0 25px;
+    }
+
+    textarea {
+        min-height: 243px;
+        padding: 25px 27px;
+        resize: none;
+    }
+
+    label {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 35px;
+        color: #1c1d21;
+        span {
+            font-weight: bold;
+            color: #ff0006;
+        }
+    }
+
+    input[type=submit] {
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+        width: 360px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        color: #fff;
+        background-color: #1569ff;
+        border-radius: 50px;
+        border-bottom: 0;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    input.success, textarea.success {
+        background-image: url(../img/check.png);
+        background-repeat: no-repeat;
+        background-position: right 18px center;
+    }
+    input.error, textarea.error {
+        background-image: url(../img/error.png);
+        background-repeat: no-repeat;
+        background-position: right 18px center;
+    }
+}
