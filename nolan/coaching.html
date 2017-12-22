@@ -23,10 +23,11 @@
             <a href="/" class="logo"></a>
             
             <nav class="nav-head">
+                <div id="touch-menu">&#9776;</div>
                 <ul>
                     <li><a href="about.html">About</a></li>
                     <li class="active"><a href="#">Products</a></li>
-                    <li><a href="">Seminars</a></li>
+                    <li><a href="#">Seminars</a></li>
                     <li><a href="coaching.html">Coaching</a></li>
                 </ul>
             </nav>
@@ -124,6 +125,39 @@
     </div>
 </footer>
 
+<div class="modal-overlay" id="modal-overlay"></div>
+<div class="modal-wrap" id="modal-contact-us">
+    <a href="#" class="close"></a>
+    <div class="head">
+        <h5>Contact us</h5>
+    </div>
+
+    <form action="#" class="form-contact-us">
+        <label for="name">Your First Name: <span>*</span></label>
+        <input type="text" name="name" id="name" class="success">
+
+        <label for="email">Your Email: <span>*</span></label>
+        <input type="email" name="email" id="email" class="error">
+
+        <label for="subject">Subject:</label>
+        <input type="text">
+
+        <label for="message">Your Message: <span>*</span></label>
+        <textarea name="message" id="message"></textarea>
+
+        <div class="captcha text-center">
+            <img src="img/captcha.jpg" alt="">
+        </div>
+
+        <div class="text-center">
+            <input type="submit" value="Send message">
+        </div>
+    </form>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.fullpage.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

@@ -34,6 +34,10 @@ body {
     font-weight: 300;
 }
 
+#wrapper {
+    min-width: 280px;
+}
+
 /* Slider */
 .slick-slider
 {
@@ -154,7 +158,7 @@ body {
     display: none;
 }
 
-.box {margin-top: 157px;}
+.box {margin-top: 155px;}
 
 .clearfix:after,
 .clearfix:before {
@@ -184,7 +188,7 @@ body {
 
 /* VIDEO PLAYER
 ----------------------------------------- */
-.form-contacts {
+.form-contacts, .form-contact-us {
     max-width: 1060px;
     margin: 0 auto;
     padding: 67px 0 60px 0;
@@ -260,5 +264,63 @@ body {
         background-image: url(../img/error.png);
         background-repeat: no-repeat;
         background-position: right 18px center;
+    }
+}
+
+/* MODAL
+----------------------------------------- */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9992;
+    background: rgba(255,255,255,.63);
+}
+
+.modal-wrap {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 9993;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+    background: #fff;
+    @include box-shadow(0 32px 76px rgba(0,0,0,.29));
+
+    .close {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: url(../img/sprite-close.png) no-repeat 0 0;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        &:hover {background-position: right top;}
+    }
+    
+    .head {
+        padding: 40px 40px 0 40px;
+        h5 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1c1d21;
+        }
+    }
+
+    form {
+        padding: 60px 60px 55px 60px;
+        input {
+            margin-bottom: 30px;
+        }
+        textarea {
+            margin-bottom: 45px;
+        }
+        input[type="submit"] {
+            margin-top: 45px;
+        }
     }
 }

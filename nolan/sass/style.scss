@@ -41,23 +41,33 @@
                 a {
                     font: normal 18px 'HelveticaNeueCyr', sans-serif;
                     color: #fff;
+                    @include transition(color 0.2s 0.3s);
                     &:hover {color: #3d8fff;}
                 }
-                
-                &.active a {color: #3d8fff;}    
-                &:hover::before, &.active::before {
+
+                &::before {
                     content: '';
                     display: block;
                     width: 2px;
-                    height: 28px;
+                    height: 0;
                     background: #3d8fff;
                     position: absolute;
                     top: -69px;
                     left: 50%;
                     margin-left: -1px;
+                    @include transition(height 0.2s);
+                }
+                
+                &.active a {color: #3d8fff;}    
+                &:hover::before, &.active::before {
+                    height: 28px;
                 }
             }
         }
+    }
+
+    #touch-menu {
+        display: none;
     }
 }
 
@@ -77,6 +87,9 @@
         width: 19px;
         height: 54px;
         display: inline-block;
+        position: fixed;
+        top: 80px;
+        right: 27px;
         background: url(../img/down.png) no-repeat;
     }
 
@@ -97,7 +110,7 @@
     }
 
     .nav-fullpage {
-        width: 280px;
+        width: 282px;
         background: #1a1d23;
         position: relative;
 
@@ -182,15 +195,14 @@
         }
 
         .left {
-            padding-left: 125px;
+            padding-left: 120px;
             width: 100%;            
-            background: url(../img/bg-mountains.jpg) no-repeat right bottom;
+            background: url(../img/bg-mountains.jpg) no-repeat right bottom 125px;
+
             .heading {
                 margin-top: 105px;
                 position: relative;
                 min-height: 625px;
-                max-width: 825px;
-                float: right;
                 padding-right: 185px;
                 @include flex();
                 @include align-items(center);
@@ -259,12 +271,12 @@
         &:after {
             content: '';
             display: block;
-            width: 885px;
-            height: 919px;
+            width: 870px;
+            height: 876px;
             background: url(../img/persona.png) no-repeat;
             position: absolute;
-            bottom: -3px;
-            right: -160px;
+            bottom: 120px;
+            right: -180px;
         }
     }
 
@@ -518,7 +530,10 @@
         }
     }
 
-    #contacts-wrap.active {
+    #contacts-wrap {
+    }
+
+    #contacts-wrap.active {        
         h2.title {
             @include animation-name(leftInWidth);
             @include animation-duration(1s);
@@ -708,3 +723,5 @@ footer {
         }
     }
 }
+
+@import 'media';

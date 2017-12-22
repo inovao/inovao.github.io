@@ -1,0 +1,509 @@
+@media only screen and (max-width: 1750px) {
+    .page-main #introduction-wrap .left .heading {
+        padding-right: 30px;
+    }
+    .page-main #introduction-wrap .left .heading h1 {
+        font-size: 75px;
+        line-height: 80px;
+    }
+    .page-main #introduction-wrap .left {
+        background-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .page-main #services-wrap .container {
+        padding: 0 50px;
+        margin-top: 50px;
+    }
+    .page-main #services-wrap ul {
+        padding: 0 50px;
+        margin-top: 80px;
+    }
+    .page-main #testmonials-wrap .slider-testimonials ul li .wrap .left {
+        margin-right: 15px;
+    }
+    .page-main #testmonials-wrap .slider-testimonials ul li .wrap .right {
+        margin-left: 15px;
+    }
+    .page-main #testmonials-wrap .slider-testimonials .slick-next {
+        right: -80px;
+    }
+    .page-main #testmonials-wrap .slider-testimonials .slick-prev {
+        left: -80px;
+    }
+    .page-main #testmonials-wrap .slider-testimonials ul li .btn {
+        margin-top: 50px;
+    }
+    .page-main #testmonials-wrap .container {
+        max-width: 100%;
+        margin: 50px auto 0 auto;
+        padding: 0 150px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .page-main #introduction-wrap .right {
+        min-width: 300px;
+    }
+    .page-main #introduction-wrap .right:before {
+        min-width: 200px;
+    }
+    .form-contacts .container {
+        padding: 0 50px;
+    }
+    .page-main .nav-fullpage ul {
+        top: 80px;
+    }
+    .page-main .nav-fullpage ul li:not(.button) {
+        margin-top: 20px;
+    }
+    #header {
+        height: 80px;
+        background: #1a1d23;
+        @include flex();
+        .container {
+            height: auto;
+            width: 100%;
+        }
+    }
+    .box {margin-top: 78px;}
+    .page-main #introduction-wrap .left .heading {
+        margin-top: 60px;
+    }
+    .page-main #introduction-wrap .left .heading:after,
+    .page-main #introduction-wrap .left .heading:before {
+        height: 60px;
+    }
+    .page-main #introduction-wrap .left .heading {
+        min-height: 465px;
+    }
+    .page-main #introduction-wrap:after {
+        width: 600px;
+        height: 600px;
+        @include background-size(600px);
+        bottom: 0;
+        right: -125px;
+    }
+    h2.title {
+        font-size: 40px;
+        height: 80px;
+    }
+    .page-main #introduction-wrap .right:before {
+        content: '';
+        margin-top: 40px;
+        min-height: 448px;
+    }
+    .page-main #services-wrap .container {
+        margin-top: 30px;
+    }
+    .page-main #services-wrap ul {
+        margin-top: 50px;
+    }
+    .page-main #testmonials-wrap .slider-testimonials ul li .wrap p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .form-contacts label,
+    .form-contacts input, .form-contacts textarea {
+        margin-bottom: 20px;
+    }
+    .form-contacts {
+        padding: 30px 0 60px 0;
+    }
+    .page-main #testmonials-wrap .container {
+        margin-top: 30px;
+    }
+    .page-main #testmonials-wrap .slider-testimonials ul li .wrap span,
+    .page-main #testmonials-wrap .slider-testimonials ul li .wrap p {
+        margin-top: 15px;
+    }
+    #header .nav-head ul li::before {top: -38px;}
+}
+
+@media only screen and (max-width: 1300px) {
+    .page-main #introduction-wrap:after {
+        width: 650px;
+        height: 654px;
+        @include background-size(650px);
+        bottom: 154px;
+        right: -84px;
+    }
+    .page-main #services-wrap ul li {
+        min-height: 180px;
+        margin-bottom: 0;
+        background-position: left top !important;
+    }
+    .page-main #services-wrap ul li:nth-child(odd) {
+        padding-right: 30px;
+    }
+    .page-main .nav-fullpage {
+        width: 100px;
+    }
+    .page-main .nav-fullpage ul {
+        right: 37px;
+    }
+    .page-about .container {
+        padding: 0 15px;
+    }
+
+    .page-coaching .services li a {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .page-main #introduction-wrap .left {
+        padding-left: 50px;
+    }
+    .page-main #introduction-wrap .left .heading h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .page-main #introduction-wrap .left .heading p {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .page-main .nav-fullpage {display: none;}
+    .nav-head ul {
+        display: none !important;
+    }
+    #touch-menu {
+        display: block !important;
+        font-size: 30px;
+        color: #fff;
+        position: fixed;
+        top: 17px;
+        right: 68px;
+        cursor: pointer;
+    }
+    .nav-head.responsive {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 9991;
+        background: rgba(0,0,0,1);
+        @include flex();
+        @include justify-content(center);
+        @include align-items(center);
+    } 
+    .nav-head.responsive ul {
+        display: block !important;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-head.responsive ul li + li {margin-left: 0 !important;}
+    .nav-head.responsive ul li::before {display: none !important;}
+    .nav-head.responsive ul li a {
+        display: block;
+        font-size: 30px !important;
+        padding: 30px 0;
+    }
+
+    .page-main #testmonials-wrap .slider-testimonials ul li .wrap {
+        display: block;
+    }
+    .page-main #testmonials-wrap .slider-testimonials ul li .wrap .left {
+        width: 100%;
+    }
+    .page-main #testmonials-wrap .slider-testimonials ul li .wrap .right {
+        display: none;
+    }
+
+    .page-coaching .services {
+        display: block;
+    }
+    .page-coaching .services li {
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    .page-coaching .head-coaching p.title {
+        font: bold 35px 'HelveticaNeueCyr', sans-serif;
+        max-width: 685px;
+        line-height: 140px;
+    }
+    .video-player {
+        padding: 0 15px;
+    }
+    .page-main #introduction-wrap:after {
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #header {
+        height: 50px;
+        background: #1a1d23;
+        @include flex();
+        .container {
+            height: auto;
+            padding: 0 15px;
+            width: 100%;
+        }
+    }
+    #header .logo {
+        width: 200px;
+        height: 37px;
+        @include background-size(200px);
+    }
+    #touch-menu {
+        top: 4px;
+        right: 15px;
+    }
+    .box {
+        margin-top: 50px;
+    }
+    .page-main #introduction-wrap:after {
+        bottom: 50px;
+    }
+    h2.title {
+        height: 35px;
+        font-size: 20px;
+    }
+    .page-main #services-wrap .container {
+        padding: 0 15px;
+        margin-top: 10px;
+    }
+    .page-main #services-wrap .container h4 {
+        font-size: 25px;
+    }
+    .page-main #services-wrap .container h5 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .page-main #services-wrap ul {
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+    .page-main #services-wrap ul li {
+        float: none;
+        width: 100%;
+        min-height: auto !important;
+        margin-bottom: 15px !important;
+        padding-left: 65px;
+        @include background-size(50px !important);
+    }
+    .page-main #services-wrap ul li:nth-child(odd) {
+        padding-right: 0;
+    }
+    .page-main #services-wrap ul li h6 {
+        font-size: 20px !important;
+    }
+    .page-main #services-wrap ul li p {
+        font: 15px 'HelveticaNeueCyr Roman', sans-serif !important;
+        margin-top: 5px;
+    }
+    .page-main #introduction-wrap .right {
+        min-width: 150px;
+    }
+    .page-main #introduction-wrap .right:before {
+        min-width: 100px;
+    }
+    .page-main #introduction-wrap:after {
+        width: 500px;
+        height: 500px;
+        @include background-size(500px);
+    }
+    .page-main #introduction-wrap .left .heading {
+        margin-top: 50px;
+        min-height: 350px;
+    }
+    .page-main #introduction-wrap .left .heading:before,
+    .page-main #introduction-wrap .left .heading:after {
+        height: 40px;
+    }
+    .page-main #introduction-wrap .right:before {
+        min-height: 334px;
+        margin-top: 30px;
+    }
+    .page-main #testmonials-wrap .container {
+        max-width: 100%;
+        margin: 20px auto 0 auto;
+        padding: 0 50px;
+    }
+    .page-main #testmonials-wrap .slider-testimonials ul li .wrap p {
+        margin-top: 15px;
+        height: 95px;
+        overflow-y: scroll;
+    }
+    .page-main #testmonials-wrap .slider-testimonials .slick-prev {
+        left: -41px;
+    }
+    .page-main #testmonials-wrap .slider-testimonials .slick-next {
+        right: -41px;
+    }
+    .page-main #testmonials-wrap .slider-testimonials ul li .wrap span {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .page-main #testmonials-wrap .slider-testimonials ul li .btn {
+        margin-top: 30px;
+        line-height: 35px;
+        height: 35px;
+    }
+    .form-contacts {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px 0 60px 0;
+    }
+    .form-contacts .container {
+        padding: 0 15px;
+    }
+    .form-contacts .container .left {
+        margin-right: 10px;
+    }
+    .form-contacts .container .right {
+        margin-left: 10px;
+    }
+    .form-contacts label {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .form-contacts input, .form-contacts textarea {
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    .form-contacts textarea {
+        min-height: 106px;
+    }
+    .form-contacts input[type=submit] {
+        height: 35px;
+        line-height: 35px;
+        width: 200px;
+        padding: 0 !important;
+    }
+    .page-main #introduction-wrap:after {
+        width: 200px;
+        height: 200px;
+        right: 0;
+        bottom: 0;
+        @include background-size(200px);
+    }
+    
+    #main .btn-change-screen {
+        min-width: 35px;
+    }
+    #main .btn-screen-nav {
+        right: 9px;
+    }
+    .page-about .container {
+        margin-top: 0;
+    }
+    p {
+        margin-top: 30px;
+    }
+
+    .page-coaching .head-coaching {
+        min-height: 180px;
+    }
+
+    .page-main #introduction-wrap:after {
+        width: 400px;
+        height: 400px;
+        right: 0;
+        bottom: 49px;
+        -moz-background-size: 400px;
+        -o-background-size: 400px;
+        -webkit-background-size: 400px;
+        background-size: 400px;
+    }
+
+    .modal-wrap {
+        width: 400px;
+        margin-left: -200px;
+    }
+    .modal-wrap form {
+        padding: 30px 15px 30px 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .page-main #introduction-wrap .left .heading h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .page-main #introduction-wrap .left .heading h1 span {
+        color: #1569ff;
+        margin-left: 0;
+    }
+    .page-main #introduction-wrap .left .heading p {
+        font-size: 19px;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .page-main #services-wrap .container h4 {
+        font-size: 16px;
+    }
+    .page-main #services-wrap .container h5 {
+        font-size: 15px;
+    }
+    .page-main #testmonials-wrap .slider-testimonials ul li .wrap p {
+        margin-top: 15px;
+        height: 65px;
+        overflow-y: scroll;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .page-main #introduction-wrap .right {
+        min-width: 80px;
+    }
+    .page-main #introduction-wrap .right:before {
+        min-width: 50px;
+    }
+    .page-main #introduction-wrap .left {
+        padding-left: 15px;
+    }
+    .page-main #introduction-wrap .left .heading {
+        padding-right: 10px;
+    }
+
+    .page-coaching .form-contacts {
+        .container {
+            display: block;
+            .left, .right {
+                width: 100%;
+                margin: 0 !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .modal-wrap {
+        width: 250px;
+        margin-left: -125px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .page-main #introduction-wrap:after {
+        width: 300px;
+        height: 300px;
+        right: 0;
+        bottom: 49px;
+        -moz-background-size: 300px;
+        -o-background-size: 300px;
+        -webkit-background-size: 300px;
+        background-size: 300px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .page-coaching .head-coaching p.title {
+        font-size: 20px;
+        line-height: 100px;
+    }
+    #main .btn-change-screen {display: none;}
+}
+
+@media only screen and (max-width: 350px) {
+    .page-main #services-wrap ul {
+        margin-top: 10px;
+    }
+}
