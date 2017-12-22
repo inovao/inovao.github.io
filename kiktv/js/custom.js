@@ -382,12 +382,22 @@ $(function(){
         groupBy: 'category'
     });
 
-    $('.js-replays-tab li').click(function(){
+  /*  $('.js-replays-tab li').click(function(){
     	$(this).parents('.tab-wrap').find('.tab-cont').addClass('hide');
-		var id = $(this).attr('data-href');
+		var id = $(this).data('href');
 		$(id).removeClass('hide');
 
+
+		
+    })*/
+    $('.js-replays-tab li').on('click', function(){
+    	$(this).parents('.tab-wrap').find('.tab-cont').addClass('hide');
+    	replaysLi = $(this).index();
+
+    	$(this).parents('.tab-wrap').find('.tv-programme').find('.tab-cont').eq(parseInt(replaysLi)).removeClass('hide')
+		
     })
+
 });
 
 
@@ -409,6 +419,17 @@ $slick_slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
 });
 $slick_slider.slick(settings);
 
+$plays_slider = $('.kik-plays');
+playsSettings = {
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	variableWidth: true,
+	arrows: false,
+	infinite: false,
+}
+
+$plays_slider.slick(playsSettings);
+
 	// reslick only if it's not slick()
 $(window).on('load resize', function() {
 	if ($(window).width() > 719) {
@@ -416,9 +437,46 @@ $(window).on('load resize', function() {
 	    $slick_slider.slick('unslick');
 	  }
 	  return
+
+	  if ($plays_slider.hasClass('slick-initialized')) {
+	    $plays_slider.slick('unslick');
+	  }
+	  return
 	}
 
 	if (!$slick_slider.hasClass('slick-initialized')) {
 	  return $slick_slider.slick(settings);
 	}
+	if (!$plays_slider.hasClass('slick-initialized')) {
+	  return $plays_slider.slick(playsSettings);
+	}
 });
+
+	// reslick only if it's not slick()
+$(window).on('load resize', function() {
+	if ($(window).width() > 719) {
+	  if ($plays_slider.hasClass('slick-initialized')) {
+	    $plays_slider.slick('unslick');
+	  }
+	  return
+	}
+
+	if (!$plays_slider.hasClass('slick-initialized')) {
+	  return $plays_slider.slick(playsSettings);
+	}
+});
+
+ if($('#myjwplayer').length){
+	    
+	jwplayer("myjwplayer").setup({
+		 
+		"file": "https://s3-us-west-2.amazonaws.com/shapiromd-video/Shapiro-MD-FB-v9.mp4",
+		"image": 'img/actu-img.png',
+		    "startparam": '10000',
+		    "mediaid": "ihhd8q0e",
+
+		});
+	$('#myjwplayer').click(function() {
+	$('.jw-icon-rewind, .jw-icon-fullscreen, .jw-text-duration').remove();
+	});
+};

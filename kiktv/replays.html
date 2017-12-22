@@ -3069,9 +3069,27 @@
 		</div>
 		
 		<div class="tab-wrap">
-			<div class="raplays-filter">
+			<div class="raplays-filter raplays-filter--search">
 				<div class="wrapper">
-					<ul class="filter-nav tabs hidden-ipad">
+					<ul class="filter-nav tabs">
+						<li class="filter-nav__item filter-nav__item-select">
+							<select class="styler filter__select sec-1" >
+								<option value="">Tous les chaines</option>
+								<option value="">En ce moment</option>
+								<option value="">Ce matin</option>
+								<option value="">A midi</option>
+								<option value="">Ce soir</option>
+							</select>
+							<select class="styler filter__select js-replays-tab">
+								<option value="">Recent replays</option>
+								<option value="">Series et fictions</option>
+								<option value="">Emissions</option>
+								<option value="">Films</option>
+								<option value="">Information</option>
+								<option value="">Jeunesse</option>
+								<option value="">Sports</option>
+							</select>
+						</li>
 						<li class="filter-nav__item filter-search">
 							<button class="toggle-filter-search">
 								<span class="icon-search2"></span>
@@ -3084,50 +3102,28 @@
 								</form>
 							</div>
 						</li>
-						<li class="filter-nav__item active">
+						<li class="filter-nav__item active hidden-ipad">
 							<a href="#t-replays_1" class="filter-nav__link ">RECENT</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#t-replays_2" class="filter-nav__link">SERIES & FICTIONS</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#t-replays_3" class="filter-nav__link">EMISSION</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#t-replays_4" class="filter-nav__link">FILMS</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#t-replays_5" class="filter-nav__link">INFORMATION</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#t-replays_6" class="filter-nav__link">JeunessE</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#t-replays_7" class="filter-nav__link">SPORTS</a>
 						</li>
 					</ul>
-					<div class="filter hidden-notebook hidden-desktop">
-						<div class="filter-left">
-							<select class="styler filter__select sec-1" >
-								<option value="">Tous les chaines</option>
-								<option value="">En ce moment</option>
-								<option value="">Ce matin</option>
-								<option value="">A midi</option>
-								<option value="">Ce soir</option>
-							</select>
-							<select class="styler filter__select js-replays-tab">
-								<option value="" data-href="#t-replays_1">Recent replays</option>
-								<option value="" data-href="#t-replays_2">Series et fictions</option>
-								<option value="" data-href="#t-replays_3">Emissions</option>
-								<option value="" data-href="#t-replays_4">Films</option>
-								<option value="" data-href="#t-replays_5">Information</option>
-								<option value="" data-href="#t-replays_6">Jeunesse</option>
-								<option value="" data-href="#t-replays_7">Sports</option>
-							</select>
-							
-						</div>
-						
-					</div>
 				</div>
 			</div>
 			<div class="tv-programme">
@@ -3466,7 +3462,7 @@
 									
 								</div>
 								<div class="btn-ipad">
-									<a href="#" class="btn btn--info">Tous les replays <span class="icon-right-arrow btn-icon-right"></span></a>
+									<a href="#" class="btn btn--info">Plus les replays <span class="icon-down-arrow btn-icon-right"></span></a>
 								</div>
 								<div class="kik-loader">
 									<span class="icon-spinner"></span>
@@ -4316,11 +4312,13 @@
 				</div>
 				<div class="footer-wrap__about">
 					<h6 class="footer-title">A propos</h6>
-					<p>Le programme tv à consulter rapidement pour choisir
+					<p class="hidden-ipad">Le programme tv à consulter rapidement pour choisir
 					votre programme de ce soir à la tv (tnt, box, cable-sat...).
 					Retrouvez les principaux liens replay TF1, M6, W9, C8,
 					Pluzz... pour ne rien manquer de la télé et organisez
 					simplement votre grille tv.</p>
+					<p class="hidden-notebook hidden-desktop">KIK.TV réinvente la façon dont les Français regardent la télévision. À l’heure de l’internet, les modes de consommation changent radicalement et quotidiennement. Le secteur du cinéma et de l’audiovisuel est le premier à être impacté par ces évolutions! KIK.TV a l’ambition de devenir le partenaire numéro 1 des chaînes et des téléspectateurs pour les accompagner dans cette nouvelle ère «post-télévision».</p>
+					<a href="#" class="desktop-version">Desktop version</a>
 				</div>
 				<a href="#scrollup" class="up"><span class="icon-down-arrow"></span></a>
 			</div>
