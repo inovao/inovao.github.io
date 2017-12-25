@@ -4,15 +4,17 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-	<title>KikTV - Actu Page</title>
+	<title>KikTV - Главная</title>
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" >
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700">
 	<link rel="stylesheet" type="text/css" href="css/jsscrollpanel.css?ver1.0">
 	<link rel="stylesheet" type="text/css" href="css/icomoon.css?ver1.0">
-	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.0" />		
-			
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.0" />	
+	<link rel="stylesheet" href="css/component.css">
+	<script src="js/modernizr.custom.js"></script>		
 </head>
 <body class="loaded">
 		
@@ -31,6 +33,9 @@
 						<a href="#"><img src="img/logo.png?ver1.0" alt=""></a>
 					</div>
 					<!-- BEGIN SEARCH -->
+					<button class="open-search js-open-search">
+						<span class="icon-search2"></span>
+					</button>
 					<div class="search">
 						<form action="#">
 							<div class="search-inner">
@@ -45,21 +50,21 @@
 									<ul class="bar-channels-list">
 										<li class="bar-channels-list__item">
 											<a href="#">
-												<span class="bar-channels-list__img"><img src="img/c1.png" alt=""></span>
+												<span class="bar-channels-list__img"><img src="img/c1.png?ver1.0" alt=""></span>
 												<span class="bar-channels-list__title"><span class="selected-text">Eur</span>osport 1</span>
 											</a>
 											
 										</li>
 										<li class="bar-channels-list__item">
 											<a href="#">
-												<span class="bar-channels-list__img"><img src="img/c2.png" alt=""></span>
+												<span class="bar-channels-list__img"><img src="img/c2.png?ver1.0" alt=""></span>
 												<span class="bar-channels-list__title"><span class="selected-text">Eur</span>osport 2</span>
 											</a>
 											
 										</li>
 										<li class="bar-channels-list__item">
 											<a href="#">
-												<span class="bar-channels-list__img"><img src="img/euronnews.png" alt=""></span>
+												<span class="bar-channels-list__img"><img src="img/euronnews.png?ver1.0" alt=""></span>
 												<span class="bar-channels-list__title"><span class="selected-text">Eur</span>onews</span>
 											</a>
 											
@@ -73,7 +78,7 @@
 									<ul class="bar-channels-list">
 										<li class="bar-programmes-list__item">
 											<a href="#">
-												<span class="bar-programmes-list__img"><img src="img/programmes.png" alt=""></span>
+												<span class="bar-programmes-list__img"><img src="img/programmes.png?ver1.0" alt=""></span>
 												<span class="bar-programmes-list__details">
 													<span class="bar-programmes-list__title">Votre tour du monde : l'<span class="selected-text">Eur</span>ope</span>
 													<span class="bar-programmes-list__channel">TF1</span>
@@ -83,7 +88,7 @@
 										</li>
 										<li class="bar-programmes-list__item">
 											<a href="#">
-												<span class="bar-programmes-list__img"><img src="img/programmes1.png" alt=""></span>
+												<span class="bar-programmes-list__img"><img src="img/programmes1.png?ver1.0" alt=""></span>
 												<span class="bar-programmes-list__details">
 													<span class="bar-programmes-list__title"><span class="selected-text">Eur</span>o 2016: Toutes les goals</span>
 													<span class="bar-programmes-list__channel">FRANCE 3</span>
@@ -93,7 +98,7 @@
 										</li>
 										<li class="bar-programmes-list__item">
 											<a href="#">
-												<span class="bar-programmes-list__img"><img src="img/programmes2.png" alt=""></span>
+												<span class="bar-programmes-list__img"><img src="img/programmes2.png?ver1.0" alt=""></span>
 												<span class="bar-programmes-list__details">
 													<span class="bar-programmes-list__title">K<span class="selected-text">eur</span>oshido: Decouvrez le Nippon</span>
 													<span class="bar-programmes-list__channel">FRANCE 3</span>
@@ -103,7 +108,7 @@
 										</li>
 										<li class="bar-programmes-list__item">
 											<a href="#">
-												<span class="bar-programmes-list__img"><img src="img/programmes3.png" alt=""></span>
+												<span class="bar-programmes-list__img"><img src="img/programmes3.png?ver1.0" alt=""></span>
 												<span class="bar-programmes-list__details">
 													<span class="bar-programmes-list__title">N<span class="selected-text">eur</span>otique at sexuelle (season 3 ep. 12)</span>
 													<span class="bar-programmes-list__channel">ARTE</span>
@@ -126,6 +131,14 @@
 
 					<!-- BEGIN NAVBAR -->
 					<nav class="navbar">
+						<button class="open-menu ">
+							<span class="menu-burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+							<span class="only-text">Menu</span>
+						</button>
 						<ul class="navbar-menu">
 
 							<li class="navbar-menu__item navbar-menu__item--dropdown">
@@ -162,13 +175,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining.png" alt="">
+																	<img src="img/treining.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -181,13 +194,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining1.png" alt="">
+																	<img src="img/treining1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/2.png" alt=""> 
+																		<img src="img/2.png?ver1.0" alt=""> 
 																		<span>Demain, 18:35</span>
 																	</a>
 																</div>
@@ -200,13 +213,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining2.png" alt="">
+																	<img src="img/treining2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/3.png" alt=""> 
+																		<img src="img/3.png?ver1.0" alt=""> 
 																		<span>Demain, 19:00</span>
 																	</a>
 																</div>
@@ -219,13 +232,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining.png" alt="">
+																	<img src="img/treining.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -238,13 +251,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining2.png" alt="">
+																	<img src="img/treining2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -257,13 +270,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -281,477 +294,477 @@
 														<ul class="channel-list">
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/canal.png" alt="">
+																	<img src="img/canal.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/5.png" alt="">
+																	<img src="img/5.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/m.png" alt="">
+																	<img src="img/m.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/arte.png" alt="">
+																	<img src="img/arte.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/c8.png" alt="">
+																	<img src="img/c8.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/w9.png" alt="">
+																	<img src="img/w9.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tmc.png" alt="">
+																	<img src="img/tmc.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/nt1.png" alt="">
+																	<img src="img/nt1.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/nrj.png" alt="">
+																	<img src="img/nrj.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/cstar.png" alt="">
+																	<img src="img/cstar.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/6ter.png" alt="">
+																	<img src="img/6ter.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/4.png" alt="">
+																	<img src="img/4.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/gull.png" alt="">
+																	<img src="img/gull.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/rmc.png" alt="">
+																	<img src="img/rmc.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/cherie.png" alt="">
+																	<img src="img/cherie.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/23.png" alt="">
+																	<img src="img/23.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/lcp.png" alt="">
+																	<img src="img/lcp.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/canal.png" alt="">
+																	<img src="img/canal.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/5.png" alt="">
+																	<img src="img/5.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/m.png" alt="">
+																	<img src="img/m.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/arte.png" alt="">
+																	<img src="img/arte.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/c8.png" alt="">
+																	<img src="img/c8.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/w9.png" alt="">
+																	<img src="img/w9.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tmc.png" alt="">
+																	<img src="img/tmc.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/nt1.png" alt="">
+																	<img src="img/nt1.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/nrj.png" alt="">
+																	<img src="img/nrj.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/cstar.png" alt="">
+																	<img src="img/cstar.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/6ter.png" alt="">
+																	<img src="img/6ter.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/4.png" alt="">
+																	<img src="img/4.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/gull.png" alt="">
+																	<img src="img/gull.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/rmc.png" alt="">
+																	<img src="img/rmc.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/cherie.png" alt="">
+																	<img src="img/cherie.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/23.png" alt="">
+																	<img src="img/23.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/lcp.png" alt="">
+																	<img src="img/lcp.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/w9.png" alt="">
+																	<img src="img/w9.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tmc.png" alt="">
+																	<img src="img/tmc.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/nt1.png" alt="">
+																	<img src="img/nt1.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/nrj.png" alt="">
+																	<img src="img/nrj.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/cstar.png" alt="">
+																	<img src="img/cstar.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/6ter.png" alt="">
+																	<img src="img/6ter.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/4.png" alt="">
+																	<img src="img/4.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/gull.png" alt="">
+																	<img src="img/gull.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/rmc.png" alt="">
+																	<img src="img/rmc.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/cherie.png" alt="">
+																	<img src="img/cherie.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/23.png" alt="">
+																	<img src="img/23.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/lcp.png" alt="">
+																	<img src="img/lcp.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/m.png" alt="">
+																	<img src="img/m.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/arte.png" alt="">
+																	<img src="img/arte.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/c8.png" alt="">
+																	<img src="img/c8.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/w9.png" alt="">
+																	<img src="img/w9.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tmc.png" alt="">
+																	<img src="img/tmc.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/nt1.png" alt="">
+																	<img src="img/nt1.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/nrj.png" alt="">
+																	<img src="img/nrj.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/cstar.png" alt="">
+																	<img src="img/cstar.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/6ter.png" alt="">
+																	<img src="img/6ter.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/arte.png" alt="">
+																	<img src="img/arte.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/c8.png" alt="">
+																	<img src="img/c8.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/w9.png" alt="">
+																	<img src="img/w9.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tmc.png" alt="">
+																	<img src="img/tmc.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/nt1.png" alt="">
+																	<img src="img/nt1.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/nrj.png" alt="">
+																	<img src="img/nrj.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/cstar.png" alt="">
+																	<img src="img/cstar.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/6ter.png" alt="">
+																	<img src="img/6ter.png?ver1.0" alt="">
 																</a>
 															</li>
 														</ul>
@@ -761,212 +774,212 @@
 														<ul class="channel-list">
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/canal.png" alt="">
+																	<img src="img/canal.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/5.png" alt="">
+																	<img src="img/5.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/m.png" alt="">
+																	<img src="img/m.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/arte.png" alt="">
+																	<img src="img/arte.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/c8.png" alt="">
+																	<img src="img/c8.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/w9.png" alt="">
+																	<img src="img/w9.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tmc.png" alt="">
+																	<img src="img/tmc.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/nt1.png" alt="">
+																	<img src="img/nt1.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/nrj.png" alt="">
+																	<img src="img/nrj.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/cstar.png" alt="">
+																	<img src="img/cstar.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/6ter.png" alt="">
+																	<img src="img/6ter.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/4.png" alt="">
+																	<img src="img/4.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/gull.png" alt="">
+																	<img src="img/gull.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/rmc.png" alt="">
+																	<img src="img/rmc.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/cherie.png" alt="">
+																	<img src="img/cherie.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/23.png" alt="">
+																	<img src="img/23.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/lcp.png" alt="">
+																	<img src="img/lcp.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/3.png" alt="">
+																	<img src="img/3.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/tfi.png" alt="">
+																	<img src="img/tfi.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/2.png" alt="">
+																	<img src="img/2.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/canal.png" alt="">
+																	<img src="img/canal.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/5.png" alt="">
+																	<img src="img/5.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/m.png" alt="">
+																	<img src="img/m.png?ver1.0" alt="">
 																</a>
 															</li>
 															<li class="channel-list__item">
 																<a href="#" class="channel-list__link">
-																	<img src="img/arte.png" alt="">
+																	<img src="img/arte.png?ver1.0" alt="">
 																</a>
 															</li>
 															
@@ -982,13 +995,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining5.png" alt="">
+																	<img src="img/treining5.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title channel-title-lg">
 																	<a href="#">
-																		<img src="img/tfi-big.png" alt=""> 
+																		<img src="img/tfi-big.png?ver1.0" alt=""> 
 																		<span>TF1</span>
 																	</a>
 																</div>
@@ -1006,13 +1019,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining6.png" alt="">
+																	<img src="img/treining6.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title channel-title-lg">
 																	<a href="#">
-																		<img src="img/canal-big.png" alt=""> 
+																		<img src="img/canal-big.png?ver1.0" alt=""> 
 																		<span>CANAL+</span>
 																	</a>
 																</div>
@@ -1030,13 +1043,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining7.png" alt="">
+																	<img src="img/treining7.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title channel-title-lg">
 																	<a href="#">
-																		<img src="img/m-big.png" alt=""> 
+																		<img src="img/m-big.png?ver1.0" alt=""> 
 																		<span>M6</span>
 																	</a>
 																</div>
@@ -1054,13 +1067,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining5.png" alt="">
+																	<img src="img/treining5.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title channel-title-lg">
 																	<a href="#">
-																		<img src="img/tfi-big.png" alt=""> 
+																		<img src="img/tfi-big.png?ver1.0" alt=""> 
 																		<span>TF1</span>
 																	</a>
 																</div>
@@ -1078,13 +1091,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining5.png" alt="">
+																	<img src="img/treining5.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title channel-title-lg">
 																	<a href="#">
-																		<img src="img/tfi-big.png" alt=""> 
+																		<img src="img/tfi-big.png?ver1.0" alt=""> 
 																		<span>TF1</span>
 																	</a>
 																</div>
@@ -1102,13 +1115,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining5.png" alt="">
+																	<img src="img/treining5.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title channel-title-lg">
 																	<a href="#">
-																		<img src="img/tfi-big.png" alt=""> 
+																		<img src="img/tfi-big.png?ver1.0" alt=""> 
 																		<span>TF1</span>
 																	</a>
 																</div>
@@ -1131,13 +1144,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining.png" alt="">
+																	<img src="img/treining.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -1150,13 +1163,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining1.png" alt="">
+																	<img src="img/treining1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/2.png" alt=""> 
+																		<img src="img/2.png?ver1.0" alt=""> 
 																		<span>Demain, 18:35</span>
 																	</a>
 																</div>
@@ -1169,13 +1182,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining2.png" alt="">
+																	<img src="img/treining2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/3.png" alt=""> 
+																		<img src="img/3.png?ver1.0" alt=""> 
 																		<span>Demain, 19:00</span>
 																	</a>
 																</div>
@@ -1188,13 +1201,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining.png" alt="">
+																	<img src="img/treining.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -1207,13 +1220,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining2.png" alt="">
+																	<img src="img/treining2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -1226,13 +1239,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -1250,13 +1263,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining.png" alt="">
+																	<img src="img/treining.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -1269,13 +1282,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining1.png" alt="">
+																	<img src="img/treining1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/2.png" alt=""> 
+																		<img src="img/2.png?ver1.0" alt=""> 
 																		<span>Demain, 18:35</span>
 																	</a>
 																</div>
@@ -1288,13 +1301,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining2.png" alt="">
+																	<img src="img/treining2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/3.png" alt=""> 
+																		<img src="img/3.png?ver1.0" alt=""> 
 																		<span>Demain, 19:00</span>
 																	</a>
 																</div>
@@ -1307,13 +1320,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining.png" alt="">
+																	<img src="img/treining.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -1326,13 +1339,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining2.png" alt="">
+																	<img src="img/treining2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -1345,13 +1358,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -1369,13 +1382,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining.png" alt="">
+																	<img src="img/treining.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -1388,13 +1401,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining1.png" alt="">
+																	<img src="img/treining1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/2.png" alt=""> 
+																		<img src="img/2.png?ver1.0" alt=""> 
 																		<span>Demain, 18:35</span>
 																	</a>
 																</div>
@@ -1407,13 +1420,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining2.png" alt="">
+																	<img src="img/treining2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/3.png" alt=""> 
+																		<img src="img/3.png?ver1.0" alt=""> 
 																		<span>Demain, 19:00</span>
 																	</a>
 																</div>
@@ -1426,13 +1439,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining.png" alt="">
+																	<img src="img/treining.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -1445,13 +1458,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/treining2.png" alt="">
+																	<img src="img/treining2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -1464,13 +1477,13 @@
 														<div class="trend">
 															<div class="trend__img">
 																<a href="#">
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
 																<div class="channel-title">
 																	<a href="#">
-																		<img src="img/tfi.png" alt=""> 
+																		<img src="img/tfi.png?ver1.0" alt=""> 
 																		<span>Aujourd’hui, 20:20</span>
 																	</a>
 																</div>
@@ -1499,7 +1512,7 @@
 													<a href="#">
 														
 														<span class="trend-play"><span class="icon-play-button"></span></span>
-														<img src="img/direct-list-img.png" alt="">
+														<img src="img/direct-list-img.png?ver1.0" alt="">
 													</a>
 												</div>
 												<div class="trend__info">
@@ -1515,7 +1528,7 @@
 													<a href="#">
 														
 														<span class="trend-play"><span class="icon-play-button"></span></span>
-														<img src="img/direct-list-img1.png" alt="">
+														<img src="img/direct-list-img1.png?ver1.0" alt="">
 													</a>
 												</div>
 												<div class="trend__info">
@@ -1531,7 +1544,7 @@
 													<a href="#">
 														
 														<span class="trend-play"><span class="icon-play-button"></span></span>
-														<img src="img/direct-list-img2.png" alt="">
+														<img src="img/direct-list-img2.png?ver1.0" alt="">
 													</a>
 												</div>
 												<div class="trend__info">
@@ -1547,7 +1560,7 @@
 													<a href="#">
 														
 														<span class="trend-play"><span class="icon-play-button"></span></span>
-														<img src="img/direct-list-img3.png" alt="">
+														<img src="img/direct-list-img3.png?ver1.0" alt="">
 													</a>
 												</div>
 												<div class="trend__info">
@@ -1564,7 +1577,7 @@
 													<a href="#direct_trend_1" class="cover"></a>
 													<div class="direct-list__col1">
 														<div class="channel-title">
-															<img src="img/tfi.png" alt="">
+															<img src="img/tfi.png?ver1.0" alt="">
 														</div>
 														<h5 class="direct-list__title">24 Heures en questions Le Samedi</h5>
 														<div class="grey-line">
@@ -1581,14 +1594,14 @@
 														<p class="direct-list__text">Du cote do chez vous</p> 
 													</div>
 													<div class="direct-list__col3">
-														<img src="img/direct-list-img.png" alt="">
+														<img src="img/direct-list-img.png?ver1.0" alt="">
 													</div>
 												</div>
 												<div class="direct-list__item">
 													<a href="#direct_trend_2" class="cover"></a>
 													<div class="direct-list__col1">
 														<div class="channel-title">
-															<img src="img/3.png" alt="">
+															<img src="img/3.png?ver1.0" alt="">
 														</div>
 														<h5 class="direct-list__title">Les douz coupe de mini</h5>
 														<div class="grey-line">
@@ -1605,14 +1618,14 @@
 														<p class="direct-list__text">24 Heures en questions Le Samedi</p> 
 													</div>
 													<div class="direct-list__col3">
-														<img src="img/direct-list-img1.png" alt="">
+														<img src="img/direct-list-img1.png?ver1.0" alt="">
 													</div>
 												</div>
 												<div class="direct-list__item">
 													<a href="#direct_trend_3" class="cover"></a>
 													<div class="direct-list__col1">
 														<div class="channel-title">
-															<img src="img/canal.png" alt="">
+															<img src="img/canal.png?ver1.0" alt="">
 														</div>
 														<h5 class="direct-list__title">24 Heures en questions Le Samedi</h5>
 														<div class="grey-line">
@@ -1629,14 +1642,14 @@
 														<p class="direct-list__text">Les petits meurtres d'Agatha Christie</p> 
 													</div>
 													<div class="direct-list__col3">
-														<img src="img/direct-list-img2.png" alt="">
+														<img src="img/direct-list-img2.png?ver1.0" alt="">
 													</div>
 												</div>
 												<div class="direct-list__item">
 													<a href="#direct_trend_4" class="cover"></a>
 													<div class="direct-list__col1">
 														<div class="channel-title">
-															<img src="img/5.png" alt="">
+															<img src="img/5.png?ver1.0" alt="">
 														</div>
 														<h5 class="direct-list__title">Peur a domicile</h5>
 														<div class="grey-line">
@@ -1653,7 +1666,7 @@
 														<p class="direct-list__text">Le grand voyage des éléphants</p> 
 													</div>
 													<div class="direct-list__col3">
-														<img src="img/direct-list-img3.png" alt="">
+														<img src="img/direct-list-img3.png?ver1.0" alt="">
 													</div>
 												</div>
 
@@ -1699,7 +1712,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1714,7 +1727,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img2.png" alt="">
+																	<img src="img/trend-img2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1729,7 +1742,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img3.png" alt="">
+																	<img src="img/trend-img3.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1744,7 +1757,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1759,7 +1772,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1774,7 +1787,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1789,7 +1802,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1804,7 +1817,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1819,7 +1832,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1838,7 +1851,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1853,7 +1866,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img2.png" alt="">
+																	<img src="img/trend-img2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1868,7 +1881,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img3.png" alt="">
+																	<img src="img/trend-img3.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1883,7 +1896,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1898,7 +1911,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1913,7 +1926,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1928,7 +1941,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1943,7 +1956,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1958,7 +1971,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1977,7 +1990,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -1992,7 +2005,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img2.png" alt="">
+																	<img src="img/trend-img2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2007,7 +2020,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img3.png" alt="">
+																	<img src="img/trend-img3.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2022,7 +2035,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2037,7 +2050,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2052,7 +2065,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2067,7 +2080,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2082,7 +2095,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2102,7 +2115,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2117,7 +2130,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img2.png" alt="">
+																	<img src="img/trend-img2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2132,7 +2145,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img3.png" alt="">
+																	<img src="img/trend-img3.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2147,7 +2160,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2162,7 +2175,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2177,7 +2190,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2192,7 +2205,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2207,7 +2220,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2222,7 +2235,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2241,7 +2254,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2256,7 +2269,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img2.png" alt="">
+																	<img src="img/trend-img2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2271,7 +2284,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img3.png" alt="">
+																	<img src="img/trend-img3.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2286,7 +2299,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2301,7 +2314,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2316,7 +2329,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2331,7 +2344,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2346,7 +2359,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2361,7 +2374,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2380,7 +2393,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2395,7 +2408,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img2.png" alt="">
+																	<img src="img/trend-img2.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2410,7 +2423,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img3.png" alt="">
+																	<img src="img/trend-img3.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2425,7 +2438,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2440,7 +2453,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2455,7 +2468,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2470,7 +2483,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2485,7 +2498,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2500,7 +2513,7 @@
 																<a href="#">
 																	<span class="badge">TF1</span>
 																	<span class="trend-play"><span class="icon-play-button"></span></span>
-																	<img src="img/trend-img1.png" alt="">
+																	<img src="img/trend-img1.png?ver1.0" alt="">
 																</a>
 															</div>
 															<div class="trend__info">
@@ -2548,38 +2561,52 @@
 		</section>
 
 		<div class="tab-wrap">
-			<div class="raplays-filter">
+			<div class="raplays-filter raplays-filter--search">
 				<div class="wrapper">
 					<ul class="filter-nav tabs">
-						
-						<li class="filter-nav__item active">
-							<a href="#actu_1" class="filter-nav__link ">Dernier</a>
+						<li class="filter-nav__item filter-nav__item-select-one">
+
+							<select class="styler filter__select js-replays-tab sec-4">
+								<option value="">Dernier</option>
+								<option value="">Series et fictions</option>
+								<option value="">Ducumentaires</option>
+								<option value="">ACTUALITE ET SOCIETE</option>
+								<option value="">SPORTS</option>
+								<option value="">films</option>
+								<option value="">enfants</option>
+								<option value="">culture</option>
+								<option value="">jeux</option>
+								<option value="">vie quotidienne</option>
+							</select>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad active">
+							<a href="#actu_1" class="filter-nav__link">Dernier</a>
+						</li>
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#actu_2" class="filter-nav__link">SERIES AND FICTIONS</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#actu_3" class="filter-nav__link">DUCUMENTAIRES</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#actu_4" class="filter-nav__link">ACTUALITE ET SOCIETE</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#actu_5" class="filter-nav__link">SPORTS</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#actu_6" class="filter-nav__link">films</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#actu_7" class="filter-nav__link">enfants</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#actu_8" class="filter-nav__link">culture</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#actu_9" class="filter-nav__link">jeux</a>
 						</li>
-						<li class="filter-nav__item">
+						<li class="filter-nav__item hidden-ipad">
 							<a href="#actu_10" class="filter-nav__link">vie quotidienne</a>
 						</li>
 					</ul>
@@ -2648,10 +2675,10 @@
 										<span class="following__text">Commentez-vous</span>
 									</a>
 
-									<a href="#" class="btn btn--default btn--lg">Page of the show <span class="icon-right-arrow btn-icon-right"></span></a>
+									<a href="#" class="btn btn--default btn--lg hidden-iphone">Page of the show <span class="icon-right-arrow btn-icon-right"></span></a>
 								</div>
 							</div>
-							<div class="kik-tabs-banner">
+							<div class="kik-tabs-banner hidden-ipad">
 								<img src="img/banner300x600.png" alt="">
 							</div>
 						</div>
@@ -2773,15 +2800,58 @@
 			<div class="wrapper">
 				<h2 class="content-title">
 					<span class="content-title__icon"><i class="ic ic--voice"></i></span>
-					<span class="content-title__text">Sur le même sujet</span>
+					<span class="content-title__text">SUR LE MEME SUJET</span>
 					<a href="#" class="content-title__link">TOUS LES ACTUEs <span class="icon-right-arrow"></span></a>
 				</h2>
-				
+				<div class="actu-wrap">
+					<div class="trend trend--empty trend--big">
+						<div class="trend__img">
+							<a href="#">
+								<img src="img/trend-empty.png?ver1.0" alt="">
+							</a>
+						</div>
+						<div class="trend__info">
+							<div class="tags">
+								<a href="#" class="tags__link">series et fictions</a>
+							</div>
+							<h5 class="trend__title"><a href="#">Tout le monde a son mot a dire </a></h5>
+							<p class="trend__descr">En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre ordinateur, qu'il soit un PC ou un Mac d'Apple. </p>
+						</div>
+					</div>
+					<div class="trend trend--empty trend--big hidden-iphone">
+						<div class="trend__img">
+							<a href="#">
+								<img src="img/trend-empty1.png?ver1.0" alt="">
+							</a>
+						</div>
+						<div class="trend__info">
+							<div class="tags">
+								<a href="#" class="tags__link">FILMS</a>
+							</div>
+							<h5 class="trend__title"><a href="#">Le nouveau clip de Lenni Kim, nouveau participant de Danse avec les stars!</a></h5>
+							<p class="trend__descr">En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre ordinateur, qu'il soit un PC ...</p>
+						</div>
+					</div>
+					<div class="trend trend--empty trend--big hidden-ipad">
+						<div class="trend__img">
+							<a href="#">
+								<img src="img/trend-empty2.png?ver1.0" alt="">
+							</a>
+						</div>
+						<div class="trend__info">
+							<div class="tags">
+								<a href="#" class="tags__link">series et fictions</a>
+							</div>
+							<h5 class="trend__title"><a href="#">Quand je serai grande, je te tuerai</a></h5>
+							<p class="trend__descr">En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre ordinateur, qu'il soit un PC ou un Mac d'Apple. </p>
+						</div>
+					</div>
+				</div>
 				<div class="actu-wrap">
 					<div class="trend trend--empty">
 						<div class="trend__img">
 							<a href="#">
-								<img src="img/trend-empty.png" alt="">
+								<img src="img/trend-empty.png?ver1.0" alt="">
 							</a>
 						</div>
 						<div class="trend__info">
@@ -2795,7 +2865,7 @@
 					<div class="trend trend--empty">
 						<div class="trend__img">
 							<a href="#">
-								<img src="img/trend-empty4.png" alt="">
+								<img src="img/trend-empty4.png?ver1.0" alt="">
 							</a>
 						</div>
 						<div class="trend__info">
@@ -2806,10 +2876,10 @@
 							<p class="trend__descr">En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre.</p>
 						</div>
 					</div>
-					<div class="trend trend--empty">
+					<div class="trend trend--empty hidden-iphone">
 						<div class="trend__img">
 							<a href="#">
-								<img src="img/trend-empty5.png" alt="">
+								<img src="img/trend-empty5.png?ver1.0" alt="">
 							</a>
 						</div>
 						<div class="trend__info">
@@ -2820,13 +2890,28 @@
 							<p class="trend__descr">En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre.</p>
 						</div>
 					</div>
-					
+					<div class="trend trend--empty  hidden-ipad">
+						<div class="trend__img">
+							<a href="#">
+								<img src="img/trend-empty6.png?ver1.0" alt="">
+							</a>
+						</div>
+						<div class="trend__info">
+							<div class="tags">
+								<a href="#" class="tags__link">FILMS</a>
+							</div>
+							<h5 class="trend__title"><a href="#">Gabor - le nouveaux film de Massimo Pinzicollo.</a></h5>
+							<p class="trend__descr">En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre.</p>
+						</div>
+					</div>
+				</div>
+				<div class="btn-ipad">
+					<a href="#" class="btn btn--info">Tous les actues <span class="icon-right-arrow btn-icon-right"></span></a>
 				</div>
 			</div>
 		</section>
 
-
-		<section class="section section--text">
+		<section class="section section--text hidden-iphone">
 			<div class="wrapper">
 				<p>En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre ordinateur, qu'il soit un PC ou un Mac d'Apple, et sur votre smartphone, qu'il soit un Android ou un iPhone, voire même sur votre tablette iPad. L'accès à ce service de télévision en live est gratuit et illimité pour tous les internautes. La visualisation de la télé en streaming se fait online et requiert donc une connexion internet de qualité. Sur notre site, tout est en direct et le restera!  C'est pourquoi nous ne proposons pas de logiciel à télécharger pour regarder la télévision, que de visionnage tv direct et en replay sur notre plateforme web. En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre ordinateur, qu'il soit un PC ou un Mac d'Apple, et sur votre smartphone, qu'il soit un Android ou un iPhone, voire même sur votre tablette iPad. L'accès à ce service de télévision en live est gratuit et illimité pour tous les internautes. La visualisation de la télé en streaming se fait online et requiert donc une connexion internet de qualité. Sur notre site, tout est en direct et le restera!  C'est pourquoi nous ne proposons pas de logiciel à télécharger pour regarder la télévision, que de visionnage tv direct et en replay sur notre plateforme web.</p>
 			</div>
@@ -2906,11 +2991,13 @@
 				</div>
 				<div class="footer-wrap__about">
 					<h6 class="footer-title">A propos</h6>
-					<p>Le programme tv à consulter rapidement pour choisir
+					<p class="hidden-ipad">Le programme tv à consulter rapidement pour choisir
 					votre programme de ce soir à la tv (tnt, box, cable-sat...).
 					Retrouvez les principaux liens replay TF1, M6, W9, C8,
 					Pluzz... pour ne rien manquer de la télé et organisez
 					simplement votre grille tv.</p>
+					<p class="hidden-notebook hidden-desktop">KIK.TV réinvente la façon dont les Français regardent la télévision. À l’heure de l’internet, les modes de consommation changent radicalement et quotidiennement. Le secteur du cinéma et de l’audiovisuel est le premier à être impacté par ces évolutions! KIK.TV a l’ambition de devenir le partenaire numéro 1 des chaînes et des téléspectateurs pour les accompagner dans cette nouvelle ère «post-télévision».</p>
+					<a href="#" class="desktop-version">Desktop version</a>
 				</div>
 				<a href="#scrollup" class="up"><span class="icon-down-arrow"></span></a>
 			</div>
@@ -2924,6 +3011,133 @@
 
 	<!-- FOOTER EOF   -->
 </div>
+
+
+<div class="box-menu-sidebar ">
+	<div class="box-menu-sidebar-overflow dl-menuwrapper" id="dl-menu">
+		<div class="box-close-menu-sidebar">
+			<a href="#" class="close-menu-sidebar"><span class="icon-close"></span> Fermer</a>
+		</div>
+		<ul class="menu-sidebar dl-menu dl-menuopen" >
+			<li class="menu-sidebar__item">
+				<a href="#" class="menu-sidebar__link">Home</a>
+			</li>
+			<li class="menu-sidebar__item  menu-sidebar__item--dropdown">
+				<a href="#" class="menu-sidebar__link">Tv programme <span class="icon-right-arrow"></span></a>
+				<ul class="sub-menu dl-submenu">
+					
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">En ce moment</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Choisir le chaine <span class="icon-right-arrow"></span></a>
+						<ul class="sub-menu dl-submenu">
+					
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">TF1</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">France 2</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">France 3</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">Canal+</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">France 5</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">M6</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">Arte</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">C8</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">W9</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">TMC</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">NTI</a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Aujoupd’hui</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Ce soir</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Demain</a>
+					</li>
+				</ul>
+			</li>
+			<li class="menu-sidebar__item">
+				<a href="#" class="menu-sidebar__link">En direct</a>
+			</li>
+			<li class="menu-sidebar__item menu-sidebar__item--dropdown">
+				<a href="#" class="menu-sidebar__link">Replays <span class="icon-right-arrow"></span></a>
+				<ul class="sub-menu dl-submenu">
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Les derniers</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Series et fiction</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Documentaries</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Sports</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Films</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Jeux</a>
+					</li>
+				</ul>
+			</li>
+			<li class="menu-sidebar__item">
+				<a href="#" class="menu-sidebar__link">Actu</a>
+			</li>
+			<li class="menu-sidebar__item">
+				<a href="#" class="menu-sidebar__link">Aide</a>
+			</li>
+			<li class="menu-sidebar__item">
+				<a href="#" class="menu-sidebar__link">Kirill <span class="icon-right-arrow"></span></a>
+				<ul class="sub-menu dl-submenu">
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Mon compte</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Favoris</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">My shows</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Deconnexion</a>
+					</li>
+
+				</ul>
+			</li>
+			<li class="menu-sidebar__item" style="display: none !important;">
+				<a href="#" class="menu-sidebar__link">Se connecter</a>
+			</li>
+			
+		</ul>
+
+	</div>
+</div>
 <!-- BODY EOF   -->
 
 
@@ -2931,11 +3145,19 @@
 <script src="js/jquery-3.2.1.min.js?ver1.0"></script>
 <script src="js/jquery-migrate.min.js?ver1.0"></script>
 <script src="js/jquery.formstyler.min.js?ver1.0"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/jquery.matchHeight.js"></script>
-<script src="js/jquery.mousewheel.js"></script>
-<script src="js/jsscrollpanel.js"></script>
-<script src="js/jquery.autocomplete.js"></script>
+<script src="js/slick.min.js?ver1.0"></script>
+<script src="js/jquery.matchHeight.js?ver1.0"></script>
+<script src="js/jquery.mousewheel.js?ver1.0"></script>
+<script src="js/jsscrollpanel.js?ver1.0"></script>
+<script src="js/jquery.autocomplete.js?ver1.0"></script>
+<script src="js/jquery.dlmenu.js"></script>
+<script>
+	$(function() {
+		$('#dl-menu').dlmenu({
+			animationClasses : { classin : 'dl-animate-in-2', classout : 'dl-animate-out-2' }
+		});
+	});
+</script>
 <script src="js/custom.js?ver1.0"></script>
 
 </body>

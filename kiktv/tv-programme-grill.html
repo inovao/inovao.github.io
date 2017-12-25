@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="css/jsscrollpanel.css">
 	<link rel="stylesheet" type="text/css" href="css/icomoon.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.0" />		
-			
+	<link rel="stylesheet" href="css/component.css">
+	<script src="js/modernizr.custom.js"></script>			
 </head>
 <body class="loaded">
 		
@@ -3087,7 +3088,7 @@
 						<option value="">A midi</option>
 						<option value="">Ce soir</option>
 					</select>
-					<button class="filter__button">
+					<button class="filter__button hidden-iphone">
 						<span>Demain</span>
 					</button>
 					<button class="filter__button hidden-ipad">
@@ -3099,7 +3100,7 @@
 					<button class="filter__button hidden-ipad">
 						<span>22, Tu</span>
 					</button>
-					<select class="styler filter__select sec-3">
+					<select class="styler hidden-iphone filter__select sec-3">
 						<option value="">Plus</option>
 						<option value="">23, We</option>
 						<option value="">24, Th</option>
@@ -3596,6 +3597,12 @@
 
 		<section class="section section--grey actu">
 			<div class="wrapper">
+				<div class="banner-ipad ">
+					<a href="#"><img src="img/adv-banner-2.png" alt=""></a>
+				</div>
+				<div class="banner-iphone ">
+					<a href="#"><img src="img/banner-iphone.png" alt=""></a>
+				</div>
 				<h2 class="content-title">
 					<span class="content-title__icon"><i class="ic ic--voice"></i></span>
 					<span class="content-title__text">ACTU</span>
@@ -3616,7 +3623,7 @@
 							<p class="trend__descr">En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre ordinateur, qu'il soit un PC ou un Mac d'Apple. </p>
 						</div>
 					</div>
-					<div class="trend trend--empty trend--big">
+					<div class="trend trend--empty trend--big hidden-iphone">
 						<div class="trend__img">
 							<a href="#">
 								<img src="img/trend-empty1.png" alt="">
@@ -3674,7 +3681,7 @@
 							<p class="trend__descr">En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre.</p>
 						</div>
 					</div>
-					<div class="trend trend--empty">
+					<div class="trend trend--empty hidden-iphone">
 						<div class="trend__img">
 							<a href="#">
 								<img src="img/trend-empty5.png" alt="">
@@ -3688,7 +3695,7 @@
 							<p class="trend__descr">En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre.</p>
 						</div>
 					</div>
-					<div class="trend trend--empty  hidden-ipad">
+					<div class="trend trend--empty hidden-ipad">
 						<div class="trend__img">
 							<a href="#">
 								<img src="img/trend-empty6.png" alt="">
@@ -3704,12 +3711,12 @@
 					</div>
 				</div>
 				<div class="btn-ipad">
-					<a href="#" class="btn btn--info">Tous les replays <span class="icon-right-arrow btn-icon-right"></span></a>
+					<a href="#" class="btn btn--info">Tous les actues <span class="icon-right-arrow btn-icon-right"></span></a>
 				</div>
 			</div>
 		</section>
 
-		<section class="section section--text">
+		<section class="section section--text hidden-iphone">
 			<div class="wrapper">
 				<p>En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre ordinateur, qu'il soit un PC ou un Mac d'Apple, et sur votre smartphone, qu'il soit un Android ou un iPhone, voire même sur votre tablette iPad. L'accès à ce service de télévision en live est gratuit et illimité pour tous les internautes. La visualisation de la télé en streaming se fait online et requiert donc une connexion internet de qualité. Sur notre site, tout est en direct et le restera!  C'est pourquoi nous ne proposons pas de logiciel à télécharger pour regarder la télévision, que de visionnage tv direct et en replay sur notre plateforme web. En accédant au site Kik.tv, vous pouvez regarder la tv en direct sur votre ordinateur, qu'il soit un PC ou un Mac d'Apple, et sur votre smartphone, qu'il soit un Android ou un iPhone, voire même sur votre tablette iPad. L'accès à ce service de télévision en live est gratuit et illimité pour tous les internautes. La visualisation de la télé en streaming se fait online et requiert donc une connexion internet de qualité. Sur notre site, tout est en direct et le restera!  C'est pourquoi nous ne proposons pas de logiciel à télécharger pour regarder la télévision, que de visionnage tv direct et en replay sur notre plateforme web.</p>
 			</div>
@@ -3789,11 +3796,13 @@
 				</div>
 				<div class="footer-wrap__about">
 					<h6 class="footer-title">A propos</h6>
-					<p>Le programme tv à consulter rapidement pour choisir
+					<p class="hidden-ipad">Le programme tv à consulter rapidement pour choisir
 					votre programme de ce soir à la tv (tnt, box, cable-sat...).
 					Retrouvez les principaux liens replay TF1, M6, W9, C8,
 					Pluzz... pour ne rien manquer de la télé et organisez
 					simplement votre grille tv.</p>
+					<p class="hidden-notebook hidden-desktop">KIK.TV réinvente la façon dont les Français regardent la télévision. À l’heure de l’internet, les modes de consommation changent radicalement et quotidiennement. Le secteur du cinéma et de l’audiovisuel est le premier à être impacté par ces évolutions! KIK.TV a l’ambition de devenir le partenaire numéro 1 des chaînes et des téléspectateurs pour les accompagner dans cette nouvelle ère «post-télévision».</p>
+					<a href="#" class="desktop-version">Desktop version</a>
 				</div>
 				<a href="#scrollup" class="up"><span class="icon-down-arrow"></span></a>
 			</div>
@@ -3804,22 +3813,155 @@
 		</div>
 
 	</footer>
-
 	<!-- FOOTER EOF   -->
 </div>
 <!-- BODY EOF   -->
 
+<div class="box-menu-sidebar ">
+	<div class="box-menu-sidebar-overflow dl-menuwrapper" id="dl-menu">
+		<div class="box-close-menu-sidebar">
+			<a href="#" class="close-menu-sidebar"><span class="icon-close"></span> Fermer</a>
+		</div>
+		<ul class="menu-sidebar dl-menu dl-menuopen" >
+			<li class="menu-sidebar__item">
+				<a href="#" class="menu-sidebar__link">Home</a>
+			</li>
+			<li class="menu-sidebar__item  menu-sidebar__item--dropdown">
+				<a href="#" class="menu-sidebar__link">Tv programme <span class="icon-right-arrow"></span></a>
+				<ul class="sub-menu dl-submenu">
+					
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">En ce moment</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Choisir le chaine <span class="icon-right-arrow"></span></a>
+						<ul class="sub-menu dl-submenu">
+					
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">TF1</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">France 2</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">France 3</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">Canal+</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">France 5</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">M6</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">Arte</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">C8</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">W9</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">TMC</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#" class="sub-menu__link">NTI</a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Aujoupd’hui</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Ce soir</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Demain</a>
+					</li>
+				</ul>
+			</li>
+			<li class="menu-sidebar__item">
+				<a href="#" class="menu-sidebar__link">En direct</a>
+			</li>
+			<li class="menu-sidebar__item menu-sidebar__item--dropdown">
+				<a href="#" class="menu-sidebar__link">Replays <span class="icon-right-arrow"></span></a>
+				<ul class="sub-menu dl-submenu">
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Les derniers</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Series et fiction</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Documentaries</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Sports</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Films</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Jeux</a>
+					</li>
+				</ul>
+			</li>
+			<li class="menu-sidebar__item">
+				<a href="#" class="menu-sidebar__link">Actu</a>
+			</li>
+			<li class="menu-sidebar__item">
+				<a href="#" class="menu-sidebar__link">Aide</a>
+			</li>
+			<li class="menu-sidebar__item">
+				<a href="#" class="menu-sidebar__link">Kirill <span class="icon-right-arrow"></span></a>
+				<ul class="sub-menu dl-submenu">
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Mon compte</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Favoris</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">My shows</a>
+					</li>
+					<li class="sub-menu__item">
+						<a href="#" class="sub-menu__link">Deconnexion</a>
+					</li>
+
+				</ul>
+			</li>
+			<li class="menu-sidebar__item" style="display: none !important;">
+				<a href="#" class="menu-sidebar__link">Se connecter</a>
+			</li>
+			
+		</ul>
+
+	</div>
+</div>
 
 <div class="icon-load"></div>
 <script src="js/jquery-3.2.1.min.js?ver1.0"></script>
 <script src="js/jquery-migrate.min.js?ver1.0"></script>
 <script src="js/jquery.formstyler.min.js?ver1.0"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/jquery.matchHeight.js"></script>
 <script src="js/jquery.mousewheel.js"></script>
 <script src="js/jsscrollpanel.js"></script>
-<script src="js/jquery.matchHeight.js"></script>
 <script src="js/jquery.autocomplete.js"></script>
+<script src="js/jquery.dlmenu.js"></script>
+<script>
+	$(function() {
+		$('#dl-menu').dlmenu({
+			animationClasses : { classin : 'dl-animate-in-2', classout : 'dl-animate-out-2' }
+		});
+	});
+</script>
 <script src="js/custom.js?ver1.0"></script>
+
 
 </body>
 </html>

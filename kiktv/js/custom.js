@@ -19,6 +19,35 @@ $(window).on('load resize', hf);
 
 $(function(){
 
+    $('.open-menu').click(function(){
+    	
+    	$('.main-wrapper').addClass('menu-sidebar-open');
+    	$('.box-menu-sidebar').addClass('open');
+    	$('body').addClass('no-scroll');
+    	return false
+    });
+
+    $('.close-menu-sidebar').click(function(){
+    	
+    	$('.main-wrapper').removeClass('menu-sidebar-open');
+    	$('.box-menu-sidebar').removeClass('open');
+    	$('body').removeClass('no-scroll');
+    	return false
+    });
+
+	$(document).click( function(event){
+		if( $(event.target).closest(".box-menu-sidebar").length ) 
+		return;
+		$('.main-wrapper').removeClass('menu-sidebar-open')
+    	$('.box-menu-sidebar').removeClass('open')
+		$('body').removeClass('no-scroll');
+		event.stopPropagation();
+    });
+
+
+   
+    
+
 	$('.js-sliding').click(function(){
     	$(this).toggleClass('active');
     	$(this).parents('.channel-content').find('.js-channel-list-hide').slideToggle(400)
@@ -395,6 +424,7 @@ $(function(){
     	replaysLi = $(this).index();
 
     	$(this).parents('.tab-wrap').find('.tv-programme').find('.tab-cont').eq(parseInt(replaysLi)).removeClass('hide')
+    	$(this).parents('.tab-wrap').find('.box-actu').find('.tab-cont').eq(parseInt(replaysLi)).removeClass('hide')
 		
     })
 
@@ -406,6 +436,7 @@ $slick_slider = $('.kik-tabs-list');
 settings = {
 	slidesToShow: 1,
 	slidesToScroll: 1,
+	infinite: true,
 	prevArrow: '<button class="slick-arrow slick-prev"></button>',
 	nextArrow: '<button class="slick-arrow slick-next"></button>',
 }
