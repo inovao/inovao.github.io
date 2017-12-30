@@ -18,6 +18,12 @@ var hf = function(){
 $(window).on('load resize', hf);
 
 $(function(){
+	$('.channel-wrap-list__item, .timeblock').tooltipster({
+	    contentCloning: true,
+	    delay: [1400, 100],
+	    interactive: true,
+	    side: ['right', 'left', 'bottom', 'top']
+	});
 
     $('.open-menu').click(function(){
     	
@@ -383,13 +389,6 @@ $(function(){
     	]
     });
 
-    // $(".js-channel-list ul li").click(function(){
-        
-    //     slideIndex = $(this).index();
-
-    //     $('.slideshow').slick('slickGoTo', slideIndex);
-    // });
-
 
 
     var nhlTeams = ['Anaheim Ducks', 'Atlanta Thrashers', 'Boston Bruins', 'Buffalo Sabres', 'Calgary Flames', 'Carolina Hurricanes', 'Chicago Blackhawks', 'Colorado Avalanche', 'Columbus Blue Jackets', 'Dallas Stars', 'Detroit Red Wings', 'Edmonton OIlers', 'Florida Panthers', 'Los Angeles Kings', 'Minnesota Wild', 'Montreal Canadiens', 'Nashville Predators', 'New Jersey Devils', 'New Rork Islanders', 'New York Rangers', 'Ottawa Senators', 'Philadelphia Flyers', 'Phoenix Coyotes', 'Pittsburgh Penguins', 'Saint Louis Blues', 'San Jose Sharks', 'Tampa Bay Lightning', 'Toronto Maple Leafs', 'Vancouver Canucks', 'Washington Capitals'];
@@ -411,14 +410,7 @@ $(function(){
         groupBy: 'category'
     });
 
-  /*  $('.js-replays-tab li').click(function(){
-    	$(this).parents('.tab-wrap').find('.tab-cont').addClass('hide');
-		var id = $(this).data('href');
-		$(id).removeClass('hide');
 
-
-		
-    })*/
     $('.js-replays-tab li').on('click', function(){
     	$(this).parents('.tab-wrap').find('.tab-cont').addClass('hide');
     	replaysLi = $(this).index();
@@ -461,6 +453,25 @@ playsSettings = {
 
 $plays_slider.slick(playsSettings);
 
+
+$(window).on('load resize', function() {
+	if ($(window).width() < 960) {
+	  $('.navbar-user').toggle(function(){
+	  	$('.user-list').fadeIn(400);
+	  	$('body').addClass('no-scroll');
+	  	return false
+	  }, function(){
+	  	$('.user-list').fadeOut(400);
+	  	$('body').removeClass('no-scroll');
+	  })
+	  return false
+	} else {
+		$('.navbar-user').unbind( "click" )
+		$('.user-list').removeAttr('style');
+		$('body').removeClass('no-scroll');
+	}
+});
+
 	// reslick only if it's not slick()
 $(window).on('load resize', function() {
 	if ($(window).width() > 719) {
@@ -469,18 +480,12 @@ $(window).on('load resize', function() {
 	  }
 	  return
 
-	  if ($plays_slider.hasClass('slick-initialized')) {
-	    $plays_slider.slick('unslick');
-	  }
-	  return
 	}
 
 	if (!$slick_slider.hasClass('slick-initialized')) {
 	  return $slick_slider.slick(settings);
 	}
-	if (!$plays_slider.hasClass('slick-initialized')) {
-	  return $plays_slider.slick(playsSettings);
-	}
+
 });
 
 	// reslick only if it's not slick()

@@ -2533,12 +2533,37 @@
 							<li class="navbar-menu__item">
 								<a href="#" class="navbar-menu__link">AIDE</a>
 							</li>
-							<li class="navbar-menu__item navbar-menu__item--button">
-								<a href="#" class="navbar-menu__link"><span class="icon icon-share-symbol"></span> Se connecter</a>
-							</li>
 							<li class="overlay"></li>
 						</ul>
 					</nav>
+					<div class="navbar-user">
+						<div class="navbar-user__img">
+							<a href="#"><img src="img/user.png" alt=""></a>
+							<span class="u-badge">3</span>
+						</div>
+						<div class="navbar-user-dropdown">
+							<ul class="user-list">
+								<li class="user-list__item">
+									<div class="user-avatar">
+										<img src="img/user-big.png" alt="">
+									</div>
+									<span class="user-name">Kirill Yermakov</span>
+								</li>
+								<li class="user-list__item">
+									<a href="#" class="user-list__link">Mon compte</a>
+								</li>
+								<li class="user-list__item active">
+									<a href="#" class="user-list__link">Favoris</a>
+								</li>
+								<li class="user-list__item">
+									<a href="#" class="user-list__link">My shows</a>
+								</li>
+								<li class="user-list__item">
+									<a href="#" class="user-list__link">Deconnexion</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<!-- NAVBAR EOF -->
 				</div>
 			</div>
@@ -2607,8 +2632,7 @@
 			</div>
 		</section>
 		
-		
-		<section class="section section--grey actu">
+		<section class="banners section section--grey pb0">
 			<div class="wrapper">
 				<div class="banner-ipad ">
 					<a href="#"><img src="img/adv-banner-2.png" alt=""></a>
@@ -2616,6 +2640,11 @@
 				<div class="banner-iphone ">
 					<a href="#"><img src="img/banner-iphone.png" alt=""></a>
 				</div>
+			</div>
+		</section>
+		<section class="section section--grey actu">
+			<div class="wrapper">
+				
 				<h2 class="content-title">
 					<span class="content-title__icon"><i class="ic ic--voice"></i></span>
 					<span class="content-title__text">ACTU</span>
@@ -2809,11 +2838,13 @@
 				</div>
 				<div class="footer-wrap__about">
 					<h6 class="footer-title">A propos</h6>
-					<p>Le programme tv à consulter rapidement pour choisir
+					<p class="hidden-ipad">Le programme tv à consulter rapidement pour choisir
 					votre programme de ce soir à la tv (tnt, box, cable-sat...).
 					Retrouvez les principaux liens replay TF1, M6, W9, C8,
 					Pluzz... pour ne rien manquer de la télé et organisez
 					simplement votre grille tv.</p>
+					<p class="hidden-notebook hidden-desktop">KIK.TV réinvente la façon dont les Français regardent la télévision. À l’heure de l’internet, les modes de consommation changent radicalement et quotidiennement. Le secteur du cinéma et de l’audiovisuel est le premier à être impacté par ces évolutions! KIK.TV a l’ambition de devenir le partenaire numéro 1 des chaînes et des téléspectateurs pour les accompagner dans cette nouvelle ère «post-télévision».</p>
+					<a href="#" class="desktop-version">Desktop version</a>
 				</div>
 				<a href="#scrollup" class="up"><span class="icon-down-arrow"></span></a>
 			</div>

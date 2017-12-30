@@ -2533,12 +2533,37 @@
 							<li class="navbar-menu__item">
 								<a href="#" class="navbar-menu__link">AIDE</a>
 							</li>
-							<li class="navbar-menu__item navbar-menu__item--button">
-								<a href="#" class="navbar-menu__link"><span class="icon icon-share-symbol"></span> Se connecter</a>
-							</li>
 							<li class="overlay"></li>
 						</ul>
 					</nav>
+					<div class="navbar-user">
+						<div class="navbar-user__img">
+							<a href="#"><img src="img/user.png" alt=""></a>
+							<span class="u-badge">3</span>
+						</div>
+						<div class="navbar-user-dropdown">
+							<ul class="user-list">
+								<li class="user-list__item">
+									<div class="user-avatar">
+										<img src="img/user-big.png" alt="">
+									</div>
+									<span class="user-name">Kirill Yermakov</span>
+								</li>
+								<li class="user-list__item">
+									<a href="#" class="user-list__link">Mon compte</a>
+								</li>
+								<li class="user-list__item active">
+									<a href="#" class="user-list__link">Favoris</a>
+								</li>
+								<li class="user-list__item">
+									<a href="#" class="user-list__link">My shows</a>
+								</li>
+								<li class="user-list__item">
+									<a href="#" class="user-list__link">Deconnexion</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<!-- NAVBAR EOF -->
 				</div>
 			</div>
@@ -2555,7 +2580,15 @@
 				<div class="filter">
 					<div class="filter-left">
 						<select class="styler filter__select sec-1" >
-							<option value="">Mes signets</option>
+							<option value="">Favoris</option>
+							<option value="">Series et fictions</option>
+							<option value="">Emissions</option>
+							<option value="">Films</option>
+							<option value="">Information</option>
+							<option value="">Jeunesse</option>
+						</select>
+						<select class="styler filter__select sec-1 hidden-desktop hidden-netbook" >
+							<option value="">Aujourd’hui</option>
 							<option value="">Series et fictions</option>
 							<option value="">Emissions</option>
 							<option value="">Films</option>
@@ -2563,22 +2596,22 @@
 							<option value="">Jeunesse</option>
 						</select>
 						
-						<button class="filter__button active">
+						<button class="filter__button active hidden-ipad">
 							<span>Aujuord’hui</span>
 						</button>
-						<button class="filter__button">
+						<button class="filter__button hidden-ipad">
 							<span>Demain</span>
 						</button>
-						<button class="filter__button">
+						<button class="filter__button hidden-ipad">
 							<span>20, Su</span>
 						</button>
-						<button class="filter__button">
+						<button class="filter__button hidden-ipad">
 							<span>21, Mo</span>
 						</button>
-						<button class="filter__button">
+						<button class="filter__button hidden-ipad">
 							<span>22, Tu</span>
 						</button>
-						<select class="styler filter__select sec-3">
+						<select class="styler filter__select sec-3 hidden-ipad">
 							<option value="">Plus</option>
 							<option value="">23, We</option>
 							<option value="">24, Th</option>
@@ -2594,6 +2627,8 @@
 				<div class="devtols-details">
 					<h1 class="devtols-title">Favoris <span class="devtols-count">4</span></h1>
 					<p class="devtols-text">Les programmes que je veux voir:</p>
+					<div class="hr visible-iphone"></div>
+					<p class="devtols-text visible-iphone">Aujourd’hui, 23 Aout, 2017</p>
 					<ul class="favoris-list">
 						<li class="favoris-list__item">
 							<div class="favoris-list__img">
@@ -2603,6 +2638,7 @@
 								<div class="favoris-list__details">
 									<a href="#" class="favoris-channel">
 										<img src="img/canal-big.png" alt="">
+										<span class="favoris-channel-title visible-iphone">Canal +</span>
 									</a>
 									<span class="favoris-category">AUJOURD’HUI</span>
 									<span class="separator separator--sm"></span>
@@ -2612,8 +2648,10 @@
 								</div>
 								<h5 class="favoris-list__title"><a href="#">Japon : Tokyo, la ville phoenix</a></h5>
 								<p class="favoris-list__text">Season 14 episode 8</p>
-								<div class="tags">
-									<a href="#" class="tags__link">series et fictions</a>
+								<div>
+									<div class="tags">
+										<a href="#" class="tags__link">series et fictions</a>
+									</div>
 								</div>
 								<span class="close js-remove-f-list"><span class="icon-cancel"></span></span>
 							</div>
@@ -2627,6 +2665,7 @@
 								<div class="favoris-list__details">
 									<a href="#" class="favoris-channel">
 										<img src="img/2.png" alt="">
+										<span class="favoris-channel-title visible-iphone">France 2</span>
 									</a>
 									<span class="favoris-category">AUJOURD’HUI</span>
 									<span class="separator separator--sm"></span>
@@ -2635,10 +2674,13 @@
 									<span class="favoris-time">16:00</span>
 								</div>
 								<h5 class="favoris-list__title"><a href="#">L’Europe, La vida loca</a></h5>
-
-								<div class="tags">
-									<a href="#" class="tags__link">DOCUMENTARIE</a>
+								<div>
+									<div class="tags">
+										<a href="#" class="tags__link">DOCUMENTARIE</a>
+									</div>
+									<span class="eighteen">18+</span>
 								</div>
+								
 								<span class="close js-remove-f-list"><span class="icon-cancel"></span></span>
 							</div>
 						</li>
@@ -2650,6 +2692,7 @@
 								<div class="favoris-list__details">
 									<a href="#" class="favoris-channel">
 										<img src="img/c8.png" alt="">
+										<span class="favoris-channel-title visible-iphone">C8</span>
 									</a>
 									<span class="favoris-category">DEMAIN</span>
 									<span class="separator separator--sm"></span>
@@ -2659,8 +2702,10 @@
 								</div>
 								<h5 class="favoris-list__title"><a href="#">Japan - Neurosam, La ville phoenix </a></h5>
 								<p class="favoris-list__text">Season 14 episode 8</p>
-								<div class="tags">
-									<a href="#" class="tags__link">series et fictions</a>
+								<div>
+									<div class="tags">
+										<a href="#" class="tags__link">series et fictions</a>
+									</div>
 								</div>
 								<span class="close js-remove-f-list"><span class="icon-cancel"></span></span>
 							</div>
@@ -2673,6 +2718,7 @@
 								<div class="favoris-list__details">
 									<a href="#" class="favoris-channel">
 										<img src="img/canal-big.png" alt="">
+										<span class="favoris-channel-title visible-iphone">Canal +</span>
 									</a>
 									<span class="favoris-category">AUJOURD’HUI</span>
 									<span class="separator separator--sm"></span>
@@ -2682,8 +2728,10 @@
 								</div>
 								<h5 class="favoris-list__title"><a href="#">Japan - Neurosam, La ville phoenix </a></h5>
 								<p class="favoris-list__text">Season 14 episode 8</p>
-								<div class="tags">
-									<a href="#" class="tags__link">series et fictions</a>
+								<div>
+									<div class="tags">
+										<a href="#" class="tags__link">series et fictions</a>
+									</div>
 								</div>
 								<span class="close js-remove-f-list"><span class="icon-cancel"></span></span>
 							</div>
@@ -2693,8 +2741,7 @@
 			</div>
 		</section>
 		
-		
-		<section class="section section--grey actu">
+		<section class="banners section section--grey pb0">
 			<div class="wrapper">
 				<div class="banner-ipad ">
 					<a href="#"><img src="img/adv-banner-2.png" alt=""></a>
@@ -2702,6 +2749,11 @@
 				<div class="banner-iphone ">
 					<a href="#"><img src="img/banner-iphone.png" alt=""></a>
 				</div>
+			</div>
+		</section>
+		<section class="section section--grey actu">
+			<div class="wrapper">
+				
 				<h2 class="content-title">
 					<span class="content-title__icon"><i class="ic ic--voice"></i></span>
 					<span class="content-title__text">ACTU</span>
