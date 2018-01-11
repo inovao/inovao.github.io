@@ -18,13 +18,14 @@ var hf = function(){
 $(window).on('load resize', hf);
 
 $(function(){
-	$('.channel-wrap-list__item, .timeblock').tooltipster({
-	    contentCloning: true,
-	    delay: [1400, 100],
-	    interactive: true,
-	    side: ['right', 'left', 'bottom', 'top']
-	});
-
+	if($('.channel-wrap-list__item, .timeblock').length){
+		$('.channel-wrap-list__item, .timeblock').tooltipster({
+		    contentCloning: true,
+		    delay: [1400, 100],
+		    interactive: true,
+		    side: ['right', 'left', 'bottom', 'top']
+		});
+	}
     $('.open-menu').click(function(){
     	
     	$('.main-wrapper').addClass('menu-sidebar-open');

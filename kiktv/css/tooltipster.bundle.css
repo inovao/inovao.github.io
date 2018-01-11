@@ -25,6 +25,9 @@
 	max-height: 100%;
 	max-width: 100%;
 }
+.tooltipster-content .kik-popover {
+	display: block;
+}
 
 .tooltipster-ruler {
 	/* these let us test the size of the tooltip without overflowing the window */
