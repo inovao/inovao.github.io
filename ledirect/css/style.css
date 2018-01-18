@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*  Author:  Pit Orel Website: https://vk.com/html_css_verstka_saitov Github:  https://github.com/pit6262 Skype:   hostings1  */
+/*  Author:  Pit Orel Date:    11.01.17 Website: https://vk.com/html_css_verstka_saitov Skype:   hostings1 */
 /* NORMALIZE */
 /* ================================================ */
 html, body, div, span, applet, main, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; }
@@ -147,7 +147,7 @@ a { color: inherit; -webkit-transition: all 0.3s linear; -o-transition: all 0.3s
 
 .slick-disabled { opacity: 0.6; }
 
-body { color: #52575c; font: 300 13.75px "Source Sans Pro", Arial, sans-serif; background: #FFF; }
+body { color: #52575c; font: 300 12.5px "Source Sans Pro", Arial, sans-serif; background: #FFF; }
 
 /* 3. MAIN STYLES */
 /* ================================================ */
@@ -161,15 +161,21 @@ h2 { margin: 0 0 15px; font-size: 40px; color: #52575c; font-weight: 300; }
 
 h3 { margin: 0 0 15px; font-size: 30px; color: #52575c; font-weight: 300; }
 
-p { padding: 0 0 15px; font-size: 22px; line-height: 1.6; font-weight: 300; }
-p a { border-bottom: 1px dotted; }
-p a:hover { border-color: transparent; }
+p, ol { padding: 0 0 15px; font-size: 20px; line-height: 1.6; font-weight: 300; }
+p a, ol a { border-bottom: 1px dotted; }
+p a:hover, ol a:hover { border-color: transparent; }
+
+ol, ul { list-style: none; }
 
 .hr { height: 1px; background: #c2c7cc; margin: 10px 0 15px; }
 
 a:hover { color: #2980b9; }
 
 .advert { text-align: center; margin-top: 15px; margin-bottom: 15px; padding-bottom: 0; }
+
+.banner { margin-bottom: 20px; text-align: center; }
+.banner img { display: inline-block; }
+.banner-top { margin-bottom: 0; padding-bottom: 20px; padding-top: 20px; background: #f1f1f1; }
 
 img { display: block; max-width: 100%; }
 
@@ -228,7 +234,7 @@ label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 5px; }
 /* ================================================ */
 .header { position: relative; min-width: 320px; background-image: url(../img/header-bg.png), url(https://www.ledirect.fr/frontend/css/images/header.svg), -webkit-linear-gradient(15deg, #2980b9 15%, #3498db 55%); background-image: url(../img/header-bg.png), url(https://www.ledirect.fr/frontend/css/images/header.svg), -o-linear-gradient(15deg, #2980b9 15%, #3498db 55%); background-image: url(../img/header-bg.png), url(https://www.ledirect.fr/frontend/css/images/header.svg), linear-gradient(75deg, #2980b9 15%, #3498db 55%); background-size: 128px 128px, 100% 620%, auto; background-repeat: repeat, no-repeat, no-repeat; }
 .header-top { padding-top: 27px; padding-bottom: 38px; text-align: center; }
-.header-top h1 { font-size: 53px; margin-top: 15px; color: #fff; }
+.header-top h1 { font-size: 53px; margin-top: 15px; margin-bottom: 15px; color: #fff; }
 .header-top p { color: #fff; font-size: 24px; }
 .header-top .chevron { margin-top: 10px; color: #fff; font-size: 24px; }
 .header-top .chevron a:hover { color: #fff; }
@@ -290,16 +296,16 @@ span.live { color: #fff; font-size: 20px; }
 
 .promo { display: inline-block; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 10px; padding: 20px 10px; }
 .promo h2 { display: inline-block; vertical-align: middle; color: #fff; font-size: 40px; margin-right: 20px; margin-left: 20px; margin-bottom: 10px; margin-top: 10px; }
-.promo .button { vertical-align: middle; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; margin-right: 20px; margin-left: 20px; background: #fff; height: 76px; font-size: 24px; padding: 0 30px; border-color: rgba(255, 255, 255, 0); border-bottom: 1px dotted; color: #27636B; margin-bottom: 10px; margin-top: 10px; }
+.promo .button { vertical-align: middle; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; margin-right: 20px; margin-left: 20px; background: #fff; min-height: 76px; font-size: 24px; padding: 0 30px; border-color: rgba(255, 255, 255, 0); border-bottom: 1px dotted; color: #27636B; margin-bottom: 10px; margin-top: 10px; }
 .promo .button:hover { border-color: rgba(255, 255, 255, 0.75); background-color: rgba(255, 255, 255, 0.15); color: #fff; }
 
 /* 6. SIDEBAR */
 /* ================================================ */
 .actions { list-style: none; margin-bottom: 20px; margin-top: 20px; }
 .actions__item { margin-bottom: 10px; }
-.actions__item .button { font-size: 16px; height: 60px; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
+.actions__item .button { font-size: 16px; min-height: 60px; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
 
-.button { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; color: #fff; background: #2aabe9; text-decoration: none; border-radius: 6px; height: 68px; padding: 15px; font-size: 20px; cursor: pointer; outline: 0; -webkit-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out; -o-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out; transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out; }
+.button { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; color: #fff; background: #2aabe9; text-decoration: none; border-radius: 6px; min-height: 68px; padding: 15px; font-size: 20px; cursor: pointer; outline: 0; -webkit-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out; -o-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out; transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out; }
 .button .fa { margin-right: 7px; }
 .button:hover { color: #fff; background: #105D8E; }
 
@@ -307,6 +313,11 @@ span.live { color: #fff; font-size: 20px; }
 #navButton .toggle:before { font-family: FontAwesome; text-decoration: none; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: ""; color: #fff; font-size: 18px; text-align: center; display: block; width: 80px; height: 30px; line-height: 30px; position: absolute; left: 50%; margin-left: -40px; background: rgba(128, 132, 136, 0.35); border-top: 0; border-radius: 0 0 0.35em 0.35em; }
 
 #skel-layers-inactiveWrapper { height: auto !important; }
+
+.blog-list { list-style: none; margin: 20px -10px; }
+.blog-list__item { display: inline-block; vertical-align: middle; margin: 0 -4px 10px 0; padding: 0 10px; }
+.blog-list__link { background: #197abb; padding: 16px 20px; color: #fff; display: inline-block; vertical-align: middle; font-size: 20px; border-radius: 9px; }
+.blog-list__link:hover { color: #fff; background: #105D8E; }
 
 /* 7. FOOTER */
 /* ================================================ */
@@ -334,11 +345,14 @@ span.live { color: #fff; font-size: 20px; }
   .content { padding-bottom: 30px; }
   .promo { border-radius: 8px; padding: 20px 10px; }
   .promo h2 { font-size: 32px; }
-  .promo .button { height: 56px; font-size: 20px; }
+  .promo .button { min-height: 56px; font-size: 20px; }
   .footer-wrap__title { padding-bottom: 10px; } }
 @media screen and (max-width: 767px) { h2, .footer-wrap__title, .promo h2 { font-size: 28px; }
   h3 { font-size: 22px; }
-  p, .menu__link, .header-top p { font-size: 16px; }
+  p, .menu__link, .header-top p, .blog-list__link { font-size: 16px; }
+  .blog-list { margin-left: 0; margin-right: 0; }
+  .blog-list__item { display: block; margin-right: 0; padding: 0; }
+  .blog-list__link { padding: 12px 10px; }
   .promo .button { font-size: 16px; }
   .promo h2, .promo .button { margin-left: 0; margin-right: 0; } }
 @media screen and (max-width: 640px) { .header { padding-top: 40px; padding-bottom: 20px; }
