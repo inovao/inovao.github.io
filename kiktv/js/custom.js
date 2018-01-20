@@ -130,6 +130,7 @@ $(function(){
      $('.toggle-filter-search').click(function(){
     	$(this).parents('.filter-search').find('.filter-search-wrap').toggleClass('show');
     	$(this).toggleClass('active');
+    	$(this).parents('.filter-nav').find('.filter-nav__item:not(.filter-search)').toggleClass('f-tabs-hidden')
     	return false;
     })
 
