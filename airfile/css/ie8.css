@@ -1,0 +1,116 @@
+/* ---------------------------------------------------------------------
++ PAGE INDEX 
+---------------------------------------------------------------------- */
+#index .container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#index .row {
+	margin: 0;
+	padding: 0;
+}
+#index .col-xs-7 {
+	float: left;
+	width: 60%;
+	padding: 0;
+	margin: 0;
+}
+
+#index .col-xs-5 {
+	float: right;
+	width: 35%;
+	padding: 0;
+	margin: 0;
+}
+
+#index .wrap-checkbox.plane {
+	margin-right: 5% !important;	
+}
+#index .wrap-checkbox.plane .plane-ie {
+	position: absolute;
+	top: -165px;
+	left: 50%;
+	margin-left: -63.5px;
+	width: 127px;
+	height: 165px;
+	background: url(../img/plane.png) no-repeat;
+}
+#index .wrap-checkbox.border-color {margin-right: 0!important;}
+#index .wrap-checkbox.plane,
+#index .wrap-checkbox.border-color {
+	width: 40%;
+	display: inline-block !important;
+	*display: inline !important;
+	zoom: 1 !important;
+}
+#index .wrap-checkbox input {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+}
+#index .wrap-checkbox input + span.wrap:before {
+	display: none;
+}
+
+.main-btn {
+	width: 49%;
+}
+
+/* ---------------------------------------------------------------------
++ PAGE HISTORY 
+---------------------------------------------------------------------- */
+#airfile .tabs-cont .box form .input-enter .wrap input,
+#airfile .tabs-cont .box form .input-enter .wrap .view-select {
+	width: 100%;
+}
+
+#airfile .tabs-cont .box form .input-enter button {
+	background: #502e8b;
+}
+#airfile .tabs-cont .box form .input-enter button:hover {
+	background: #6B37AC;
+}
+
+#airfile .tabs-cont .box form .wrap-check input {
+	display: inline-block !important;
+}
+#airfile .tabs-cont .box form .wrap-check input + span.wrap:before {
+	display: none;
+}
+
+.box {background: #efeeec;}
+#airfile .tabs-cont .box .social a.ico-social {
+	background-color: #EFEEEC;
+}
+#airfile .tabs-cont .box .agent a i {
+	    background: #EFEEEC url(../img/bg-headphones.png) no-repeat center top;
+}
+#airfile .tabs-cont .tab-item .delete .ico-delete a.ico-del.tank {
+	    background: #EFEEEC url(../img/ico-delete-sprite.png) no-repeat 0 0;
+}
+#airfile .tabs-cont .tab-item .delete .ico-delete a.ico-del.clos {
+    background: #EFEEEC url(../img/ico-delete-sprite.png) no-repeat -72.5px 0;
+}
+#airfile .tabs-cont .tab-item .delete .ico-delete a.ico-del.tank:hover {
+    background: #EFEEEC url(../img/ico-delete-sprite.png) no-repeat 0 -73px;
+}
+#airfile .tabs-cont .tab-item .delete .ico-delete a.ico-del.clos:hover {
+    background: #EFEEEC url(../img/ico-delete-sprite.png) no-repeat -72.5px -73px;
+}
+
+#airfile .tabs-cont .box form .input-enter button {
+	border: none;
+}
+
+#airfile .header .menu-history .tabs-control-link.transfer {
+    background: #502E8B !important;
+}
+#airfile .header .menu-history .tabs-control-link.transfer:hover {
+	background: #7055B2 !important;
+}
+#airfile .header .menu-history {
+	left: 81.5% !important;
+}
+#airfile .tab-forms .get-pro {background: #000;}
+#menu {overflow: hidden;}
