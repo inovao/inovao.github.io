@@ -17,6 +17,54 @@ var hf = function(){
 
 $(window).on('load resize', hf);
 
+    $('.kik-top-slider').slick({
+		infinite: false,
+		speed: 300,
+		slidesToShow: 3,
+		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
+		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
+		variableWidth: true,
+		responsive: [
+		    {
+				breakpoint: 1680,
+				settings: {
+					slidesToShow: 3,
+
+				}
+			},
+			{
+				breakpoint: 1360,
+				settings: {
+					slidesToShow: 2,
+
+				}
+			},
+			{
+				breakpoint: 920,
+				settings: {
+					slidesToShow: 1,
+
+				}
+			},
+			{
+				breakpoint: 720,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 560,
+				settings: {
+					variableWidth: false,
+					slidesToShow: 1,
+					arrows: false,
+					adaptiveHeight: true,
+				}
+			}
+			
+		]
+	});
 $(function(){
 	if($('.channel-wrap-list__item, .timeblock').length){
 		$('.channel-wrap-list__item, .timeblock').tooltipster({
@@ -160,54 +208,7 @@ $(function(){
 
     
     //Slider top
-    $('.kik-top-slider').slick({
-		infinite: false,
-		speed: 300,
-		slidesToShow: 3,
-		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
-		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
-		variableWidth: true,
-		responsive: [
-		    {
-				breakpoint: 1680,
-				settings: {
-					slidesToShow: 3,
 
-				}
-			},
-			{
-				breakpoint: 1360,
-				settings: {
-					slidesToShow: 2,
-
-				}
-			},
-			{
-				breakpoint: 920,
-				settings: {
-					slidesToShow: 1,
-
-				}
-			},
-			{
-				breakpoint: 720,
-				settings: {
-					slidesToShow: 1,
-					arrows: false,
-				}
-			},
-			{
-				breakpoint: 560,
-				settings: {
-					variableWidth: false,
-					slidesToShow: 1,
-					arrows: false,
-					adaptiveHeight: true,
-				}
-			}
-			
-		]
-	});
 
 	//Trend slider
     $('.trend-slider').slick({
