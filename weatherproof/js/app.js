@@ -3259,6 +3259,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     });
 })();
 
+// owl carousel arrows
+var owlArrows = ["<svg class=\"icon icon-prev\">\n        <use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"img/sprite.svg#icon-prev\"></use>\n    </svg>", "<svg class=\"icon icon-next\">\n        <use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"img/sprite.svg#icon-next\"></use>\n    </svg>"];
+
 // 
 (function () {})();
 
@@ -3274,6 +3277,32 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         var data = $(this).data('popup');
         popup = $(data);
         showPopup();
+
+        var slider = popup.find('.js-popup-slider');
+        if (slider.length) {
+            if (!slider.hasClass('inited')) {
+                slider.addClass('inited');
+
+                var current = popup.find('.js-popup-current'),
+                    all = popup.find('.js-popup-all'),
+                    slides = slider.find('> div').length;
+
+                current.text('1');
+                all.text(slides);
+
+                slider.owlCarousel({
+                    items: 1,
+                    nav: true,
+                    dots: false,
+                    navText: owlArrows,
+                    smartSpeed: 400
+                });
+
+                slider.on('changed.owl.carousel', function (event) {
+                    current.text(++event.item.index);
+                });
+            }
+        }
     });
 
     $('.js-popup-close').on('click touchstart', function (e) {

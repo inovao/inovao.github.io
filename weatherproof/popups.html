@@ -25,6 +25,22 @@
     <meta property="og:site_name" content="Site Name, i.e. Moz">
     <meta property="fb:admins" content="Facebook numeric ID">
     <link rel="stylesheet" media="all" href="css/app.css">
+    <script>
+      var viewportmeta = document.querySelector('meta[name="viewport"]');
+      if (viewportmeta)
+      {
+        if (screen.width <= 375)
+        {
+          var newScale = screen.width / 375;
+          viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', user-scalable=0, maximum-scale=1, initial-scale=' + newScale + '';
+        }
+        else
+        {
+          viewportmeta.content = 'width=device-width, maximum-scale=1.6, initial-scale=1.0';
+        }
+      }
+
+    </script>
   </head>
 
   <body>
@@ -68,6 +84,8 @@
           <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-job-here-1">Open Popup "Job here 1"</button></div>
           <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-job-here-2">Open Popup "Job here 2"</button></div>
           <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-contact">Open Popup "Contact"</button></div>
+          <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-why-metal">Open Popup "Why metal"</button></div>
+          <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-why-us">Open Popup "Why us"</button></div>
         </div>
       </div>
       <!-- popup job here 1-->
@@ -274,7 +292,7 @@
                           </a>
                         </div>
                         <div class="contacts__socials socials">
-                          <div class="socials__title">Följ oss!</div>
+                          <div class="socials__title"><strong>Följ oss!</strong></div>
                           <div class="socials__list"><a class="socials__item" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="socials__item" href="#"><svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg></a></div>
                         </div>
                       </div>
@@ -286,13 +304,183 @@
         </div>
       </div>
     </div>
+    <!-- popup why metal-->
+    <div class="popup popup_slider js-popup-why-metal">
+      <div class="popup__wrap js-popup-wrap"><button class="popup__close js-popup-close"><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button>
+        <div class="popup__body">
+          <div class="popup__slider">
+            <div class="popup__status"><span class="js-popup-current"></span>/<span class="js-popup-all"></span></div>
+            <div class="popup__owl owl-carousel owl-popup js-popup-slider">
+              <div class="slide">
+                <div class="slide__head">
+                  <div class="slide__title">Plåt är ett smart val</div>
+                  <div class="slide__subtitle">9 anledningar för att välja byggplåt.</div>
+                </div>
+                <div class="slide__text">
+                  <ul>
+                    <li><strong>Vädersäkert material</strong>
+                      <p>Utmärkt material för det skandinaviska klimatet. I storm, regn och rusk är risk för läckage på ditt hus minimalt.</p>
+                    </li>
+                    <li><strong>Varar en evighet</strong>
+                      <p>Med ett korrekt utfört arbete och underhåll så varar byggplåt i 80 - 100 år.</p>
+                    </li>
+                    <li><strong>Kreativ utformning</strong>
+                      <p>Urvalet av färger, material och former gör att varje klimatskal blir unikt.</p>
+                    </li>
+                    <li><strong>Miljövänligt material</strong>
+                      <p>Byggplåt är ett energismart material då den har en lång livscykel och en återvinningsgrad närmare 100%.</p>
+                    </li>
+                    <li><strong>Lätt vikt</strong>
+                      <p>Med tak och fasad i plåt blir påfrestningarna på den övriga konstruktionen mindre. Detta gör konstruktionen mer kostnadseffektiv.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__head">
+                  <div class="slide__title">Plåt är ett smart val</div>
+                  <div class="slide__subtitle">9 anledningar för att välja byggplåt.</div>
+                </div>
+                <div class="slide__text">
+                  <ul>
+                    <li><strong>Brandsäkert</strong>
+                      <p>Plåt har en minimal brandrisk tack vare dess metalliska egenskaper.</p>
+                    </li>
+                    <li><strong>Solceller + tak</strong>
+                      <p>Plåtkonstruktioner är väldigt kompatibelt med solcellspaneler.</p>
+                    </li>
+                    <li><strong>Utmärkt för låglutande tak</strong>
+                      <p>Plåten ger ett tätt ytskikt på låglutande tak. </p>
+                    </li>
+                    <li><strong>Säkerhet</strong>
+                      <p>Infästningen av plåt i tak-konstruktionen är väldigt bra och har därför en minimal fallrisk.</p>
+                    </li>
+                  </ul>
+                  <p>Kontakta oss för mer information, så pratar vi om hurvida takplåt eller fasadplåt är rätt för dig. </p>
+                </div>
+                <div class="slide__foot"><button class="slide__btn btn">Kontakta oss</button><button class="slide__btn btn btn_stroke">Stäng</button></div>
+              </div>
+            </div>
+            <div class="popup__logo"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- popup why us-->
+    <div class="popup popup_slider js-popup-why-us">
+      <div class="popup__wrap js-popup-wrap"><button class="popup__close js-popup-close"><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button>
+        <div class="popup__body">
+          <div class="popup__slider">
+            <div class="popup__status"><span class="js-popup-current"></span>/<span class="js-popup-all"></span></div>
+            <div class="popup__owl owl-carousel owl-popup js-popup-slider">
+              <div class="slide">
+                <div class="slide__head">
+                  <div class="slide__title">Allt inom plåt på ett <a href="#">ställe</a></div>
+                </div>
+                <div class="slide__text">
+                  <p>Weatherproof Family designar, tillverkar och monterar tak och fasader i plåt, och mycket mycket mer. Vi blir din enda kontaktpunkt som erbjuder dig allt inom plåt i ett byggprojekt. Det kan vara allt från dina skräddarsydda plåtdelar
+                    till tak - och fasadtjänster. Nedan kan du läsa de tjänster som vi utför:</p>
+                  <ul>
+                    <li>Skräddarsydda plåtprodukter - Vi tillverkar specialbeslag och plåtprodukter enligt dina önskemål.</li>
+                    <li>Metallegotillverkning</li>
+                    <li>Solcellsmontage</li>
+                    <li>Taksäkerhet</li>
+                    <li>Plåtarbeten inomhus</li>
+                    <li>Totalentreprenad</li>
+                  </ul>
+                  <p>Oavsett problemet, stort eller litet, så kan vi fixa det snabbt och på ett proffsigt sätt, vilket <a href="#">sparar tid, huvudvärk och till och med pengar.</a> <br>Kontakta oss här.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__head">
+                  <div class="slide__title">Du designar, vi tillverkar</div>
+                  <div class="slide__subtitle">Skräddarsydda plåtprodukter online</div>
+                </div>
+                <div class="slide__text">
+                  <p><strong>Vår övertygelse</strong> är att standardlösningar inte passar för alla situationer och kunder. Därför erbjuder vi dig skräddarsydda byggbeslag och tak - och fasadplåtslösningar i alla förekommande material såsom <a href="#">stål, rostfritt, aluminium, mässing, titanzink och plast.</a></p>
+                  <p>Vi tillverkar dina plåtprodukter enligt de <a href="#">måttangivelser och önskemål du har.</a> Med egen tillverkning säkerställer vi hög kvalité och säkra leveranstider.</p>
+                  <p><strong>Vi producerar för dig</strong></p>
+                  <ul>
+                    <li>Metallegotillverkning av tunnplåtsprodukter</li>
+                    <li>Skräddarsydda plåtprodukter - Skicka in dina ritningar</li>
+                    <li>Byggbeslag och mycket mycket mer.</li>
+                  </ul>
+                  <p>Med ett fåtal klick har du dina unika önskemål redo för produktion i vår moderna fabrik. <br><a href="#"> Läs mer här.</a></p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__head">
+                  <div class="slide__title">Kvalitétsgaranti &&nbsp;Service</div>
+                  <div class="slide__subtitle">Tryggt och prisvärt med Weatherproof Family</div>
+                </div>
+                <div class="slide__text">
+                  <p><strong>Privatperson, företagare, mamma, pappa eller mormor</strong> – Vi vill ge alla ett vädersäkert och underhållsfritt hem. Det är också därför vi erbjuder dig <a href="#">trygga och säkra</a> tak - och fasadtjänster.</p>
+                  <p>Du kommer märka att vi anstränger oss lite extra och lägger ner mycket omsorg i de små detaljerna. Det gör att våra produkt - och tjänsteutbud håller en hög nivå <a href="#">kvalitetsmässigt, har genomtänkta lösningar och är dessutom mycket prisvärda.</a></p>
+                  <p>Som bevis på vår höga produkt - och tjänstekvalité lämnar vi därför kvalitétsgaranti på alla utförda arbeten gjorda av oss.</p>
+                  <p><strong>Vad menar vi egentligen?</strong></p>
+                  <ul>
+                    <li>Kvalité är ett av våra tre kärnvärden. De två andra är service och professionalitet. Det innebär att vi tar alltid hand om dig på ett <a href="#">proffsigt och schysst sätt</a>, så att du kan vara en av alla våra nöjda kunder.</li>
+                    <li>Vi använder alltid världsledande plåtprodukter och leverantörer från start till färdig produkt.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__head">
+                  <div class="slide__title">Vädersäkert</div>
+                  <div class="slide__subtitle">Maximal livslängd och extremt väderbeständigt</div>
+                </div>
+                <div class="slide__text">
+                  <p><strong>Vid tillfällen</strong> när traditionella tak får läckage är ett tak från Weatherproof Family extremt vädersäkert. Det innebär att ett monterat tak av oss skyddar ditt hus från <a href="#">regn, storm och rusk under många, många år.</a></p>
+                  <img
+                    src="img/pic-2.svg" width="200" align="right">
+                    <p><strong>Våra produkter och tjänster</strong> är framtagna för att skydda ditt hus mot alla de tuffa påfrestningar som det skandinaviska klimatet innebär. Du kommer att märka att vi lägger mycket tid på de små detaljerna. Det är för
+                      att <a href="#">vi vet precis hur och varför</a> ett plåttak ska monteras för att bli vädersäkert året runt.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__head">
+                  <div class="slide__title">Enkelt & Transparent</div>
+                  <div class="slide__subtitle">Vi gör det enkelt att köpa skräddarsydda tak - och fasader</div>
+                </div>
+                <div class="slide__text">
+                  <p><strong>Vi vill att det ska vara enkelt</strong> för dig att köpa och ett snabbt och smidigt takmontage. Därför får du hjälp och guidning med allt från de minsta valen till de större övergripande besulten i byggprocessen. Med <a href="#">hög tillgänglighet och fortlöpande kommunikation</a>                    ser vi till att dina behov och önskemål blir uppfyllda.</p>
+                  <p><strong>Enkel & snabbt </strong></p>
+                  <p>Vi har alltid satsat mycket på en enkel och snabb installation. Vilket i början var en anledingen till att Weatherproof Family skapades! <br><a href="#">Läs mer om hur vi jobbar</a> </p>
+                  <p><strong>Tryggt med Fast Pris</strong></p>
+                  <p>Vi vill att våra kunder ska känna sig trygga med slutpriset för sina projekt. <br>För visst ska väl även hantverkare kunna förutse oväntade händelser. Det tycker iallafall vi på Weatherproof Family. Därför strävar vi alltid efter att
+                    leverera våra produkter och tjänster till fast pris på utsatt tid.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__head">
+                  <div class="slide__title">Totalentreprenad &&nbsp;Byggkonsultation</div>
+                  <div class="slide__subtitle">Skräddarsydda plåtprodukter online</div>
+                </div>
+                <div class="slide__text">
+                  <p><strong>Frågor? - Vi har svaren.</strong> <br>Vi finns där för dig när du behöver hjälp med allt som har med din byggnation att göra. <a href="#">Vi tar ansvar från start till färdigt projekt.</a></p>
+                  <p>Det innebär att vi hjälper dig med:</p>
+                  <ul>
+                    <li>Planering</li>
+                    <li>Ritningar</li>
+                    <li>Byggnation</li>
+                    <li>Tätskiktslösningar <a href="#">& mycket, mycket mer.</a></li>
+                  </ul>
+                  <p>Om du är minsta osäker på vilken entreprenadform som passar dina förutsättningar, kontakt oss så har vi ett första samtal och ser vad för förutsättningar ditt projekt har.</p>
+                </div>
+              </div>
+            </div>
+            <div class="popup__logo"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="section section_gray section_footer">
       <div class="section__center center center_lg">
         <footer class="footer">
           <div class="footer__top">
             <div class="footer__section">
               <div class="footer__about">
-                <div class="footer__map"><img class="footer__pic" src="img/map.svg" width="75"></div>
+                <div class="footer__map"><img class="footer__pic" src="img/map.svg" width="100"></div>
                 <div class="footer__wrap"><a class="footer__logo" href="#"></a>
                   <div class="footer__text">Weatherproof Family erbjuder effektiva tätskikts - tjänster för tak och fasad, med tillhörande tjänster för att skydda och bevara byggnader och infrastruktur. Vårt mål är att med bästa energi - och miljöresultat kunna erbjuda tätskitslösningar
                     som klarar marknadens alla behov, så att våra kunder kan njuta av trygghet i sin fastigheter.</div>
