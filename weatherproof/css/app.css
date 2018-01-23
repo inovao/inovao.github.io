@@ -1422,6 +1422,11 @@ a.btn {
   opacity: 1;
 }
 
+.projects__preview {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
 .projects__pic {
   display: block;
   width: 100%;
