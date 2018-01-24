@@ -3245,6 +3245,61 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     });
 })();
 
+// photos
+(function () {
+    var photos = $('.js-photos');
+    if (photos.length) {
+        $(window).scroll(function () {
+            var wnd = $(this),
+                scrollTop = wnd.scrollTop(),
+                wndHeight = wnd.height(),
+                photosTop = photos.offset().top;
+
+            if (scrollTop >= photosTop - wndHeight / 2) {
+                photos.addClass('visible');
+            }
+        });
+    }
+})();
+
+// photos
+(function () {
+    var works = $('.js-works');
+    if (works.length) {
+        var items = works.find('.js-works-item'),
+            close = works.find('.js-works-close'),
+            arrow = works.find('.js-works-arrow');
+
+        close.on('click', function (e) {
+            e.preventDefault();
+            $(this).parent().toggleClass('hide');
+        });
+
+        arrow.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $(window).height() - 5
+            }, 500);
+        });
+
+        $(window).scroll(function () {
+            var wnd = $(this),
+                scrollTop = wnd.scrollTop();
+
+            items.each(function () {
+                var item = $(this),
+                    posTop = item.offset().top;
+
+                if (scrollTop >= posTop) {
+                    item.addClass('active');
+                } else {
+                    item.removeClass('active');
+                }
+            });
+        });
+    }
+})();
+
 // section toggle
 (function () {
     var section = $('.js-section'),
