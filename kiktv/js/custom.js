@@ -54,7 +54,7 @@ $(window).on('load resize', hf);
 				}
 			},
 			{
-				breakpoint: 560,
+				breakpoint: 460,
 				settings: {
 					variableWidth: false,
 					slidesToShow: 1,
@@ -76,9 +76,9 @@ $(function(){
 	}
     $('.open-menu').click(function(){
     	
-    	$('.main-wrapper').addClass('menu-sidebar-open');
-    	$('.box-menu-sidebar').addClass('open');
-    	$('body').addClass('no-scroll');
+    	$('.main-wrapper').toggleClass('menu-sidebar-open');
+    	$('.box-menu-sidebar').toggleClass('open');
+    	$('body').toggleClass('no-scroll');
     	return false
     });
 
@@ -119,9 +119,15 @@ $(function(){
 		return false;
 	});
 
-	$('.js-open-search').click(function(){
-    	$(this).toggleClass('active');
-    	$('.search').slideToggle(400)
+	$('.js-open-search').toggle(function(){
+    	$(this).addClass('active');
+    	$('.search').slideDown(400)
+    	$('.content').animate({'margin-top': '56px'}, 400)
+    	return false;
+    }, function(){
+    	$(this).removeClass('active');
+    	$('.search').slideUp(400)
+    	$('.content').animate({'margin-top': '0px'}, 400)
     	return false;
     });
 	
@@ -316,7 +322,13 @@ $(function(){
 		$(id).removeClass('hide');
 		$(this).parent().addClass('active');
 		$('.channel-list-slider').slick('setPosition');
-		
+		if(id == '#kik-tabs_3') {
+			$('#v-replays').show();
+			$('#h-replays').hide();
+		} else {
+			$('#h-replays').show();
+			$('#v-replays').hide();
+		}
 		return false
 	});
 	//  Tabs
@@ -441,6 +453,13 @@ $slick_slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
 	var id = $(this).find('.slick-current a').attr('href');
 	$(id).removeClass('hide');
 	$(this).find('.slick-current').addClass('active');
+	if(id == '#kik-tabs_3') {
+		$('#v-replays').show();
+		$('#h-replays').hide();
+	} else {
+		$('#h-replays').show();
+		$('#v-replays').hide();
+	}
 	
 });
 $slick_slider.slick(settings);
