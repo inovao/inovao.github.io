@@ -990,6 +990,10 @@ button {
   color: #2ABFBF;
 }
 
+.orange {
+  color: #F5A623;
+}
+
 .center:not(.owl-item) {
   width: 100%;
   max-width: 1280px;
@@ -3231,10 +3235,22 @@ a.btn {
   left: 0;
   width: 100%;
   min-height: 100vh;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  perspective: 500px;
+  transform: translate3d(0, 0, 0);
+  overflow: hidden;
+  z-index: 4;
+}
+
+.works__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-position: 50% 50%;
   background-size: cover;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-  transform: translate3d(0, 0, 0);
+  z-index: -2;
 }
 
 .works__wrap {
@@ -3667,6 +3683,31 @@ a.btn {
 
 .docs__pic {
   max-width: 100%;
+}
+
+.join {
+  margin-top: 70px;
+  padding: 20px 20px 30px;
+  background-image: linear-gradient(135deg, #42A0A5 0%, #20676C 100%);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+}
+
+.join__title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.join__text {
+  margin-bottom: 20px;
+}
+
+.join__btn {
+  background: white;
+  border-color: white;
+  color: #2ABFBF;
 }
 
 .mobile-visible {

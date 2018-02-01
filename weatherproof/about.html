@@ -140,82 +140,84 @@
       </div>
       <div class="section section_gray section_contacts">
         <div class="section__center center">
-          <div class="section__row mobile-hidden">
-            <div class="section__col">
-              <div class="section__content">
-                <div class="section__theme"></div>
-                <div class="section__title">Varför välja <a href="#">Weatherproof Family?</a></div>
-                <div class="section__text">
-                  <p>Efter tusentals arbetstimmar med unika uppdrag inom byggbranschen vet vi precis <a href="#">vad, hur och varför</a> dagens vädersäkra fastigheter ska planeras, tillverkas och monteras för bästa resultat. Tillsammans med dig och dina
-                    önskemål tar vi ditt husprojekt till nästa nivå.</p>
-                  <p>Läs om <a href="#">6 anledningar</a> varför Weatherproof Family är ett smart val. </p>
-                </div><a class="section__link" href="#">Varför välja oss?<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg></a></div>
-            </div>
-            <div class="section__col">
-              <div class="section__quote">”Weatherproof Family står för - Vädersäkrat för vatten, vind, snö, is & storm”</div>
-            </div>
-          </div>
-          <div class="section__content section__content_center mobile-hidden">
-            <div class="section__theme">KONTAKTINFORMATION</div>
-            <div class="section__title">Ring, besök eller <a href="#">skicka mail till oss.</a></div>
-          </div>
-          <div class="section__contacts contacts contacts_section mobile-hidden">
-            <div class="contacts__row">
-              <div class="contacts__col">
-                <div class="contacts__map map" id="map"></div>
-                <script>
-                  function initMap()
-                  {
-                    var myLatLng = {
-                      lat: -25.363,
-                      lng: 131.044
-                    };
-                    var map = new google.maps.Map(document.getElementById('map'),
-                    {
-                      zoom: 14,
-                      center: myLatLng
-                    });
-                    var marker = new google.maps.Marker(
-                    {
-                      position: myLatLng,
-                      map: map,
-                    });
-                  }
-
-                </script>
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaTR54DQg3iCDju-I25nyfPLf3oP_MUDc&amp;callback=initMap"></script>
+          <div class="mobile-hidden">
+            <div class="section__row">
+              <div class="section__col">
+                <div class="section__content">
+                  <div class="section__theme"></div>
+                  <div class="section__title">Varför välja <a href="#">Weatherproof Family?</a></div>
+                  <div class="section__text">
+                    <p>Efter tusentals arbetstimmar med unika uppdrag inom byggbranschen vet vi precis <a href="#">vad, hur och varför</a> dagens vädersäkra fastigheter ska planeras, tillverkas och monteras för bästa resultat. Tillsammans med dig och dina
+                      önskemål tar vi ditt husprojekt till nästa nivå.</p>
+                    <p>Läs om <a href="#">6 anledningar</a> varför Weatherproof Family är ett smart val. </p>
+                  </div><a class="section__link" href="#">Varför välja oss?<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg></a></div>
               </div>
-              <div class="contacts__col">
-                <div class="contacts__head">Vi finns i <a href="#">Mölnlycke</a></div>
-                <div class="contacts__text">Weatherproof Family AB har sitt säte i&nbsp;Mölnlycke, och åtar sig uppdrag i&nbsp;hela skandinavien.</div>
-                <div class="contacts__list">
-                  <a class="contacts__item" href="tel:+46707462320">
-                    <div class="contacts__icon"><svg class="icon icon-phone-fill"><use xlink:href="img/sprite.svg#icon-phone-fill"></use></svg></div>
-                    <div class="contacts__title">+46 707 46 23 20</div>
-                  </a>
-                  <a class="contacts__item" href="mailto:info@weatherproof.se">
-                    <div class="contacts__icon"><svg class="icon icon-email-fill"><use xlink:href="img/sprite.svg#icon-email-fill"></use></svg></div>
-                    <div class="contacts__title">info@weatherproof.se</div>
-                  </a>
-                  <a class="contacts__item" href="#">
-                    <div class="contacts__icon"><svg class="icon icon-location"><use xlink:href="img/sprite.svg#icon-location"></use></svg></div>
-                    <div class="contacts__title">
-                      <p>Metallvägen 5, 43533 Mölnlycke, </p>
-                      <p>Västra Götaland, </p>
-                      <p>Sweden</p>
-                    </div>
-                  </a>
-                  <a class="contacts__item" href="#">
-                    <div class="contacts__icon"><svg class="icon icon-house"><use xlink:href="img/sprite.svg#icon-house"></use></svg></div>
-                    <div class="contacts__title">
-                      <p>Weatherproof Family AB</p>
-                      <p>Orgnr: 559064 - 3812</p>
-                    </div>
-                  </a>
+              <div class="section__col">
+                <div class="section__quote">”Weatherproof Family står för - Vädersäkrat för vatten, vind, snö, is & storm”</div>
+              </div>
+            </div>
+            <div class="section__content section__content_center">
+              <div class="section__theme">KONTAKTINFORMATION</div>
+              <div class="section__title">Ring, besök eller <a href="#">skicka mail till oss.</a></div>
+            </div>
+            <div class="section__contacts contacts contacts_section">
+              <div class="contacts__row">
+                <div class="contacts__col">
+                  <div class="contacts__map map" id="map"></div>
+                  <script>
+                    function initMap()
+                    {
+                      var myLatLng = {
+                        lat: -25.363,
+                        lng: 131.044
+                      };
+                      var map = new google.maps.Map(document.getElementById('map'),
+                      {
+                        zoom: 14,
+                        center: myLatLng
+                      });
+                      var marker = new google.maps.Marker(
+                      {
+                        position: myLatLng,
+                        map: map,
+                      });
+                    }
+
+                  </script>
+                  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaTR54DQg3iCDju-I25nyfPLf3oP_MUDc&amp;callback=initMap"></script>
                 </div>
-                <div class="contacts__socials socials">
-                  <div class="socials__title"><strong>Vill du kliva in bakom kulisserna?</strong> Klicka här:</div>
-                  <div class="socials__list"><a class="socials__item" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="socials__item" href="#"><svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg></a></div>
+                <div class="contacts__col">
+                  <div class="contacts__head">Vi finns i <a href="#">Mölnlycke</a></div>
+                  <div class="contacts__text">Weatherproof Family AB har sitt säte i&nbsp;Mölnlycke, och åtar sig uppdrag i&nbsp;hela skandinavien.</div>
+                  <div class="contacts__list">
+                    <a class="contacts__item" href="tel:+46707462320">
+                      <div class="contacts__icon"><svg class="icon icon-phone-fill"><use xlink:href="img/sprite.svg#icon-phone-fill"></use></svg></div>
+                      <div class="contacts__title">+46 707 46 23 20</div>
+                    </a>
+                    <a class="contacts__item" href="mailto:info@weatherproof.se">
+                      <div class="contacts__icon"><svg class="icon icon-email-fill"><use xlink:href="img/sprite.svg#icon-email-fill"></use></svg></div>
+                      <div class="contacts__title">info@weatherproof.se</div>
+                    </a>
+                    <a class="contacts__item" href="#">
+                      <div class="contacts__icon"><svg class="icon icon-location"><use xlink:href="img/sprite.svg#icon-location"></use></svg></div>
+                      <div class="contacts__title">
+                        <p>Metallvägen 5, 43533 Mölnlycke, </p>
+                        <p>Västra Götaland, </p>
+                        <p>Sweden</p>
+                      </div>
+                    </a>
+                    <a class="contacts__item" href="#">
+                      <div class="contacts__icon"><svg class="icon icon-house"><use xlink:href="img/sprite.svg#icon-house"></use></svg></div>
+                      <div class="contacts__title">
+                        <p>Weatherproof Family AB</p>
+                        <p>Orgnr: 559064 - 3812</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="contacts__socials socials">
+                    <div class="socials__title"><strong>Vill du kliva in bakom kulisserna?</strong> Klicka här:</div>
+                    <div class="socials__list"><a class="socials__item" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="socials__item" href="#"><svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg></a></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -228,10 +230,16 @@
             <div class="section__text">Skriv gärna till oss! Vi är öppna för <a href="#">nytänkande och kreativa lösningar.</a> <br>Vi är vänliga människor som skulle bli glada att få hjälpa till, eller bara få höra på dina tankar & idéer.</div>
             <div class="section__action"><button class="section__btn btn">Kontakta oss!</button></div>
           </div>
+          <div class="join mobile-visible">
+            <div class="join__title">
+              <p>VI <span class="orange">SÖKER</span></p>
+              <p>WEATHERPROOFERS </p>
+            </div>
+            <div class="join__text">Hos Weatherproof Family är det alltid din personlighet som är det viktigaste, vi söker dig med extremt driv, ambition och vilja att vara en del av ett äventyr.</div><a class="join__btn btn" href="#">JOIN US ></a></div>
         </div>
         <div class="section__bg"><img class="section__pic" src="img/pic-9.svg" width="590"></div>
       </div>
-      <div class="section">
+      <div class="section mobile-hidden">
         <div class="section__center center">
           <div class="section__content section__content_center section__content_mw section__content_m0">
             <div class="section__theme">ÄR DU EN WEATHERPROOFER?</div>

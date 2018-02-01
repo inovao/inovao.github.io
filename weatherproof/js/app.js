@@ -6276,10 +6276,12 @@ function _classCallCheck(t, e) {
 
             items.each(function () {
                 var item = $(this),
+                    itemHeight = item.height(),
                     posTop = item.offset().top;
 
                 if (scrollTop >= posTop) {
                     item.addClass('active');
+                    item.find('.js-works-bg').css('transform', 'translate3d(0, ' + (scrollTop - posTop) / 8 + 'px, ' + (scrollTop - posTop) / 8 + 'px)');
                 } else {
                     item.removeClass('active');
                 }
