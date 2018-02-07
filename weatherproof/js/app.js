@@ -6294,13 +6294,21 @@ function _classCallCheck(t, e) {
 (function () {
     var section = $('.js-section'),
         wrap = section.find('.js-section-wrap'),
-        toggle = section.find('.js-section-toggle');
+        toggle = section.find('.js-section-toggle'),
+        scrollTop = 0;
 
     toggle.on('click', function (e) {
         e.preventDefault();
 
-        toggle.toggleClass('active');
-        wrap.slideToggle();
+        if (!toggle.hasClass('active')) {
+            toggle.addClass('active');
+            wrap.show();
+            scrollTop = $(window).scrollTop();
+        } else {
+            toggle.removeClass('active');
+            wrap.hide();
+            $(window).scrollTop(scrollTop);
+        }
     });
 })();
 
@@ -6503,6 +6511,29 @@ var owlArrows = ["<svg class=\"icon icon-prev\">\n        <use xmlns:xlink=\"htt
         carousel.each(function () {
             $(this).carousel({
                 indicators: true
+            });
+        });
+    }
+})();
+
+// slider css
+(function () {
+    var slider = $('.js-slider-css');
+    if (slider.length) {
+        var getMaxItemHeight = function getMaxItemHeight(content) {
+            var maxHeight = Math.max.apply(null, content.map(function () {
+                return $(this).height();
+            }).get());
+            content.css('height', maxHeight);
+        };
+
+        slider.each(function () {
+            var content = $(this).find('.js-slider-content');
+
+            getMaxItemHeight(content);
+
+            $(window).resize(function () {
+                getMaxItemHeight(content);
             });
         });
     }
