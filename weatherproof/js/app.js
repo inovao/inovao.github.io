@@ -6521,20 +6521,120 @@ var owlArrows = ["<svg class=\"icon icon-prev\">\n        <use xmlns:xlink=\"htt
     var slider = $('.js-slider-css');
     if (slider.length) {
         var getMaxItemHeight = function getMaxItemHeight(content) {
-            var maxHeight = Math.max.apply(null, content.map(function () {
-                return $(this).height();
-            }).get());
-            content.css('height', maxHeight);
+            content.height('auto');
+            setTimeout(function () {
+                var maxHeight = Math.max.apply(null, content.map(function () {
+                    return $(this).height();
+                }).get());
+                content.css('height', maxHeight);
+            }, 500);
         };
 
         slider.each(function () {
-            var content = $(this).find('.js-slider-content');
+            var _this = $(this),
+                content = _this.find('.js-slider-content'),
+                prev = _this.find('.js-slider-prev'),
+                next = _this.find('.js-slider-next');
 
             getMaxItemHeight(content);
 
             $(window).resize(function () {
                 getMaxItemHeight(content);
             });
+
+            next.on('click', function (e) {
+                e.preventDefault();
+                var activeInput = _this.find('input[type="radio"]:checked'),
+                    nextInput = activeInput.next('input');
+                if (nextInput.length) {
+                    activeInput.removeAttr('checked');
+                    nextInput.attr('checked', true);
+                }
+                if (nextInput.next('input').length) {
+                    prev.removeClass('disabled');
+                } else {
+                    next.addClass('disabled');
+                }
+            });
+
+            prev.on('click', function (e) {
+                e.preventDefault();
+                var activeInput = _this.find('input[type="radio"]:checked'),
+                    prevInput = activeInput.prev('input');
+                if (prevInput.length) {
+                    activeInput.removeAttr('checked');
+                    prevInput.attr('checked', true);
+                }
+                if (prevInput.prev('input').length) {
+                    next.removeClass('disabled');
+                } else {
+                    prev.addClass('disabled');
+                }
+            });
         });
+    }
+})();
+
+// scroll animate
+(function () {
+    var anim = $('[data-animate]');
+    if (anim.length) {
+        var wnd = $(window),
+            screenBlocks = [];
+
+        anim.each(function () {
+            var _this = $(this);
+
+            wnd.scroll(function () {
+                animateBlocks();
+            });
+
+            // animation for visble blocks
+            var posTop = _this.offset().top,
+                posScroll = wnd.scrollTop(),
+                wndHeight = wnd.height();
+
+            if (posScroll + wndHeight >= posTop) {
+                screenBlocks.push(_this);
+            };
+
+            function animateBlocks() {
+                var posTop = _this.offset().top,
+                    posScroll = wnd.scrollTop(),
+                    wndHeight = wnd.height(),
+                    delay = 0,
+                    delayTime = 200,
+                    dataAnimate = _this.data('animate');
+
+                if (dataAnimate != '') {
+                    delay = (dataAnimate + 1) * delayTime;
+                } else {
+                    dataAnimate = 1;
+                    delay = dataAnimate * delayTime;
+                }
+
+                setTimeout(function () {
+                    if (posScroll + wndHeight >= posTop) {
+                        _this.addClass('animated');
+
+                        setTimeout(function () {
+                            _this.addClass('done');
+                        }, 1000);
+                    };
+                }, delay);
+            }
+        });
+
+        setTimeout(function () {
+            var count = 0;
+            var intrvl = setInterval(function () {
+                if (count < screenBlocks.length) {
+                    screenBlocks[count].addClass('animated');
+                    count++;
+                } else {
+                    clearInterval(intrvl);
+                }
+            }, 100);
+        }, 400);
     }
 })();
