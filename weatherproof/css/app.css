@@ -7005,6 +7005,10 @@ button {
   color: #F5A623;
 }
 
+.lh-18 {
+  line-height: 1.8;
+}
+
 .center:not(.owl-item) {
   width: 100%;
   max-width: 1280px;
@@ -8261,6 +8265,11 @@ a.btn {
 .section_story .section__bg {
   top: 210px;
   left: calc(50% - 800px);
+}
+
+.section_memories .section__bg {
+  top: 980px;
+  left: calc(50% - 700px);
 }
 
 .widget {
