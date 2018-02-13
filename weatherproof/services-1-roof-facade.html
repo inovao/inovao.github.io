@@ -45,7 +45,7 @@
 
   <body>
     <div class="outer js-outer">
-      <header class="header js-header">
+      <header class="header fixed">
         <div class="header__container">
           <div class="header__center center"><a class="header__logo" href="#">weatherproff family</a>
             <div class="header__wrap js-header-wrap">
@@ -71,7 +71,8 @@
             </div><button class="header__menu js-header-menu"><svg class="icon icon-menu"><use xlink:href="img/sprite.svg#icon-menu"></use></svg><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button></div>
         </div>
       </header>
-      <div class="main" style="background-image: url(img/bg-1.jpg);">
+      <div class="main main_down main_no_full js-main">
+        <div class="main__bg js-main-bg" style="background-image: url(img/bg-1.jpg);"></div>
         <div class="main__center center">
           <div class="main__wrap main__wrap_center_mob">
             <div class="main__title main__title_custom" data-animate>Tak & Fasadtjänster</div>
@@ -350,7 +351,7 @@
           </div>
         </footer>
       </div>
-    </div><button class="btn btn_fixed">Kontakta oss</button></div>
+    </div><button class="btn btn_fixed btn_shake">Kontakta oss</button></div>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 

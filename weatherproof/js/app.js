@@ -6250,6 +6250,24 @@ function _classCallCheck(t, e) {
     }
 })();
 
+// main bg
+(function () {
+    var main = $('.js-main');
+    if (main.length) {
+        var bg = main.find('.js-main-bg');
+
+        $(window).scroll(function () {
+            var wnd = $(this),
+                scrollTop = wnd.scrollTop(),
+                posTop = main.offset().top;
+
+            if (scrollTop >= posTop) {
+                bg.css('transform', 'translate3d(0, ' + (scrollTop - posTop) / 2 + 'px, ' + (scrollTop - posTop) / 2 + 'px)');
+            }
+        });
+    }
+})();
+
 // photos
 (function () {
     var works = $('.js-works');
