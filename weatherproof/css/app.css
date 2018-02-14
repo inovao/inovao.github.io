@@ -7026,33 +7026,6 @@ button {
   background: #2ABFBF;
 }
 
-@keyframes shake-bottom {
-  0%,
-  100% {
-    transform: rotate(0deg);
-    transform-origin: 50% 100%;
-  }
-  10% {
-    transform: rotate(2deg);
-  }
-  20%,
-  40%,
-  60% {
-    transform: rotate(-4deg);
-  }
-  30%,
-  50%,
-  70% {
-    transform: rotate(4deg);
-  }
-  80% {
-    transform: rotate(-2deg);
-  }
-  90% {
-    transform: rotate(2deg);
-  }
-}
-
 .btn {
   padding: 10px 20px;
   background: #2ABFBF;
@@ -7123,7 +7096,25 @@ button {
 }
 
 .btn_shake {
-  animation: shake-bottom 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  animation: btnWiggle 5s infinite;
+}
+
+@keyframes btnWiggle {
+  0% {
+    transform: rotate(0);
+  }
+  2% {
+    transform: rotate(-1deg);
+  }
+  3.5% {
+    transform: rotate(1deg);
+  }
+  5% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 a.btn {

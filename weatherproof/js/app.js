@@ -6313,17 +6313,22 @@ function _classCallCheck(t, e) {
     var section = $('.js-section'),
         wrap = section.find('.js-section-wrap'),
         toggle = section.find('.js-section-toggle'),
-        scrollTop = 0;
+        toggleSpan = toggle.find('span'),
+        textHide = toggleSpan.data('text'),
+        textShow = toggleSpan.text();
+    scrollTop = 0;
 
     toggle.on('click', function (e) {
         e.preventDefault();
 
         if (!toggle.hasClass('active')) {
             toggle.addClass('active');
+            toggleSpan.text(textHide);
             wrap.show();
             scrollTop = $(window).scrollTop();
         } else {
             toggle.removeClass('active');
+            toggleSpan.text(textShow);
             wrap.hide();
             $(window).scrollTop(scrollTop);
         }
