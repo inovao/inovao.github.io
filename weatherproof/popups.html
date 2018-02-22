@@ -47,7 +47,7 @@
     <div class="outer js-outer">
       <header class="header fixed">
         <div class="header__container">
-          <div class="header__center center"><a class="header__logo" href="#">weatherproff family</a>
+          <div class="header__center center"><a class="header__logo" href="#">weatherproff family<div class="header__name">Back to Home</div></a>
             <div class="header__wrap js-header-wrap">
               <div class="header__top">
                 <a class="header__contact" href="tel:0707462320">
@@ -60,18 +60,28 @@
                 </a>
                 <div class="header__socials"><a class="header__social" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="header__social" href="#"><svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg></a></div>
               </div>
-              <div class="header__nav"><a class="header__link" href="#">Tjänster</a><a class="header__link" href="#">Produkter</a><a class="header__link" href="#">Uppdrag</a><a class="header__link" href="#">Om oss</a><a class="header__link" href="#">Nyheter</a><a class="header__link header__link_border"
-                  href="#">Onlineverktyg</a></div>
-              <div class="header__lang lang">
-                <div class="lang__head">Sv</div>
-                <div class="lang__drop">
-                  <div class="lang__list"><a class="lang__item" href="#">En</a><a class="lang__item" href="#">Fi</a><a class="lang__item" href="#">Cn</a></div>
+              <div class="header__nav"><a class="header__link" href="#">Tjänster</a><a class="header__link" href="#">Produkter</a><a class="header__link" href="#">Uppdrag</a><a class="header__link" href="#">Om oss</a><a class="header__link" href="#">Nyheter</a></div>
+              <div class="header__dropdown dropdown dropdown_online mobile-hidden">
+                <div class="dropdown__head">Onlineverktyg</div>
+                <div class="dropdown__drop">
+                  <div class="dropdown__list"><a class="dropdown__item" href="#">Färgväljare</a><a class="dropdown__item" href="#">Räkna på mitt hus</a><a class="dropdown__item" href="#">Beställ skräddarsydda plåtprodukt</a></div>
+                </div>
+              </div>
+              <div class="header__actions"><a class="btn" href="#">Kontakta oss</a><a class="btn" href="#">Räkna på mitt hus</a><a class="btn" href="#">Skicka in din plåtbeställning</a></div>
+              <div class="header__dropdown dropdown">
+                <div class="dropdown__head">Sv</div>
+                <div class="dropdown__drop">
+                  <div class="dropdown__list"><a class="dropdown__item" href="#">En</a><a class="dropdown__item" href="#">Fi</a><a class="dropdown__item" href="#">Cn</a></div>
                 </div>
               </div>
             </div><button class="header__menu js-header-menu"><svg class="icon icon-menu"><use xlink:href="img/sprite.svg#icon-menu"></use></svg><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button></div>
         </div>
       </header>
-      <div class="main main_no_full js-main">
+      <div class="feedback js-feedback"><a class="feedback__link" href="#"><svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg></a><a class="feedback__link" href="#"><svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg></a>
+        <a
+          class="feedback__link" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="feedback__btn js-feedback-btn" href="#"><svg class="icon icon-dots"><use xlink:href="img/sprite.svg#icon-dots"></use></svg></a></div>
+      <div
+        class="main main_no_full js-main">
         <div class="main__bg js-main-bg" style="background-image: url(img/bg-1.jpg);"></div>
         <div class="main__center center">
           <div class="main__wrap">
@@ -79,231 +89,234 @@
             <div class="main__title">TAK - & FASADTJÄNSTER</div>
             <div class="main__text">...och mycket mycket mer. Vi skapar vädersäkra hus åt företag, organisationer och husägare som vill lite mer. </div><button class="main__btn"><span class="main__action">BOKA KOSTNADSFRI KONSULTATION</span><span class="main__label">Vi besöker dig och kalkylerar en offert för ditt projekt</span></button></div>
         </div>
-      </div>
-      <div class="section">
-        <div class="section__center center">
-          <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-job-here-1">Open Popup "Job here 1"</button></div>
-          <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-job-here-2">Open Popup "Job here 2"</button></div>
-          <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-contact">Open Popup "Contact"</button></div>
-          <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-why-metal">Open Popup "Why metal"</button></div>
-          <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-why-us">Open Popup "Why us"</button></div>
+        <div class="main__scroll scroll"><svg class="icon icon-arrow-toggle"><use xlink:href="img/sprite.svg#icon-arrow-toggle"></use></svg>
+          <div class="scroll__title">Scroll down</div>
         </div>
+    </div>
+    <div class="section">
+      <div class="section__center center">
+        <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-job-here-1">Open Popup "Job here 1"</button></div>
+        <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-job-here-2">Open Popup "Job here 2"</button></div>
+        <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-contact">Open Popup "Contact"</button></div>
+        <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-why-metal">Open Popup "Why metal"</button></div>
+        <div style="margin-bottom: 20px;"><button class="btn" data-popup=".js-popup-why-us">Open Popup "Why us"</button></div>
       </div>
-      <!-- popup job here 1-->
-      <div class="popup js-popup-job-here-1">
-        <div class="popup__wrap js-popup-wrap"><button class="popup__close js-popup-close"><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button>
-          <div class="popup__head">
-            <div class="popup__title">
-              <p>Vi ser fram emot att få <a href="#">träffa dig.</a></p>
-              <p>Tillsammans med dig vill vi bli bäst.</p>
-            </div>
-            <div class="popup__text">Först vill vi gör dig uppmärksam på vad Weatherproof Family tycker att en bra arbetsplats är.</div>
+    </div>
+    <!-- popup job here 1-->
+    <div class="popup js-popup-job-here-1">
+      <div class="popup__wrap js-popup-wrap"><button class="popup__close js-popup-close"><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button>
+        <div class="popup__head">
+          <div class="popup__title">
+            <p>Vi ser fram emot att få <a href="#">träffa dig.</a></p>
+            <p>Tillsammans med dig vill vi bli bäst.</p>
           </div>
-          <div class="popup__body">
-            <div class="popup__content">
-              <p><strong>Weatherproof Family anser att en bra arbetsplats är där: </strong></p>
-              <ul>
-                <li>Där du repsekteras och inkluderas i det dagliga arbetsuppgifterna.</li>
-                <li>Där dina idéer blir tagna på allvar.</li>
-                <li>Där du får rätt förutsättningar för att göra ett bra arbete. </li>
-                <li>Där du får chansen att växa och ha kul.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="popup__foot">
-            <div class="popup__text">
-              <p>Vi siktar på att bli bäst på vårt område.</p>
-              <p>Slutar vi sträva efter att bli bättre, slutar vi snabbt att vara bra.</p>
-            </div><button class="popup__btn btn">Ansök nu</button></div>
+          <div class="popup__text">Först vill vi gör dig uppmärksam på vad Weatherproof Family tycker att en bra arbetsplats är.</div>
         </div>
-      </div>
-      <!-- popup job here 2-->
-      <div class="popup js-popup-job-here-2">
-        <div class="popup__wrap js-popup-wrap"><button class="popup__close js-popup-close"><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button>
-          <div class="popup__head">
-            <div class="popup__title">Vi vill veta mer om dig.</div>
-            <div class="popup__text">Fyll i dina uppgifter nedan så återkommer vi på Weatherproof Family snart.</div>
+        <div class="popup__body">
+          <div class="popup__content">
+            <p><strong>Weatherproof Family anser att en bra arbetsplats är där: </strong></p>
+            <ul>
+              <li>Där du repsekteras och inkluderas i det dagliga arbetsuppgifterna.</li>
+              <li>Där dina idéer blir tagna på allvar.</li>
+              <li>Där du får rätt förutsättningar för att göra ett bra arbete. </li>
+              <li>Där du får chansen att växa och ha kul.</li>
+            </ul>
           </div>
-          <div class="popup__body">
-            <div class="form">
-              <div class="form__title">Vem är du?</div>
-              <div class="form__group">
-                <div class="form__field field">
-                  <div class="field__label">
-                    <div class="field__icon"><svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg></div>
-                    <div class="field__title">Förnamn</div>
-                  </div>
-                  <div class="field__wrap"><input class="field__input" type="text"></div>
+        </div>
+        <div class="popup__foot">
+          <div class="popup__text">
+            <p>Vi siktar på att bli bäst på vårt område.</p>
+            <p>Slutar vi sträva efter att bli bättre, slutar vi snabbt att vara bra.</p>
+          </div><button class="popup__btn btn">Ansök nu</button></div>
+      </div>
+    </div>
+    <!-- popup job here 2-->
+    <div class="popup js-popup-job-here-2">
+      <div class="popup__wrap js-popup-wrap"><button class="popup__close js-popup-close"><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button>
+        <div class="popup__head">
+          <div class="popup__title">Vi vill veta mer om dig.</div>
+          <div class="popup__text">Fyll i dina uppgifter nedan så återkommer vi på Weatherproof Family snart.</div>
+        </div>
+        <div class="popup__body">
+          <div class="form">
+            <div class="form__title">Vem är du?</div>
+            <div class="form__group">
+              <div class="form__field field">
+                <div class="field__label">
+                  <div class="field__icon"><svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg></div>
+                  <div class="field__title">Förnamn</div>
                 </div>
-                <div class="form__field field">
-                  <div class="field__label">
-                    <div class="field__icon"><svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg></div>
-                    <div class="field__title">Efternamn</div>
-                  </div>
-                  <div class="field__wrap"><input class="field__input" type="text"></div>
-                </div>
-                <div class="form__field field">
-                  <div class="field__label">
-                    <div class="field__icon"><svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg></div>
-                    <div class="field__title">Din E - postadress</div>
-                  </div>
-                  <div class="field__wrap"><input class="field__input" type="email"></div>
-                </div>
-                <div class="form__field field">
-                  <div class="field__label">
-                    <div class="field__icon"><svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg></div>
-                    <div class="field__title">Ditt telefonnummer</div>
-                  </div>
-                  <div class="field__wrap"><input class="field__input" type="text"></div>
-                </div>
+                <div class="field__wrap"><input class="field__input" type="text"></div>
               </div>
-              <div class="form__title">Kort presentation om dig.</div>
+              <div class="form__field field">
+                <div class="field__label">
+                  <div class="field__icon"><svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg></div>
+                  <div class="field__title">Efternamn</div>
+                </div>
+                <div class="field__wrap"><input class="field__input" type="text"></div>
+              </div>
               <div class="form__field field">
                 <div class="field__label">
                   <div class="field__icon"><svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg></div>
-                  <div class="field__title">Mitt Meddelande</div>
+                  <div class="field__title">Din E - postadress</div>
                 </div>
-                <div class="field__wrap"><textarea class="field__textarea"></textarea></div>
+                <div class="field__wrap"><input class="field__input" type="email"></div>
               </div>
-              <div class="form__file file">Lägg till Cv<input class="file__input" type="file"></div>
-              <div class="form__foot"><button class="form__btn btn">SKICKA IN</button></div>
+              <div class="form__field field">
+                <div class="field__label">
+                  <div class="field__icon"><svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg></div>
+                  <div class="field__title">Ditt telefonnummer</div>
+                </div>
+                <div class="field__wrap"><input class="field__input" type="text"></div>
+              </div>
             </div>
+            <div class="form__title">Kort presentation om dig.</div>
+            <div class="form__field field">
+              <div class="field__label">
+                <div class="field__icon"><svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg></div>
+                <div class="field__title">Mitt Meddelande</div>
+              </div>
+              <div class="field__wrap"><textarea class="field__textarea"></textarea></div>
+            </div>
+            <div class="form__file file">Lägg till Cv<input class="file__input" type="file"></div>
+            <div class="form__foot"><button class="form__btn btn">SKICKA IN</button></div>
           </div>
         </div>
       </div>
-      <!-- popup contact-->
-      <div class="popup js-popup-contact">
-        <div class="popup__wrap js-popup-wrap"><button class="popup__close js-popup-close"><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button>
-          <div class="popup__head">
-            <div class="popup__title">Hej! Härligt att du har hittat hit.</div>
-            <div class="popup__text">Vi ser fram emot att höra från dig. Fyll i dina uppgifter nedan så återkommer vi från Weatherproof Family snart.</div>
-          </div>
-          <div class="popup__body">
-            <div class="tabs js-tabs">
-              <div class="tabs__nav"><button class="tabs__btn btn btn_stroke js-tabs-btn active">Personligt meddelande</button><button class="tabs__btn btn btn_stroke js-tabs-btn">Boka gratis konsultation</button><button class="tabs__btn btn btn_stroke js-tabs-btn js-map-resize">Kontaktuppgifter</button></div>
-              <div
-                class="tabs__wrap">
-                <div class="tabs__item js-tabs-item" style="display: block;">
-                  <div class="form">
-                    <div class="form__title">Vem är du?</div>
-                    <div class="form__group">
-                      <div class="form__field field">
-                        <div class="field__label">
-                          <div class="field__icon"><svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg></div>
-                          <div class="field__title">Namn</div>
-                        </div>
-                        <div class="field__wrap"><input class="field__input" type="text"></div>
+    </div>
+    <!-- popup contact-->
+    <div class="popup js-popup-contact">
+      <div class="popup__wrap js-popup-wrap"><button class="popup__close js-popup-close"><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button>
+        <div class="popup__head">
+          <div class="popup__title">Hej! Härligt att du har hittat hit.</div>
+          <div class="popup__text">Vi ser fram emot att höra från dig. Fyll i dina uppgifter nedan så återkommer vi från Weatherproof Family snart.</div>
+        </div>
+        <div class="popup__body">
+          <div class="tabs js-tabs">
+            <div class="tabs__nav"><button class="tabs__btn btn btn_stroke js-tabs-btn active">Personligt meddelande</button><button class="tabs__btn btn btn_stroke js-tabs-btn">Boka gratis konsultation</button><button class="tabs__btn btn btn_stroke js-tabs-btn js-map-resize">Kontaktuppgifter</button></div>
+            <div
+              class="tabs__wrap">
+              <div class="tabs__item js-tabs-item" style="display: block;">
+                <div class="form">
+                  <div class="form__title">Vem är du?</div>
+                  <div class="form__group">
+                    <div class="form__field field">
+                      <div class="field__label">
+                        <div class="field__icon"><svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg></div>
+                        <div class="field__title">Namn</div>
                       </div>
-                      <div class="form__field field">
-                        <div class="field__label">
-                          <div class="field__icon"><svg class="icon icon-house-stroke"><use xlink:href="img/sprite.svg#icon-house-stroke"></use></svg></div>
-                          <div class="field__title">Företag</div>
-                        </div>
-                        <div class="field__wrap"><input class="field__input" type="text"></div>
-                      </div>
-                      <div class="form__field field">
-                        <div class="field__label">
-                          <div class="field__icon"><svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg></div>
-                          <div class="field__title">Min E - postadress</div>
-                        </div>
-                        <div class="field__wrap"><input class="field__input" type="email"></div>
-                      </div>
-                      <div class="form__field field">
-                        <div class="field__label">
-                          <div class="field__icon"><svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg></div>
-                          <div class="field__title">Mitt telefonnummer</div>
-                        </div>
-                        <div class="field__wrap"><input class="field__input" type="text"></div>
-                      </div>
+                      <div class="field__wrap"><input class="field__input" type="text"></div>
                     </div>
-                    <div class="form__title">Kort presentation om dig.</div>
+                    <div class="form__field field">
+                      <div class="field__label">
+                        <div class="field__icon"><svg class="icon icon-house-stroke"><use xlink:href="img/sprite.svg#icon-house-stroke"></use></svg></div>
+                        <div class="field__title">Företag</div>
+                      </div>
+                      <div class="field__wrap"><input class="field__input" type="text"></div>
+                    </div>
                     <div class="form__field field">
                       <div class="field__label">
                         <div class="field__icon"><svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg></div>
-                        <div class="field__title">Mitt Meddelande</div>
+                        <div class="field__title">Min E - postadress</div>
                       </div>
-                      <div class="field__wrap"><textarea class="field__textarea"></textarea></div>
+                      <div class="field__wrap"><input class="field__input" type="email"></div>
                     </div>
-                    <div class="form__file file">Lägg till Cv<input class="file__input" type="file"></div>
-                    <div class="form__foot"><button class="form__btn btn">SKICKA IN</button></div>
+                    <div class="form__field field">
+                      <div class="field__label">
+                        <div class="field__icon"><svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg></div>
+                        <div class="field__title">Mitt telefonnummer</div>
+                      </div>
+                      <div class="field__wrap"><input class="field__input" type="text"></div>
+                    </div>
                   </div>
+                  <div class="form__title">Kort presentation om dig.</div>
+                  <div class="form__field field">
+                    <div class="field__label">
+                      <div class="field__icon"><svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg></div>
+                      <div class="field__title">Mitt Meddelande</div>
+                    </div>
+                    <div class="field__wrap"><textarea class="field__textarea"></textarea></div>
+                  </div>
+                  <div class="form__file file">Lägg till Cv<input class="file__input" type="file"></div>
+                  <div class="form__foot"><button class="form__btn btn">SKICKA IN</button></div>
                 </div>
-                <div class="tabs__item js-tabs-item">Calendly or a similar service for book a meeting.</div>
-                <div class="tabs__item js-tabs-item">
-                  <div class="contacts">
-                    <div class="contacts__row">
-                      <div class="contacts__col">
-                        <div class="contacts__map map" id="map"></div>
-                        <script>
-                          function initMap()
+              </div>
+              <div class="tabs__item js-tabs-item">Calendly or a similar service for book a meeting.</div>
+              <div class="tabs__item js-tabs-item">
+                <div class="contacts">
+                  <div class="contacts__row">
+                    <div class="contacts__col">
+                      <div class="contacts__map map" id="map"></div>
+                      <script>
+                        function initMap()
+                        {
+                          var myLatLng = {
+                            lat: -25.363,
+                            lng: 131.044
+                          };
+                          var map = new google.maps.Map(document.getElementById('map'),
                           {
-                            var myLatLng = {
-                              lat: -25.363,
-                              lng: 131.044
-                            };
-                            var map = new google.maps.Map(document.getElementById('map'),
+                            zoom: 14,
+                            center: myLatLng
+                          });
+                          var marker = new google.maps.Marker(
+                          {
+                            position: myLatLng,
+                            map: map,
+                          });
+                          document.getElementsByClassName('js-map-resize')[0].onclick = function()
+                          {
+                            setTimeout(function()
                             {
-                              zoom: 14,
-                              center: myLatLng
-                            });
-                            var marker = new google.maps.Marker(
-                            {
-                              position: myLatLng,
-                              map: map,
-                            });
-                            document.getElementsByClassName('js-map-resize')[0].onclick = function()
-                            {
-                              setTimeout(function()
-                              {
-                                google.maps.event.trigger(map, 'resize');
-                                map.setCenter(myLatLng);
-                              }, 500);
-                            };
-                          }
+                              google.maps.event.trigger(map, 'resize');
+                              map.setCenter(myLatLng);
+                            }, 500);
+                          };
+                        }
 
-                        </script>
-                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaTR54DQg3iCDju-I25nyfPLf3oP_MUDc&amp;callback=initMap"></script>
+                      </script>
+                      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaTR54DQg3iCDju-I25nyfPLf3oP_MUDc&amp;callback=initMap"></script>
+                    </div>
+                    <div class="contacts__col">
+                      <div class="contacts__head">Vi finns i <a href="#">Mölnlycke</a></div>
+                      <div class="contacts__text">Weatherproof Family AB har sitt säte i&nbsp;Mölnlycke, och åtar sig uppdrag i&nbsp;hela skandinavien.</div>
+                      <div class="contacts__list">
+                        <a class="contacts__item" href="tel:+46707462320">
+                          <div class="contacts__icon"><svg class="icon icon-phone-fill"><use xlink:href="img/sprite.svg#icon-phone-fill"></use></svg></div>
+                          <div class="contacts__title">+46 707 46 23 20</div>
+                        </a>
+                        <a class="contacts__item" href="mailto:info@weatherproof.se">
+                          <div class="contacts__icon"><svg class="icon icon-email-fill"><use xlink:href="img/sprite.svg#icon-email-fill"></use></svg></div>
+                          <div class="contacts__title">info@weatherproof.se</div>
+                        </a>
+                        <a class="contacts__item" href="#">
+                          <div class="contacts__icon"><svg class="icon icon-location"><use xlink:href="img/sprite.svg#icon-location"></use></svg></div>
+                          <div class="contacts__title">
+                            <p>Metallvägen 5, 43533 Mölnlycke, </p>
+                            <p>Västra Götaland, </p>
+                            <p>Sweden</p>
+                          </div>
+                        </a>
+                        <a class="contacts__item" href="#">
+                          <div class="contacts__icon"><svg class="icon icon-house"><use xlink:href="img/sprite.svg#icon-house"></use></svg></div>
+                          <div class="contacts__title">
+                            <p>Weatherproof Family AB</p>
+                            <p>Orgnr: 559064 - 3812</p>
+                          </div>
+                        </a>
                       </div>
-                      <div class="contacts__col">
-                        <div class="contacts__head">Vi finns i <a href="#">Mölnlycke</a></div>
-                        <div class="contacts__text">Weatherproof Family AB har sitt säte i&nbsp;Mölnlycke, och åtar sig uppdrag i&nbsp;hela skandinavien.</div>
-                        <div class="contacts__list">
-                          <a class="contacts__item" href="tel:+46707462320">
-                            <div class="contacts__icon"><svg class="icon icon-phone-fill"><use xlink:href="img/sprite.svg#icon-phone-fill"></use></svg></div>
-                            <div class="contacts__title">+46 707 46 23 20</div>
-                          </a>
-                          <a class="contacts__item" href="mailto:info@weatherproof.se">
-                            <div class="contacts__icon"><svg class="icon icon-email-fill"><use xlink:href="img/sprite.svg#icon-email-fill"></use></svg></div>
-                            <div class="contacts__title">info@weatherproof.se</div>
-                          </a>
-                          <a class="contacts__item" href="#">
-                            <div class="contacts__icon"><svg class="icon icon-location"><use xlink:href="img/sprite.svg#icon-location"></use></svg></div>
-                            <div class="contacts__title">
-                              <p>Metallvägen 5, 43533 Mölnlycke, </p>
-                              <p>Västra Götaland, </p>
-                              <p>Sweden</p>
-                            </div>
-                          </a>
-                          <a class="contacts__item" href="#">
-                            <div class="contacts__icon"><svg class="icon icon-house"><use xlink:href="img/sprite.svg#icon-house"></use></svg></div>
-                            <div class="contacts__title">
-                              <p>Weatherproof Family AB</p>
-                              <p>Orgnr: 559064 - 3812</p>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="contacts__socials socials">
-                          <div class="socials__title"><strong>Följ oss!</strong></div>
-                          <div class="socials__list"><a class="socials__item" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="socials__item" href="#"><svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg></a></div>
-                        </div>
+                      <div class="contacts__socials socials">
+                        <div class="socials__title"><strong>Följ oss!</strong></div>
+                        <div class="socials__list"><a class="socials__item" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="socials__item" href="#"><svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg></a></div>
                       </div>
                     </div>
                   </div>
                 </div>
-            </div>
+              </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
     <!-- popup why metal-->
     <div class="popup popup_slider js-popup-why-metal">

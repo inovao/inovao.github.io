@@ -6661,3 +6661,11 @@ var owlArrows = ["<svg class=\"icon icon-prev\">\n        <use xmlns:xlink=\"htt
         }, 400);
     }
 })();
+
+// feedback
+(function () {
+    $('.js-feedback-btn').on('click', function (e) {
+        e.preventDefault();
+        $('.js-feedback').toggleClass('active');
+    });
+})();

@@ -47,7 +47,7 @@
     <div class="outer js-outer">
       <header class="header js-header">
         <div class="header__container">
-          <div class="header__center center"><a class="header__logo" href="#">weatherproff family</a>
+          <div class="header__center center"><a class="header__logo" href="#">weatherproff family<div class="header__name">Back to Home</div></a>
             <div class="header__wrap js-header-wrap">
               <div class="header__top">
                 <a class="header__contact" href="tel:0707462320">
@@ -60,18 +60,28 @@
                 </a>
                 <div class="header__socials"><a class="header__social" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="header__social" href="#"><svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg></a></div>
               </div>
-              <div class="header__nav"><a class="header__link" href="#">Tjänster</a><a class="header__link" href="#">Produkter</a><a class="header__link" href="#">Uppdrag</a><a class="header__link" href="#">Om oss</a><a class="header__link" href="#">Nyheter</a><a class="header__link header__link_border"
-                  href="#">Onlineverktyg</a></div>
-              <div class="header__lang lang">
-                <div class="lang__head">Sv</div>
-                <div class="lang__drop">
-                  <div class="lang__list"><a class="lang__item" href="#">En</a><a class="lang__item" href="#">Fi</a><a class="lang__item" href="#">Cn</a></div>
+              <div class="header__nav"><a class="header__link" href="#">Tjänster</a><a class="header__link" href="#">Produkter</a><a class="header__link" href="#">Uppdrag</a><a class="header__link" href="#">Om oss</a><a class="header__link" href="#">Nyheter</a></div>
+              <div class="header__dropdown dropdown dropdown_online mobile-hidden">
+                <div class="dropdown__head">Onlineverktyg</div>
+                <div class="dropdown__drop">
+                  <div class="dropdown__list"><a class="dropdown__item" href="#">Färgväljare</a><a class="dropdown__item" href="#">Räkna på mitt hus</a><a class="dropdown__item" href="#">Beställ skräddarsydda plåtprodukt</a></div>
+                </div>
+              </div>
+              <div class="header__actions"><a class="btn" href="#">Kontakta oss</a><a class="btn" href="#">Räkna på mitt hus</a><a class="btn" href="#">Skicka in din plåtbeställning</a></div>
+              <div class="header__dropdown dropdown">
+                <div class="dropdown__head">Sv</div>
+                <div class="dropdown__drop">
+                  <div class="dropdown__list"><a class="dropdown__item" href="#">En</a><a class="dropdown__item" href="#">Fi</a><a class="dropdown__item" href="#">Cn</a></div>
                 </div>
               </div>
             </div><button class="header__menu js-header-menu"><svg class="icon icon-menu"><use xlink:href="img/sprite.svg#icon-menu"></use></svg><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button></div>
         </div>
       </header>
-      <div class="main main_overlay" style="background-image: url(img/bg-main.jpg);"><video class="main__video" autoplay><source src="videos/main-video.mp4" type="video/mp4"></video>
+      <div class="feedback js-feedback"><a class="feedback__link" href="#"><svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg></a><a class="feedback__link" href="#"><svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg></a>
+        <a
+          class="feedback__link" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="feedback__btn js-feedback-btn" href="#"><svg class="icon icon-dots"><use xlink:href="img/sprite.svg#icon-dots"></use></svg></a></div>
+      <div
+        class="main main_overlay main_landing" style="background-image: url(img/bg-main.jpg);"><video class="main__video" autoplay><source src="videos/main-video.mp4" type="video/mp4" loop></video>
         <div class="main__center center">
           <div class="main__wrap">
             <div class="main__theme">VI FINNS DÄR NÄR DU BEHÖVER</div>
@@ -92,10 +102,10 @@
               </div>
           </div>
         </div>
-      </div>
-      <div class="main__scroll scroll"><svg class="icon icon-arrow-toggle"><use xlink:href="img/sprite.svg#icon-arrow-toggle"></use></svg>
-        <div class="scroll__title">Scroll down</div>
-      </div>
+    </div>
+    <div class="main__scroll scroll"><svg class="icon icon-arrow-toggle"><use xlink:href="img/sprite.svg#icon-arrow-toggle"></use></svg>
+      <div class="scroll__title">Scroll down</div>
+    </div>
     </div>
     <div class="section mobile-visible">
       <div class="section__center center">
@@ -170,7 +180,7 @@
             </div>
             <div class="section__content section__content_mw">
               <div class="section__text">Efter tusentals arbetstimmar med unika uppdrag inom byggbranschen vet vi precis <a href="#">vad, hur och varför</a> dagens vädersäkra fastigheter ska planeras, tillverkas och monteras för bästa resultat. Tillsammans med dig och dina önskemål
-                tar vi ditt projekt till nästa nivå.</div><a class="section__link" href="#">Varför välja oss?<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg></a></div>
+                tar vi ditt projekt till nästa nivå.</div><a class="btn btn_white btn_mt20" href="#">Varför välja oss?</a></div>
           </div>
           <div class="section__col">
             <div class="section__preview"><img class="section__pic" src="img/pic-1.svg" width="200"></div>
@@ -189,7 +199,7 @@
               <div class="section__theme">VARFÖR PLÅT?</div>
               <div class="section__title">Plåt är ett <a href="#">Smart Val</a> för Ditt Projekt</div>
               <div class="section__text">Storm, regn eller rusk? En av de stora fördelarna med byggplåt är dess <a href="#">hållbarhet, optimala tätskikt och breda utbud</a> av möjligheter som medföljer med ett mjukt och följsamt material. Oavsett dina behov så finns det alltid
-                en lösning med byggnadsplåt.</div><a class="section__link" href="#">Varför välja oss?<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg></a></div>
+                en lösning med byggnadsplåt.</div><a class="btn btn_white btn_mt20" href="#">Varför välja oss?</a></div>
           </div>
         </div>
       </div>
@@ -220,12 +230,12 @@
             </div>
           </div>
         </div>
-        <div class="section__action"><button class="section__btn btn btn_stroke js-section-toggle"><span class="btn__title" data-text="Visa mindre">Visa mer</span><svg class="icon icon-chevron"><use xlink:href="img/sprite.svg#icon-chevron"></use></svg></button></div>
+        <div class="section__action"><button class="section__btn btn btn_white js-section-toggle"><span class="btn__title" data-text="Visa mindre">Visa mer</span><svg class="icon icon-chevron"><use xlink:href="img/sprite.svg#icon-chevron"></use></svg></button></div>
       </div>
     </div>
     <div class="section section_gray section_online mobile-hidden">
       <div class="section__row">
-        <div class="section__col" style="background-image: url(img/bg-2.jpg);"></div>
+        <div class="section__col section__col_preview" style="background-image: url(img/bg-2.jpg);"><img class="section__pic js-photos" src="img/laptop.png"></div>
         <div class="section__col">
           <div class="section__content">
             <div class="section__theme">ONLINEVERKTYG</div>
@@ -265,7 +275,7 @@
           </div>
         </div>
       </div>
-      <div class="section__bg"><img class="section__pic" src="img/pic-6.svg" width="300"></div>
+      <div class="section__bg"><img class="section__pic" src="img/pic-6.svg" width="540"></div>
     </div>
     <div class="section section_quality mobile-hidden">
       <div class="section__center center">
@@ -310,10 +320,10 @@
           data-title="Läs mer om detta projekt" data-url="%"><img class="gallery__pic" src="img/content/pg_2.jpg"></a><a class="gallery__item js-gallery-item" href="img/content/pg_3.jpg" data-title="Läs mer om detta projekt" data-url="%"><img class="gallery__pic" src="img/content/pg_3.jpg"></a>
         <a
           class="gallery__item js-gallery-item" href="img/content/pg_4.jpg" data-title="Läs mer om detta projekt" data-url="%"><img class="gallery__pic" src="img/content/pg_4.jpg"></a><a class="gallery__item js-gallery-item" href="img/content/pg_5.jpg" data-title="Läs mer om detta projekt" data-url="%"><img class="gallery__pic" src="img/content/pg_5.jpg"></a><a class="gallery__item js-gallery-item"
-            href="img/content/pg_6.jpg" data-title="Läs mer om detta projekt" data-url="%"><img class="gallery__pic" src="img/content/pg_6.jpg"></a><a class="gallery__item js-gallery-item" href="img/content/pg_7.jpg" data-title="Läs mer om detta projekt"
+            href="img/content/pg_6.jpg" data-title="Läs mer om detta projekt" data-url="%"><img class="gallery__pic" src="img/content/pg_6.jpg"></a><a class="gallery__item gallery__item_visible js-gallery-item" href="img/content/pg_7.jpg" data-title="Läs mer om detta projekt"
             data-url="%"><img class="gallery__pic" src="img/content/pg_7.jpg"></a><a class="gallery__item js-gallery-item" href="img/content/pg_8.jpg" data-title="Läs mer om detta projekt" data-url="%"><img class="gallery__pic" src="img/content/pg_8.jpg"></a>
           <a
-            class="gallery__item js-gallery-item" href="img/content/pg_9.jpg" data-title="Läs mer om detta projekt" data-url="%"><img class="gallery__pic" src="img/content/pg_9.jpg"></a><a class="gallery__item js-gallery-item" href="img/content/pg_10.jpg" data-title="Läs mer om detta projekt" data-url="%"><img class="gallery__pic" src="img/content/pg_10.jpg"></a><a class="gallery__item js-gallery-item"
+            class="gallery__item gallery__item_visible js-gallery-item" href="img/content/pg_9.jpg" data-title="Läs mer om detta projekt" data-url="%"><img class="gallery__pic" src="img/content/pg_9.jpg"></a><a class="gallery__item js-gallery-item" href="img/content/pg_10.jpg" data-title="Läs mer om detta projekt" data-url="%"><img class="gallery__pic" src="img/content/pg_10.jpg"></a><a class="gallery__item js-gallery-item"
               href="img/content/pg_11.jpg" data-title="Läs mer om detta projekt" data-url="%"><img class="gallery__pic" src="img/content/pg_11.jpg"></a><a class="gallery__item js-gallery-item" href="img/content/pg_12.jpg" data-title="Läs mer om detta projekt"
               data-url="%"><img class="gallery__pic" src="img/content/pg_12.jpg"></a><a class="gallery__item js-gallery-item" href="img/content/pg_13.jpg" data-title="Läs mer om detta projekt" data-url="%"><img class="gallery__pic" src="img/content/pg_13.jpg"></a>
             <a

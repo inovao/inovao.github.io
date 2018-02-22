@@ -10,6 +10,8 @@
     <path d="M4.003 4.162L6.597.698a.503.503 0 0 1 .806.604L4.005 5.838.598 1.302a.503.503 0 0 1 .804-.604l2.601 3.464z"/>
 </symbol><symbol id="icon-close" viewBox="0 0 13 13">
     <path fill-rule="evenodd" d="M13 1.3L11.7 0 6.5 5.2 1.3 0 0 1.3l5.2 5.2L0 11.7 1.3 13l5.2-5.2 5.2 5.2 1.3-1.3-5.2-5.2z"/>
+</symbol><symbol id="icon-dots" viewBox="0 0 18 17">
+    <path fill-rule="evenodd" d="M3 6a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zM15 6a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
 </symbol><symbol id="icon-edit" viewBox="0 0 12 12">
     <path fill-rule="evenodd" d="M0 9.467V12h2.533l7.334-7.4-2.534-2.533L0 9.467zm11.8-6.8a.644.644 0 0 0 0-.934L10.267.2a.644.644 0 0 0-.934 0l-1.2 1.2 2.534 2.533L11.8 2.667z"/>
 </symbol><symbol id="icon-email-fill" viewBox="0 0 11 9">
