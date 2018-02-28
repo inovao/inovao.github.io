@@ -21,7 +21,7 @@ $(window).on('load resize', hf);
 		infinite: false,
 		speed: 300,
 		slidesToShow: 3,
-		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
+		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-right-arrow"></span></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
 		variableWidth: true,
 		responsive: [
@@ -221,7 +221,7 @@ $(function(){
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		infinite: false,
-		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
+		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-right-arrow"></span></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
 
     });
@@ -231,7 +231,7 @@ $(function(){
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		infinite: false,
-		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
+		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-right-arrow"></span></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
 		responsive: [
 
@@ -264,7 +264,7 @@ $(function(){
 		infinite: false,
 		dots: true,
 
-		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
+		prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-right-arrow"></span></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
     });
 
@@ -362,7 +362,7 @@ $(function(){
     	slidesToShow: 1,
     	centerMode: true,
     	centerPadding: '287px',
-    	prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-left-arrow"></span></button>',
+    	prevArrow: '<button class="slick-arrow slick-prev"><span class="icon-right-arrow"></span></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><span class="icon-right-arrow"></span></button>',
     	asNavFor: '.slideshow-info',
     	responsive: [
