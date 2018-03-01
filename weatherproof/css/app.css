@@ -7512,6 +7512,10 @@ a.btn {
   animation: mouse 2s linear infinite;
 }
 
+.scroll_works .icon {
+  fill: black;
+}
+
 @keyframes mouse {
   0% {
     top: 0;
@@ -8934,7 +8938,7 @@ a.btn {
 
 .footer__marker {
   position: absolute;
-  top: 73.5%;
+  top: 79.5%;
   left: 12%;
   width: 1px;
   height: 1px;
@@ -9772,7 +9776,12 @@ a.btn {
 
 .works__item {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 76px);
+}
+
+.works__item:first-child .works__container {
+  top: 0;
+  margin-bottom: -76px;
 }
 
 .works__item.active .works__container {
@@ -9781,10 +9790,10 @@ a.btn {
 
 .works__container {
   position: fixed;
-  top: 0;
+  top: 76px;
   left: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 76px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   perspective: 500px;
   transform: translate3d(0, 0, 0);
@@ -11984,6 +11993,16 @@ a.btn {
     display: none;
   }
 
+  .scroll_works {
+    display: block;
+    bottom: 10px;
+    z-index: 4;
+  }
+
+  .scroll_works .scroll__title {
+    display: none;
+  }
+
   .main {
     min-height: 0;
     margin-top: -86px;
@@ -12442,7 +12461,7 @@ a.btn {
   }
 
   .works {
-    margin-top: -86px;
+    margin-top: -76px;
   }
 
   .works__container {
@@ -12458,7 +12477,7 @@ a.btn {
   .works__wrap {
     position: relative;
     top: auto;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     background: white;
     -ms-transform: none;
     transform: none;
