@@ -24,6 +24,23 @@
     <meta property="og:description" content="Description Here">
     <meta property="og:site_name" content="Site Name, i.e. Moz">
     <meta property="fb:admins" content="Facebook numeric ID">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" media="all" href="css/app.css">
     <script>
       var viewportmeta = document.querySelector('meta[name="viewport"]');
@@ -45,7 +62,7 @@
 
   <body>
     <div class="outer js-outer">
-      <header class="header fixed">
+      <header class="header js-header fixed">
         <div class="header__container">
           <div class="header__center center"><a class="header__logo" href="#">weatherproff family<div class="header__name">Back to Home</div></a>
             <div class="header__wrap js-header-wrap">
@@ -64,7 +81,20 @@
               <div class="header__dropdown dropdown dropdown_online mobile-hidden">
                 <div class="dropdown__head">Onlineverktyg</div>
                 <div class="dropdown__drop">
-                  <div class="dropdown__list"><a class="dropdown__item" href="#">Färgväljare</a><a class="dropdown__item" href="#">Räkna på mitt hus</a><a class="dropdown__item" href="#">Beställ skräddarsydda plåtprodukt</a></div>
+                  <div class="dropdown__list">
+                    <a class="dropdown__item" href="#">
+                      <div class="dropdown__preview"><img class="dropdown__pic dropdown__pic_mb" src="img/d1.svg"></div>
+                      <div class="dropdown__title">Färgväljare</div>
+                    </a>
+                    <a class="dropdown__item" href="#">
+                      <div class="dropdown__preview"><img class="dropdown__pic" src="img/d2.svg"></div>
+                      <div class="dropdown__title">Räkna på mitt hus</div>
+                    </a>
+                    <a class="dropdown__item" href="#">
+                      <div class="dropdown__preview"><img class="dropdown__pic" src="img/d3.svg"></div>
+                      <div class="dropdown__title">Beställ skräddarsydda plåtprodukt</div>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="header__actions"><a class="btn" href="#">Kontakta oss</a><a class="btn" href="#">Räkna på mitt hus</a><a class="btn" href="#">Skicka in din plåtbeställning</a></div>
@@ -160,7 +190,7 @@
           </div>
         </div>
     </div>
-    <div class="section section_footer section_gray">
+    <div class="section section_footer section_white">
       <div class="section__center center center_lg">
         <footer class="footer">
           <div class="footer__top">

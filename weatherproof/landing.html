@@ -24,6 +24,23 @@
     <meta property="og:description" content="Description Here">
     <meta property="og:site_name" content="Site Name, i.e. Moz">
     <meta property="fb:admins" content="Facebook numeric ID">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" media="all" href="css/app.css">
     <script>
       var viewportmeta = document.querySelector('meta[name="viewport"]');
@@ -45,7 +62,7 @@
 
   <body>
     <div class="outer js-outer">
-      <header class="header js-header">
+      <header class="header js-header js-header-main">
         <div class="header__container">
           <div class="header__center center"><a class="header__logo" href="#">weatherproff family<div class="header__name">Back to Home</div></a>
             <div class="header__wrap js-header-wrap">
@@ -64,7 +81,20 @@
               <div class="header__dropdown dropdown dropdown_online mobile-hidden">
                 <div class="dropdown__head">Onlineverktyg</div>
                 <div class="dropdown__drop">
-                  <div class="dropdown__list"><a class="dropdown__item" href="#">Färgväljare</a><a class="dropdown__item" href="#">Räkna på mitt hus</a><a class="dropdown__item" href="#">Beställ skräddarsydda plåtprodukt</a></div>
+                  <div class="dropdown__list">
+                    <a class="dropdown__item" href="#">
+                      <div class="dropdown__preview"><img class="dropdown__pic dropdown__pic_mb" src="img/d1.svg"></div>
+                      <div class="dropdown__title">Färgväljare</div>
+                    </a>
+                    <a class="dropdown__item" href="#">
+                      <div class="dropdown__preview"><img class="dropdown__pic" src="img/d2.svg"></div>
+                      <div class="dropdown__title">Räkna på mitt hus</div>
+                    </a>
+                    <a class="dropdown__item" href="#">
+                      <div class="dropdown__preview"><img class="dropdown__pic" src="img/d3.svg"></div>
+                      <div class="dropdown__title">Beställ skräddarsydda plåtprodukt</div>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="header__actions"><a class="btn" href="#">Kontakta oss</a><a class="btn" href="#">Räkna på mitt hus</a><a class="btn" href="#">Skicka in din plåtbeställning</a></div>
@@ -81,7 +111,7 @@
         <a
           class="feedback__link" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="feedback__btn js-feedback-btn" href="#"><svg class="icon icon-dots"><use xlink:href="img/sprite.svg#icon-dots"></use></svg></a></div>
       <div
-        class="main main_overlay main_landing" style="background-image: url(img/bg-main.jpg);"><video class="main__video" autoplay><source src="videos/main-video.mp4" type="video/mp4" loop></video>
+        class="main main_overlay main_landing" style="background-image: url(img/bg-main.jpg);"><video class="main__video" autoplay loop><source src="videos/main-video.mp4" type="video/mp4"></video>
         <div class="main__center center">
           <div class="main__wrap">
             <div class="main__theme">VI FINNS DÄR NÄR DU BEHÖVER</div>
@@ -103,11 +133,11 @@
           </div>
         </div>
     </div>
-    <div class="main__scroll scroll"><svg class="icon icon-arrow-toggle"><use xlink:href="img/sprite.svg#icon-arrow-toggle"></use></svg>
+    <div class="main__scroll scroll"><svg class="icon icon-go-down"><use xlink:href="img/sprite.svg#icon-go-down"></use></svg>
       <div class="scroll__title">Scroll down</div>
     </div>
     </div>
-    <div class="section mobile-visible">
+    <div class="section section_mobile_bg mobile-visible">
       <div class="section__center center">
         <div class="section__content">
           <div class="section__title">Vad kan vi hjälpa dig med?</div>
@@ -188,7 +218,7 @@
         </div>
       </div>
     </div>
-    <div class="section section_gray mobile-hidden">
+    <div class="section section_gray section_border mobile-hidden">
       <div class="section__center center">
         <div class="section__row">
           <div class="section__col">
@@ -204,7 +234,7 @@
         </div>
       </div>
     </div>
-    <div class="section section_how mobile-hidden js-section">
+    <div class="section section_how section_border mobile-hidden js-section">
       <div class="section__center center">
         <div class="section__content section__content_center">
           <div class="section__title">Så <a href="#">Anlitar</a> Du Oss</div>
@@ -232,8 +262,9 @@
         </div>
         <div class="section__action"><button class="section__btn btn btn_white js-section-toggle"><span class="btn__title" data-text="Visa mindre">Visa mer</span><svg class="icon icon-chevron"><use xlink:href="img/sprite.svg#icon-chevron"></use></svg></button></div>
       </div>
+      <div class="section__bg section__bg_center js-section-bg"><img class="section__pic" src="img/how.svg" width="860"></div>
     </div>
-    <div class="section section_gray section_online mobile-hidden">
+    <div class="section section_gray section_border section_online mobile-hidden">
       <div class="section__row">
         <div class="section__col section__col_preview" style="background-image: url(img/bg-2.jpg);"><img class="section__pic js-photos" src="img/laptop.png"></div>
         <div class="section__col">
@@ -277,7 +308,7 @@
       </div>
       <div class="section__bg"><img class="section__pic" src="img/pic-6.svg" width="540"></div>
     </div>
-    <div class="section section_quality mobile-hidden">
+    <div class="section section_quality section_border mobile-hidden">
       <div class="section__center center">
         <div class="section__content section__content_center">
           <div class="section__theme">KVALITE ÄR UTGÅNGSPUNKTEN I ALLT VI GÖR</div>

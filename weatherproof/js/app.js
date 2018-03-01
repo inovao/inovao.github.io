@@ -6222,13 +6222,15 @@ function _classCallCheck(t, e) {
     });
 
     $(window).scroll(function () {
-        var scrollTop = $(this).scrollTop(),
-            margin = 47;
+        if (header.hasClass('js-header-main')) {
+            var scrollTop = $(this).scrollTop(),
+                margin = 47;
 
-        if (scrollTop > margin) {
-            header.addClass('fixed');
-        } else {
-            header.removeClass('fixed');
+            if (scrollTop > margin) {
+                header.addClass('fixed');
+            } else {
+                header.removeClass('fixed');
+            }
         }
     });
 })();
@@ -6261,7 +6263,7 @@ function _classCallCheck(t, e) {
                 scrollTop = wnd.scrollTop(),
                 posTop = main.offset().top;
 
-            if (scrollTop >= posTop) {
+            if (scrollTop >= posTop && main.outerHeight() > scrollTop) {
                 bg.css('transform', 'translate3d(0, ' + (scrollTop - posTop) / 2 + 'px, ' + (scrollTop - posTop) / 2 + 'px)');
             }
         });
@@ -6274,14 +6276,14 @@ function _classCallCheck(t, e) {
     if (works.length) {
         var items = works.find('.js-works-item'),
             close = works.find('.js-works-close'),
-            arrow = works.find('.js-works-arrow');
+            scroll = works.find('.js-works-scroll');
 
         close.on('click', function (e) {
             e.preventDefault();
             $(this).parent().toggleClass('hide');
         });
 
-        arrow.on('click', function (e) {
+        scroll.on('click', function (e) {
             e.preventDefault();
             $('html, body').animate({
                 scrollTop: $(window).height() - 5
@@ -6313,6 +6315,7 @@ function _classCallCheck(t, e) {
     var section = $('.js-section'),
         wrap = section.find('.js-section-wrap'),
         toggle = section.find('.js-section-toggle'),
+        bg = section.find('.js-section-bg'),
         toggleSpan = toggle.find('span'),
         textHide = toggleSpan.data('text'),
         textShow = toggleSpan.text();
@@ -6326,11 +6329,17 @@ function _classCallCheck(t, e) {
             toggleSpan.text(textHide);
             wrap.show();
             scrollTop = $(window).scrollTop();
+            if (bg.length) {
+                bg.hide();
+            }
         } else {
             toggle.removeClass('active');
             toggleSpan.text(textShow);
             wrap.hide();
             $(window).scrollTop(scrollTop);
+            if (bg.length) {
+                bg.show();
+            }
         }
     });
 })();
