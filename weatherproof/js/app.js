@@ -6678,3 +6678,31 @@ var owlArrows = ["<svg class=\"icon icon-prev\">\n        <use xmlns:xlink=\"htt
         $('.js-feedback').toggleClass('active');
     });
 })();
+
+// prod
+(function () {
+    var prod = $('.js-prod');
+    if (prod.length) {
+        var link = prod.find('.js-prod-link'),
+            pic = prod.find('.js-prod-pic'),
+            type = prod.find('.js-prod-type'),
+            content = prod.find('.js-prod-content');
+
+        link.on('click', function (e) {
+            e.preventDefault();
+            var _this = $(this);
+            link.removeClass('active');
+            _this.addClass('active');
+            pic.attr('src', _this.attr('href'));
+        });
+
+        type.on('click', function (e) {
+            e.preventDefault();
+            var _this = $(this);
+            type.removeClass('active');
+            _this.addClass('active');
+            content.hide();
+            content.eq(_this.index()).show();
+        });
+    }
+})();
