@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Product Spec Page</title>
+    <title>Product Checkout Page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
@@ -111,62 +111,116 @@
         <a
           class="feedback__link" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="feedback__btn js-feedback-btn" href="#"><svg class="icon icon-dots"><use xlink:href="img/sprite.svg#icon-dots"></use></svg></a></div>
       <div
-        class="prod js-prod">
+        class="prod prod_pb js-prod">
         <div class="prod__center center">
           <div class="prod__row">
             <div class="prod__col">
-              <div class="prod__title">Ränna plåt </div>
-              <div class="prod__text">Skriv in leveransinformation nedan. Vi återkommer med en offert normalt inom 24 timmar. Vid godkänd offert tillverkar vi delarna inom 2&nbsp;d&nbsp;kar vi delarna inom 2.</div>
-              <div class="prod__head">Steg 1. Ange mått</div><label class="prod__switcher switcher"><input class="switcher__input" type="checkbox"><span class="switcher__content"><span class="switcher__item">Standard</span><span class="switcher__item">Egna mått</span></span></label>
-              <div
-                class="prod__form">
-                <div class="prod__field field field_def">
-                  <div class="field__label">Mått: A (millimeter) <span class="field__required">*</span></div>
-                  <div class="field__wrap"><select class="field__select"><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option></select></div>
+              <div class="prod__title">Checkout</div>
+              <div class="prod__text">
+                <p>Skriv in leveransinformation nedan. </p>
+                <p>Vi återkommer med en offert normalt inom 24 timmar. Vid godkänd offert tillverkar vi delarna inom 2 dagar och skickar sedan med prioriterad sändebud för snabba leveranser.</p>
+              </div>
+              <div class="prod__head">Steg 2. Leveransuppgifter</div>
+              <div class="prod__form">
+                <div class="prod__field prod__field_wide field field_def">
+                  <div class="field__label">E-postadress <span class="field__required">*</span></div>
+                  <div class="field__wrap"><input class="field__input" type="text"></div>
                 </div>
                 <div class="prod__field field field_def">
-                  <div class="field__label">Mått: B (millimeter) <span class="field__required">*</span></div>
-                  <div class="field__wrap"><select class="field__select"><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option></select></div>
+                  <div class="field__label">Förnamn alt. Företag <span class="field__required">*</span></div>
+                  <div class="field__wrap"><input class="field__input" type="text"></div>
                 </div>
                 <div class="prod__field field field_def">
-                  <div class="field__label">Mått: C (millimeter) <span class="field__required">*</span></div>
-                  <div class="field__wrap"><select class="field__select"><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option></select></div>
+                  <div class="field__label"> Efternamn</div>
+                  <div class="field__wrap"><input class="field__input" type="text"></div>
                 </div>
                 <div class="prod__field field field_def">
-                  <div class="field__label">Mått: D (millimeter) <span class="field__required">*</span></div>
-                  <div class="field__wrap"><select class="field__select"><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option></select></div>
+                  <div class="field__label">Adress <span class="field__required">*</span></div>
+                  <div class="field__wrap"><input class="field__input" type="text" placeholder="T.ex. Metallvägen 5"></div>
                 </div>
                 <div class="prod__field field field_def">
-                  <div class="field__label">Material <span class="field__required">*</span></div>
-                  <div class="field__wrap"><select class="field__select"><option>Stålplåt</option><option>Stålplåt</option><option>Stålplåt</option><option>Stålplåt</option></select></div>
+                  <div class="field__label">Postnummer <span class="field__required">*</span></div>
+                  <div class="field__wrap"><input class="field__input" type="text" placeholder="T.ex. 43533"></div>
                 </div>
                 <div class="prod__field field field_def">
-                  <div class="field__label">Färg <span class="field__required">*</span></div>
-                  <div class="field__wrap"><select class="field__select"><option>Svart</option><option>Svart</option><option>Svart</option><option>Svart</option></select></div>
+                  <div class="field__label">Stad <span class="field__required">*</span></div>
+                  <div class="field__wrap"><input class="field__input" type="text" placeholder="T.ex. Mölnlycke"></div>
                 </div>
                 <div class="prod__field field field_def">
-                  <div class="field__label">Antal enheter <span class="field__required">*</span></div>
-                  <div class="field__wrap"><input class="field__input" type="text"><button class="field__btn"><svg class="icon icon-plus"><use xlink:href="img/sprite.svg#icon-plus"></use></svg></button><button class="field__btn"><svg class="icon icon-minus"><use xlink:href="img/sprite.svg#icon-minus"></use></svg></button></div>
+                  <div class="field__label">Telefonnummer <span class="field__required">*</span></div>
+                  <div class="field__wrap"><input class="field__input" type="text"></div>
                 </div>
+                <div class="prod__field field field_def">
+                  <div class="field__label">Ditt meddelande <span class="field__required">*</span></div>
+                  <div class="field__wrap"><textarea class="field__input"></textarea></div>
+                </div>
+              </div>
+              <div class="prod__foot"><button class="prod__btn btn"><span>Skicka förfrågan</span><svg class="icon icon-send"><use xlink:href="img/sprite.svg#icon-send"></use></svg></button></div>
             </div>
-            <div class="prod__foot"><button class="prod__btn btn btn_white">Lägg  i varukorg</button><button class="prod__btn btn"><span>Nästa steg</span><svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg></button></div>
-          </div>
-          <div class="prod__col">
-            <div class="prod__gallery js-prod-gallery">
-              <div class="prod__thumbs"><a class="prod__link js-prod-link active" href="img/prod-lg.jpg"><img class="prod__pic" src="img/prod.jpg"></a><a class="prod__link js-prod-link" href="img/bg-1.jpg"><img class="prod__pic" src="img/prod.jpg"></a><a class="prod__link js-prod-link"
-                  href="img/bg-2.jpg"><img class="prod__pic" src="img/prod.jpg"></a><a class="prod__link js-prod-link" href="img/bg-3.jpg"><img class="prod__pic" src="img/prod.jpg"></a></div>
-              <div class="prod__preview"><img class="prod__pic js-prod-pic" src="img/prod-lg.jpg"></div>
-            </div>
-            <div class="prod__tabs">
-              <div class="prod__nav"><a class="prod__type js-prod-type active" href="#">Produktbeskrivning</a><a class="prod__type js-prod-type" href="#">Specifikation</a></div>
-              <div class="prod__container">
-                <div class="prod__content js-prod-content" style="display: block;">
-                  <p>Skriv in leveransinformation nedan. </p>
-                  <p>Vi återkommer med en offert normalt inom 24 timmar. Vid godkänd offert tillverkar vi delarna inom 2 dagar och skickar sedan med prioriterad sändebud för snabba leveranser. </p><br>
-                  <p>Vi återkommer med en offert normalt inom 24 timmar. Vid godkänd offert tillverkar vi delarna inom 2 dagar och skickar sedan med prioriterad sändebud för snabba leveranser. Skriv in leveransinformation nedan. </p>
+            <div class="prod__col">
+              <div class="checkout">
+                <div class="checkout__head">
+                  <div class="checkout__title">Din Förfrågan</div>
+                  <div class="checkout__text">En summering av din förfrågan presenteras nedan. Kolla igenom att uppgifterna stämmer. Vid förfrågningar</div>
                 </div>
-                <div class="prod__content js-prod-content">
-                  <p>Vi återkommer med en offert normalt inom 24 timmar. Vid godkänd offert tillverkar vi delarna inom 2 dagar och skickar sedan med prioriterad sändebud för snabba leveranser. </p>
+                <div class="checkout__wrap">
+                  <div class="checkout__row">
+                    <div class="checkout__col">
+                      <div class="checkout__name">Ränna plåt (Egna mått)</div>
+                      <ul class="checkout__list">
+                        <li><span class="bold">Mått A:</span> 400 mm</li>
+                        <li><span class="bold">Mått B:</span> 600 mm</li>
+                        <li><span class="bold">Mått C:</span> 30 mm</li>
+                        <li><span class="bold">Material:</span> Stålplåt</li>
+                        <li><span class="bold">Färg:</span> Svart <span class="checkout__color" style="background-color: black"></span></li>
+                      </ul>
+                    </div>
+                    <div class="checkout__col">
+                      <div class="checkout__group">
+                        <div class="checkout__label">Antal:</div>
+                        <div class="checkout__values values"><button class="values__btn disabled"><svg class="icon icon-minus-sm"><use xlink:href="img/sprite.svg#icon-minus-sm"></use></svg></button><input class="values__input" type="text" value="1"><button class="values__btn"><svg class="icon icon-plus-sm"><use xlink:href="img/sprite.svg#icon-plus-sm"></use></svg></button></div>
+                        <div
+                          class="checkout__actions"><a class="checkout__btn" href="#"><svg class="icon icon-pencil"><use xlink:href="img/sprite.svg#icon-pencil"></use></svg></a><a class="checkout__btn" href="#"><svg class="icon icon-trash"><use xlink:href="img/sprite.svg#icon-trash"></use></svg></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout__row">
+                  <div class="checkout__col">
+                    <div class="checkout__name">Ränna plåt (Egna mått)</div>
+                    <ul class="checkout__list">
+                      <li><span class="bold">Mått A:</span> 400 mm</li>
+                      <li><span class="bold">Mått B:</span> 600 mm</li>
+                      <li><span class="bold">Mått C:</span> 30 mm</li>
+                      <li><span class="bold">Material:</span> Stålplåt</li>
+                      <li><span class="bold">Färg:</span> Svart <span class="checkout__color" style="background-color: black"></span></li>
+                    </ul>
+                  </div>
+                  <div class="checkout__col">
+                    <div class="checkout__group">
+                      <div class="checkout__label">Antal:</div>
+                      <div class="checkout__values values"><button class="values__btn disabled"><svg class="icon icon-minus-sm"><use xlink:href="img/sprite.svg#icon-minus-sm"></use></svg></button><input class="values__input" type="text" value="1"><button class="values__btn"><svg class="icon icon-plus-sm"><use xlink:href="img/sprite.svg#icon-plus-sm"></use></svg></button></div>
+                      <div
+                        class="checkout__actions"><a class="checkout__btn" href="#"><svg class="icon icon-pencil"><use xlink:href="img/sprite.svg#icon-pencil"></use></svg></a><a class="checkout__btn" href="#"><svg class="icon icon-trash"><use xlink:href="img/sprite.svg#icon-trash"></use></svg></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout__row">
+                <div class="checkout__col">
+                  <div class="checkout__name">Ränna plåt (Egna mått)</div>
+                  <ul class="checkout__list">
+                    <li><span class="bold">Mått A:</span> 400 mm</li>
+                    <li><span class="bold">Mått B:</span> 600 mm</li>
+                    <li><span class="bold">Mått C:</span> 30 mm</li>
+                    <li><span class="bold">Material:</span> Stålplåt</li>
+                    <li><span class="bold">Färg:</span> Svart <span class="checkout__color" style="background-color: black"></span></li>
+                  </ul>
+                </div>
+                <div class="checkout__col">
+                  <div class="checkout__group">
+                    <div class="checkout__label">Antal:</div>
+                    <div class="checkout__values values"><button class="values__btn"><svg class="icon icon-minus-sm"><use xlink:href="img/sprite.svg#icon-minus-sm"></use></svg></button><input class="values__input" type="text" value="1"><button class="values__btn disabled"><svg class="icon icon-plus-sm"><use xlink:href="img/sprite.svg#icon-plus-sm"></use></svg></button></div>
+                    <div
+                      class="checkout__actions"><a class="checkout__btn" href="#"><svg class="icon icon-pencil"><use xlink:href="img/sprite.svg#icon-pencil"></use></svg></a><a class="checkout__btn" href="#"><svg class="icon icon-trash"><use xlink:href="img/sprite.svg#icon-trash"></use></svg></a></div>
                 </div>
               </div>
             </div>
@@ -174,40 +228,7 @@
         </div>
     </div>
     </div>
-    <div class="filter">
-      <div class="filter__center center">
-        <div class="filter__title">Filter:</div>
-        <div class="filter__list"><a class="filter__item" href="#">Alla</a><a class="filter__item" href="#">Takprodukter</a><a class="filter__item active" href="#">Ränna plåt</a><a class="filter__item disabled" href="#">Bleck</a><a class="filter__item disabled" href="#">Löpmeter Garnering</a>
-          <a
-            class="filter__item disabled" href="#">Vattenavrinning</a><a class="filter__item disabled" href="#">Taksäkerhet</a><a class="filter__item disabled" href="#">Skorstenar</a></div>
-      </div>
     </div>
-    <div class="products">
-      <div class="products__center center">
-        <div class="products__title">Liknande produkter</div>
-        <div class="products__list">
-          <a class="products__item" href="#">
-            <div class="products__preview"><img class="products__pic" src="img/bg-2.jpg"></div>
-            <div class="products__name">Trädgårdskanter</div>
-            <div class="products__category">Läs mer</div>
-          </a>
-          <a class="products__item" href="#">
-            <div class="products__preview"><img class="products__pic" src="img/bg-2.jpg"></div>
-            <div class="products__name">Trädgårdskanter</div>
-            <div class="products__category">Läs mer</div>
-          </a>
-          <a class="products__item" href="#">
-            <div class="products__preview"><img class="products__pic" src="img/bg-2.jpg"></div>
-            <div class="products__name">Trädgårdskanter</div>
-            <div class="products__category">Läs mer</div>
-          </a>
-          <a class="products__item" href="#">
-            <div class="products__preview"><img class="products__pic" src="img/bg-2.jpg"></div>
-            <div class="products__name">Trädgårdskanter</div>
-            <div class="products__category">Läs mer</div>
-          </a>
-        </div>
-      </div>
     </div>
     <div class="section section_footer section_white">
       <div class="section__center center center_lg">
