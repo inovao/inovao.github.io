@@ -10781,10 +10781,15 @@ a.btn {
 }
 
 .filter {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding: 15px 0;
   background: white;
   border: solid #cecece;
   border-width: 1px 0;
+  z-index: 40;
 }
 
 .filter__center {

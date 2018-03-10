@@ -7552,6 +7552,10 @@ var owlArrows = ["<svg class=\"icon icon-prev\">\n        <use xmlns:xlink=\"htt
             filterItem.removeClass('active');
             _this.addClass('active');
             grid.isotope({ filter: filterValue });
+
+            $('html, body').animate({
+                scrollTop: grid.offset().top - 120
+            }, 500);
         });
     }
 })();
