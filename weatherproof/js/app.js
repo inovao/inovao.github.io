@@ -7512,7 +7512,10 @@ var owlArrows = ["<svg class=\"icon icon-prev\">\n        <use xmlns:xlink=\"htt
         var link = prod.find('.js-prod-link'),
             pic = prod.find('.js-prod-pic'),
             type = prod.find('.js-prod-type'),
-            content = prod.find('.js-prod-content');
+            content = prod.find('.js-prod-content'),
+            switcher = prod.find('.js-prod-switcher'),
+            select = prod.find('.js-prod-select'),
+            input = prod.find('.js-prod-input');
 
         link.on('click', function (e) {
             e.preventDefault();
@@ -7530,6 +7533,11 @@ var owlArrows = ["<svg class=\"icon icon-prev\">\n        <use xmlns:xlink=\"htt
             content.hide();
             content.eq(_this.index()).show();
         });
+
+        switcher.on('change', function () {
+            select.toggleClass('hidden');
+            input.toggleClass('hidden');
+        });
     }
 })();
 
@@ -7537,6 +7545,12 @@ var owlArrows = ["<svg class=\"icon icon-prev\">\n        <use xmlns:xlink=\"htt
 (function () {
     var grid = $('.js-grid-container');
     if (grid.length) {
+        grid.find('.js-grid-preview').each(function () {
+            $(this).owlCarousel({
+                items: 1
+            });
+        });
+
         grid.isotope({
             // options
             itemSelector: '.js-grid-item'
@@ -7556,6 +7570,29 @@ var owlArrows = ["<svg class=\"icon icon-prev\">\n        <use xmlns:xlink=\"htt
             $('html, body').animate({
                 scrollTop: grid.offset().top - 120
             }, 500);
+        });
+    }
+})();
+
+// field
+(function () {
+    var field = $('.js-field');
+    if (field.length) {
+        var input = field.find('.js-field-input'),
+            plus = field.find('.js-field-plus'),
+            minus = field.find('.js-field-minus'),
+            counter = 0;
+
+        plus.on('click', function (e) {
+            e.preventDefault();
+            input.val(++counter);
+        });
+
+        minus.on('click', function (e) {
+            e.preventDefault();
+            if (counter > 1) {
+                input.val(--counter);
+            }
         });
     }
 })();

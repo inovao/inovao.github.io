@@ -117,24 +117,28 @@
             <div class="prod__col">
               <div class="prod__title">Ränna plåt </div>
               <div class="prod__text">Skriv in leveransinformation nedan. Vi återkommer med en offert normalt inom 24 timmar. Vid godkänd offert tillverkar vi delarna inom 2&nbsp;d&nbsp;kar vi delarna inom 2.</div>
-              <div class="prod__head">Steg 1. Ange mått</div><label class="prod__switcher switcher"><input class="switcher__input" type="checkbox"><span class="switcher__content"><span class="switcher__item">Standard</span><span class="switcher__item">Egna mått</span></span></label>
+              <div class="prod__head">Steg 1. Ange mått</div><label class="prod__switcher switcher"><input class="switcher__input js-prod-switcher" type="checkbox"><span class="switcher__content"><span class="switcher__item">Standard</span><span class="switcher__item">Egna mått</span></span></label>
               <div
                 class="prod__form">
                 <div class="prod__field field field_def">
                   <div class="field__label">Mått: A (millimeter) <span class="field__required">*</span></div>
-                  <div class="field__wrap"><select class="field__select"><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option></select></div>
+                  <div class="field__wrap"><select class="field__select js-prod-select"><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option></select><input class="field__input js-prod-input hidden"
+                      type="text"></div>
                 </div>
                 <div class="prod__field field field_def">
                   <div class="field__label">Mått: B (millimeter) <span class="field__required">*</span></div>
-                  <div class="field__wrap"><select class="field__select"><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option></select></div>
+                  <div class="field__wrap"><select class="field__select js-prod-select"><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option></select><input class="field__input js-prod-input hidden"
+                      type="text"></div>
                 </div>
                 <div class="prod__field field field_def">
                   <div class="field__label">Mått: C (millimeter) <span class="field__required">*</span></div>
-                  <div class="field__wrap"><select class="field__select"><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option></select></div>
+                  <div class="field__wrap"><select class="field__select js-prod-select"><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option></select><input class="field__input js-prod-input hidden"
+                      type="text"></div>
                 </div>
                 <div class="prod__field field field_def">
                   <div class="field__label">Mått: D (millimeter) <span class="field__required">*</span></div>
-                  <div class="field__wrap"><select class="field__select"><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option></select></div>
+                  <div class="field__wrap"><select class="field__select js-prod-select"><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option><option>450 mm</option></select><input class="field__input js-prod-input hidden"
+                      type="text"></div>
                 </div>
                 <div class="prod__field field field_def">
                   <div class="field__label">Material <span class="field__required">*</span></div>
@@ -144,9 +148,9 @@
                   <div class="field__label">Färg <span class="field__required">*</span></div>
                   <div class="field__wrap"><select class="field__select"><option>Svart</option><option>Svart</option><option>Svart</option><option>Svart</option></select></div>
                 </div>
-                <div class="prod__field field field_def">
+                <div class="prod__field field field_def js-field">
                   <div class="field__label">Antal enheter <span class="field__required">*</span></div>
-                  <div class="field__wrap"><input class="field__input" type="text"><button class="field__btn"><svg class="icon icon-plus"><use xlink:href="img/sprite.svg#icon-plus"></use></svg></button><button class="field__btn"><svg class="icon icon-minus"><use xlink:href="img/sprite.svg#icon-minus"></use></svg></button></div>
+                  <div class="field__wrap"><input class="field__input js-field-input" type="text"><button class="field__btn js-field-plus"><svg class="icon icon-plus"><use xlink:href="img/sprite.svg#icon-plus"></use></svg></button><button class="field__btn js-field-minus"><svg class="icon icon-minus"><use xlink:href="img/sprite.svg#icon-minus"></use></svg></button></div>
                 </div>
             </div>
             <div class="prod__foot"><button class="prod__btn btn btn_white">Lägg  i varukorg</button><button class="prod__btn btn"><span>Nästa steg</span><svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg></button></div>
@@ -186,81 +190,51 @@
       </div>
       <div class="grid__center center">
         <div class="grid__container js-grid-container">
-          <a class="grid__item js-grid-item js-skorstenar" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g1.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item js-grid-item js-skorstenar" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g2.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item grid__item_lg js-grid-item js-taksakerhet" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g3.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item js-grid-item js-taksakerhet" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g4.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item js-grid-item js-taksakerhet" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g5.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item js-grid-item js-vattenavrinning" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g6.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item js-grid-item js-vattenavrinning" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g1.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item js-grid-item js-lopmeter-garnering" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g7.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item js-grid-item js-lopmeter-garnering" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g8.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item js-grid-item js-bleck" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g9.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item js-grid-item js-bleck" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g10.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item grid__item_lg js-grid-item js-takprodukter" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g11.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item js-grid-item js-takprodukter" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g12.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item js-grid-item js-alla" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g13.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
-          <a class="grid__item js-grid-item js-alla" href="#">
-            <div class="grid__preview"><img class="grid__pic" src="img/g14.jpg"></div>
-            <div class="grid__name">Vinkelränna</div>
-            <div class="grid__more">Läs mer</div>
-          </a>
+          <div class="grid__item js-grid-item js-skorstenar">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g1.jpg"><img class="grid__pic" src="img/g1.jpg"><img class="grid__pic" src="img/g1.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item js-grid-item js-skorstenar">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g2.jpg"><img class="grid__pic" src="img/g2.jpg"><img class="grid__pic" src="img/g2.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item grid__item_lg js-grid-item js-taksakerhet">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g3.jpg"><img class="grid__pic" src="img/g3.jpg"><img class="grid__pic" src="img/g3.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item js-grid-item js-taksakerhet">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g4.jpg"><img class="grid__pic" src="img/g4.jpg"><img class="grid__pic" src="img/g4.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item js-grid-item js-taksakerhet">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g5.jpg"><img class="grid__pic" src="img/g5.jpg"><img class="grid__pic" src="img/g5.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item js-grid-item js-vattenavrinning">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g6.jpg"><img class="grid__pic" src="img/g6.jpg"><img class="grid__pic" src="img/g6.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item js-grid-item js-vattenavrinning">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g1.jpg"><img class="grid__pic" src="img/g1.jpg"><img class="grid__pic" src="img/g1.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item js-grid-item js-lopmeter-garnering">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g7.jpg"><img class="grid__pic" src="img/g7.jpg"><img class="grid__pic" src="img/g7.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item js-grid-item js-lopmeter-garnering">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g8.jpg"><img class="grid__pic" src="img/g8.jpg"><img class="grid__pic" src="img/g8.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item js-grid-item js-bleck">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g9.jpg"><img class="grid__pic" src="img/g9.jpg"><img class="grid__pic" src="img/g9.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item js-grid-item js-bleck">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g10.jpg"><img class="grid__pic" src="img/g10.jpg"><img class="grid__pic" src="img/g10.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item grid__item_lg js-grid-item js-takprodukter">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g11.jpg"><img class="grid__pic" src="img/g11.jpg"><img class="grid__pic" src="img/g11.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item js-grid-item js-takprodukter">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g12.jpg"><img class="grid__pic" src="img/g12.jpg"><img class="grid__pic" src="img/g12.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item js-grid-item js-alla">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g13.jpg"><img class="grid__pic" src="img/g13.jpg"><img class="grid__pic" src="img/g13.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
+          <div class="grid__item js-grid-item js-alla">
+            <div class="grid__preview owl-carousel js-grid-preview"><img class="grid__pic" src="img/g14.jpg"><img class="grid__pic" src="img/g14.jpg"><img class="grid__pic" src="img/g14.jpg"></div>
+            <div class="grid__name">Vinkelränna</div><a class="grid__more" href="#">Läs mer</a></div>
         </div>
       </div>
     </div>
