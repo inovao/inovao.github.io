@@ -7,6 +7,27 @@ $(window).on('load', function(){
 
 $(function(){
 
+    $('#callback-form').submit(function(e) {
+         
+         var form = $(this),
+             data = form.serialize(),
+             sub = form.find('input[type="submit"]');
+
+         $.ajax({
+             url: 'send-ajax.php',
+             type: 'POST',
+             data: data,
+             beforeSend: function() {
+               sub.val('...');
+             },
+             success: function(data) {
+                 sub.val('SEND');
+             }
+         });
+
+         return false;
+     });
+
 
 	/* ---------------------------------------------- /*
 	 * Slider
