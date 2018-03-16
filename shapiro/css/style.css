@@ -622,7 +622,6 @@ select {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     border: 1px solid #cdc8cd;
-    padding-top: 122px;
     background: url(../img/bg-aside.jpg) repeat;
 }
 .inner-aside:after {
@@ -634,6 +633,20 @@ select {
     position: absolute;
     top: 25px;
     right: 80px;
+}
+
+.inner-aside .head-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    font-size: 15.82px;
+    line-height: 17.57px;
+    color: #6c6c6c;
+}
+.inner-aside .head-text strong {
+    font-weight: bold;
+    color: #6c6c6c;
+    display: block;
 }
 
 .checkbox-wrap {
@@ -762,21 +775,53 @@ select {
     margin-bottom: 15px;
 }
 
-.aside-form input[type="submit"] {
+.btn, a.btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    -webkit-box-shadow: inset 0 0 9px rgba(152, 48, 48, 0.54);
+    box-shadow: inset 0 0 9px rgba(152, 48, 48, 0.54);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#f56f04), to(#f78f22));
+    background-image: -webkit-linear-gradient(bottom, #f56f04 0%, #f78f22 100%);
+    background-image: -o-linear-gradient(bottom, #f56f04 0%, #f78f22 100%);
+    background-image: linear-gradient(to top, #f56f04 0%, #f78f22 100%);
+    cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    overflow: hidden;
+
     height: 77px;
     width: 374px;
-    border: none;
     font-family: 'Gotham', sans-serif;
     font-weight: normal;
     font-size: 29.41px;
     color: #fff;
-    text-align: center;
-    cursor: pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    overflow: hidden;
     line-height: 77px;
-    background: url(../img/bg-submit.png) no-repeat;
+}
+
+.btn:before, a.btn:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 0;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    background: url(../img/btn-bg.png) no-repeat 0 0;
+    width: 198px;
+    height: 82px;
+}
+
+.btn:hover:before, a.btn:hover:before {
+    right: -68px;
 }
 
 .aside-form .group-img {
@@ -855,6 +900,79 @@ select {
     background: #ebebeb;
     text-align: center;
     padding-top: 50px;
+}
+
+.review-head {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.review-head li {
+    margin-right: 20px;
+}
+.review-head p {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.review-head span {
+    font-size: 13px;
+    line-height: 14px;
+    display: inline-block;
+    color: #757477;
+}
+
+.reviews-content .review-item-head {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.reviews-content li {
+    padding: 30px 0;
+    border-bottom: 1px solid #d2d2d3;
+}
+.reviews-content .meta-review {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 10px;
+}
+.reviews-content p {
+    font-size: 14px;
+    color: #464242;
+}
+.reviews-content .verification {
+    font-size: 13px;
+    color: #464242;
+}
+.reviews-content .verification:before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 11px;
+    background: url(../img/ic-user.png) no-repeat center;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 /*  04. FOOTER
@@ -1025,6 +1143,13 @@ select {
     .product-info li:first-child::after {display: none;}
 }
 
+@media only screen and (max-width: 550px) {
+    .inner-aside:after {display: none;}
+    .inner-aside .head-text {
+        padding-right: 15px;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .aside-form input[type="submit"] {
         width: 100%;
@@ -1164,5 +1289,23 @@ select {
 
     .checkbox-wrap .checkbox-text {
         padding-right: 20px;
+    }
+
+    .review-head {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .review-head li {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .btn, a.btn {
+        width: 100%;
+        font-size: 17px;
     }
 }
