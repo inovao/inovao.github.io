@@ -253,12 +253,14 @@ select {
     background: #ffffff;
 }
 .content-offer header {
-    padding: 27px 20px 20px 60px;
+    padding: 27px 20px 20px 50px;
 }
 .content-offer header h2 {
     font-weight: bold;
     font-size: 42.17px;
+    letter-spacing: 2px;
     line-height: 38.66px;
+    font-family: 'Lato', sans-serif;
     color: #5e465d;
 }
 .content-offer header h2 span {
@@ -276,7 +278,7 @@ select {
     font-size: 15.82px;
     line-height: 26.36px;
     color: #5a5a5a;
-    margin-top: 13px;
+    margin-top: 5px;
 }
 
 .list-product-head {
@@ -482,11 +484,11 @@ select {
 }
 .product-info li:last-child span sup:last-child:after {
     content: '';
-    width: 100%;
     height: 3px;
     background: #fff;
     position: absolute;
-    left: 0;
+    left: 5px;
+    right: 3px;
     bottom: -8px;
 }
 
