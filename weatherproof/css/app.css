@@ -7131,6 +7131,11 @@ button {
   font-size: 19px;
 }
 
+.btn .icon-roof {
+  top: -2px;
+  font-size: 16px;
+}
+
 .btn_stroke {
   background: transparent;
   border-color: #2ABFBF;
@@ -10728,20 +10733,28 @@ a.btn {
 }
 
 .prod__row {
-  display: -ms-flexbox;
-  display: flex;
   margin: 0 -30px;
+  *zoom: 1;
+}
+
+.prod__row:after {
+  content: " ";
+  display: table;
+  clear: both;
 }
 
 .prod__col {
   padding: 0 30px;
-  -ms-flex: 0 0 55%;
-  flex: 0 0 55%;
 }
 
-.prod__col:first-child {
-  -ms-flex: 0 0 45%;
-  flex: 0 0 45%;
+.prod__col:nth-child(1), .prod__col:nth-child(3) {
+  float: left;
+  width: 45%;
+}
+
+.prod__col:nth-child(2) {
+  float: right;
+  width: 55%;
 }
 
 .prod__title {
@@ -10892,8 +10905,9 @@ a.btn {
 .filter__list {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -ms-flex: 0 0 calc(100% - 55px);
+  flex: 0 0 calc(100% - 55px);
+  overflow: auto;
 }
 
 .filter__item {
@@ -10910,6 +10924,22 @@ a.btn {
 
 .filter__item.disabled {
   color: #ccc;
+}
+
+.filter__next {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 10px 15px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white 20%);
+  font-size: 0;
+}
+
+.filter__next .icon {
+  font-size: 20px;
+  fill: #4F575E;
 }
 
 .products {
@@ -11140,6 +11170,16 @@ a.btn {
   color: #4F575E;
 }
 
+.grid__type {
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cecece;
+  font-family: 'ProximaNova-SemiBold', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #4F575E;
+}
+
 .grid .owl-dots {
   position: absolute;
   left: 0;
@@ -11185,6 +11225,7 @@ a.btn {
 }
 
 .checkout {
+  margin-bottom: 30px;
   padding: 50px 30px 30px;
   background: white;
   border: 1px solid #cecece;
@@ -11384,6 +11425,32 @@ a.btn {
 .preview__btn {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.cookies {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  max-width: 100%;
+  padding: 5px 40px 5px 15px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.cookies__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 0;
+}
+
+.cookies__close .icon {
+  font-size: 14px;
 }
 
 .mobile-visible {
@@ -11829,13 +11896,6 @@ a.btn {
 
   .prod__col {
     padding: 0 15px;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-
-  .prod__col:first-child {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
   }
 
   .prod__form {
@@ -12915,7 +12975,6 @@ a.btn {
   }
 
   .header__wrap {
-    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -12923,6 +12982,9 @@ a.btn {
     padding: 101px 15px 15px;
     background: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity .4s;
     z-index: 8;
   }
 
@@ -12976,6 +13038,7 @@ a.btn {
   .header__nav {
     display: block;
     max-width: 100%;
+    width: 100%;
     margin: 0;
     padding: 20px 0;
     border-top: 1px solid #cecece;
@@ -13030,7 +13093,8 @@ a.btn {
   }
 
   .header.open .header__wrap {
-    display: block;
+    visibility: visible;
+    opacity: 1;
   }
 
   .header.open .header__menu .icon {
@@ -13537,7 +13601,7 @@ a.btn {
 
   .works__bg {
     position: static;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
   }
 
@@ -13628,30 +13692,43 @@ a.btn {
     padding-top: 100px;
   }
 
-  .prod__row {
-    -ms-flex-direction: column;
-    flex-direction: column;
+  .prod__col:nth-child(1), .prod__col:nth-child(3) {
+    float: none;
+    width: 100%;
   }
 
-  .prod__col {
-    -ms-flex-order: 1;
-    order: 1;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+  .prod__col:nth-child(2) {
+    float: none;
+    width: 100%;
   }
 
-  .prod__col:first-child {
-    margin-top: 50px;
-    -ms-flex-order: 2;
-    order: 2;
+  .prod__text {
+    margin-bottom: 30px;
   }
 
   .prod__head {
     margin-bottom: 30px;
   }
 
+  .prod__tabs {
+    display: none;
+  }
+
+  .filter__title {
+    margin-right: 20px;
+  }
+
   .filter__item {
     margin-right: 10px;
+    white-space: nowrap;
+  }
+
+  .filter__item:last-child {
+    padding-right: 30px;
+  }
+
+  .filter__next {
+    display: block;
   }
 
   .products {
@@ -13675,6 +13752,15 @@ a.btn {
 
   .grid__item {
     width: 50%;
+  }
+
+  .cookies {
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    border-radius: 0;
+    -ms-transform: none;
+    transform: none;
   }
 
   .mobile-visible {

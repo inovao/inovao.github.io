@@ -7557,7 +7557,9 @@ var owlArrows = ["<svg class=\"icon icon-prev\">\n        <use xmlns:xlink=\"htt
         });
 
         var filter = $('.js-filter'),
-            filterItem = filter.find('.js-filter-item');
+            filterItem = filter.find('.js-filter-item'),
+            filterList = filter.find('.js-filter-list'),
+            filterNext = filter.find('.js-filter-next');
 
         filterItem.on('click', function (e) {
             e.preventDefault();
@@ -7570,6 +7572,14 @@ var owlArrows = ["<svg class=\"icon icon-prev\">\n        <use xmlns:xlink=\"htt
             $('html, body').animate({
                 scrollTop: grid.offset().top - 120
             }, 500);
+        });
+
+        filterNext.on('click', function (e) {
+            e.preventDefault();
+            var posScroll = filterList.scrollLeft();
+            filterList.animate({
+                scrollLeft: posScroll += 100
+            }, 400);
         });
     }
 })();
