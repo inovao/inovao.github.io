@@ -7047,10 +7047,10 @@ function _classCallCheck(t, e) {
         header.toggleClass('open');
     });
 
-    $(window).scroll(function () {
+    $('.js-container').scroll(function () {
         if (header.hasClass('js-header-main')) {
             var scrollTop = $(this).scrollTop(),
-                margin = 47;
+                margin = 80;
 
             if (scrollTop > margin) {
                 header.addClass('fixed');
@@ -7605,4 +7605,24 @@ var owlArrows = ["<svg class=\"icon icon-prev\">\n        <use xmlns:xlink=\"htt
             }
         });
     }
+})();
+
+// cookies
+(function () {
+    var cookies = $('.js-cookies'),
+        close = cookies.find('.js-cookies-close');
+
+    if (typeof Storage !== "undefined") {
+        if (localStorage.visibleNote) {
+            cookies.hide();
+        }
+    } else {
+        // Sorry! No Web Storage support..
+    }
+
+    close.on('click', function (e) {
+        e.preventDefault();
+        localStorage.visibleNote = true;
+        cookies.hide();
+    });
 })();
