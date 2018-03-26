@@ -473,14 +473,19 @@ select {
     position: relative;
     z-index: 2;
     font-family: 'Lato', sans-serif;
-    font-size: 50px;
+    font-size: 63px;
+    line-height: 63px;
     font-weight: bold;
     color: #fff;
+}
+.product-info li:last-child span sup {
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: 1.42px
 }
 .product-info li:last-child span sup:last-child {
     position: relative;
     display: inline-block;
-    padding-bottom: 8px;
 }
 .product-info li:last-child span sup:last-child:after {
     content: '';
@@ -489,7 +494,7 @@ select {
     position: absolute;
     left: 5px;
     right: 3px;
-    bottom: -8px;
+    bottom: -5px;
 }
 
 .content-offer footer {
@@ -736,10 +741,14 @@ select {
     padding: 0 15px;
 }
 
-.aside-form input::-webkit-input-placeholder {color:#626262;}
-.aside-form input::-moz-placeholder          {color:#626262;}/* Firefox 19+ */
-.aside-form input:-moz-placeholder           {color:#626262;}/* Firefox 18- */
-.aside-form input:-ms-input-placeholder      {color:#626262;}
+.aside-form input{
+    line-height: 12px;
+ }
+
+.aside-form input::-webkit-input-placeholder {color: #726272; font-size: 10px; letter-spacing: 1.5px;}
+.aside-form input::-moz-placeholder          {color: #726272; font-size: 10px; letter-spacing: 1.5px;}/* Firefox 19+ */
+.aside-form input:-moz-placeholder           {color: #726272; font-size: 10px; letter-spacing: 1.5px;}/* Firefox 18- */
+.aside-form input:-ms-input-placeholder      {color: #726272; font-size: 10px; letter-spacing: 1.5px;}
 
 .aside-form .flex {
     -webkit-box-align: end;
