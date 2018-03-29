@@ -13088,13 +13088,23 @@ a.btn {
     transform: rotate(0);
   }
 
+  .header__group.active > .header__link:after {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
   .header__list {
+    display: none;
     position: static;
     width: 100%;
     box-shadow: none;
     border: 1px solid #cecece;
     opacity: 1;
     visibility: visible;
+  }
+
+  .header__list.open {
+    display: block;
   }
 
   .header__actions {

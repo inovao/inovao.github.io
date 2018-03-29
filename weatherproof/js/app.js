@@ -7041,11 +7041,21 @@ $(document).ready(function () {
     (function () {
         var header = $('.js-header'),
             menu = header.find('.js-header-menu'),
+            link = header.find('.js-header-link'),
             wrap = header.find('.js-header-wrap');
 
         menu.on('click', function (e) {
             e.preventDefault();
             header.toggleClass('open');
+        });
+
+        link.on('click', function (e) {
+            if ($(window).width() <= 767) {
+                e.preventDefault();
+                var _this = $(this);
+                _this.parent().toggleClass('active');
+                _this.next().toggleClass('open');
+            }
         });
 
         $('.js-container').scroll(function () {
