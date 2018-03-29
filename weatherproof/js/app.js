@@ -7091,7 +7091,7 @@ $(document).ready(function () {
                     posTop = main.offset().top;
 
                 if (scrollTop >= posTop && main.outerHeight() > scrollTop) {
-                    bg.css('transform', 'translate3d(0, ' + (scrollTop - posTop) / 2 + 'px, ' + (scrollTop - posTop) / 2 + 'px)');
+                    bg.css('transform', 'translate3d(0, ' + (scrollTop - posTop) / 2 + 'px, 0px)');
                 }
             });
         }
@@ -7542,26 +7542,32 @@ $(document).ready(function () {
         }
     })();
 
-    // preload plugin
-    $.fn.preload = function () {
-        this.each(function () {
-            $('<img/>')[0].src = this;
-        });
-    }
-
     // grid
     (function () {
         var grid = $('.js-grid-container');
         if (grid.length) {
-            grid.find('.js-grid-preview').each(function () {
-                $(this).owlCarousel({
+
+            var previews = grid.find('.js-grid-preview'),
+                counter = 0;
+
+            previews.each(function () {
+                var _this = $(this);
+
+                _this.on('initialized.owl.carousel', function (event) {
+                    counter++;
+                    if (counter == previews.length) {
+                        setTimeout(function () {
+                            grid.isotope({
+                                // options
+                                itemSelector: '.js-grid-item'
+                            });
+                        }, 1000);
+                    }
+                });
+
+                _this.owlCarousel({
                     items: 1
                 });
-            });
-
-            grid.isotope({
-                // options
-                itemSelector: '.js-grid-item'
             });
 
             var filter = $('.js-filter'),
@@ -7590,7 +7596,7 @@ $(document).ready(function () {
                 }, 400);
             });
         }
-    }());
+    })();
 
     // field
     (function () {

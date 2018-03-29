@@ -10729,7 +10729,7 @@ a.btn {
 
 .prod {
   background: #F5F7F9;
-  margin-top: -60px;
+  margin-top: -75px;
   padding: 60px 0;
 }
 
@@ -11127,7 +11127,11 @@ a.btn {
 }
 
 .grid__container {
+  display: -ms-flexbox;
+  display: flex;
   margin: 40px -10px 50px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .grid__item {
@@ -11136,10 +11140,14 @@ a.btn {
   margin-bottom: 20px;
   padding: 0 10px;
   color: #4F575E;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
 }
 
 .grid__item_lg {
   width: 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
 }
 
 .grid__item:hover .grid__preview {
@@ -13763,6 +13771,8 @@ a.btn {
 
   .grid__item {
     width: 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
   }
 
   .cookies {
