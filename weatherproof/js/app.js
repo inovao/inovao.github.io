@@ -7058,7 +7058,7 @@ $(document).ready(function () {
             }
         });
 
-        $('.js-container').scroll(function () {
+        $(window).scroll(function () {
             if (header.hasClass('js-header-main')) {
                 var scrollTop = $(this).scrollTop(),
                     margin = 80;

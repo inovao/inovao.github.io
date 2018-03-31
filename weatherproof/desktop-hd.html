@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Landing Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Page description">
+    <!--Twitter Card data-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description" content="Page description less than 200 characters">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="http://www.example.com/image.jpg">
+    <!--Open Graph data-->
+    <meta property="og:title" content="Title Here">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://www.example.com/">
+    <meta property="og:image" content="http://example.com/image.jpg">
+    <meta property="og:description" content="Description Here">
+    <meta property="og:site_name" content="Site Name, i.e. Moz">
+    <meta property="fb:admins" content="Facebook numeric ID">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <script>
+      var viewportmeta = document.querySelector('meta[name="viewport"]');
+      if (viewportmeta)
+      {
+        if (screen.width <= 375)
+        {
+          var newScale = screen.width / 375;
+          viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', user-scalable=0, maximum-scale=1, initial-scale=' + newScale + '';
+        }
+        else
+        {
+          viewportmeta.content = 'width=device-width, maximum-scale=1.6, initial-scale=1.0';
+        }
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="app__sidebar">
+        <div class="app__tabs js-tabs">
+          <div class="app__nav"><button class="app__btn js-tabs-btn active"><svg class="icon icon-settings"><use xlink:href="img/sprite.svg#icon-settings"></use></svg><span class="app__type">Detaljer</span></button><button class="app__btn js-tabs-btn"><svg class="icon icon-plane"><use xlink:href="img/sprite.svg#icon-plane"></use></svg><span class="app__type">Skicka förfrågan</span></button></div>
+          <div
+            class="app__wrap">
+            <div class="app__section js-tabs-item" style="display: block;">
+              <div class="app__title">Din skräddarsydda plåtprodukt</div>
+              <div class="app__text">
+                <p>24 st lister? En prototyp? Ett konstverk? Eller varför inte en lampskärm? </p>
+                <p>Vi på Weatherproof Family åtar oss både små som stora uppdrag. </p>
+                <p>Ange nedan ditt nästa plåtprojekt så återkommer vi snart med en offert.</p>
+              </div>
+              <div class="app__head">Steg 1. Beskriv din plåtprodukt</div>
+              <div class="app__category">Titel</div>
+              <div class="app__field field field_app">
+                <div class="field__wrap"><input class="field__input" type="text" placeholder="T. ex. fönsterbleck"></div>
+              </div>
+              <div class="app__category">Material</div>
+              <div class="app__field field field_app">
+                <div class="field__label">Välj ett material som passar din produkt.</div>
+                <div class="field__wrap"><select class="field__select"><option>T. ex. Stålplåt</option><option>T. ex. Stålplåt</option><option>T. ex. Stålplåt</option></select></div>
+              </div>
+              <div class="app__category">Välj färg</div>
+              <div class="app__field field field_app">
+                <div class="field__label">Här väljer du färg. Standard är svart, vit och mörkröd. </div>
+                <div class="field__wrap"><select class="field__select"><option>T. ex. Vit</option><option>T. ex. Vit</option><option>T. ex. Vit</option></select></div>
+              </div>
+              <div class="app__category">Önskad tjocklek (mm)</div>
+              <div class="app__field field field_app">
+                <div class="field__label">
+                  <p>Här väljer du vilken tjocklek din beställning är på. </p>
+                  <p>Osäker? Lämn fri ruta så återkommer vi med ett förslag.</p>
+                </div>
+                <div class="field__wrap"><select class="field__select"><option>0.7 mm</option><option>0.7 mm</option><option>0.7 mm</option></select></div>
+              </div>
+              <div class="app__category">Produktbeskrivning</div>
+              <div class="app__field field field_app">
+                <div class="field__label">Vad ska den användas till? Vilka mått har den?</div>
+                <div class="field__wrap"><textarea class="field__textarea"></textarea></div>
+              </div>
+              <div class="app__flex">
+                <div class="app__group">
+                  <div class="app__category">Bifoga fil</div>
+                  <div class="app__fild file">Välj fil<input class="file__input" type="file"></div>
+                </div>
+                <div class="app__group">
+                  <div class="app__category">Antal enheter</div>
+                  <div class="app__field field field_app js-field">
+                    <div class="field__wrap"><input class="field__input js-field-input" type="text"><button class="field__btn js-field-plus"><svg class="icon icon-plus"><use xlink:href="img/sprite.svg#icon-plus"></use></svg></button><button class="field__btn js-field-minus"><svg class="icon icon-minus"><use xlink:href="img/sprite.svg#icon-minus"></use></svg></button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="app__foot"><button class="app__next btn"><span class="btn__title">Nästa steg</span><svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg></button></div>
+            </div>
+            <div class="app__section js-tabs-item">
+              <div class="app__text">
+                <p>Skriv in leveransinformation nedan. </p>
+                <p>Vi återkommer med en offert så fort vi kan. Vid godkänd offert tillverkar vi delarna inom 2 dagar och skickar sedan med prioriterad sändebud för snabba leveranser.</p>
+              </div>
+              <div class="app__head">Steg 2. Skicka förfrågan</div>
+              <div class="app__field field field_app_bold">
+                <div class="field__label">E-postadress <span class="field__required">*</span></div>
+                <div class="field__wrap"><input class="field__input" type="text"></div>
+              </div>
+              <div class="app__row">
+                <div class="app__field field field_app_bold">
+                  <div class="field__label">Förnamn alt. Företag <span class="field__required">*</span></div>
+                  <div class="field__wrap"><input class="field__input" type="text"></div>
+                </div>
+                <div class="app__field field field_app_bold">
+                  <div class="field__label">Efternamn</div>
+                  <div class="field__wrap"><input class="field__input" type="text"></div>
+                </div>
+              </div>
+              <div class="app__row">
+                <div class="app__field field field_app_bold">
+                  <div class="field__label">Adress <span class="field__required">*</span></div>
+                  <div class="field__wrap"><input class="field__input" type="text" placeholder="T.ex. Metallvägen 5"></div>
+                </div>
+                <div class="app__field field field_app_bold">
+                  <div class="field__label">Postnummer <span class="field__required">*</span></div>
+                  <div class="field__wrap"><input class="field__input" type="text" placeholder="T.ex. 43533"></div>
+                </div>
+              </div>
+              <div class="app__row">
+                <div class="app__field field field_app_bold">
+                  <div class="field__label">Stad <span class="field__required">*</span></div>
+                  <div class="field__wrap"><input class="field__input" type="text" placeholder="T.ex. Mölnlycke"></div>
+                </div>
+                <div class="app__field field field_app_bold">
+                  <div class="field__label">Telefonnummer <span class="field__required">*</span></div>
+                  <div class="field__wrap"><input class="field__input" type="text"></div>
+                </div>
+              </div>
+              <div class="app__field field field_app_bold">
+                <div class="field__label">Tidsplanering
+                  <p>När ska uppdraget påbörjas?</p>
+                </div>
+                <div class="field__wrap"><select class="field__select"><option>Snarast möjligt</option><option>Snarast möjligt</option><option>Snarast möjligt</option></select></div>
+              </div>
+              <div class="app__field field field_app_bold">
+                <div class="field__label">Ditt meddelande</div>
+                <div class="field__wrap"><textarea class="field__textarea"></textarea></div>
+              </div>
+              <div class="app__foot app__foot_mt"><button class="app__next btn"><span class="btn__title">Skicka förfrågan</span><svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg></button></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="app__container">
+      <div class="app__top">
+        <div class="app__logo"></div>
+      </div>
+      <div class="app__frame"></div>
+      <div class="app__inspiration">
+        <div class="app__title">Inspiration</div>
+        <div class="app__text">Här är några av de produkter som vi har tillverkat.</div>
+        <div class="app__list"><a class="app__preview" href="#"><img class="app__pic" src="img/picture.jpg"></a><a class="app__preview" href="#"><img class="app__pic" src="img/picture.jpg"></a><a class="app__preview" href="#"><img class="app__pic" src="img/picture.jpg"></a>
+          <a
+            class="app__preview" href="#"><img class="app__pic" src="img/picture.jpg"></a><a class="app__preview" href="#"><img class="app__pic" src="img/picture.jpg"></a></div>
+      </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+
+</html>
