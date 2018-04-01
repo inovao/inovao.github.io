@@ -7849,7 +7849,7 @@ a.btn {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -2px;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.45), white);
   z-index: -2;
 }
@@ -11706,15 +11706,15 @@ a.btn {
 .app__list {
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: -20px;
+  margin: 0 -10px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .app__preview {
-  margin: 0 20px 20px 0;
-  -ms-flex: 0 0 145px;
-  flex: 0 0 145px;
+  margin: 0 10px 20px;
+  -ms-flex: 0 0 calc(20% - 20px);
+  flex: 0 0 calc(20% - 20px);
 }
 
 .app__pic {
@@ -11759,6 +11759,8 @@ a.btn {
 
 .page {
   margin-bottom: calc(5vw + 70px);
+  padding-top: 10px;
+  overflow: hidden;
 }
 
 .page__slider {
@@ -12025,6 +12027,16 @@ a.btn {
 
   .header__group {
     margin-left: 20px;
+  }
+
+  .app__sidebar {
+    -ms-flex: 0 0 35%;
+    flex: 0 0 35%;
+  }
+
+  .app__container {
+    -ms-flex: 0 0 65%;
+    flex: 0 0 65%;
   }
 }
 
@@ -12345,6 +12357,14 @@ a.btn {
   .checkout__col:last-child {
     -ms-flex: 0 0 100px;
     flex: 0 0 100px;
+  }
+
+  .app {
+    display: block;
+  }
+
+  .app__container {
+    min-height: 0;
   }
 }
 
@@ -13570,6 +13590,10 @@ a.btn {
     margin-right: 10px;
   }
 
+  .main__love {
+    bottom: 20px;
+  }
+
   .main_landing {
     min-height: calc(100vh + 5vw);
     -ms-flex-align: center;
@@ -14190,6 +14214,50 @@ a.btn {
 
   .cookies__close {
     right: 10px;
+  }
+
+  .app__section {
+    padding: 30px 15px;
+  }
+
+  .app__container {
+    padding: 30px 15px;
+  }
+
+  .app__preview {
+    -ms-flex: 0 0 calc(50% - 20px);
+    flex: 0 0 calc(50% - 20px);
+  }
+
+  .love__title {
+    font-size: 22px;
+  }
+
+  .page__slider {
+    margin-bottom: 60px;
+  }
+
+  .about {
+    margin-bottom: 60px;
+  }
+
+  .about__tabs {
+    margin: 0 -15px;
+    border-width: 1px 0;
+  }
+
+  .about__btn {
+    padding: 10px 15px;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+
+  .about__item {
+    padding: 15px;
+  }
+
+  .about__row {
+    display: block;
   }
 
   .mobile-visible {
