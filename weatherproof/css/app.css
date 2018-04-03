@@ -13510,13 +13510,16 @@ a.btn {
     position: static;
     width: 100%;
     box-shadow: none;
-    border: 1px solid #cecece;
     opacity: 1;
     visibility: visible;
   }
 
   .header__list.open {
     display: block;
+  }
+
+  .header__list .header__link:not(:last-child) {
+    border: none;
   }
 
   .header__actions {

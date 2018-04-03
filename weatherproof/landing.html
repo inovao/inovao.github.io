@@ -78,10 +78,13 @@
             </div>
             <div class="header__nav"><a class="header__link" href="#">Tjänster</a>
               <div class="header__group"><a class="header__link js-header-link" href="#">Produkter</a>
-                <div class="header__list"><a class="header__link" href="#">Tak - & fasadsystem</a><a class="header__link" href="#">Plåt invändigt</a><a class="header__link" href="#">Byggplåtsprodukter</a></div>
+                <div class="header__list">
+                  <a class="header__link" href="#">Tak - & fasadsystem</a>
+                  <a class="header__link" href="#">Plåt invändigt</a><a class="header__link" href="#">Byggplåtsprodukter</a>
+                </div>
               </div><a class="header__link" href="#">Uppdrag</a><a class="header__link" href="#">Om oss</a><a class="header__link" href="#">Nyheter</a></div>
             <div class="header__dropdown dropdown dropdown_online mobile-hidden">
-              <div class="dropdown__head">Onlineverktyg</div>
+              <div class="dropdown__head" id="dropdown_onlinetools">Onlineverktyg</div>
               <div class="dropdown__drop">
                 <div class="dropdown__list">
                   <a class="dropdown__item" href="#">
@@ -113,12 +116,20 @@
       <a
         class="feedback__link" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="feedback__btn js-feedback-btn" href="#"><svg class="icon icon-dots"><use xlink:href="img/sprite.svg#icon-dots"></use></svg></a></div>
     <div class="main main_overlay main_landing"
-      style="background-image: url(img/bg-main.jpg);"><video class="main__video" autoplay loop><source src="videos/main-video.mp4" type="video/mp4"></video>
-      <div class="main__center center">
+      style="background-image: url(img/bg-main.jpg);">
+      <video class="main__video" autoplay loop>
+        <source src="videos/main-video.mp4" type="video/mp4">
+      </video>
+
+      <div class="main__center center" id="get_up">
         <div class="main__wrap">
-          <div class="main__theme">VI FINNS DÄR NÄR DU BEHÖVER</div>
-          <div class="main__title">TAK - & FASADTJÄNSTER</div>
-          <div class="main__text">...och mycket mycket mer. Vi skapar vädersäkra hus åt företag, organisationer och husägare som vill lite mer. </div><button class="main__btn"><span class="main__action">BOKA KOSTNADSFRI KONSULTATION</span><span class="main__label">Vi besöker dig och kalkylerar en offert för ditt projekt</span></button>
+          <div class="main__theme" data-animate>VI FINNS DÄR NÄR DU BEHÖVER</div>
+          <div class="main__title" data-animate>TAK - & FASADTJÄNSTER</div>
+          <div class="main__text" data-animate>...och mycket mycket mer. Vi skapar vädersäkra hus åt företag, organisationer och husägare som vill lite mer. </div>
+          <button class="main__btn" data-animate>
+            <span class="main__action">BOKA KOSTNADSFRI KONSULTATION</span>
+            <span class="main__label">Vi besöker dig och kalkylerar en offert för ditt projekt</span>
+          </button>
           <div
             class="main__call call">
             <div class="call__title">RING OSS DIREKT FÖR HJÄLP OCH RÅD</div>
@@ -201,7 +212,7 @@
                 <div class="change change_sm">
                   <div class="change__list change__list_six">
                     <div class="change__item">Arkitekter</div>
-                    <div class="change__item">Förtag</div>
+                    <div class="change__item">Företag</div>
                     <div class="change__item">Privatpersoner</div>
                     <div class="change__item">Brf:er</div>
                     <div class="change__item">Företag</div>
@@ -231,7 +242,7 @@
               <div class="section__theme">VARFÖR PLÅT?</div>
               <div class="section__title">Plåt är ett <a href="#">Smart Val</a> för Ditt Projekt</div>
               <div class="section__text">Storm, regn eller rusk? En av de stora fördelarna med byggplåt är dess <a href="#">hållbarhet, optimala tätskikt och breda utbud</a> av möjligheter som medföljer med ett mjukt och följsamt material. Oavsett dina behov så finns det alltid
-                en lösning med byggnadsplåt.</div><a class="btn btn_white btn_mt20" href="#">Varför välja oss?</a></div>
+                en lösning med byggnadsplåt.</div><a class="btn btn_white btn_mt20" href="#">Varför välja plåt?</a></div>
           </div>
         </div>
       </div>
@@ -242,8 +253,8 @@
           <div class="section__title">Så <a href="#">Anlitar</a> Du Oss</div>
           <div class="section__text">
             <p><strong>Vi gör det enkelt</strong> att byta till tak-och fasadplåt. </p>
-            <p>Vårt dedikerade team hanterar allt från början till slut. Vi kommer att styra dig genom byggprocessen och hålla dig informerad om vad som händer <a href="#">varje steg på vägen.</a> Allt börjar med ett snabbt samtal.</p>
-            <p>Läs mer om hur vi jobbar för att du som kund ska känna dig <a href="#">trygg att anlita oss.</a></p>
+            <p>Vårt dedikerade team hanterar allt från början till slut. Vi kommer att styra dig genom byggprocessen och hålla dig informerad om vad som händer <a href="#">varje steg på vägen.</a></br>Allt börjar med ett snabbt samtal.</p>
+            <p>Läs mer om hur vi jobbar för att du som kund ska känna </br>dig <a href="#">trygg att anlita oss.</a></p>
           </div>
         </div>
         <div class="section__wrap js-section-wrap">
@@ -303,7 +314,7 @@
                 </div>
               </div>
             </div>
-            <div class="section__text">Använd vårt offerstystem och få ett gratis prisförslag för ett tak - och fasadbyte.</div>
+            <div class="section__text">Använd vårt onlineverktyg och få ett gratis prisförslag för ditt nya tak.</div>
             <div class="section__action"><button class="section__btn btn"><svg class="icon icon-edit"><use xlink:href="img/sprite.svg#icon-edit"></use></svg><span class="btn__title">Räkna på mitt hus</span></button></div>
           </div>
         </div>
@@ -414,11 +425,14 @@
                 <div class="footer__col">
                   <div class="footer__title">NAVIGATION</div>
                   <nav class="footer__nav"><a class="footer__link" href="#">Tjänster</a><a class="footer__link" href="#">Produkter</a><a class="footer__link" href="#">Projekt</a><a class="footer__link" href="#">Om oss</a><a class="footer__link" href="#">Referenser</a><a class="footer__link"
-                      href="#">Miljö & Hälsa</a><a class="footer__link" href="#">Jobb här</a><a class="footer__link" href="#">Press/Media</a><a class="footer__link" href="#">Finansiering</a></nav>
+                      href="#">Miljö & Hälsa</a><a class="footer__link" href="#">Jobb här</a></nav>
                 </div>
                 <div class="footer__col">
-                  <div class="footer__title">GUIDER</div>
-                  <nav class="footer__nav"><a class="footer__link" href="#">Material Guiden</a><a class="footer__link" href="#">Arkitekter</a><a class="footer__link" href="#">Byggherrer</a><a class="footer__link" href="#">Fastighetsägare</a><a class="footer__link" href="#">Husägare</a></nav>
+                  <div class="footer__title">ONLINETOOLS</div>
+                  <nav class="footer__nav">
+                      <a class="footer__link" href="#">Prisförslag Direkt</a>
+                      <a class="footer__link" href="#">Egen plåtprodukt</a>
+                  </nav>
                 </div>
                 <div class="footer__col">
                   <div class="footer__title">KONTAKTUPPGIFTER</div>
@@ -463,7 +477,7 @@
           <div class="footer__down">
             <div class="footer__links"><a href="#">Om personuppgiftshantering</a><span>|</span><a href="#">Användning av cookies</a><span>|</span><a href="#">Köp- & leveransvillkor</a></div>
             <div class="footer__copyright">
-              <p>Copyright © 2017 Weatherproof Family AB.</p>
+              <p>Copyright © 2018 Weatherproof Family AB.</p>
               <p>All rights reserved. </p>
             </div>
           </div>
