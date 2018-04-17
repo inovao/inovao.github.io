@@ -224,7 +224,7 @@ input[type="search"] { -webkit-appearance: none; }
 
 ::-ms-clear { width: 0; height: 0; }
 
-textarea.form-input { height: auto; min-height: 100px; padding-top: 10px; resize: none; }
+textarea.form-input { padding-top: 17px; resize: none; }
 
 label { display: block; font-weight: 600; font-size: 15px; margin-bottom: 25px; text-align: left; }
 
