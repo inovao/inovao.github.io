@@ -8,6 +8,19 @@ $(window).on('load', function(){
 $(function(){
 
 	/* ---------------------------------------------- /*
+	 * Fixed header
+	/* ---------------------------------------------- */
+	var homeHeight = $('.home').innerHeight();
+	$(".header").removeClass("fixed");
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > homeHeight) {
+			$(".header").addClass("fixed").fadeIn('fast');;
+		} else {
+			 $(".header").removeClass("fixed").fadeIn('fast');
+		};
+	});
+
+	/* ---------------------------------------------- /*
 	 * Styler
 	/* ---------------------------------------------- */
     if($('.styler').length){
@@ -184,6 +197,7 @@ $(function(){
     	$(this).toggleClass('active');
     	$('html').toggleClass('html-lock html-margin');
     	$('.navbar-wrap').slideToggle(500);
+    	return false
     })
     
 
