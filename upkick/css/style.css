@@ -175,9 +175,7 @@ span, a { display: inline-block; }
 
 .text-right { text-align: right !important; }
 
-.html-margin { margin-right: 17px; }
-
-.html-lock { overflow: hidden !important; width: auto; }
+.html-lock { width: auto; }
 .html-lock body { overflow: hidden !important; }
 
 /* loader */
@@ -264,7 +262,8 @@ label { display: block; font-weight: 600; font-size: 15px; margin-bottom: 25px; 
 .logo a { display: block; }
 .logo svg { width: 129px; fill: #ffffff; }
 
-.navbar-wrap { display: none; z-index: 10; background-color: #2e3d50; height: 100%; height: 100vh; position: absolute; color: #fff; left: 0; top: 0; right: 0; }
+.navbar { width: 130px; text-align: right; }
+.navbar-wrap { display: none; z-index: 10; background-color: #2e3d50; height: 100%; height: 100vh; position: absolute; color: #fff; left: 0; top: 0; right: 0; text-align: left; }
 .navbar-wrap .wrapper { padding-top: 100px; padding-bottom: 100px; }
 .navbar-wrap img { margin-bottom: 72px; }
 .navbar-menu { list-style: none; position: relative; }
@@ -388,6 +387,7 @@ label { display: block; font-weight: 600; font-size: 15px; margin-bottom: 25px; 
 @media screen and (max-width: 991px) { .html-margin { margin-right: 0px; }
   .faisons-wrap__item { padding: 6% 5%; }
   .faisons-wrap__item:nth-child(2n):after { margin-top: 6%; }
+  .carousel-item .social { opacity: 1; visibility: visible; }
   .approche-wrap__head { height: 100px; }
   .approche-wrap__box { padding: 40px 30px; }
   .recommandent-text { padding: 30px; }
@@ -416,6 +416,7 @@ label { display: block; font-weight: 600; font-size: 15px; margin-bottom: 25px; 
   .list-check--horizontal .list-check__item { width: auto; max-width: none; }
   .btn, a.btn { height: 60px; padding: 0 48px; letter-spacing: 1.22px; font-size: 16px; line-height: 16px; border-radius: 30px; }
   .header { padding-top: 25px; }
+  .navbar { width: auto; }
   .navbar-wrap { height: 100vh; overflow-y: auto; }
   .navbar-wrap img { width: 44px; margin-bottom: 47px; }
   .navbar-wrap .wrapper { padding-top: 137px; padding-left: 55px; padding-right: 55px; }
@@ -476,7 +477,7 @@ label { display: block; font-weight: 600; font-size: 15px; margin-bottom: 25px; 
   .approche-wrap__item:first-child .approche-wrap__head:after { height: 50px; width: 50px; font-size: 37px; margin-top: -25px; margin-left: -17px; }
   .approche-wrap__box-title.sm a { font-size: 12px; }
   .approche-wrap__box-title a { font-size: 14px; }
-  .perfomance { background: url("../img/perfomance-bg-mobile.png") no-repeat left bottom; }
+  .perfomance { background: url("../img/perfomance-bg-mobile.png") no-repeat left bottom; background-size: cover; }
   .perfomance h2 { text-shadow: none; }
   .perfomance-box__procent { font-size: 52px; }
   .perfomance-box p { font-size: 18px; }

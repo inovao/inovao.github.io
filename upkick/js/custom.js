@@ -11,13 +11,21 @@ $(function(){
 	 * Fixed header
 	/* ---------------------------------------------- */
 	var homeHeight = $('.home').innerHeight();
+	var topSection = $('.recommandent').offset().top;
 	$(".header").removeClass("fixed");
 	$(window).scroll(function(){
+
 		if ($(this).scrollTop() > homeHeight) {
-			$(".header").addClass("fixed").fadeIn('fast');;
+			$(".header").addClass("fixed").fadeIn('fast');
 		} else {
 			 $(".header").removeClass("fixed").fadeIn('fast');
 		};
+
+		if ($(this).scrollTop() > topSection - 2000) {
+			$(".header").removeClass("fixed").fadeIn('fast');
+		} 
+
+		
 	});
 
 	/* ---------------------------------------------- /*
