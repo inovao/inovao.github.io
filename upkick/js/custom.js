@@ -10,23 +10,27 @@ $(function(){
 	/* ---------------------------------------------- /*
 	 * Fixed header
 	/* ---------------------------------------------- */
-	var homeHeight = $('.home').innerHeight();
-	var topSection = $('.recommandent').offset().top;
-	$(".header").removeClass("fixed");
-	$(window).scroll(function(){
+	if($('.home').length){
+       
+   
+		var homeHeight = $('.home').innerHeight();
+		var topSection = $('.recommandent').offset().top
+		$(".header").removeClass("fixed");
+		$(window).scroll(function(){
 
-		if ($(this).scrollTop() > homeHeight) {
-			$(".header").addClass("fixed").fadeIn('fast');
-		} else {
-			 $(".header").removeClass("fixed").fadeIn('fast');
-		};
+			if ($(this).scrollTop() > homeHeight) {
+				$(".header").addClass("fixed").fadeIn('fast');
+			} else {
+				 $(".header").removeClass("fixed").fadeIn('fast');
+			};
 
-		if ($(this).scrollTop() > topSection - 2000) {
-			$(".header").removeClass("fixed").fadeIn('fast');
-		} 
+			if ($(this).scrollTop() > topSection - 2000) {
+				$(".header").removeClass("fixed").fadeIn('fast');
+			} 
 
-		
-	});
+			
+		});
+	};
 
 	/* ---------------------------------------------- /*
 	 * Styler
@@ -88,49 +92,6 @@ $(function(){
         });
     };
 
-    /* ---------------------------------------------- /*
-	 * Perfomance slider
-	/* ---------------------------------------------- */
-    $slick_slider = $('.perfomance-wrap');
-	settings = {
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		dots: true,
-		responsive: [
-
-			{
-				breakpoint: 880,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2,
-					
-				}
-			},
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					fade: true,
-				}
-			}
-		]
-	}
-	$slick_slider.slick(settings);
-
-	// reslick only if it's not slick()
-	$(window).on('resize load', function() {
-	if ($(window).width() > 974) {
-	  if ($slick_slider.hasClass('slick-initialized')) {
-	    $slick_slider.slick('unslick');
-	  }
-	  return
-	}
-
-	if (!$slick_slider.hasClass('slick-initialized')) {
-	  return $slick_slider.slick(settings);
-	}
-	});
 
 	/* ---------------------------------------------- /*
     * MultiSelect
@@ -204,7 +165,7 @@ $(function(){
     $('.navbar-toggle').click(function(){
     	$(this).toggleClass('active');
     	$('html').toggleClass('html-lock html-margin');
-    	$('.navbar-wrap').slideToggle(500);
+    	$('.navbar-wrap').toggleClass('open');
     	return false
     })
     
@@ -229,12 +190,52 @@ $(function(){
     };
 
 
-
-
-
-
 });
 
    
 
 
+
+/* ---------------------------------------------- /*
+ * Perfomance slider
+/* ---------------------------------------------- */
+$slick_slider = $('.perfomance-wrap');
+settings = {
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	dots: true,
+	responsive: [
+
+		{
+			breakpoint: 880,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				
+			}
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				fade: true,
+			}
+		}
+	]
+}
+$slick_slider.slick(settings);
+
+// reslick only if it's not slick()
+$(window).on('resize load', function() {
+if ($(window).width() > 974) {
+  if ($slick_slider.hasClass('slick-initialized')) {
+    $slick_slider.slick('unslick');
+  }
+  return
+}
+
+if (!$slick_slider.hasClass('slick-initialized')) {
+  return $slick_slider.slick(settings);
+}
+});

@@ -1,0 +1,6 @@
+$("#search-input-js").on("change keyup", function() {
+		$('.search-bar').addClass('open');
+		if($(this).val() == '') {
+			$('.search-bar').removeClass('open');
+		}
+	});

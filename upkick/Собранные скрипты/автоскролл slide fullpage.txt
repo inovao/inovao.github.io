@@ -1,0 +1,9 @@
+$('#fullpage').fullpage({   
+        anchors: ['home', 'about', 'contact'],
+    continuousGorizontal: true,
+        afterRender: function () {
+            setInterval(function () {
+                $.fn.fullpage.moveSlideRight();
+            }, 2000);
+        }
+});

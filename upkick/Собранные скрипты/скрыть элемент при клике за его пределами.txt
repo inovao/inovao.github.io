@@ -1,0 +1,7 @@
+$(document).click( function(event){
+      if( $(event.target).closest(".improved-search").length ) 
+        return;
+      $(".improved-search").fadeOut("slow");
+      $('.js-improved-search-show').removeClass('active')
+      event.stopPropagation();
+    });

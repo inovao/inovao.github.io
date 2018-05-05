@@ -1,0 +1,8 @@
+$("header").removeClass("fixed");
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 10) {
+			$("header").addClass("fixed").fadeIn('fast');;
+		} else {
+			 $("header").removeClass("fixed").fadeIn('fast');
+		};
+	});

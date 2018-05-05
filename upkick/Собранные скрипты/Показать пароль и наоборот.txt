@@ -1,0 +1,5 @@
+$('.js-show-password').toggle(function(){
+    	$(this).parent().addClass('active').find('input').attr('type', "text")
+    }, function(){
+    	$(this).parent().removeClass('active').find('input').attr('type', "password")
+    })

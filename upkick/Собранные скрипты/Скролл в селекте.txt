@@ -1,0 +1,10 @@
+ if($('.styler').length){
+    	var _dropdown;
+		var settings = {autoReinitialise: true};
+
+        $('.styler').styler({
+			onSelectOpened: function() { 
+			 $(this).find(".jq-selectbox__dropdown ul").jScrollPane();
+			 }
+        });
+    };
