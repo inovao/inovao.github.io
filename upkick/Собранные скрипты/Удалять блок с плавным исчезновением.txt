@@ -1,4 +1,0 @@
-$('.js-remove').click(function(){
-		$(this).parents('tr').fadeOut(1000, function(){$(this).remove()});
-		return false;
-	});

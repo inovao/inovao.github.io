@@ -1,2 +1,0 @@
-$('.tariff_checkbox').prop('checked', this.checked); //Изменяем значение всех чекбоксов
-+        $('input, select').trigger('refresh'); //Обновляем jquery styler

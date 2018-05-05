@@ -1,3 +1,0 @@
-$(".close-popup").click(function(){
-		$.fancybox.close();
-	});

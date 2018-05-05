@@ -1,6 +1,0 @@
-$(".js-channel-list ul li").click(function(){
-        
-        slideIndex = $(this).index();
-
-        $('.slideshow').slick('slickGoTo', slideIndex);
-    });

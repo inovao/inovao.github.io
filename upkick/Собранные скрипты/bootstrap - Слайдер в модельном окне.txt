@@ -1,6 +1,0 @@
-$('.modal').on('shown.bs.modal', function (e) { 
-
-$('.slider').bxSlider({
-	pagerCustom: '#bx-pager'
-});
-});
