@@ -63,52 +63,188 @@
   <body>
     <header class="header js-header fixed">
       <div class="header__container">
-        <div class="header__center center"><a class="header__logo" href="#">weatherproff family<div class="header__name">Back to Home</div></a>
-          <div class="header__wrap js-header-wrap">
-            <div class="header__top">
-              <a class="header__contact" href="tel:0707462320">
-                <div class="header__icon"><svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg></div>
-                <div class="header__title">0707 46 23 20</div>
-              </a>
-              <a class="header__contact" href="mailto:Info@weatherproof.se">
-                <div class="header__icon"><svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg></div>
-                <div class="header__title">Info@weatherproof.se</div>
-              </a>
-              <div class="header__socials"><a class="header__social" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="header__social" href="#"><svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg></a></div>
-            </div>
-            <div class="header__nav"><a class="header__link" href="#">Tjänster</a>
-              <div class="header__group"><a class="header__link js-header-link" href="#">Produkter</a>
-                <div class="header__list"><a class="header__link" href="#">Tak - & fasadsystem</a><a class="header__link" href="#">Plåt invändigt</a><a class="header__link" href="#">Byggplåtsprodukter</a></div>
-              </div><a class="header__link" href="#">Uppdrag</a><a class="header__link" href="#">Om oss</a><a class="header__link" href="#">Nyheter</a></div>
-            <div class="header__dropdown dropdown dropdown_online mobile-hidden">
-              <div class="dropdown__head">Onlineverktyg</div>
-              <div class="dropdown__drop">
-                <div class="dropdown__list">
-                  <a class="dropdown__item" href="#">
-                    <div class="dropdown__preview"><img class="dropdown__pic dropdown__pic_mb" src="img/d1.svg"></div>
-                    <div class="dropdown__title">Färgväljare</div>
+        <div class="header__top">
+          <a class="header__contact" href="tel:0707462320">
+            <div class="header__icon"><svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg></div>
+            <div class="header__title">0707 46 23 20</div>
+          </a>
+          <a class="header__contact" href="mailto:Info@weatherproof.se">
+            <div class="header__icon"><svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg></div>
+            <div class="header__title">Info@weatherproof.se</div>
+          </a>
+          <div class="header__socials"><a class="header__social" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="header__social" href="#"><svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg></a></div>
+        </div>
+        <div class="header__inner">
+          <div class="header__center center"><a class="header__logo" href="#"></a>
+            <div class="header__wrap">
+              <div class="header__nav">
+                <div class="header__group">
+                  <div class="header__item js-header-trigger">Tjänster<svg class="icon icon-arrow-menu"><use xlink:href="img/sprite.svg#icon-arrow-menu"></use></svg></div>
+                  <div class="header__drop js-header-drop">
+                    <a class="header__link" href="#">
+                      <div class="header__preview"><img class="header__pic" src="img/menu-1.svg"></div>
+                      <div class="header__label">Tak & Fasadtjänster</div>
+                    </a>
+                    <a class="header__link" href="#">
+                      <div class="header__preview"><img class="header__pic" src="img/menu-2.svg"></div>
+                      <div class="header__label">Garnering</div>
+                    </a>
+                    <a class="header__link" href="#">
+                      <div class="header__preview"><img class="header__pic" src="img/menu-3.svg"></div>
+                      <div class="header__label">Taksäkerhet</div>
+                    </a>
+                    <a class="header__link" href="#">
+                      <div class="header__preview"><img class="header__pic" src="img/menu-4.svg"></div>
+                      <div class="header__label">Plåt inomhus</div>
+                    </a>
+                    <a class="header__link" href="#">
+                      <div class="header__preview"><img class="header__pic" src="img/menu-5.svg"></div>
+                      <div class="header__label">Legotillverkning</div>
+                    </a>
+                    <a class="header__link" href="#">
+                      <div class="header__preview"><img class="header__pic" src="img/menu-6.svg"></div>
+                      <div class="header__label">Skräddarsydda tillverkning</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="header__group">
+                  <div class="header__item js-header-trigger">Produkter<svg class="icon icon-arrow-menu"><use xlink:href="img/sprite.svg#icon-arrow-menu"></use></svg></div>
+                  <div class="header__drop js-header-drop">
+                    <a class="header__link" href="#">
+                      <div class="header__preview"><img class="header__pic" src="img/menu-7.svg"></div>
+                      <div class="header__label">Tak & Fasadsystem</div>
+                    </a>
+                    <a class="header__link" href="#">
+                      <div class="header__preview"><img class="header__pic" src="img/menu-8.svg"></div>
+                      <div class="header__label">Byggnadsplåtsprodukter</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="header__group"><a class="header__item" href="#">Uppdrag</a></div>
+                <div class="header__group"><a class="header__item" href="#">Om oss</a></div>
+                <div class="header__group"><a class="header__item" href="#">Byggnadsplåtsprodukter</a></div>
+              </div>
+              <div class="header__lang">
+                <div class="header__head js-header-trigger"><img class="header__pic" src="img/flag-sweden.png"></div>
+                <div class="header__drop js-header-drop">
+                  <a class="header__link active" href="#">
+                    <div class="header__preview"><img class="header__pic" src="img/flag-sweden.png"></div>
+                    <div class="header__label">Svenska</div>
                   </a>
-                  <a class="dropdown__item" href="#">
-                    <div class="dropdown__preview"><img class="dropdown__pic" src="img/d2.svg"></div>
-                    <div class="dropdown__title">Räkna på mitt hus</div>
+                  <a class="header__link" href="#">
+                    <div class="header__preview"><img class="header__pic" src="img/flag-england.png"></div>
+                    <div class="header__label">English</div>
                   </a>
-                  <a class="dropdown__item" href="#">
-                    <div class="dropdown__preview"><img class="dropdown__pic" src="img/d3.svg"></div>
-                    <div class="dropdown__title">Beställ skräddarsydda plåtprodukt</div>
+                  <a class="header__link" href="#">
+                    <div class="header__preview"><img class="header__pic" src="img/flag-china.png"></div>
+                    <div class="header__label">中国</div>
                   </a>
                 </div>
               </div>
-            </div>
-            <div class="header__actions"><a class="btn" href="#">Kontakta oss</a><a class="btn" href="#">Räkna på mitt hus</a><a class="btn" href="#">Skicka in din plåtbeställning</a></div>
-            <div class="header__dropdown dropdown">
-              <div class="dropdown__head">Sv</div>
-              <div class="dropdown__drop">
-                <div class="dropdown__list"><a class="dropdown__item" href="#">En</a><a class="dropdown__item" href="#">Fi</a><a class="dropdown__item" href="#">Cn</a></div>
+              <div class="header__online"><button class="header__btn btn js-header-trigger"><span class="btn__title">Onlineverktyg</span><svg class="icon icon-arrow-menu"><use xlink:href="img/sprite.svg#icon-arrow-menu"></use></svg></button>
+                <div class="header__drop js-header-drop">
+                  <a class="header__link" href="#">
+                    <div class="header__preview"><img class="header__pic" src="img/menu-9.svg"></div>
+                    <div class="header__label">Skapa takbuget online</div>
+                  </a>
+                  <a class="header__link" href="#">
+                    <div class="header__preview"><img class="header__pic" src="img/menu-10.svg"></div>
+                    <div class="header__label">Beställ din plåtprodukt</div>
+                  </a>
+                </div>
               </div>
-            </div>
-          </div><button class="header__menu js-header-menu"><svg class="icon icon-menu"><use xlink:href="img/sprite.svg#icon-menu"></use></svg><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button></div>
+            </div><button class="header__burger js-header-burger"><svg class="icon icon-menu"><use xlink:href="img/sprite.svg#icon-menu"></use></svg></button></div>
+        </div>
       </div>
     </header>
+    <div class="menu js-menu">
+      <div class="menu__wrap">
+        <div class="menu__head"><a class="menu__logo" href="#"><img class="menu__pic" src="img/weatherproof-family-black.svg"></a><button class="menu__close"><span class="menu__icon"><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></span><span class="menu__span">Stäng</span></button></div>
+        <div
+          class="menu__body">
+          <div class="menu__nav">
+            <a class="menu__item" href="#">
+              <div class="menu__title">
+                <div class="menu__label">Tjänster</div>
+              </div>
+              <div class="menu__text">Vi hjälper företag med allt inom tunnplåt. Läs mer om våra tjänster.</div>
+            </a>
+            <a class="menu__item" href="#">
+              <div class="menu__title">
+                <div class="menu__label">Produkter</div>
+              </div>
+              <div class="menu__text">Våra kategorier är tak - och fasadsystem & byggnadsplåtsprodukter.</div>
+            </a>
+            <a class="menu__item" href="#">
+              <div class="menu__title">
+                <div class="menu__label">Referenser</div>
+              </div>
+              <div class="menu__text">Vi har hjälpt många nå fina resultat. - Ja, titta själv!</div>
+            </a>
+            <a class="menu__item" href="#">
+              <div class="menu__title">
+                <div class="menu__label">Om oss</div>
+              </div>
+              <div class="menu__text">Vi vill bygg mer än hus tillsammans.</div>
+            </a>
+            <a class="menu__item" href="#">
+              <div class="menu__title">
+                <div class="menu__label">Blogg</div>
+              </div>
+              <div class="menu__text">Följ vår framfart i bygg - och plåtbranschen.</div>
+            </a>
+            <a class="menu__item" href="#">
+              <div class="menu__title">
+                <div class="menu__label">Våra Certifieringar</div>
+              </div>
+              <div class="menu__text">ISO certifieringar är en självklarhet för oss. </div>
+            </a>
+            <a class="menu__item" href="#">
+              <div class="menu__title">
+                <div class="menu__label">Miljö & Hälsa</div>
+              </div>
+              <div class="menu__text">Läs mer om hur vi jobbar för att alla ska må bra.</div>
+            </a>
+            <a class="menu__item" href="#">
+              <div class="menu__title">
+                <div class="menu__label">Bli en Weatherproofer</div>
+              </div>
+              <div class="menu__text">Ansök om att bli en i familjen. </div>
+            </a>
+          </div><a class="menu__contact" href="#">Kontakta oss</a>
+          <div class="menu__section">
+            <div class="menu__category">Onlineverktyg</div>
+            <div class="menu__list">
+              <a class="menu__link" href="#">
+                <div class="menu__preview"><img class="menu__pic" src="img/menu-9.svg"></div>
+                <div class="menu__type">Beställ din plåtprodukt</div>
+              </a>
+              <a class="menu__link" href="#">
+                <div class="menu__preview"><img class="menu__pic" src="img/menu-10.svg"></div>
+                <div class="menu__type">Kalkylera din takbudget</div>
+              </a>
+            </div>
+          </div>
+          <div class="menu__foot">
+            <div class="menu__h">Välj språk</div>
+            <div class="menu__group">
+              <a class="menu__lang active" href="#">
+                <div class="menu__flag"><img class="menu__pic" src="img/flag-sweden.png"></div>
+                <div class="menu__country">Svenska</div>
+              </a>
+              <a class="menu__lang" href="#">
+                <div class="menu__flag"><img class="menu__pic" src="img/flag-england.png"></div>
+                <div class="menu__country">English</div>
+              </a>
+              <a class="menu__lang" href="#">
+                <div class="menu__flag"><img class="menu__pic" src="img/flag-china.png"></div>
+                <div class="menu__country">中国</div>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
     <div class="feedback js-feedback"><a class="feedback__link" href="#"><svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg></a><a class="feedback__link" href="#"><svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg></a>
       <a
         class="feedback__link" href="#"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a><a class="feedback__btn js-feedback-btn" href="#"><svg class="icon icon-dots"><use xlink:href="img/sprite.svg#icon-dots"></use></svg></a></div>
@@ -128,7 +264,7 @@
         <div class="section__row">
           <div class="section__col" data-animate>
             <div class="section__content section__content_mw">
-              <div class="section__title section__title_center">Plåtdetaljerna som <a>gör skillnad</a></div>
+              <div class="section__title section__title_center">Plåtdetaljerna som <a href="#">gör skillnad</a></div>
               <div class="section__text lh-18">
                 <p><strong>Garnering</strong> är ett annat ord för “plåtdetaljerna” och kan även associeras till garnering på en tårta - alltså det som gör att slutresultatet blir extra fint. Garnering i byggbranschen syftar oftast på mer estetiskt tilltalande
                   plåtarbeten som uppfyller vädersäkra funktioner. Ett vanligt inslag av garneringar i plåt är fönsterbleck, hängrännor och stuprör och kan monteras på alla förekommande tätskiktsmaterial, såsom plåt, papp, tegel och betongpannor.</p>
@@ -158,7 +294,7 @@
       <div class="section__center center">
         <div class="section__content section__content_center" data-animate>
           <div class="section__theme">WPF ♡ MEMORIES</div>
-          <div class="section__title">Bli inspirerad av våra <a>Garneringsarbeten</a>.</div>
+          <div class="section__title">Bli inspirerad av våra <a href="#">Garneringsarbeten</a>.</div>
         </div>
         <div class="slider slider_css js-slider-css" data-animate="data-animate"><input class="slider__radio" id="carousel-1" type="radio" name="carousel" checked="" /><input class="slider__radio" id="carousel-2" type="radio" name="carousel" /><input class="slider__radio" id="carousel-3" type="radio" name="carousel" /><input
             class="slider__radio" id="carousel-4" type="radio" name="carousel" /><input class="slider__radio" id="carousel-5" type="radio" name="carousel" />
@@ -185,12 +321,12 @@
       <div class="section__protection section__protection_mt">
         <div class="section__content" data-animate>
           <div class="section__theme">WPF ♡ HJÄLPA TILL</div>
-          <div class="section__title">Vad kan Weatherproof Family <a>hjälpa dig med?</a></div>
+          <div class="section__title">Vad kan Weatherproof Family <a href="#">hjälpa dig med?</a></div>
           <div class="section__text">Här hittar du ett urval av olika förslag kring vad vi kan hjälpa dig med. </div>
         </div>
-        <div class="section__links" data-animate><a>Glidskydd</a><a>Takstege</a><a>Vindslucka</a><a>Gångbrygga</a><a>Räcken</a><a>Taklucka</a><a>Väggstege</a><a>Fasadstege</a><a>Skyddsräcke</a><a>Fallskydd</a>
+        <div class="section__links" data-animate><a href="#">Plåttak</a><a href="#">Fasad</a><a href="#">Skorsten</a><a href="#">Hängränna</a><a href="#">Stuprör</a><a href="#">Fönsterbleck</a><a href="#">Bandtäckning</a><a href="#">Tak-nock</a><a href="#">Ventilastionshuv</a><a href="#">Stos</a>
           <a
-            >Snörasskydd</a><a>Livlinefäste</a><a>Tillträdeslucka</a><a>Snöglidhinder</a><a>Isstop</a></div>
+            href="#">Tröskelbleck</a><a href="#">Takstege</a><a href="#">Vindskivor</a><a href="#">Takkupa</a><a href="#">Snöraskydd</a></div>
         <div class="section__note" data-animate>Om du inte hittar vad du söker efter, så kan du använda vårt onlineverktyg och beställa din alldeles egna plåtpdodukt.</div>
       </div>
     </div>
@@ -287,6 +423,7 @@
       <div class="cookies__text">By using this website you agree to our <a href="#">cookie policy</a></div><button class="cookies__close js-cookies-close"><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button></div>
     <script type="text/javascript"
       src="js/app.js"></script>
+    <script type="text/javascript" src="js/hdr.js"></script>
   </body>
 
 </html>

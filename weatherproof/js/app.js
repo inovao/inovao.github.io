@@ -7038,39 +7038,39 @@ function _classCallCheck(t, e) {
 
 $(document).ready(function () {
     // header
-    (function () {
-        var header = $('.js-header'),
-            menu = header.find('.js-header-menu'),
-            link = header.find('.js-header-link'),
-            wrap = header.find('.js-header-wrap');
+    // (function(){
+    //     var header = $('.js-header'),
+    //         menu = header.find('.js-header-menu'),
+    //         link = header.find('.js-header-link'),
+    //         wrap = header.find('.js-header-wrap');
 
-        menu.on('click', function (e) {
-            e.preventDefault();
-            header.toggleClass('open');
-        });
+    //     menu.on('click', function(e){
+    //         e.preventDefault();
+    //         header.toggleClass('open');
+    //     });
 
-        link.on('click', function (e) {
-            if ($(window).width() <= 767) {
-                e.preventDefault();
-                var _this = $(this);
-                _this.parent().toggleClass('active');
-                _this.next().toggleClass('open');
-            }
-        });
+    //     link.on('click', function(e){
+    //         if ($(window).width() <= 767) {
+    //             e.preventDefault();
+    //             var _this = $(this);
+    //             _this.parent().toggleClass('active');
+    //             _this.next().toggleClass('open');
+    //         }
+    //     });
 
-        $(window).scroll(function () {
-            if (header.hasClass('js-header-main')) {
-                var scrollTop = $(this).scrollTop(),
-                    margin = 80;
+    //     $(window).scroll(function(){
+    //         if (header.hasClass('js-header-main')) {
+    //             var scrollTop = $(this).scrollTop(),
+    //                 margin = 80;
 
-                if (scrollTop > margin) {
-                    header.addClass('fixed');
-                } else {
-                    header.removeClass('fixed');
-                }
-            }
-        });
-    })();
+    //             if (scrollTop > margin) {
+    //                 header.addClass('fixed');
+    //             } else {
+    //                 header.removeClass('fixed');
+    //             }
+    //         }
+    //     });
+    // }());
 
     // photos
     (function () {

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="41" viewBox="0 0 47 41">
+  <defs>
+    <filter id="menu-4-a" width="109.6%" height="106.6%" x="-4.8%" y="-2.6%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.399606718   0 0 0 0 0.397391411   0 0 0 0 0.397391411  0 0 0 0.5 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" filter="url(#menu-4-a)" transform="translate(5.814 3.78)">
+    <path fill="#40B8B9" d="M31.0782535,5.4531743 C31.0782535,5.8625912 30.7493729,6.19352305 30.3424937,6.19352305 C29.9356145,6.19352305 29.6059297,5.8625912 29.6059297,5.4531743 C29.6059297,5.04375739 29.9356145,4.71201642 30.3424937,4.71201642 C30.7493729,4.71201642 31.0782535,5.04375739 31.0782535,5.4531743"/>
+    <path fill="#57BEC9" d="M1.97794754,9.87965074 C1.97794754,10.2890676 1.64826281,10.6208086 1.24138361,10.6208086 C0.835308524,10.6208086 0.505623796,10.2890676 0.505623796,9.87965074 C0.505623796,9.47023383 0.835308524,9.13849286 1.24138361,9.13849286 C1.64826281,9.13849286 1.97794754,9.47023383 1.97794754,9.87965074"/>
+    <polyline stroke="#020303" stroke-linecap="round" stroke-width="1.045" points=".308 16.564 17.901 .374 35.278 16.456"/>
+    <polyline stroke="#020303" stroke-linecap="round" stroke-width=".784" points="5.726 29.705 5.672 15.997 17.793 4.987 29.861 16.104 29.914 29.596"/>
+    <polygon fill="#3FBBD4" points="23.188 28.859 18.883 24.527 20.788 22.609 25.094 26.942"/>
+    <polygon fill="#3FBBD4" points="14.786 20.404 10.48 16.072 12.385 14.153 16.69 18.486"/>
+    <polygon stroke="#020303" stroke-linecap="round" stroke-width=".672" points="15.735 26.102 12.987 23.337 20.432 15.845 23.18 18.611"/>
+    <polygon stroke="#020303" stroke-linecap="round" stroke-width=".672" points="13.361 28.491 10.613 25.726 12.239 24.089 14.987 26.855"/>
+    <polygon stroke="#020303" stroke-linecap="round" stroke-width=".672" points="17.163 17.976 14.415 20.742 10.132 16.433 12.882 13.667"/>
+    <polygon stroke="#020303" stroke-linecap="round" stroke-width=".672" points="25.529 26.393 22.78 29.159 18.399 24.751 21.147 21.985"/>
+    <polygon stroke="#020303" stroke-linecap="round" stroke-width=".672" points="21.208 15.318 23.604 17.728 24.194 14.658"/>
+    <path stroke="#020303" stroke-linecap="round" stroke-width=".672" d="M11.9170575 16.0445308L13.5904086 14.3607431M13.7129548 16.1433249L14.4511269 15.4005487M13.786772 17.9005811L15.4351956 16.2418762M15.5339402 17.9259067L16.321163 17.1831305M21.2169008 23.5455178L21.9301456 22.8771811M21.3393666 25.2783385L22.8647616 23.7685125M23.0371626 25.4015681L23.8243854 24.658792M23.0371626 27.1343888L24.6365356 25.6245628"/>
+    <g transform="translate(13.67 16.992)">
+      <path fill="#8BD2F5" d="M8.0299942,0.264988216 L0.653097404,7.68870389"/>
+      <path stroke="#020303" stroke-width=".672" d="M8.0299942,0.264988216 L0.653097404,7.68870389"/>
+    </g>
+  </g>
+</svg>
