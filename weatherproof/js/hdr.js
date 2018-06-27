@@ -35,9 +35,11 @@ $(document).ready(function () {
 		$(window).scroll(function () {
 			if (header.hasClass('js-header-main')) {
 				var posScroll = $(this).scrollTop(),
-				    posTop = parseInt(header.css('padding-top'));
+				    posTop1 = 300,
+				    posTop2 = 600;
 
-				posScroll > posTop ? header.addClass('fixed') : header.removeClass('fixed');
+				posScroll > posTop1 ? header.addClass('fixed') : header.removeClass('fixed');
+				posScroll > posTop2 ? header.addClass('visible') : header.removeClass('visible');
 			}
 		});
 
