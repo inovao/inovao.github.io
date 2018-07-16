@@ -7554,59 +7554,82 @@ $(document).ready(function () {
 
     // grid
     (function () {
-        var grid = $('.js-grid-container');
+        var grid = $('.js-grid');
         if (grid.length) {
+            var btn = grid.find('[data-type]'),
+                item = grid.find('[data-item]');
 
-            var previews = grid.find('.js-grid-preview'),
-                counter = 0;
+            btn.on('click', function () {
+                btn.removeClass('active');
+                $(this).addClass('active');
 
-            previews.each(function () {
-                var _this = $(this);
-
-                _this.on('initialized.owl.carousel', function (event) {
-                    counter++;
-                    if (counter == previews.length) {
-                        setTimeout(function () {
-                            grid.isotope({
-                                // options
-                                itemSelector: '.js-grid-item'
-                            });
-                        }, 1000);
-                    }
-                });
-
-                _this.owlCarousel({
-                    items: 1
-                });
-            });
-
-            var filter = $('.js-filter'),
-                filterItem = filter.find('.js-filter-item'),
-                filterList = filter.find('.js-filter-list'),
-                filterNext = filter.find('.js-filter-next');
-
-            filterItem.on('click', function (e) {
-                e.preventDefault();
-                var _this = $(this),
-                    filterValue = _this.attr('data-filter');
-                filterItem.removeClass('active');
-                _this.addClass('active');
-                grid.isotope({ filter: filterValue });
-
-                $('html, body').animate({
-                    scrollTop: grid.offset().top - 120
-                }, 500);
-            });
-
-            filterNext.on('click', function (e) {
-                e.preventDefault();
-                var posScroll = filterList.scrollLeft();
-                filterList.animate({
-                    scrollLeft: posScroll += 100
-                }, 400);
+                var type = $(this).data('type');
+                if (type == 'all') {
+                    item.show();
+                } else {
+                    item.hide();
+                    grid.find('[data-item=' + type + ']').show();
+                }
             });
         }
     })();
+
+    // old js
+    // (function(){
+    //     var grid = $('.js-grid-container');
+    //     if (grid.length) {
+
+    //         var previews = grid.find('.js-grid-preview'),
+    //             counter = 0;
+
+    //         previews.each(function(){
+    //             var _this = $(this);
+
+    //             _this.on('initialized.owl.carousel', function(event) {
+    //                 counter++;
+    //                 if (counter == previews.length) {
+    //                     setTimeout(function(){
+    //                         grid.isotope({
+    //                           // options
+    //                           itemSelector: '.js-grid-item'
+    //                         });
+    //                     }, 1000);
+    //                 }
+    //             });
+
+    //             _this.owlCarousel({
+    //                 items: 1
+    //             });
+
+    //         });
+
+    //         var filter = $('.js-filter'),
+    //             filterItem = filter.find('.js-filter-item'),
+    //             filterList = filter.find('.js-filter-list'),
+    //             filterNext = filter.find('.js-filter-next');
+
+    //         filterItem.on( 'click', function(e) {
+    //             e.preventDefault();
+    //             var _this = $(this),
+    //                 filterValue = _this.attr('data-filter');
+    //             filterItem.removeClass('active');
+    //             _this.addClass('active');
+    //             grid.isotope({ filter: filterValue });
+
+    //             $('html, body').animate({
+    //                 scrollTop: grid.offset().top - 120
+    //             }, 500);
+    //         });
+
+    //         filterNext.on('click', function(e){
+    //             e.preventDefault();
+    //             var posScroll = filterList.scrollLeft();
+    //             filterList.animate({
+    //                 scrollLeft: posScroll += 100
+    //             }, 400);
+    //         });
+    //     }
+    // }());
 
     // field
     (function () {
