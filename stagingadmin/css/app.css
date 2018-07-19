@@ -151,6 +151,10 @@ select {
   font-size: 14px;
 }
 
+button {
+  background: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -180,6 +184,7 @@ a {
 .btn {
   display: inline-block;
   padding: 8px 15px;
+  background: white;
   border: 1px solid #D4D4DD;
   border-radius: 4px;
   font-size: 0;
@@ -187,6 +192,15 @@ a {
   color: #1A1A3F;
   text-align: center;
   vertical-align: middle;
+  transition: all .2s;
+}
+
+.btn:hover {
+  background: #D4D4DD;
+}
+
+.btn:hover .icon {
+  fill: black;
 }
 
 .btn__title,
@@ -205,10 +219,21 @@ a {
   margin-right: 10px;
   font-size: 12px;
   fill: #BABAC5;
+  transition: fill .2s;
 }
 
 .btn_gold {
   border-color: #CBB2A1;
+}
+
+.btn_gold:hover {
+  background: #b99780;
+  border-color: #b99780;
+  color: white;
+}
+
+.btn_gold:hover .icon {
+  fill: white;
 }
 
 .btn_gray {
@@ -217,10 +242,20 @@ a {
   color: #00B24D;
 }
 
+.btn_gray:hover {
+  border-color: #D4D4DD;
+}
+
 .btn_def {
   border-radius: 0;
   border-color: #CBB2A1;
   text-transform: uppercase;
+}
+
+.btn_def:hover {
+  background: #b99780;
+  border-color: #b99780;
+  color: white;
 }
 
 .btn_bg {
@@ -229,6 +264,11 @@ a {
   background: #CBB2A1;
   color: white;
   text-transform: uppercase;
+}
+
+.btn_bg:hover {
+  background: #b99780;
+  border-color: #b99780;
 }
 
 .panel {
@@ -438,6 +478,11 @@ a {
   border-radius: 8px;
   -ms-flex-align: center;
   align-items: center;
+  transition: background .2s;
+}
+
+.table__row:hover {
+  background: rgba(186, 186, 197, 0.05);
 }
 
 .table__cell {
@@ -498,7 +543,7 @@ a {
 }
 
 .switch__input:checked + .switch__content .switch__preview .icon {
-  fill: #00B24D;
+  opacity: 1;
 }
 
 .switch__content {
@@ -517,8 +562,9 @@ a {
   display: block;
   margin: 3px 0 0 3px;
   font-size: 16px;
-  fill: #BABAC5;
-  transition: fill .2s;
+  fill: #00B24D;
+  opacity: 0;
+  transition: opacity .2s;
 }
 
 .counter {
@@ -534,8 +580,13 @@ a {
   font-size: 0;
 }
 
+.counter__btn:hover .icon {
+  fill: black;
+}
+
 .counter__btn .icon {
   font-size: 18px;
+  transition: fill .2s;
 }
 
 .counter__field {
