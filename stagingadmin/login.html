@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Index Page</title>
+    <title>Login Page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
@@ -35,7 +35,34 @@
 
   <body>
     <div class="out">
-      <div style="padding: 50px"><a href="login.html">login.html</a><br><a href="change-password.html">change-password.html</a><br><a href="gallery.html">gallery.html</a><br><a href="add-photo.html">add-photo.html</a><br><a href="edit-photo.html">edit-photo.html</a><br><a href="promo-banners.html">promo-banners.html</a></div>
+      <div class="start">
+        <div class="start__wrap">
+          <div class="start__logo logo">
+            <div class="logo__number">No.1</div>
+            <div class="logo__title">STAGING</div>
+          </div>
+          <div class="start__head">
+            <div class="start__title">Login</div>
+            <div class="start__text">to #1Staging admin panel</div>
+          </div>
+          <form class="start__form" action="">
+            <div class="start__fieldset">
+              <div class="start__field field field_start">
+                <div class="field__label">Email</div>
+                <div class="field__wrap"><input class="field__input" type="email" required></div>
+              </div>
+              <div class="start__field field field_start">
+                <div class="field__label">Password</div>
+                <div class="field__wrap"><input class="field__input" type="password" required></div>
+              </div>
+            </div>
+            <div class="start__field field field_reset">
+              <div class="field__wrap"><label class="field__switch switch"><input class="switch__input" type="checkbox" checked><span class="switch__content"><span class="switch__preview"><svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg></span><span class="switch__content">Save password</span></span></label></div>
+            </div>
+            <div class="start__foot"><button class="start__btn btn btn_bg"><span class="btn__title">CONTINUE</span></button></div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 
