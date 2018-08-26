@@ -59,15 +59,7 @@ $(document).ready(function () {
     });
 
  
-    $('a[href^="#"]').on('click',
-      function(){
-        var scroll_el = $(this).attr('href');
-          if ($(scroll_el).length != 0) {
-            $('html, body').animate({ scrollTop: $(scroll_el).offset().top - 80 }, 500);
-          }
-          return false;
-      }
-    ); 
+
 
 
      // закрыть блок при клике вне его поля
@@ -102,9 +94,29 @@ $(document).ready(function () {
         }).resize()
     });
 
+    jQuery('.tab_item').hide();
+    $('.tab_item:first').show();
+    $('.item_sect_13:first .butt_js_click:first').addClass('active');
 
+    $('.butt_js_click').hover(function (event) {
+       $('.butt_js_click').removeClass('active');
+       $(this).addClass('active');
+       $('.tab_item').hide();
+       event.preventDefault();
+
+       var selectTab = $(this).find('a').attr('href')
+       $(selectTab).show();
+    });
     
-
+    $('.butt_js_click a').on('click',
+      function(){
+        var scroll_el = $(this).attr('href');
+          if ($(scroll_el).length != 0) {
+            $('html, body').animate({ scrollTop: $(scroll_el).offset().top - 100 }, 500);
+          }
+          return false;
+      }
+    ); 
     
 
     
