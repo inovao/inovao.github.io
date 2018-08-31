@@ -44,6 +44,8 @@ $(function(){
 		slidesToShow: 2, 
 		slidesToScroll: 1,
 		infinite: false,
+		autoplay: true,
+		autoplaySpeed: 2000,
 		prevArrow: '<button class="slick-arrow slick-prev"><svg class="icon icon-slick-left"><use xlink:href="#icon-slick-left"></use></svg></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><svg class="icon icon-slick-right"><use xlink:href="#icon-slick-right"></use></svg></button>',
 		responsive: [
