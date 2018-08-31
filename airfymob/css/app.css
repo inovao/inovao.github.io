@@ -92,6 +92,7 @@ html {
 
 body {
   min-width: 320px;
+  background: #2C3235;
   font-family: 'AvenirNext-Regular', serif;
   font-size: 1.3rem;
   color: #5D90A3;
@@ -119,7 +120,6 @@ body {
 
 .container {
   padding: 2.6rem 0;
-  background: #2C3235;
 }
 
 .title {
@@ -139,6 +139,10 @@ body {
 
 .text {
   margin-bottom: 1.5rem;
+}
+
+.text p {
+  margin-bottom: 1.8rem;
 }
 
 .counter {
@@ -478,6 +482,88 @@ body {
   padding-left: 12.9rem;
   font-size: 1.5rem;
   letter-spacing: .076rem;
+}
+
+.auth {
+  padding-bottom: 1.5rem;
+}
+
+.auth__header {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3.3rem 0 2.3rem;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.auth__header .logo {
+  width: 8.1rem;
+  height: 3.5rem;
+}
+
+.auth__preview {
+  display: -ms-flexbox;
+  display: flex;
+  height: 18.5rem;
+  margin-bottom: 2.2rem;
+}
+
+.auth__pic {
+  max-width: 29rem;
+  margin: auto;
+}
+
+.auth__title {
+  margin-bottom: 2.7rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+.auth__title span {
+  display: block;
+  font-family: 'AvenirNext-DemiBold', serif;
+  color: #FF0000;
+}
+
+.auth__form {
+  max-width: 36rem;
+  margin: 0 auto 3.9rem;
+}
+
+.auth__field {
+  margin-bottom: 1.25rem;
+}
+
+.auth__field .field__input {
+  height: 5.22rem;
+  text-align: center;
+}
+
+.auth__help {
+  margin: 4rem 0 6.7rem;
+  color: white;
+  text-align: center;
+}
+
+.auth__help a {
+  font-family: 'AvenirNext-DemiBold', serif;
+  color: white;
+  text-decoration: none;
+}
+
+.auth__btn {
+  display: block;
+  width: 31.2rem;
+  margin: 3.1rem auto 0;
+}
+
+.auth_error .auth__pic {
+  max-width: 38.75rem;
+}
+
+.auth .text {
+  text-align: center;
 }
 
 @media only screen and (max-width: 767px) {

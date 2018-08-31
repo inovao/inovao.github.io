@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Index Page</title>
+    <title>Error Page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
@@ -28,13 +28,20 @@
   </head>
 
   <body>
-    <div style="padding: 50px">
-      <style>
-        a {
-          color: white
-        }
-
-      </style><br><a href="main.html">main.html</a><br><a href="login.html">login.html</a></div>
+    <div class="center">
+      <div class="auth auth_error">
+        <div class="auth__header">
+          <div class="logo"></div>
+        </div>
+        <div class="auth__preview"><img class="auth__pic" src="img/auth-2.jpg"></div>
+        <div class="auth__title"><span>Ooops</span> Login-Daten nicht korrekt.</div>
+        <div class="auth__form">
+          <div class="auth__help">
+            <p>Falls Sie Probleme mit dem Login haben, wenden Sie sich bitte an <a href="mailto:support@airfy.com">support@airfy.com</a> oder an unsere </p>
+            <p>Hotline unter <a href="tel:030896778745">030/896-778-745</a></p>
+          </div><button class="auth__btn btn">LOGIN</button></div>
+      </div>
+    </div>
   </body>
 
 </html>
