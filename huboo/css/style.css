@@ -868,11 +868,11 @@ table td img { display: inline-block; }
   body { font-size: 14px; line-height: 1.57; }
   p { font-size: 14px; line-height: 1.57; }
   .tel__icon { width: 36px; height: 36px; }
-  .sec-home { padding-top: 95px; padding-bottom: 95px; min-height: 500px; background-position: center; text-align: center; }
+  .sec-home { padding-top: 135px; padding-bottom: 95px; min-height: 500px; background-position: center; text-align: center; display: block; }
   .sec-home br { display: none; }
   .sec-home img { width: 90px; margin: 0 auto 10px; }
   .sec-home p { font-size: 14px; }
-  .sec-home .btn { display: none; }
+  .sec-home:not(.text-center) .btn { display: none; }
   h1 { font-size: 24px; margin-bottom: 20px; }
   h2 { font-size: 28px; }
   .btn--lg { height: 46px; min-width: 192px; }
