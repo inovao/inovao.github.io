@@ -1,0 +1,7 @@
+.hide { position: absolute; left: 0; top: 0; height: 0; width: 0; overflow: hidden; z-index: -1; opacity: 0; visibility: hidden; }
+
+.tab-cont { opacity: 1; -webkit-transition: opacity 0.4s; -o-transition: opacity 0.4s; transition: opacity 0.4s; visibility: visible; }
+
+.tab-cont.hide { opacity: 0; }
+
+/*# sourceMappingURL=_ui.css.map */
