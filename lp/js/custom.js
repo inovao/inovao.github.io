@@ -67,4 +67,115 @@ $(function(){
 
 
 
+    function initGoogleMap(){
+
+        var coordinates = {lat: 47.212325, lng: 38.933663},
+            markerImage = 'images/marker.png',
+            zoom = 17,
+            
+
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: coordinates,
+                zoom: zoom,
+                disableDefaultUI: true,
+                scrollwheel: false,
+                styles: [
+    {
+        "featureType": "landscape",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "stylers": [
+            {
+                "hue": "#000"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "gamma": 1.15
+            },
+            {
+                "lightness": 12
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "lightness": 24
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": 57
+            }
+        ]
+    }
+]
+            }),
+
+            marker = new google.maps.Marker({
+                position: coordinates,
+                map: map,
+                icon: markerImage
+            });
+
+
+        marker.addListener('click', function () {
+            marker.setAnimation(null);
+        });
+
+    }
+google.maps.event.addDomListener(window, 'load', initGoogleMap);
 
