@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	
 	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.0" />
 </head>
 <body class="loaded">
@@ -49,26 +49,41 @@
 				</div>
 
 				<nav class="navbar">
-					<ul class="navbar-menu">
-						<li class="navbar-menu__item">
-							<a href="#" class="navbar-menu__link">Why Purpurex</a>
-						</li>
-						<li class="navbar-menu__item">
-							<a href="#" class="navbar-menu__link">Benefits</a>
-						</li>
-						<li class="navbar-menu__item">
-							<a href="#" class="navbar-menu__link">About Us</a>
-						</li>
-						<li class="navbar-menu__item">
-							<a href="#" class="navbar-menu__link">FAQ</a>
-						</li>
-						<li class="navbar-menu__item">
-							<a href="#" class="navbar-menu__link">Clinical Study</a>
-						</li>
-					</ul>
+					<div class="navbar-fixed">
+						<span class="navbar-close visible-ipad"></span>
+						<div class="logo visible-ipad"><a href="#"><img src="img/logo_navbar.png" alt=""></a></div>
+						<ul class="navbar-menu">
+							<li class="navbar-menu__item">
+								<a href="#" class="navbar-menu__link">Why Purpurex</a>
+							</li>
+							<li class="navbar-menu__item">
+								<a href="#" class="navbar-menu__link">Benefits</a>
+							</li>
+							<li class="navbar-menu__item">
+								<a href="#" class="navbar-menu__link">About Us</a>
+							</li>
+							<li class="navbar-menu__item">
+								<a href="#" class="navbar-menu__link">FAQ</a>
+							</li>
+							<li class="navbar-menu__item">
+								<a href="#" class="navbar-menu__link">Clinical Study</a>
+							</li>
+						</ul>
+						<div class="navbar-footer visible-ipad">
+							<div class="navbar-footer__title">Have Questions?</div>
+							<a href="tel:8779074047">(877) 907-4047</a><br>
+							<a href="mailto:info@purpurex.com">info@purpurex.com</a>
+						</div>			
+					</div>
+					
 				</nav>
 				<a href="#" class="btn">Buy Now</a>
- 
+				<button class="navbar-toggle visible-ipad">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+ 				
 
 			</div>
 		</div>
@@ -90,7 +105,7 @@
 						<li><span class="ic ic-eoy"></span>Support a reduction in the appearance of new bruises</li>
 						<li><span class="ic ic-check"></span>Achieve healthier looking and bruise-free skin</li>
 					</ul>
-					<div class="banner-button">
+					<div class="banner-button hidden-ipad">
 						<a href="#" class="btn">Buy Now</a>
 					</div>
 
@@ -108,9 +123,12 @@
 						</span>
 					</div>
 				</div>
+				<div class="banner-button visible-ipad">
+					<a href="#" class="btn">Buy Now</a>
+				</div>
 			</div>
 		</section>
-		<section class="section text-center" style="background-image: url('img/se-img.png');">
+		<section class="sepup section text-center" style="background-image: url('img/se-img.png');">
 			<div class="wrapper">
 				<div class="section-header">
 					<div class="ellipse"><img src="img/Ellipse.png" alt=""></div>
@@ -123,11 +141,12 @@
 		<section class="artset section section--info">
 			<div class="wrapper">
 				<div class="artset-wrap">
-					<div class="man">
+					<div class="man ">
 						<img src="img/man.png" alt="">
 					</div>
 					<div class="artset-wrap__right">
 						<div class="boxes-artset">
+							
 							<h3 class="h3">How Does it Work?</h3>
 							<p>Purpura is thought to be caused by an increased weakening in the connective tissues and blood vessels in those over the age of 50. The unique combination of ingredients found in Purpurex is believed to reduce capillary fragility, build collagen, and maintain capillary strength. In fact, an independent clinical study with 67 participants showed an average 50% reduction in bruising for participants that took Purpurex daily. </p>
 						</div>
@@ -349,9 +368,58 @@
 				</div>
 			</div>
 		</section>
-		<section class="section">
+		<section class="supple section">
 			<div class="wrapper">
 				<h2 class="text-info text-center">Supplement Facts</h2>
+				<div class="boxes-table">
+					<table class="table">
+						<tr>
+							<th class="table-full">INGREDIENTS</th>
+							<th>AMOUNT PER SERVING</th>
+							<th class="table-sm">% DAILY VALUE</th>
+						</tr>
+						<tr>
+							<td class="table-full">Vitamin C (as Calcium Ascorbate)</td>
+							<td>125 mg</td>
+							<td class="table-sm">208%</td>
+						</tr>
+						<tr>
+							<td class="table-full">Calcium (as Calcium  Carbonate and Calcium Ascorbate)</td>
+							<td>112.5 mg</td>
+							<td class="table-sm">11%</td>
+						</tr>
+						<tr>
+							<td class="table-full">Proprietary Blend</td>
+							<td>544 mg</td>
+							<td class="table-sm"></td>
+						</tr>
+					</table>
+				</div>
+				<ul class="tb-list">
+					<li>
+						<span class="tb-list__title">Citrus Bioflavonoid Complex</span>
+						<span class="tb-list__star">**</span>
+					</li>
+					<li>
+						<span class="tb-list__title">Rutin (Quercetin-3-Rutinoside)	</span>
+						<span class="tb-list__star">**</span>
+					</li>
+					<li>
+						<span class="tb-list__title">Eriocitrin (Eriodictyol-7-0-Rutinoside)	</span>
+						<span class="tb-list__star">**</span>
+					</li>
+					<li>
+						<span class="tb-list__title">Hesperidin Complex	</span>
+						<span class="tb-list__star">**</span>
+					</li>
+					<li>
+						<span class="tb-list__title">Arnica Montana (Blossom) Extract</span>
+						<span class="tb-list__star">**</span>
+					</li>
+
+
+				</ul>
+				<p class="td-text">Other ingredients: Microcrystalline Cellulose, Tablet Coating (Hypromeliose, Polydextrose, Titanium Dioxide, Talc, Maltodextrin, FD&C Blue #2, Medium Chain Triglycerides, FD&C Red #40), Stearic Acid, Croscarmeliose Sodium, Magnesium Stearate Silica</p>
 			</div>
 		</section>
 		<section class="rp section section--info" style="background-image: url(img/r-policy.png);">
@@ -474,26 +542,40 @@
 				</div>
 				<div class="footer-wrap__item last">
 					<div class="logo"><a href="#"><img src="img/logo-white.png" alt=""></a></div>
-					<div class="social">
+					<div class="social hidden-ipad">
 						<a href="#"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a>
 						<a href="#"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
 						<a href="#"><svg class="icon icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg></a>
 						<a href="#"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a>
 					</div>
-					<p class="copy">&copy; 2018 Purpurex ™. All Rights Reserved.</p>
+					<p class="copy hidden-ipad">&copy; 2018 Purpurex ™. All Rights Reserved.</p>
 				</div>
+				
 			</div>
 			<div class="footer-bottom">
-				<div class="fm-list">
+
+				<div class="fm-list ">
 					<a href="#">Terms and Conditions</a>
 					<span>|</span>          
 					<a href="#">Privacy Policy</a>
-					<span>|</span>          
+					<span class="hidden-iphone">|</span>          
 					<a href="#">Shipping Policy</a>
 					<span>|</span>           
 					<a href="#">Money Back Guarentee</a>
 				</div>
 				<p>Disclaimer: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			</div>
+
+		</div>
+		<div class="footer-bt visible-ipad">
+			<div class="wrapper">
+				<div class="social ">
+					<a href="#"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a>
+					<a href="#"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+					<a href="#"><svg class="icon icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg></a>
+					<a href="#"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a>
+				</div>
+				<p class="copy ">&copy; 2018 Purpurex ™. All Rights Reserved.</p>
 			</div>
 		</div>
 	</footer>
@@ -506,7 +588,6 @@
 
 <div class="icon-load"></div>
 <script src="js/jquery-3.2.1.min.js?ver1.0"></script>
-<!-- <script src="js/jquery.formstyler.js?ver1.0"></script> -->
 <script src="js/slick.min.js?ver1.0"></script>
 <script src="js/custom.js?ver1.0"></script>
 

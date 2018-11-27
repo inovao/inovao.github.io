@@ -32,6 +32,24 @@ $(function(){
 		return false;
 	});
 
+    $('.navbar-toggle').on('click', function(){
+		$('.navbar-fixed').addClass('open')
+	})
+	$('.navbar-close').on('click', function(){
+		$('.navbar-fixed').removeClass('open')
+	})
+	$(".header").removeClass("fixed");
+	$(window).on('scroll load', function(){
+
+		if ($(this).scrollTop() > 200) {
+			$(".header").addClass("fixed");
+		} else {
+			 $(".header").removeClass("fixed");
+		};
+
+		
+	});
+
  //    $('.video__play').on('click', function(){
 	// 	var dataYoutubeLink = $(this).parents('.js-video').attr('data-youtube-link');
 	// 	$(this).parents('.js-video').html('<iframe class="video-frame" src="https://www.youtube.com/embed/'+ dataYoutubeLink +'?autoplay=1" allowfullscreen></iframe>');
