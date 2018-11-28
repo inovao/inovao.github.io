@@ -52,12 +52,15 @@ $(function(){
 
     $('.navbar-toggle').on('click', function(){
 		$('.navbar-fixed').addClass('open')
+		$('.header').css({'overflow': 'visible'})
 	})
 	$('.navbar-close').on('click', function(){
 		$('.navbar-fixed').removeClass('open')
+		$('.header').css({'overflow': 'hidden'})
 	})
 	$('.navbar-fixed .anchor').on('click', function(){
 		$('.navbar-fixed').removeClass('open')
+		$('.header').css({'overflow': 'hidden'})
 	})
 	$(".header").removeClass("fixed");
 	$(window).on('scroll load', function(){
