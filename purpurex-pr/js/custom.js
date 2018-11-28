@@ -22,7 +22,7 @@ $(function(){
 		return false;
 	});
 
-     if($('.slider').length){
+    if($('.slider').length){
         $('.slider').slick({
         	slidesToShow: 1,
         	dots: true,
@@ -30,14 +30,7 @@ $(function(){
         	nextArrow: '<button class="slick-next slick-arrow">Next</button>',
         	appendArrows: '.slider-arrows',
         	adaptiveHeight: true,
-        	responsive: [
-        		{
-        			breakpoint: 480,
-        			settings: {
-        				dots: false,
-        			}
-        		}
-        	]
+        	
         });
     };
 
