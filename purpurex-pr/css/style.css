@@ -775,8 +775,8 @@ label input:checked ~ .radio { border-color: #212121; }
   .banner-button { padding-left: 0; }
   .banner-button .btn { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
   .banner-product > img { min-width: 13rem; }
-  .banner-product .video { min-width: 17rem; -webkit-box-shadow: 0 1.4rem 1.6rem rgba(79, 79, 79, 0.48); box-shadow: 0 1.4rem 1.6rem rgba(79, 79, 79, 0.48); margin-left: -4rem; width: 73%; max-width: 30rem; }
-  .banner-product .video-sub { left: 8rem; }
+  .banner-product .video { min-width: 17rem; -webkit-box-shadow: 0 1.4rem 1.6rem rgba(79, 79, 79, 0.48); box-shadow: 0 1.4rem 1.6rem rgba(79, 79, 79, 0.48); margin-left: 3rem; width: 73%; max-width: 30rem; }
+  .banner-product .video-sub { left: 4rem; }
   .banner-product .video-sub__title { font-size: 2.4rem; color: #323481; }
   .banner-product .video-sub__descr { font-size: 1.4rem; }
   .sepup { padding: 4.2rem 0; background: url("../img/sepup-img-mobile.png") no-repeat center 5rem !important; background-size: 100% auto !important; }
@@ -841,8 +841,8 @@ label input:checked ~ .radio { border-color: #212121; }
   .social a .icon { font-size: 1.5rem; }
   .copy { margin-bottom: 0; } }
 
-@media screen and (max-width: 480px) { .banner { background-size: 110% auto; background-position: left bottom; }
-  .banner-product .video { max-width: 20rem; }
+@media screen and (max-width: 480px) { .banner { background-size: 100% auto; background-position: left bottom; }
+  .banner-product .video { max-width: 23rem; }
   .slider-arrows { margin-top: 1rem; }
   .americas-header__left { max-width: none; width: auto; }
   .choose-button { display: block; }
@@ -859,5 +859,8 @@ label input:checked ~ .radio { border-color: #212121; }
   .table-sm { width: 10rem; }
   .tb-list { margin-left: 0; margin-right: -1rem; font-size: 1.2rem; }
   .tb-list__star { width: 10rem; } }
+
+@media screen and (max-width: 400px) { .banner { background-size: 110% auto; background-position: left bottom; }
+  .banner-product .video { margin-left: -2rem; margin-right: -2rem; width: 66%; } }
 
 /*# sourceMappingURL=style.css.map */
