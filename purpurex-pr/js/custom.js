@@ -15,20 +15,38 @@ $(function(){
         $('.styler').styler();
     };
 
+    $('a.anchor').bind('click.smoothscroll',function () {
+		var target = $(this).attr('href'),
+            bl_top = $(target).offset().top -80;
+		$('body,html').animate({scrollTop: bl_top}, 900);
+		return false;
+	});
+
      if($('.slider').length){
         $('.slider').slick({
         	slidesToShow: 1,
         	dots: true,
         	prevArrow: '<button class="slick-prev slick-arrow">Prev</button>',
         	nextArrow: '<button class="slick-next slick-arrow">Next</button>',
-        	appendArrows: '.slider-arrows' 
+        	appendArrows: '.slider-arrows',
+        	adaptiveHeight: true,
+        	responsive: [
+        		{
+        			breakpoint: 480,
+        			settings: {
+        				dots: false,
+        			}
+        		}
+        	]
         });
     };
 
     $('.accordion__head').on('click', function(){
 		var el = $(this);
-		el.next('.accordion__body').slideToggle();
-		el.toggleClass('open');
+		$('.accordion__head').removeClass('open')
+		$('.accordion__body').slideUp(200)
+		el.next('.accordion__body').slideDown(200);
+		el.addClass('open');
 		return false;
 	});
 
@@ -36,6 +54,9 @@ $(function(){
 		$('.navbar-fixed').addClass('open')
 	})
 	$('.navbar-close').on('click', function(){
+		$('.navbar-fixed').removeClass('open')
+	})
+	$('.navbar-fixed .anchor').on('click', function(){
 		$('.navbar-fixed').removeClass('open')
 	})
 	$(".header").removeClass("fixed");
@@ -50,26 +71,13 @@ $(function(){
 		
 	});
 
-	$('.fancybox').fancybox();
-
- //    $('.video__play').on('click', function(){
-	// 	var dataYoutubeLink = $(this).parents('.js-video').attr('data-youtube-link');
-	// 	$(this).parents('.js-video').html('<iframe class="video-frame" src="https://www.youtube.com/embed/'+ dataYoutubeLink +'?autoplay=1" allowfullscreen></iframe>');
-	// 	$('.js-video').addClass('active');
-	// });
-
-
-	/* ---------------------------------------------- /*
-	 * Tabs
-	/* ---------------------------------------------- */
-	$('.tabs a').click(function(){
-		$(this).parents('.tab-wrap').find('.tab-cont').addClass('hide');
-		$(this).parent().siblings().removeClass('active');
-		var id = $(this).attr('href');
-		$(id).removeClass('hide');
-		$(this).parent().addClass('active');
-		return false
+	$('.fancybox').fancybox({
 	});
+
+
+
+
+	
 
 });
 
