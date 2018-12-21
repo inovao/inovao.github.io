@@ -1,0 +1,983 @@
+@font-face {
+    font-family: 'DIN Pro Cond';
+    src: url('../fonts/DINPro-CondensedMedium.eot');
+    src: url('../fonts/DINPro-CondensedMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DINPro-CondensedMedium.woff2') format('woff2'),
+        url('../fonts/DINPro-CondensedMedium.woff') format('woff'),
+        url('../fonts/DINPro-CondensedMedium.ttf') format('truetype'),
+        url('../fonts/DINPro-CondensedMedium.svg#DINPro-CondensedMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url('../fonts/DINPro.eot');
+    src: url('../fonts/DINPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DINPro.woff2') format('woff2'),
+        url('../fonts/DINPro.woff') format('woff'),
+        url('../fonts/DINPro.ttf') format('truetype'),
+        url('../fonts/DINPro.svg#DINPro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Pro Cond';
+    src: url('../fonts/DINPro-CondensedLight.eot');
+    src: url('../fonts/DINPro-CondensedLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DINPro-CondensedLight.woff2') format('woff2'),
+        url('../fonts/DINPro-CondensedLight.woff') format('woff'),
+        url('../fonts/DINPro-CondensedLight.ttf') format('truetype'),
+        url('../fonts/DINPro-CondensedLight.svg#DINPro-CondensedLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url('../fonts/DINPro-Bold.eot');
+    src: url('../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DINPro-Bold.woff2') format('woff2'),
+        url('../fonts/DINPro-Bold.woff') format('woff'),
+        url('../fonts/DINPro-Bold.ttf') format('truetype'),
+        url('../fonts/DINPro-Bold.svg#DINPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Pro Cond';
+    src: url('../fonts/DINPro-CondensedRegular.eot');
+    src: url('../fonts/DINPro-CondensedRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DINPro-CondensedRegular.woff2') format('woff2'),
+        url('../fonts/DINPro-CondensedRegular.woff') format('woff'),
+        url('../fonts/DINPro-CondensedRegular.ttf') format('truetype'),
+        url('../fonts/DINPro-CondensedRegular.svg#DINPro-CondensedRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url('../fonts/DINPro-Medium.eot');
+    src: url('../fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DINPro-Medium.woff2') format('woff2'),
+        url('../fonts/DINPro-Medium.woff') format('woff'),
+        url('../fonts/DINPro-Medium.ttf') format('truetype'),
+        url('../fonts/DINPro-Medium.svg#DINPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINPro';
+    src: url('../fonts/DINPro-Medium_1.eot');
+    src: url('../fonts/DINPro-Medium_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DINPro-Medium_1.woff2') format('woff2'),
+        url('../fonts/DINPro-Medium_1.woff') format('woff'),
+        url('../fonts/DINPro-Medium_1.ttf') format('truetype'),
+        url('../fonts/DINPro-Medium_1.svg#DINPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*------------------------------------------ */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Light.eot');
+    src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/OpenSans-Light.woff') format('woff'),
+        url('../fonts/OpenSans-Light.ttf') format('truetype'),
+        url('../fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('../fonts/OpenSansCondensed-Light.eot');
+    src: url('../fonts/OpenSansCondensed-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSansCondensed-Light.woff2') format('woff2'),
+        url('../fonts/OpenSansCondensed-Light.woff') format('woff'),
+        url('../fonts/OpenSansCondensed-Light.ttf') format('truetype'),
+        url('../fonts/OpenSansCondensed-Light.svg#OpenSansCondensed-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+        url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('../fonts/OpenSansCondensed-Bold.eot');
+    src: url('../fonts/OpenSansCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSansCondensed-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSansCondensed-Bold.woff') format('woff'),
+        url('../fonts/OpenSansCondensed-Bold.ttf') format('truetype'),
+        url('../fonts/OpenSansCondensed-Bold.svg#OpenSansCondensed-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+/*------------------------------------------ */
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Black.eot');
+    src: url('../fonts/PlayfairDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-Black.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Black.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-Black.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-Black.svg#PlayfairDisplay-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-BoldItalic.eot');
+    src: url('../fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Italic.eot');
+    src: url('../fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Italic.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-BlackItalic.eot');
+    src: url('../fonts/PlayfairDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-BlackItalic.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-BlackItalic.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-BlackItalic.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-BlackItalic.svg#PlayfairDisplay-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Regular.eot');
+    src: url('../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Bold.eot');
+    src: url('../fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+/*------------------------------------------ */
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../fonts/PlayfairDisplaySC-Bold.eot');
+    src: url('../fonts/PlayfairDisplaySC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplaySC-Bold.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplaySC-Bold.woff') format('woff'),
+        url('../fonts/PlayfairDisplaySC-Bold.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplaySC-Bold.svg#PlayfairDisplaySC-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../fonts/PlayfairDisplaySC-BlackItalic.eot');
+    src: url('../fonts/PlayfairDisplaySC-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplaySC-BlackItalic.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplaySC-BlackItalic.woff') format('woff'),
+        url('../fonts/PlayfairDisplaySC-BlackItalic.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplaySC-BlackItalic.svg#PlayfairDisplaySC-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../fonts/PlayfairDisplaySC-Black.eot');
+    src: url('../fonts/PlayfairDisplaySC-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplaySC-Black.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplaySC-Black.woff') format('woff'),
+        url('../fonts/PlayfairDisplaySC-Black.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplaySC-Black.svg#PlayfairDisplaySC-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../fonts/PlayfairDisplaySC-Italic.eot');
+    src: url('../fonts/PlayfairDisplaySC-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplaySC-Italic.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplaySC-Italic.woff') format('woff'),
+        url('../fonts/PlayfairDisplaySC-Italic.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplaySC-Italic.svg#PlayfairDisplaySC-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../fonts/PlayfairDisplaySC-Regular.eot');
+    src: url('../fonts/PlayfairDisplaySC-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplaySC-Regular.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplaySC-Regular.woff') format('woff'),
+        url('../fonts/PlayfairDisplaySC-Regular.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplaySC-Regular.svg#PlayfairDisplaySC-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../fonts/PlayfairDisplaySC-BoldItalic.eot');
+    src: url('../fonts/PlayfairDisplaySC-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplaySC-BoldItalic.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplaySC-BoldItalic.woff') format('woff'),
+        url('../fonts/PlayfairDisplaySC-BoldItalic.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplaySC-BoldItalic.svg#PlayfairDisplaySC-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+/*------------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    border: none;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font: normal 16px/34px 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+.btn-menu {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    background: url(../img/ic-menu.png) no-repeat;
+}
+
+#middle-mobile {display: none;}
+
+/*  01. header
+------------------------------------------------- */
+.main-Implement {
+    background: #363636;
+}
+.container {
+    max-width: 1160px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header-title {
+   padding-top: 85px;
+   margin-left: 118px;
+}
+.header-dscr {
+    margin-top: 55px;
+    color: #98ceda;
+}
+h6 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 60px;
+    font-family: 'DIN Pro';
+    font-weight: normal;
+    margin-bottom: 0;
+}
+#team h6 {
+    margin-bottom: 50px;
+}
+h1 {
+    color: #fd89c5;
+    font-family: PerpetuaTitlingMT;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 50px;
+    position: relative;
+}
+.header-title h1:after {
+    content: '';
+    display: block;
+    width: 88px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    right: 100%;
+    margin-right: 30px;
+}
+/*  02. middle
+------------------------------------------------- */
+#middle {
+    margin-top: 25px;
+}
+h2.title {
+    color: #fff;
+    font-family: 'DIN Pro';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 60px;
+    position: relative;
+    z-index: 2;
+}
+.about-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.about-left, .about-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+.about-left {padding-right: 250px;}
+.about-right {padding-left: 250px;}
+
+.about-left .title:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #acacac;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-left: 25px;
+}
+.about-left .title:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #acacac;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -8px;
+    margin-left: 25px;
+}
+
+.about-right .title:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #acacac;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-right: 25px;
+}
+.about-right .title:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #acacac;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -8px;
+    margin-right: 25px;
+}
+.about-left .about {
+    text-align: right;
+}
+.about-left .about:first-child:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 30px;
+    background: #363636;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+.about-right .about:first-child:after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 30px;
+    background: #363636;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.about-left .about:first-child:after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 30px;
+    background: #363636;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+.about-right .about:first-child:after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 30px;
+    background: #363636;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.about-left {
+    position: relative;
+}
+.about-right:after {
+    content: '';
+    width: 2px;
+    background: #acacac;
+    height: 3000px;    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about-right .about {
+    text-align: left;
+    margin-top: 100px;
+}
+.about-right .about:last-child {
+    position: relative;
+}
+.about-right .about:last-child:after {
+    content: '';
+    display: block;
+    width: 1000px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: #363636;
+    z-index: 1;
+    margin-top: 32px;
+}
+.about-center {
+    width: 1px;
+    background: #acacac;
+    position: relative;
+}
+.about-center:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 95px;
+    background-color: #363636;
+    position: absolute;
+    bottom: 0;
+}
+.about-center:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 30px;
+    background-color: #363636;
+    position: absolute;
+    top: 0;
+}
+/*  03. team
+------------------------------------------------- */
+#team {
+    margin-top: 65px;
+}
+.team-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+.team-inner {
+  text-align: center;
+}
+.team-name {
+    font-family: 'DIN Pro';
+    font-weight: normal;
+    font-style: normal;
+}
+/*  04. captcha
+------------------------------------------------- */
+#captcha {
+    margin-top: 125px;
+}
+.captcha-text {
+    font-family: 'DIN Pro';
+    font-weight: normal;
+    font-style: normal;
+}
+.captcha-text span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+h6.line {
+    position: relative;
+    margin-left: 207px;
+    margin-bottom: 80px;
+}
+h6.line:after {
+    content: '';
+    display: block;
+    width: 88px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    right: 100%;
+    margin-right: 35px;
+}
+
+.main-Initiate_page h6.line {
+    margin-left: 207px;
+}
+/*  05. book
+------------------------------------------------- */
+#book {
+    padding-bottom: 60px;
+    margin-top: 40px;
+}
+.main-Initiate_page #book h6.line {
+    margin-bottom: 40px;
+}
+#book .container {
+    max-width: 1330px;
+}
+.book-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.book-inner {
+    width: 19%;
+    background: #fff;
+    position: relative;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+
+.book-icon {
+    width: 100%;
+    position: relative;
+}
+.book-icon:after {
+    content: '';
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    right: 0;
+    bottom: 0;
+    margin-top: -10px;
+    margin-right: -13px;
+    display: block;
+    z-index: 1;
+}
+.book-icon:before {
+    content: '';
+    background: #363636;
+    position: absolute;
+    height: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-right: -13px;
+    display: block;
+    z-index: 2;
+}
+.book-inner:first-child .book-icon:before {display: none;}
+.book-inner:first-child .book-icon:after {left: 0;}
+.book-inner:hover {
+    transform: scale(1.2);
+}
+.inner-book {
+    position: relative;
+    z-index: 2;
+}
+.book-icon img {
+    display: block;
+    width: 100%;
+}
+.read-more {
+    width: 121px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    color: #000;
+    cursor: pointer;
+    border-radius: 3px 0 0 3px;
+    font-family: 'DIN Pro';
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-Initiate_page .book-inner {
+    min-width: 300px;
+    max-width: 300px;
+    width: 100%;
+}
+
+/*  СТОРІНКА 2 Initiate_page 
+------------------------------------------------- */
+.main-Initiate_page {
+    background: #98ceda;
+    color: #000;
+}
+.main-Initiate_page .container {
+    max-width: 1185px;
+}
+.main-Initiate_page h1 {
+    color: #000;
+}
+.main-Initiate_page h1:after {
+    background: #000;
+}
+.main-Initiate_page .header-dscr {
+    color: #000;
+}
+
+.main-Initiate_page {
+    background: #98ceda;
+    color: #2b2b2b;
+}
+.main-Initiate_page .btn-menu {
+    background: url(../img/ic-menu-black.png) no-repeat;
+}
+
+.header-title {
+    padding-top: 130px;
+}
+.header-dscr {margin-top: 35px;}
+
+.main-Implement .header-title {padding-top: 85px;}
+
+.main-Initiate_page #book .container {
+    max-width: 1385px;
+}
+
+/*  01. initiate
+------------------------------------------------- */
+.initiate-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+/*.initiate-wrap:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: transparent;
+    position: absolute;
+    border-bottom: 1px dashed #fff;
+    top: 38%;
+}*/
+.initiate-inner {
+    width: 20%;
+    padding: 0 25px 0 0;
+    margin-top: 40px;
+    position: relative;
+}
+.initiate-inner:after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background-image: url(../img/border.png);
+    right: 0;
+    margin-right: 20px;
+    top: 0;
+}
+.initiate-inner:nth-child(n+1):nth-child(-n+10):before {
+    content: '';
+    display: block;
+    width: 96%;
+    height: 2px;
+    position: absolute;
+    background-image: url(../img/line.png);
+    background-repeat: no-repeat;
+    background-position: -21px;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: -20px;
+    bottom: 0;
+}
+.initiate-title {
+    font-family: 'DIN Pro';
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2b2b2b;
+    margin-bottom: 15px;
+}
+.initiate-dscr {
+    font-size: 16px;
+    color: #2b2b2b;
+    line-height: 34px;
+}
+.initiate-inner:nth-child(5):after,
+.initiate-inner:nth-child(10):after,
+.initiate-inner:nth-child(13):after {
+    display: none;
+}
+/*  02. comment
+------------------------------------------------- */
+#comment {
+    margin-top: 42px;
+}
+#comment h2.title {
+    color: #2b2b2b;
+    font-size: 30px;
+    position: relative;
+    z-index: 2;
+}
+.comment-text {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    color: #2b2b2b;
+    font-size: 19px;
+    padding: 15px 0;
+    position: relative;
+}
+.comment-text:after {
+    content: '';
+    display: block;
+    width: 98%;
+    height: 2px;
+    position: absolute;
+    background-image: url(../img/line.png);
+    background-repeat: no-repeat;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: -5px;
+    bottom: 0;
+}
+.comment-text:last-child:after {
+    display: none;
+}
+/*  03. contacts
+------------------------------------------------- */
+#contacts h2.title{
+    color: #2b2b2b;
+    font-size: 30px;
+    position: relative;
+    z-index: 2;
+}
+.request {
+    font-family: 'DIN Pro', sans-serif;
+    font-size: 20px;
+    line-height: 48px;
+    color: #1a1a1b;
+}
+.main-Initiate_page #book h6.line {
+    margin-bottom: 40px;
+}
+
+
+
+/*  RESPONSIVE
+------------------------------------------------- */
+
+@media only screen and (max-width: 1260px) {
+    .main-Initiate_page .book-inner {
+        min-width: auto;
+        max-width: 100%;
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-left {
+        padding-right: 150px;
+    }
+    .about-right {
+        padding-left: 150px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .initiate-inner {width: 25%;}
+}
+
+@media only screen and (max-width: 750px) {
+    #middle {display: none;}
+
+    #middle-mobile {display: block;}
+    .about-wrap {
+        flex-direction: column;        
+    }
+
+    .main-Implement {padding-top: 30px;}
+    .btn-menu {
+        margin-left: 30px;
+        position: static;
+        display: block;
+    }
+
+    .header-title {
+        padding-top: 20px;
+        margin-left: 60px;
+    }
+    
+    .team-wrap {
+        flex-wrap: wrap;
+    } 
+    #team .team-inner {
+        min-width: 170px;
+        margin-bottom: 30px;
+    }
+    #team .team-inner img {width: 100%;}
+
+    #captcha {
+        margin-top: 50px;
+    }
+    
+    h6.line {
+        margin-left: 120px;
+        margin-bottom: 50px;
+    }
+    h6.line:after {        
+        margin-right: 35px;
+    }
+
+    .book-wrap {
+        flex-direction: column;
+        padding-right: 15px;
+    }
+    .book-wrap .book-inner + .book-inner {
+        margin-top: 45px;
+    }
+    .book-inner {
+        width: 100%;
+    }
+
+    .initiate-inner:nth-child(n+1):nth-child(-n+10):before {display: none;}
+    .initiate-inner:after {display: none;}
+    .initiate-inner {
+        width: 50%;
+        padding: 0;
+    }
+
+    .main-Initiate_page .book-inner {
+        min-width: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .initiate-inner:nth-child(odd) {
+        padding-right: 20px;
+    }
+    .initiate-inner:nth-child(even) {
+        padding-left: 20px;
+    }
+
+    .main-Initiate_page h6.line {
+        margin-left: 123px;
+    }
+
+    .main-Initiate_page {padding-top: 30px;}
+
+    .header-title h1:after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        right: 100%;
+        margin-right: 10px;
+    }
+
+    .header-title {
+        padding-top: 20px;
+        margin-left: 50px;
+    }
+
+    .container {padding: 0 30px;}
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
+    h6 {margin-bottom: 0;}
+    .header-dscr {margin-top: 20px;}
+    #captcha img {width: 100%;} 
+}
+
