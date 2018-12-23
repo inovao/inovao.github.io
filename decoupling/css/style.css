@@ -310,9 +310,11 @@ body {
 
 a {
     transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
 }
 a:hover {
-    color: #fd89c5;
+    color: #94c5d0;
 }
 
 .btn-menu {
