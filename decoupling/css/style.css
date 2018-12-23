@@ -613,6 +613,7 @@ h6.line:after {
 #book {
     padding-bottom: 60px;
     margin-top: 40px;
+    position: relative;
 }
 .main-Initiate_page #book h6.line {
     margin-bottom: 40px;
@@ -623,6 +624,7 @@ h6.line:after {
 .book-wrap {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .book-inner {
     width: 19%;
@@ -637,7 +639,7 @@ h6.line:after {
     bottom: 0;
     width: 0;
     overflow: hidden;
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.85);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -701,7 +703,7 @@ h6.line:after {
     line-height: 40px;
     background-color: #fff;
     position: absolute;
-    bottom: 10px;
+    bottom: 16px;
     right: 0;
     color: #000;
     cursor: pointer;
@@ -720,6 +722,21 @@ h6.line:after {
     min-width: 300px;
     max-width: 300px;
     width: 100%;
+}
+
+.up-work {
+    width: 43px;
+    height: 43px;
+    background: #888;
+    display: inline-block;
+    text-indent: -3232px;
+    overflow: hidden;
+    background: url(../img/up-work.png) no-repeat;
+    position: absolute;
+    top: 0;
+    display: block;
+    right: 90px;
+    z-index: 999999999;
 }
 
 /*  СТОРІНКА 2 Initiate_page 
