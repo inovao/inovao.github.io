@@ -927,6 +927,12 @@ h6.line:after {
     .initiate-inner {width: 25%;}
 }
 
+@media only screen and (max-width: 700px) {
+    .up-work {
+        top: -40px;
+    }
+}
+
 @media only screen and (max-width: 750px) {
     #middle {display: none;}
 
