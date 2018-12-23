@@ -725,6 +725,9 @@ h6.line:after {
     max-width: 300px;
     width: 100%;
 }
+.main-Implement .book-inner:hover .hover {
+    background: rgba(140, 134, 134, 0.85);
+}
 
 .up-work {
     width: 43px;
