@@ -925,6 +925,32 @@ h6.line:after {
 
 @media only screen and (max-width: 900px) {
     .initiate-inner {width: 25%;}
+    .initiate-inner:after {
+        content: '';
+        display: block !important;
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        background-image: url(../img/border.png);
+        right: 0;
+        margin-right: 20px;
+        top: 0;
+    }
+
+    .initiate-inner:before {
+        content: '';
+        display: block !important;
+        width: 96%;
+        height: 2px;
+        position: absolute;
+        background-image: url(../img/line.png);
+        background-repeat: no-repeat;
+        background-position: -21px;
+        right: 0;
+        margin-right: 20px;
+        margin-bottom: -20px;
+        bottom: 0;
+    }
 }
 
 @media only screen and (max-width: 700px) {
