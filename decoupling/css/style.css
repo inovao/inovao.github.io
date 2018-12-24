@@ -1056,6 +1056,14 @@ h6.line:after {
     }
 
     .container {padding: 0 30px;}
+
+    .initiate-inner:after {
+        display: none !important;
+    }
+
+    .initiate-inner:before {
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
