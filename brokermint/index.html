@@ -17,6 +17,14 @@
 	<!-- BEGIN HEADER -->
 	<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<defs>
+		<symbol id="icon-fly" viewBox="0 0 37 32">
+		<title>fly</title>
+		<path d="M0 32v-12.416l26.123-3.584-26.123-3.584v-12.416l36.571 16z"></path>
+		</symbol>
+		<symbol id="icon-zoom" viewBox="0 0 32 32">
+		<title>zoom</title>
+		<path d="M22.834 20.084l9.166 9.166-2.75 2.75-9.084-9.166v-1.418l-0.582-0.5c-2.222 1.89-4.806 2.834-7.75 2.834-3.28 0-6.070-1.152-8.376-3.46-2.306-2.302-3.458-5.094-3.458-8.372s1.152-6.084 3.46-8.418c2.302-2.334 5.066-3.5 8.288-3.5 3.278 0 6.070 1.166 8.376 3.5 2.304 2.334 3.458 5.14 3.458 8.416 0 2.946-0.946 5.528-2.834 7.75l0.584 0.418h1.5zM6 17.75c1.612 1.556 3.556 2.334 5.834 2.334s4.22-0.792 5.832-2.376c1.612-1.584 2.418-3.514 2.418-5.792s-0.806-4.22-2.418-5.832c-1.61-1.612-3.554-2.418-5.832-2.418-2.28 0-4.208 0.806-5.792 2.418-1.584 1.61-2.376 3.554-2.376 5.832 0 2.28 0.78 4.222 2.334 5.834z"></path>
+		</symbol>
 		<symbol id="icon-arrow-right" viewBox="0 0 54 32">
 		<title>arrow-right</title>
 		<path d="M37.436 1.568c0.317-0.319 0.655-0.477 1.014-0.477 0.358 0 0.695 0.16 1.014 0.477l13.841 13.841c0.29 0.208 0.477 0.545 0.477 0.925 0 0.010-0 0.021-0 0.031l0-0.002c0 0.009 0 0.019 0 0.029 0 0.38-0.187 0.717-0.474 0.923l-0.003 0.002-13.841 13.841c-0.319 0.319-0.655 0.477-1.014 0.477-0.358 0-0.697-0.16-1.014-0.477l-0.836-0.835c-0.29-0.208-0.477-0.545-0.477-0.925 0-0.011 0-0.022 0-0.032l-0 0.002c0-0.397 0.16-0.756 0.477-1.073l10.023-9.903h-44.863c-0.007 0-0.015 0-0.023 0-0.389 0-0.74-0.16-0.991-0.419l-0-0c-0.258-0.251-0.418-0.602-0.418-0.99 0-0.008 0-0.017 0-0.025l-0 0.001v-1.193c-0-0.007-0-0.016-0-0.024 0-0.388 0.16-0.739 0.417-0.99l0-0c0.251-0.259 0.603-0.419 0.991-0.419 0.008 0 0.016 0 0.024 0l-0.001-0h44.864l-10.022-9.903c-0.32-0.319-0.479-0.676-0.479-1.073-0-0.009-0-0.020-0-0.031 0-0.38 0.187-0.717 0.474-0.923l0.003-0.002 0.836-0.835z"></path>
@@ -122,7 +130,7 @@
 						<a href="#" class="user-nav__link">Login</a>
 					</li>
 					<li class="user-nav__item user-nav__item--btn">
-						<a href="#" class="btn"><span class="hidden-iphone">Book A </span>Demo</a>
+						<a href="#popup-demo" class="btn fancybox"><span class="hidden-iphone">Book A </span>Demo</a>
 					</li>
 				</ul>
 			</div>
@@ -624,6 +632,72 @@
 
 </div>
 <!-- BODY EOF   -->
+
+<!-- BEGIN FOOTER -->
+<div class="popup">
+	<div class="window-open" id="popup-video">
+		
+	
+		<div class="boxes-video">
+			<iframe  src="https://www.youtube.com/embed/9zuKRgJRuEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+		
+	</div>
+	<div class="window-open" id="popup-demo">
+		
+		<div class="box-demo">
+			<div class="row">
+				<div class="col-md-6 box-demo__content">
+					<h3 class="popup__title">Request a live demo</h3>
+					<p class="text-sm">All fields are mandatory</p>
+
+					<form action="#" class="box-demo__form">
+						<div class="form-field">
+							<input type="text" class="form-input" placeholder="First name">
+						</div>
+						<div class="form-field">
+							<input type="email" class="form-input" placeholder="Email">
+						</div>
+						<div class="form-field">
+							<input type="tel" class="form-input" placeholder="Phone">
+						</div>
+						<div class="form-field">
+							<select class="styler" data-placeholder="Company size">
+								<option value=""></option>
+								<option value="">2</option>
+								<option value="">3</option>
+								<option value="">4</option>
+							</select>
+							
+						</div>
+						<div class="form-field">
+							<select class="styler" data-placeholder="Role">
+								<option value=""></option>
+								<option value="">2</option>
+								<option value="">3</option>
+								<option value="">4</option>
+							</select>
+						</div>
+						<div class="form-field">
+							<label class="box-checkbox text-sm">
+								<input type="checkbox" checked="">
+								<span class="checkbox"></span>
+								<span class="label-text">I accept <a href="#">Brokermint Privacy Policy</a> and <a href="#">Terms of use</a></span>
+							</label>
+						</div> 
+						<input type="submit" value="Request demo" class="btn btn--xl btn--block">
+					</form>
+				</div>
+				<div class="col-md-6 box-demo__banner" style="background-image: url('img/Pop-upbrokermint.png')">
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<!-- FOOTER EOF   -->
 
 <div class="overlay" style="display: none;"></div>
 <div class="icon-load"></div>
