@@ -161,8 +161,8 @@
 
 		<!-- BEGIN ASIDE -->
 		<aside class="aside hidden-ipad" >
-			<ul class="aside-nav" >
-				<li class="aside-nav__item ">
+			<ul class="aside-nav aside-nav--fixed" >
+				<li class="aside-nav__item active">
 					<a href="#basics" class="aside-nav__link active">BASICS</a>
 				</li>
 				<li class="aside-nav__item">
@@ -207,42 +207,44 @@
 
 		<!-- BEGIN CONTENT -->
 		<div class="content" >
-			<div class="content-wrap">
-				<div class="inner" id="basics">
-					<h2>Basics</h2>
-					<p>Brokermint provides an API that can be used to create, retrieve, update, and delete virtually all of the resources stored and manipulated by the system. This interface incorporates several elements of the <strong>REST</strong> tradition, making access to these actions consistent and intuitive.</p>
+			<div class="container">
+				<div class="content-wrap">
+					<div class="inner" id="basics">
+						<h2>Basics</h2>
+						<p>Brokermint provides an API that can be used to create, retrieve, update, and delete virtually all of the resources stored and manipulated by the system. This interface incorporates several elements of the <strong>REST</strong> tradition, making access to these actions consistent and intuitive.</p>
 
-					<p>In a nutshell: collections are accessed via a URL ending in a plural noun such as <span class="kbd">.../transactions</span>, and to target an individual resource instance, append its numerical id <span class="kbd">.../transactions/85</span>. To tell the API whether you are viewing, updating, or deleting the resource, make use of the “HTTP verbs,” <span class="kbd">GET</span>, <span class="kbd">PUT</span>, <span class="kbd">PATCH</span> and <span class="kbd">DELETE</span>. To create a new resource, send a <span class="kbd">POST</span> request to the collection’s URL  <span class="kbd">.../transactions</span>. The API’s response will be the content of the requested resource(s) or the data from the as-updated resource. </p>
+						<p>In a nutshell: collections are accessed via a URL ending in a plural noun such as <span class="kbd">.../transactions</span>, and to target an individual resource instance, append its numerical id <span class="kbd">.../transactions/85</span>. To tell the API whether you are viewing, updating, or deleting the resource, make use of the “HTTP verbs,” <span class="kbd">GET</span>, <span class="kbd">PUT</span>, <span class="kbd">PATCH</span> and <span class="kbd">DELETE</span>. To create a new resource, send a <span class="kbd">POST</span> request to the collection’s URL  <span class="kbd">.../transactions</span>. The API’s response will be the content of the requested resource(s) or the data from the as-updated resource. </p>
 
-					<p>The Brokermint API allows client software to retrieve and operate on a user’s data by making HTTP requests to transfer <strong>JSON-encapsulated</strong> data.</p>
+						<p>The Brokermint API allows client software to retrieve and operate on a user’s data by making HTTP requests to transfer <strong>JSON-encapsulated</strong> data.</p>
 
-					<p>Because the Brokermint API is accessible by anything that can make HTTP requests, not only can API client software be written in almost any available programming language, but people can interact with it directly through any tool that’s capable of making requests and receiving responses.</p>
+						<p>Because the Brokermint API is accessible by anything that can make HTTP requests, not only can API client software be written in almost any available programming language, but people can interact with it directly through any tool that’s capable of making requests and receiving responses.</p>
 
-					<h3>AUTHENTICATION</h3>
-					<p>All API requests have to be authenticated with credentials for a specific Brokermint account, on whose behalf the request is being made. Credentials are currently a single per-account user API Token. The API Token has to be passed with each API request as “api_key” parameter.</p>
+						<h3>AUTHENTICATION</h3>
+						<p>All API requests have to be authenticated with credentials for a specific Brokermint account, on whose behalf the request is being made. Credentials are currently a single per-account user API Token. The API Token has to be passed with each API request as “api_key” parameter.</p>
 
-					<h3>REST API V1</h3>
+						<h3>REST API V1</h3>
 
-					<p>All API requests have to be authenticated with credentials for a specific Brokermint account, on whose behalf the request is being made. Credentials are currently a single per-account user API Token. The API Token has to be passed with each API request as “api_key” parameter.</p>
+						<p>All API requests have to be authenticated with credentials for a specific Brokermint account, on whose behalf the request is being made. Credentials are currently a single per-account user API Token. The API Token has to be passed with each API request as “api_key” parameter.</p>
 
-					<h3>DATE AND TIME FIELDS</h3>
-					<p>All date and time fields are represented by 13-digit unix timestamp (number of milliseconds since Unix epoch – 00:00:00 UTC on 1 January 1970)</p>
+						<h3>DATE AND TIME FIELDS</h3>
+						<p>All date and time fields are represented by 13-digit unix timestamp (number of milliseconds since Unix epoch – 00:00:00 UTC on 1 January 1970)</p>
 
-					<h3>LISTS PAGINATION</h3>
+						<h3>LISTS PAGINATION</h3>
 
-					<p>All LIST endpoints return data sorted by ID field and support a simple cursor pagination. There are 2 params you can pass on:</p>
-					<ul>
-						<li><span class="kbd">starting_from_id</span> (ex: ?starting_from_id=3000)</li>
-						<li><span class="kbd">count</span> (ex: ?count=200)</li>
-					</ul>
+						<p>All LIST endpoints return data sorted by ID field and support a simple cursor pagination. There are 2 params you can pass on:</p>
+						<ul>
+							<li><span class="kbd">starting_from_id</span> (ex: ?starting_from_id=3000)</li>
+							<li><span class="kbd">count</span> (ex: ?count=200)</li>
+						</ul>
+					</div>
+					<div class="inner" id="endpoints">
+						<h2>ENDPOINTS</h2>
+
+
+					</div>
+	        
+	        
 				</div>
-				<div class="inner" id="endpoints">
-					<h2>ENDPOINTS</h2>
-
-
-				</div>
-        
-        
 			</div>
 		</div>
 		<!-- CONTENT EOF   -->
