@@ -139,7 +139,17 @@
 	<!-- HEADER EOF   -->
 	
 	<div id="fullpage">
-		<div class="img-gradient-b"></div>
+		<div class="pl-content pl-fixed">
+			<div class="container">
+				<div class="rgrid-wrap row" >
+					<div class="col-lg-6 col-md-7 rgrid-wrap__content">
+					</div>
+					<div class="col-lg-6 col-md-5 rgrid-wrap__img">
+						<div class="img-gradient-b"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<a href="#" class="aside-toggle"><span>ALL SERVICES</span></a>
 		<aside class="aside aside--fixed" >
 			<div>
@@ -200,33 +210,36 @@
 				</ul>
 			</div>
 			<!-- TABS NAV EOF   -->
-		
-			<!-- BEGIN PAGE HEADER -->
-			<section class="page-header page-header--full ">
-				<div class="container">
-					<div class="page-header-wrap row mx-wrapper ">
-						<div class="page-header-wrap__left col-md-6">
-							<div class="video">
-								<a href="#popup-video" class="video__link fancybox">
-									<img src="img/img1.jpg" alt="">
-									<span class="play">
-										<span class="play__icon"></span>
-									</span>
-								</a>
+			<div class="pl-content">
+				
+			
+				<!-- BEGIN PAGE HEADER -->
+				<section class="page-header page-header--full ">
+					<div class="container">
+						<div class="page-header-wrap row mx-wrapper ">
+							<div class="page-header-wrap__left col-lg-5 col-md-6">
+								<div class="video">
+									<a href="#popup-video" class="video__link fancybox">
+										<img src="img/img1.jpg" alt="">
+										<span class="play">
+											<span class="play__icon"></span>
+										</span>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="page-header-wrap__right col-md-6">
-							<h4 class="subtitle">Brokermint features</h4>
-							<h1 class="title">Instant Transaction Overview & Task Management</h1>
-							<p class="text">Ensure everyone’s on the same page while eliminating bottlenecks and promoting accountability across your entire organization </p>
-							<div class="button">
-								<a href="#" class="btn btn--lg">Learn more</a>
+							<div class="page-header-wrap__right col-lg-7 col-md-6">
+								<h4 class="subtitle">Brokermint features</h4>
+								<h1 class="title">Instant Transaction Overview & Task Management</h1>
+								<p class="text">Ensure everyone’s on the same page while eliminating bottlenecks and promoting accountability across your entire organization </p>
+								<div class="button">
+									<a href="#" class="btn btn--lg">Learn more</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<!-- PAGE HEADER EOF -->
+				</section>
+				<!-- PAGE HEADER EOF -->
+			</div>
 		</div>
 
 		<div class="fl-section" >
@@ -240,7 +253,9 @@
 							<a href="#" class="btn">LEARN MORE</a>
 						</div>
 						<div class="col-lg-6 col-md-5 rgrid-wrap__img">
+
 							<div class="img-gradient"><img src="img/documents.svg" alt=""></div>
+							
 						</div>
 					</div>
 				</div>
@@ -637,16 +652,16 @@
 
 					<form action="#" class="box-demo__form">
 						<div class="form-field">
-							<input type="text" class="form-input" placeholder="First name">
+							<input type="text" class="form-input" placeholder="First name" required="">
 						</div>
 						<div class="form-field">
-							<input type="email" class="form-input" placeholder="Email">
+							<input type="email" class="form-input" placeholder="Email" required="">
 						</div>
 						<div class="form-field">
-							<input type="tel" class="form-input" placeholder="Phone">
+							<input type="tel" class="form-input" placeholder="Phone" required="">
 						</div>
 						<div class="form-field">
-							<select class="styler" data-placeholder="Company size">
+							<select class="styler" data-placeholder="Company size" required="">
 								<option value=""></option>
 								<option value="">2</option>
 								<option value="">3</option>
@@ -655,7 +670,7 @@
 							
 						</div>
 						<div class="form-field">
-							<select class="styler" data-placeholder="Role">
+							<select class="styler" data-placeholder="Role" required="">
 								<option value=""></option>
 								<option value="">2</option>
 								<option value="">3</option>
@@ -678,6 +693,13 @@
 			</div>
 		</div>
 		
+	</div>
+	<div class="window-open" id="popup-complate">
+		<div class="complate">
+			<h3 class="popup__title">Booking complete!</h3>
+			<p>We got your request and will contact you in next 24 hours!</p>
+			<a href="#" class="btn btn--xl btn--block">Continue</a>
+		</div>
 	</div>
 </div>
 <!-- FOOTER EOF   -->
