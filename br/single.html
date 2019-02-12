@@ -326,23 +326,31 @@
 			</div>
 			<div class="row">
 				<div class="col-xl-10 offset-xl-1">
-					<form action="#">
+					<form action="#" id="checkform">
 						<div class="box-form row">
 							<div class="form-field">
 								<label>First name</label>
-								<input type="text" class="form-input" placeholder="" required="">
+								<div class="form-validate">
+									<input type="text" class="form-input" name="username" placeholder="" >
+								</div>
 							</div>
 							<div class="form-field">
 								<label>Last name</label>
-								<input type="text" class="form-input" placeholder="" required="">
+								<div class="form-validate">
+									<input type="text" class="form-input" name="surname" placeholder="" >
+								</div>
 							</div>
 							<div class="form-field">
 								<label>Email</label>
-								<input type="email" class="form-input" placeholder="" required="">
+								<div class="form-validate">
+									<input type="email" class="form-input" name="email" placeholder="" >
+								</div>
 							</div>
 							<div class="form-field">
 								<label>Phone</label>
-								<input type="tel" class="form-input" placeholder="" required="">
+								<div class="form-validate">
+									<input type="tel" class="form-input" name="tel" placeholder="" >
+								</div>
 							</div>
 							<div class="form-field form-field--button">
 								<input type="submit" class="btn btn--lg" value="Book Demo">
@@ -470,18 +478,24 @@
 					<h3 class="popup__title">Request a live demo</h3>
 					<p class="text-sm">All fields are mandatory</p>
 
-					<form action="#" class="box-demo__form">
+					<form action="#" id="checkdemoform" class="box-demo__form">
 						<div class="form-field">
-							<input type="text" class="form-input" placeholder="First name" required="">
+							<div class="form-validate">
+								<input type="text" class="form-input" name="username" placeholder="First name" >
+							</div>
 						</div>
 						<div class="form-field">
-							<input type="email" class="form-input" placeholder="Email" required="">
+							<div class="form-validate">
+								<input type="email" class="form-input" name="email" placeholder="Email" >
+							</div>
 						</div>
 						<div class="form-field">
-							<input type="tel" class="form-input" placeholder="Phone" required="">
+							<div class="form-validate">
+								<input type="tel" class="form-input" name="tel" placeholder="Phone" >
+							</div>
 						</div>
 						<div class="form-field">
-							<select class="styler" data-placeholder="Company size" required="">
+							<select class="styler" data-placeholder="Company size" >
 								<option value=""></option>
 								<option value="">2</option>
 								<option value="">3</option>
@@ -490,7 +504,7 @@
 							
 						</div>
 						<div class="form-field">
-							<select class="styler" data-placeholder="Role" required="">
+							<select class="styler" data-placeholder="Role" >
 								<option value=""></option>
 								<option value="">2</option>
 								<option value="">3</option>
@@ -516,6 +530,7 @@
 	</div>
 	<div class="window-open" id="popup-complate">
 		<div class="complate">
+			<img src="img/Checkmark-booking-complete.svg" alt="" class="complate__img">
 			<h3 class="popup__title">Booking complete!</h3>
 			<p>We got your request and will contact you in next 24 hours!</p>
 			<a href="#" class="btn btn--xl btn--block">Continue</a>
