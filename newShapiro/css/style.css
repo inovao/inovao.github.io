@@ -1,0 +1,1330 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Medium.eot');
+    src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gotham-Medium.woff2') format('woff2'),
+        url('../fonts/Gotham-Medium.woff') format('woff'),
+        url('../fonts/Gotham-Medium.ttf') format('truetype'),
+        url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/Gotham-Book.eot');
+    src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gotham-Book.woff2') format('woff2'),
+        url('../fonts/Gotham-Book.woff') format('woff'),
+        url('../fonts/Gotham-Book.ttf') format('truetype'),
+        url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Bold.eot');
+    src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gotham-Bold.woff2') format('woff2'),
+        url('../fonts/Gotham-Bold.woff') format('woff'),
+        url('../fonts/Gotham-Bold.ttf') format('truetype'),
+        url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Black';
+    src: url('../fonts/Gotham-Black.eot');
+    src: url('../fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gotham-Black.woff2') format('woff2'),
+        url('../fonts/Gotham-Black.woff') format('woff'),
+        url('../fonts/Gotham-Black.ttf') format('truetype'),
+        url('../fonts/Gotham-Black.svg#Gotham-Black') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    font: 16px 'Gotham', sans-serif;
+    background: url(../img/bg.jpg) repeat;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {text-decoration: none;}
+
+h3.title {
+    font-size: 15px;
+    color: #abadb0;
+    text-transform: uppercase;
+}
+
+h2.title {
+    font: 40px/48px 'Gotham Black', sans-serif;
+    color: #736173;
+    text-transform: uppercase;
+}
+
+p.des {
+    font: 16px/30px 'Gotham Book', sans-serif;
+    color: #4e4e4e;
+}
+
+.center {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1445px;
+}
+
+.box {padding: 0 138px;}
+
+.d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.btn {
+    display: inline-block;
+    padding: 4px;
+    background: #839c61;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn span {
+    display: inline-block;
+    padding: 15px 48px;
+    background: #89a168;
+    border: 2px solid #a8ba91;
+}
+
+.t-center {text-align: center;}
+
+.dash-green {
+    background: url(../img/shapiro-parity_bottom.jpg) no-repeat top center;
+    background-size: cover;
+    position: relative;
+    padding: 95px 0 40px 0;
+    text-align: center;
+    min-height: 323px;
+}
+.dash-green h2.title {margin-top: 5px;}
+.dash-green .btn {margin-top: 16px;}
+.dash-green.inversion {
+    background: url(../img/shapiro-parity_bottom-inversion.jpg) no-repeat top center;
+    background-size: cover;
+}
+.dash-green .center {
+    position: relative;
+    z-index: 2;
+}
+.dash-green:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    left: 9px;
+    bottom: 9px;
+    border: 2px solid #b0c099;
+    z-index: 1;
+}
+.dash-green.inversion:after {
+    border: 2px solid #7a6f7a;
+}
+.dash-green h3.title {
+    font-size: 15px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    color: #fff;
+}
+.dash-green h2.title {
+    font: 40px/48px 'Gotham Black', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.border {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: -62px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+.border.mini {margin-top: -15px;}
+.border img {width: 100%;}
+.border.small {margin-top: -31px;}
+
+.icon-svg {
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+    fill: #a79fa7;
+}
+
+/* ---------------------------------------------------------
+    HEADER 
+---------------------------------------------------------- */
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    padding-top: 22px;
+}
+
+#header .logo {
+    position: relative;
+}
+#header .logo:before,
+#header .logo:after {
+    content: '';
+    display: block;
+    width: 540px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    background: #d2d3d3;
+}
+#header .logo:before {
+    right: 100%;
+    margin-right: -10%;
+    margin-bottom: 2.3%;
+}
+#header .logo:after {
+    left: 100%;
+    margin-left: -10%;
+    margin-bottom: 2.3%;
+}
+
+.header-nav {margin-top: -28px;}
+.header-nav li {margin-right: 58px;}
+.header-nav li:last-child {margin-right: 0;}
+
+.header-nav li a {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    color: #736173;
+    text-transform: uppercase;
+}
+.header-nav li a:hover {text-decoration: underline;}
+
+/* ---------------------------------------------------------
+    HOME 
+---------------------------------------------------------- */
+
+#home {
+    background: url(../img/home-bg_left.png), url(../img/home-bg_right.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right top;    
+    position: relative;
+}
+
+#home > .center {
+    position: relative;
+    padding-top: 156px;
+}
+
+.home-left {
+    position: relative;
+    z-index: 2;
+}
+
+#home h3 {
+    font-weight: bold;
+    font-size: 15px;
+    color: #abadb0;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+#home h1 {
+    font: 500 80px/70px 'Gotham Black', sans-serif;
+    color: #736173;
+    text-transform: uppercase;
+}
+
+.home-left_descr {
+    font: 16px/30px 'Gotham Book', sans-serif;
+    color: #4e4e4e;
+    margin: 24px 0 20px 0;
+}
+
+.home-thumb {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 1;
+}
+
+.home-bottom {
+    background: url(../img/home-bg_bottom.jpg) no-repeat center;
+    background-size: cover;
+    margin-top: 160px;
+    min-height: 180px;
+    padding: 73px 0 38px 0;
+    position: relative;
+}
+
+.home-bottom:after,
+.home-bottom:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #827782;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.home-bottom:after {top: 4px;}
+.home-bottom:before {bottom: 4px;}
+
+.home-bottom ul li span.num {
+    width: 68px;
+    height: 68px;
+    border: 2px solid #a8a0a8;
+    border-radius: 3px;
+    text-align: center;
+    font: 40px/66px 'Gotham Book', sans-serif;
+    color: #9c939c;
+    margin-right: 30px;
+}
+
+.home-bottom ul li p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.home-bottom ul li span.line {
+    width: 69px;
+    height: 2px;
+    background: #fff;
+    opacity: 0.3;
+    margin: 0 35px 0 35px;
+}
+
+/* ---------------------------------------------------------
+    REVIEWS 
+---------------------------------------------------------- */
+
+.reviews-top {
+    padding: 106px 0 142px 0;
+}
+
+.reviews-top_title {
+    width: 40%;
+}
+.reviews-top_title h3 {
+    font-weight: bold;
+    font-size: 15px;
+    color: #abadb0;
+    margin-top: 5px;
+}
+.reviews-top_title h2 {
+    font: 40px/48px 'Gotham Black', sans-serif;
+    color: #736173;
+    margin-top: 7px;
+}
+
+.reviews-top_descr {
+    width: 60%;
+}
+.reviews-top_descr p {
+    font: 16px/30px 'Gotham Book', sans-serif;
+    color: #4e4e4e;
+}
+
+.reviews-middle .center {
+    background: url(../img/reviews-middle_bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 9px;
+    position: relative;
+}
+.reviews-middle .center:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    bottom: 9px;
+    left: 9px;
+    z-index: 1;
+    border: 2px solid #b2c29a;
+}
+
+.reviews-middle_item,
+.reviews-middle_item,
+.reviews-middle_bg {
+    position: relative;
+    z-index: 2;
+}
+
+.reviews-middle_item {
+    padding-top: 36px;
+    padding-bottom: 20px;
+    z-index: 4;
+    width: 50%;
+    min-width: 50%;
+}
+
+.reviews-middle_bg {
+    min-width: 380px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-45%);
+            transform: translateX(-45%);
+    margin-bottom: -53px;
+    z-index: 3;
+}
+
+.reviews-middle_item:first-child {
+    text-align: right;
+    padding-left: 127px;
+    padding-right: 138px;
+}
+
+.reviews-middle_item:first-child .descr {
+    padding-right: 110px;
+}
+
+.reviews-middle_item:first-child .avtor {
+        margin-top: 22px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.reviews-middle_item:first-child .avtor > div {
+    margin-right: 20px;
+}
+
+.reviews-middle_item:last-child {
+    text-align: left;
+    padding-right: 135px;
+    padding-left: 135px;
+}
+
+.reviews-middle_item:last-child .descr {
+    padding-left: 108px;
+}
+
+.reviews-middle_item:last-child .avtor {
+        margin-top: 22px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.reviews-middle_item:last-child .avtor > div {
+    margin-left: 20px;
+}
+
+.reviews-middle_item .descr {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #fff;
+    opacity: 0.8;
+} 
+
+.reviews-middle_item .avtor h3 {
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.reviews-middle_item .avtor p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #535e42;
+    margin-top: 4px;
+}
+
+.reviews-bottom_descr {
+    width: 51.2%;
+    margin-top: -42px;
+}
+
+.reviews-bottom_list {width: 48.6%;}
+
+.reviews-bottom_descr {
+    padding: 0 95px 0 140px;
+    margin-top: -43px;
+}
+
+.reviews-bottom_descr h3 {
+    font-size: 15px;
+    color: #abadb0;
+    text-transform: uppercase;
+}
+
+.reviews-bottom_descr h2 {
+    font: 40px/48px 'Gotham Black', sans-serif;
+    color: #736173;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.reviews-bottom_descr p {
+    font: 16px/30px 'Gotham Book', sans-serif;
+    color: #4e4e4e;
+    margin-top: 14px;
+}
+
+
+.reviews-bottom_list {
+        padding: 128px 0 235px 0;
+    background: url(../img/reviews-bottom_list.png) no-repeat left 14px bottom;    
+}
+.reviews-bottom_list ul li {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.reviews-bottom_list ul li span {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #736173;
+    border-radius: 3px;
+    text-align: center;
+    font: 34px/55px 'Gotham Book', sans-serif;
+    color: #736173;
+    margin-right: 25px;
+}
+.reviews-bottom_list ul li + li {margin-top: 24px;}
+.reviews-bottom_list ul li p {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    color: #736173;
+}
+
+
+/* ---------------------------------------------------------
+    OREDER 
+---------------------------------------------------------- */
+
+#order {    
+    position: relative;
+    text-align: center;    
+}
+#order .inner-bg {
+    background: url(../img/order-bg.jpg) no-repeat center top;
+    background-size: cover;
+    padding: 51px 0 40px 0;
+    position: relative;
+}
+#order .inner-bg:after,
+#order .inner-bg:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #847984;
+}
+#order .inner-bg:after {top: 4px;}
+#order .inner-bg:before {bottom: 4px;}
+
+.oreder-list li {
+    text-align: left;
+}
+.oreder-list li span {
+    border: 2px solid #a8a0a8;
+    width: 69px;
+    height: 69px;
+    border-radius: 3px;
+    margin-right: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.oreder-list li p {
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 17px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+#order h5 {
+    font-size: 15px;
+    color: #a69ea6;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+#order h2 {
+    font: 40px/48px 'Gotham Black', sans-serif;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------
+    SHAPIRO PARITY 
+---------------------------------------------------------- */
+
+#shapiro-parity {
+    padding-top: 80px;
+    position: relative;
+}
+
+#shapiro-parity .dash-green {
+    margin-top: 20px;
+} 
+
+h3.shapiro-parity-title {
+    font-size: 15px;
+    color: #abadb0;
+    text-align: center;
+    margin-top: 5px;
+}
+
+h2.shapiro-parity-title {
+    font: 40px 'Gotham Black', sans-serif;
+    color: #736173;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#shapiro-parity .wrap {
+    position: relative;
+    margin-top: 65px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.shapiro-parity_bg {
+    min-width: 640px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: -115px;
+    z-index: 2;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.shapiro-parity_list {
+    max-width: 280px;
+}
+.shapiro-parity_list li + li {margin-top: 45px;}
+.shapiro-parity_list h4 {
+    font: 24px 'Gotham Black', sans-serif;    
+}
+.shapiro-parity_list:first-child h4 {color: #736173;}
+.shapiro-parity_list:last-child h4 {color: #89a168;}
+.shapiro-parity_list p {
+    font: 16px/30px 'Gotham Book', sans-serif;
+    color: #4e4e4e;
+    margin-top: 15px;
+}
+
+.shapiro-parity_bottom {
+    background: url(../img/shapiro-parity_bottom.jpg) no-repeat top center;
+    background-size: cover;
+    position: relative;
+    padding: 90px 0 40px 0;
+    text-align: center;
+}
+.shapiro-parity_bottom:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    left: 9px;
+    bottom: 9px;
+    border: 2px solid #b0c099;
+    z-index: 1;
+}
+.shapiro-parity_bottom .center {
+    position: relative;
+    z-index: 2;
+}
+.shapiro-parity_bottom h3.title {
+    font-size: 15px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    color: #fff;
+}
+.shapiro-parity_bottom h2.title {
+    font: 40px/48px 'Gotham Black', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------
+    SHAPIROMD DESCR 
+---------------------------------------------------------- */
+
+#shapiromd-descr {position: relative;}
+
+.shapiromd-descr_left {
+    width: 52%;
+    padding: 70px 0 75px 136px;
+}
+
+.shapiromd-descr_left h4 {
+    font-size: 15px;
+    color: #abadb0;
+    text-transform: uppercase;
+}
+
+.shapiromd-descr_left h2 {
+    font: 40px/48px 'Gotham Black', sans-serif;
+    color: #736173;
+    text-transform: uppercase;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+.shapiromd-descr_left .d-flex {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.shapiromd-descr_left .d-flex img {margin-right: 45px;}
+.shapiromd-descr_left p {
+    font: 16px/30px 'Gotham Book', sans-serif;
+    color: #4e4e4e;
+    margin-bottom: 15px;
+}
+.shapiromd-descr_left p strong {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+}
+
+.shapiromd-descr_left h3 {
+    font: 24px/36px 'Gotham Black', sans-serif;
+    color: #736173;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    margin-top: 20px;
+}
+
+#shapiromd-descr > .center {
+    background: url(../img/shapiromd-descr_bg.png) no-repeat right center;
+    background-size: 47%;
+}
+
+.shapiromd-descr_bottom {
+    background: url(../img/shapiromd-descr_bottom.jpg) no-repeat left top;
+    background-size: cover;
+    position: relative;
+    margin-top: -7px;
+    min-height: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.shapiromd-descr_bottom:after,
+.shapiromd-descr_bottom:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #847884;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.shapiromd-descr_bottom:after {top: 4px;}
+.shapiromd-descr_bottom:before {bottom: 4px;}
+
+.shapiromd-descr_bottom p {
+    font: 35px/48px 'Gotham Black', sans-serif;
+    color: #fff;
+    padding-left: 43.3%;
+    margin-top: 7px;
+}
+
+/* ---------------------------------------------------------
+    SHAPIRO TREATMENT 
+---------------------------------------------------------- */
+
+#shapiro-treatment {
+    padding-top: 85px;
+    position: relative;
+}
+
+h3.shapiro-treatment-title {
+    font-size: 15px;
+    color: #abadb0;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+}
+
+h2.shapiro-treatment-title {
+    margin-top: 8px;
+    font: 40px 'Gotham Black', sans-serif;
+    color: #736173;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+}
+
+#shapiro-treatment .wrap {
+    position: relative;
+    margin-top: 47px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.shapiro-treatment_bg {
+    min-width: 640px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 2;
+    margin-bottom: -69px;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.shapiro-treatment_list {
+    max-width: 421px;
+}
+.shapiro-treatment_list li {
+    min-height: 290px;
+}
+.shapiro-parity_list li + li {margin-top: 35px;}
+
+.shapiro-treatment_list h4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+.shapiro-treatment_list h4 i.icon {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    min-height: 55px;
+    background: #513a50;
+    border-radius: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 24px;
+}
+.shapiro-treatment_list h4 i.icon svg {
+    fill: #fff;
+    width: 40px;
+    height: 40px;
+}
+.shapiro-treatment_list h4 span {
+    font: 24px 'Gotham Black', sans-serif;
+    color: #736173;
+    text-transform: uppercase;
+}
+
+.shapiro-treatment_list p {
+    font: 16px/30px 'Gotham Book', sans-serif;
+    color: #4e4e4e;
+    margin-top: 16px;
+}
+
+.shapiro-treatment_bottom {
+    background: url(../img/shapiro-parity_bottom.jpg) no-repeat top center;
+    background-size: cover;
+    position: relative;
+    padding: 90px 0 40px 0;
+    text-align: center;
+}
+.shapiro-treatment_bottom:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    left: 9px;
+    bottom: 9px;
+    border: 2px solid #b0c099;
+    z-index: 1;
+}
+.shapiro-treatment_bottom .center {
+    position: relative;
+    z-index: 2;
+}
+.shapiro-treatment_bottom h3.title {
+    font-size: 15px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    color: #fff;
+}
+.shapiro-treatment_bottom h2.title {
+    font: 40px/48px 'Gotham Black', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.shapiro-treatment_video {
+    padding-top: 15px;
+}
+.shapiro-treatment_video h3 {
+    font-size: 15px;
+    color: #abadb0;
+    text-transform: uppercase;
+}
+.shapiro-treatment_video h2 {
+    font: 40px/48px 'Gotham Black', sans-serif;
+    color: #736173;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.shapiro-treatment_video p {
+    font: 16px/30px 'Gotham Book', sans-serif;
+    color: #4e4e4e;
+    margin-top: 15px;
+}
+.shapiro-treatment_video .video {
+    margin-top: 40px;
+    margin-right: -56px;
+    min-width: 790px;
+    background: url(../img/mockup.png) no-repeat right bottom;
+    text-align: right;
+    min-height: 470px;
+}
+.shapiro-treatment_video .descr {margin-top: -42px;}
+.shapiro-treatment_video .video img {
+    margin-top: 26px;
+    margin-right: 85px;
+}
+
+.shapiro-treatment_satisfaction {position: relative;}
+.shapiro-treatment_satisfaction .inner-bg {
+    background: url(../img/home-bg_bottom.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 180px;
+    margin-top: 6px;    
+    position: relative;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.shapiro-treatment_satisfaction:after,
+.shapiro-treatment_satisfaction:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #837883;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.shapiro-treatment_satisfaction:after {top: 4px;}
+.shapiro-treatment_satisfaction:before {bottom: 4px;}
+
+.shapiro-treatment_satisfaction h3 {
+    font: 35px/48px 'Gotham Black', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+
+.shapiro-treatment_satisfaction p {
+    font: 16px/30px 'Gotham Book', sans-serif;
+    color: #fff;
+    margin-top: 7px;
+}
+.shapiro-treatment_satisfaction img {margin-right: 75px;}
+
+/* ---------------------------------------------------------
+    INGRADIENTS 
+---------------------------------------------------------- */
+
+#ingredients {
+    background: url(../img/ingradients-bg.png) no-repeat right 21% top -111px;
+}
+
+.ingredients-descr {
+    max-width: 570px;
+    padding-top: 87px;
+}
+.ingredients-descr h2.title {margin-top: 4px;}
+.ingredients-descr p.des {margin-top: 15px;}
+
+.ingredients-list {margin-top: 88px;}
+.ingredients-list .icon-svg {
+    width: 150px;
+    min-width: 160px;
+    height: 140px;
+    fill: #494948;
+    margin-right: 39px;
+}
+.ingredients-list li {
+    margin-bottom: 29px;
+}
+.ingredients-list li:last-child {margin-bottom: 59px;}
+#ingredients .dash-green {
+    padding: 54px 0 39px 0;
+    min-height: 280px;
+}
+
+.ingredients-list span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #abadb0;
+    text-transform: uppercase;
+}
+
+.ingredients-list h3 {
+    font: 23px/34px 'Gotham Black', sans-serif;
+    color: #736173;
+    text-transform: uppercase;
+    margin-top: 7px;
+}
+
+.ingredients-list p {
+    font: 15px/29px 'Gotham Book', sans-serif;
+    color: #4e4e4e;
+    margin-top: 11px;
+}
+
+/* ---------------------------------------------------------
+    HOW TO USE 
+---------------------------------------------------------- */
+
+#howtouse {
+    padding-top: 83px;
+    position: relative;
+}
+#howtouse h2.title {margin-top: 10px;}
+#howtouse p.des {
+    margin: 11px auto 0 auto;
+    max-width: 64%;
+}
+
+#howtouse .center {
+    position: relative;
+    z-index: 2;
+}
+
+#howtouse .line {
+    margin-top: 32px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 180px;
+    background: url(../img/home-bg_bottom.jpg) no-repeat center;
+    background-size: cover;
+}
+#howtouse .line:after,
+#howtouse .line:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #7e727e;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#howtouse .line:after {top: 4px;}
+#howtouse .line:before {bottom: 4px;}
+
+.howtouse-wrap {
+    margin-top: 40px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+.howtouse-wrap_item {
+    max-width: 355px;
+    margin: 0 0;
+    background: #fff;
+    position: relative;
+}
+.howtouse-wrap_item .inn {
+    background: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.howtouse-wrap_item img {
+    width: 100%;
+}
+.howtouse-wrap_item .inner {
+    padding: 27px 25px;
+    min-height: 263px;
+}
+.howtouse-wrap_item span {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #abadb0;
+    text-transform: uppercase;
+}
+.howtouse-wrap_item h3 {
+    font: 20px/30px 'Gotham Black', sans-serif;
+    color: #736173;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.howtouse-wrap_item p {
+    font: 15px/29px 'Gotham Book', sans-serif;
+    color: #4e4e4e;
+    margin-top: 3px;
+}
+
+/* ---------------------------------------------------------
+    PEOPLE 
+---------------------------------------------------------- */
+
+#people {
+    padding-top: 79px;
+}
+#people h2.title {margin-top: 7px;}
+#people p.des {
+    margin: 13px auto 0 auto;
+    max-width: 49%;
+}
+
+#people .t-center img {
+    margin-top: 21px;
+}
+
+.people-reviews {
+    margin-top: -38px;
+}
+
+.people-reviews_item {
+    background: #fff;
+    margin-bottom: 40px;
+    position: relative;
+}
+.people-reviews_item .thumb {
+    min-width: 555px;
+    position: relative;
+    z-index: 2;
+}
+.people-reviews_item .thumb img {
+    width: 100%;
+}
+
+.people-reviews_item .descr {
+    padding: 30px 25px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+}
+.people-reviews_item .descr h3 {
+    font: 20px 'Gotham Black', sans-serif;
+    color: #736173;
+    margin-top: -6px;
+    text-transform: uppercase;    
+}
+.people-reviews_item .descr .stars {margin-right: 10px;}
+.people-reviews_item .descr .stars img {
+    margin-left: 5px;
+}
+.people-reviews_item .descr .top {margin-bottom: 25px;}
+.people-reviews_item .descr p {
+    font: 15px/29px 'Gotham Book', sans-serif;
+    color: #4e4e4e;
+}
+
+#people .dash-green {
+    margin-top: 70px;
+    padding: 52px 0 38px 0;
+    min-height: 278px;
+}
+
+/* ---------------------------------------------------------
+    ORDER 
+---------------------------------------------------------- */
+
+#form-order {
+    padding: 40px 0 38px 0;
+    background: url(../img/bg-form-left.png), url(../img/bg-form-right.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right top;
+}
+#form-order h2.title {margin-top: 9px;}
+
+#form-order .d-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+} 
+
+.form-order_wrap {
+    padding-left: 136px;
+    max-width: 706px;
+    margin-top: -30px;
+}
+
+.form-order {margin-top: 29px;}
+
+.form-order input[type="text"],
+.form-order select {
+    width: 48%;
+    display: block;
+    height: 45px;
+    padding: 0 20px;
+    border: 1px solid #4e4e4e;
+    margin-bottom: 19px;
+    font: 16px 'Gotham Book', sans-serif;
+    color: #4e4e4e;
+}
+
+.form-order input[type="text"]::-webkit-input-placeholder {color:#4e4e4e;}
+.form-order input[type="text"]::-moz-placeholder          {color:#4e4e4e;}/* Firefox 19+ */
+.form-order input[type="text"]:-moz-placeholder           {color:#4e4e4e;}/* Firefox 18- */
+.form-order input[type="text"]:-ms-input-placeholder      {color:#4e4e4e;}
+
+.form-order select::-webkit-input-placeholder {color:#4e4e4e;}
+.form-order select::-moz-placeholder          {color:#4e4e4e;}/* Firefox 19+ */
+.form-order select:-moz-placeholder           {color:#4e4e4e;}/* Firefox 18- */
+.form-order select:-ms-input-placeholder      {color:#4e4e4e;}
+
+.form-order button,
+.form-order button span {
+    width: 100%;
+} 
+
+.form-thumb {
+    padding-top: 36px;
+}
+
+/* ---------------------------------------------------------
+    FOOTER 
+---------------------------------------------------------- */
+
+#footer {
+    background: url(../img/footer-bg.jpg) no-repeat top center;
+    background-size: cover;
+    min-height: 130px;
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#footer:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #787878;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    right: 0;
+}
+
+#footer .link a,
+#footer .link span {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+    opacity: 0.8;
+    color: #fff;
+}
+#footer .link a:hover {text-decoration: none;}
+
+#footer .link span {
+    text-decoration: none;
+    margin: 0 27px;
+}
+
+#footer .copy {
+    font: 14px 'Gotham Book', sans-serif;
+    color: #bcb6b6;
+    margin-top: 20px;
+}
+
+/* ---------------------------------------------------------
+    MEDIA QUERY 
+---------------------------------------------------------- */
+
+@media screen and (max-width: 1400px) {
+    .home-bottom ul li p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .form-thumb {
+        max-width: 40%;
+    }
+}
