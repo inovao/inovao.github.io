@@ -1026,6 +1026,15 @@ img {
 	width: 100%;
 	margin-right: 1.8%;
 }
+.programs label:first-child .programs-input:before,
+.programs label:last-child .programs-input:before,
+.programs label:nth-child(2) .programs-input:before {
+	content: '';
+	display: block;
+}
+.programs label:first-child .programs-input:before {min-height: 13px;}
+.programs label:nth-child(2) .programs-input:before {min-height: 25px;}
+
 .programs label:last-child {margin-right: 0;}
 .programs h4 {
 	font-style: normal;
@@ -1043,7 +1052,7 @@ img {
 	padding: 30px;
 	
 }
-.programs-input p.name {
+.programs-input h3.name {
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 130%;
@@ -1067,6 +1076,8 @@ img {
 	font-size: 26px;
 	line-height: 100%;
 	color: #2D2D2D;
+	margin-top: 2px;
+	margin-bottom: 1px;
 }
 .programs-input .thumb {
 	text-align: right;
@@ -1079,6 +1090,7 @@ img {
 	font-size: 14px;
 	line-height: 130%;
 	color: #BDBDBD;
+	text-decoration: line-through;
 }
 .programs-input ul li {
 	border: 1px solid #E0E0E0;
@@ -1526,7 +1538,12 @@ img {
 	    margin-right: 0;
 	    margin-bottom: 20px;
 	}
+
 	.programs-input .name {float: left;}
+	.programs-input p.month {
+		float: left;
+		clear: both;
+	}
 	.programs-input .price {
 	    float: left;
 	    clear: both;
@@ -1535,6 +1552,15 @@ img {
 	.payment-method {
 	    padding: 40px 50px;
 	}
+
+	.content-product .group-btn.visible-mobile {
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+	}
+
+	.opened-report .thumb {line-height: 0;}
+	.opened-report .thumb img {width: 100%;}
 	
 	#footer {
 		height: auto;
@@ -1548,6 +1574,8 @@ img {
 		        flex-direction: column;
 	}
 	#footer .copy {
+		font-size: 12px;
+		color: #936EAF;
 		-webkit-box-ordinal-group: 2;
 		    -ms-flex-order: 1;
 		        order: 1;
@@ -1608,10 +1636,33 @@ img {
 	.content-product {
 	    padding: 37px 0 0px 0;
 	}
-	.content-product h1.title {font-size: 39px;}
+	.content-product h1.title {font-size: 28px;}
 	.content-product h2.title {
-	    font-size: 23px;
+	    font-size: 18px;
 	    margin-top: 10px;
+	}
+	
+	.opened-report {
+		position: relative;
+	}
+	.opened-report .close-report {
+		width: 40px;
+		height: 40px;
+		background: #FFFFFF url(../img/ic-arr-up-close.png) no-repeat center;
+		-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+		        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		border-radius: 50%;
+		margin-left: -20px;
+		margin-top: -20px;
+	}
+	.opened-report.close > div {
+		height: 0;
+		overflow: hidden;
+		-webkit-transition: height 0.3s ease;
+		transition: height 0.3s ease;
 	}
 	
 	.content-step .form-radio {
@@ -1640,6 +1691,9 @@ img {
 		font-size: 12px;
 		text-align: left;
 	}
+
+	.programs-input h3.name {font-size: 16px;}
+	.programs-input p.month {font-size: 12px;}
 
 	.content-step {
 	    padding-top: 0;
@@ -1740,6 +1794,8 @@ img {
 	    padding: 15px;
 	}
 
+
+
 	.programs h4 {
 	    font-size: 16px;
 	    text-align: left;
@@ -1757,16 +1813,26 @@ img {
 	}
 	.programs-input p.price-new {
 	    font-size: 22px;
+	    margin-top: 0;
+	    margin-bottom: 5px;
 	}
 	.programs-input .price {
 	    margin-top: 10px;
-	    margin-bottom: 20px;
+	    margin-bottom: 10px;
+	}
+	.programs-input p.total {
+		font-size: 10px;
+		margin-bottom: 5px;
 	}
 	.programs-input .thumb {
 	    max-width: 110px;
 	    position: absolute;
 	    top: 10px;
 	    right: 10px;
+	    margin-bottom: 0;
+	}
+	.programs label:first-child .programs-input:before, .programs label:last-child .programs-input:before, .programs label:nth-child(2) .programs-input:before {
+		display: none;
 	}
 	.programs-input ul {clear: both;}
 	
@@ -1821,6 +1887,16 @@ img {
 	    width: 100%;
 	}
 
+	.popup-title {font-size: 18px;}
+	.popup-error p {font-size: 12px;}
+	.btn-popup {
+	    height: 50px;
+	    font-size: 14px;
+	    line-height: 50px;
+	}
+
+	.content-step .text-plashka {margin-top: 20px;}
+
 	#footer .footer-link a {
 		width: 48%;
 		font-size: 12px;
@@ -1829,4 +1905,6 @@ img {
 	#footer .footer-link a:nth-child(odd) {margin-right: 2%;}
 	#footer .footer-link a:nth-child(even) {margin-left: 2%;}
 	#footer .footer-link a + a {margin-left: 0;}
+	#footer .footer-link a:nth-last-child(1),
+	#footer .footer-link a:nth-last-child(2) {margin-bottom: 0;}
 }

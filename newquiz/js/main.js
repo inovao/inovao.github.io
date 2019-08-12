@@ -1,3 +1,6 @@
+/* ---------------------------------------------------------- */
+/* 01 - SELECT                                                */
+/* ---------------------------------------------------------- */
 function Select(elem) {
 	var select = document.querySelectorAll(elem);
 	
@@ -43,10 +46,23 @@ function Select(elem) {
 
 var select = new Select('.select');
 
-document.querySelector('.question-svv .svg-icon').onclick = function(e) {
-	document.querySelector('.info-card-svv').classList.add('active');	
+/* ---------------------------------------------------------- */
+/* 02 - QUESTION CARD                                         */
+/* ---------------------------------------------------------- */
+if (document.querySelector('.question-svv .svg-icon') != null) {
+	document.querySelector('.question-svv .svg-icon').onclick = function(e) {
+		document.querySelector('.info-card-svv').classList.add('active');	
+	}
+	document.querySelector('.info-card-svv .close').onclick = function(e) {
+		document.querySelector('.info-card-svv').classList.remove('active');	
+		return false;
+	}
 }
-document.querySelector('.info-card-svv .close').onclick = function(e) {
-	document.querySelector('.info-card-svv').classList.remove('active');	
+
+/* ---------------------------------------------------------- */
+/* 03 - CLOSE OPEN REPORT                                     */
+/* ---------------------------------------------------------- */
+document.querySelector('.close-report').onclick = function(e) {
+	document.querySelector('.opened-report').classList.toggle('close');
 	return false;
 }
