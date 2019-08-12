@@ -130,7 +130,19 @@
 							</label>
 							<label class="svv-code">
 								<input type="text" placeholder="CVC/CVV 2">
-								<div class="question-svv">
+								<div class="question-svv hidden-mobile">
+				    				<svg class="svg-icon">
+										<use xlink:href="#question-svg"></use>
+									</svg>
+
+									<div class="info-card-svv">
+										<a href="#" class="close"></a>
+										<p>See the three-digit combination on<br> the back of your card. Enter these<br> three numbers.</p>
+										<img src="img/card.png" alt="">
+									</div>
+								</div>
+
+								<div class="question-svv hidden-desktop visible-mobile button-popup" data-popup="popup-card-svv">
 				    				<svg class="svg-icon">
 										<use xlink:href="#question-svg"></use>
 									</svg>
@@ -203,6 +215,16 @@
     		<h3 class="popup-title">Oops!</h3>
     		<p>You have not selected any item. Please select the appropriate item and tap "Next".</p>
     		<a href="#" class="btn-popup">got it</a>
+    	</div>
+    </div>
+
+    <div class="popup popup-card-svv">
+    	<div class="inner">
+    		<div class="info-card-svv">
+    			<a href="#" class="close"></a>
+    			<p>See the three-digit combination on<br> the back of your card. Enter these<br> three numbers.</p>
+    			<img src="img/card.png" alt="">
+    		</div>
     	</div>
     </div>
     <!-- // POPUP -->
