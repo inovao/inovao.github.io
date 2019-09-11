@@ -47,4 +47,14 @@ $(function(){
 		$('.navbar').toggleClass('is-open')
 	})
 
+    $('.btn-link').on('click', function(e) {
+        e.preventDefault();
+        var top = $('.section-reviews').position().top;
+        $('html, body').animate({scrollTop: top}, 1000);
+    });
+
+    $('.doctors-button').on('click', function(e) {
+        $('.doctors-dropdown').slideToggle(300);
+    });
+
 });
