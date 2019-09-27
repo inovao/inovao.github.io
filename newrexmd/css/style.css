@@ -637,9 +637,10 @@ button.btn {
   margin-bottom: 2rem; }
 
 .banner {
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: #fff;
   padding: 19.4rem 0 8rem;
   position: relative; }
@@ -953,8 +954,17 @@ button.btn {
     width: 100%;
     max-width: 38%;
     right: 0;
+    -webkit-transform: translate(110%, 0);
+    -ms-transform: translate(110%, 0);
+    transform: translate(110%, 0);
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
     top: -6rem;
     z-index: 1; }
+    .standart-bg.open {
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0); }
     .standart-bg img {
       width: 100%; }
   .standart-container {
