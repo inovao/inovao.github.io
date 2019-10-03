@@ -18,11 +18,17 @@
 	<header class="header">
 		<div class="wrapper">
 			<div class="header-top">
+				<div class="burger toggle-menu">
+			        <div class="burger__icon"></div>
+				</div>
 				<div class="logo">
 					<a href="#"><img src="img/logo.png?ver1.0" alt=""></a>
 				</div>
 	
 				<nav class="main-menu">
+					<div class="burger toggle-menu">
+				        <div class="burger__icon"></div>
+					</div>
 					<ul class="menu">
 						<li class="menu__item">
 							<a href="#" class="menu__link">How It Works</a>
@@ -41,6 +47,7 @@
 						</li>
 					</ul>
 				</nav>
+				<div class="header-top__link"><a href="#">Log In</a></div>
 			</div>
 		</div>
 	</header>
@@ -138,18 +145,23 @@
 				<div class="wrapper">
 					<ol class="benefits-step-list">
 						<li class="benefits-step-list__item">
+							<div class="benefits-step-list__number">1</div>
 							<p>$10/Pill</p>
 						</li>
 						<li class="benefits-step-list__item">
+							<div class="benefits-step-list__number">2</div>
 							<p>Results with one pill, not five</p>
 						</li>
 						<li class="benefits-step-list__item">
+							<div class="benefits-step-list__number">3</div>
 							<p>Discreet Packaging</p>
 						</li>
 						<li class="benefits-step-list__item">
+							<div class="benefits-step-list__number">4</div>
 							<p>Free/Fast Shipping</p>
 						</li>
 						<li class="benefits-step-list__item">
+							<div class="benefits-step-list__number">5</div>
 							<p>No Wait, No Appointments</p>
 						</li>
 					</ol>
@@ -243,10 +255,12 @@
 						<img src="img/st-bg-1.png" alt="">
 					</div>
 					<div class="standart-discount__content">
-						<h2 class="section-title">Don’t be part of the <span class="text-danger">40%</span>.</h2>
-						<p class="section-descr">Up to 40% of men experience ED by age 40.</p>
-						<div class="button">
-							<a href="#" class="btn">Learn more about ED</a>
+						<div class="sd-wrap">
+							<h2 class="section-title">Don’t be part of the <span class="text-danger">40%</span>.</h2>
+							<p class="section-descr">Up to 40% of men experience ED by age 40.</p>
+							<div class="button">
+								<a href="#" class="btn">Learn more about ED</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -336,80 +350,181 @@
 
 		<section class="section questions">
 			<div class="wrapper">
-				<div class="link-more">
-					<span>Important Safety Information</span>
+				<div class="link-more-button">
+					<div class="link-more">
+						<span>Important Safety Information</span>
+					</div>
+				</div>
+				<div class="link-more-dropdown mb70" style="display: none;">
+					<div class="inner">
+						<h3 class="text-center">IMPORTANT SAFETY INFORMATION</h3>
+						<h5 class="text-center">What Should You Know Before Taking Viagra</h5>
+						<h4 class="text-center">Contraindications</h4>
+
+						<p><strong>Who should not take Viagra® or generic Viagra®?</strong></p>
+						<p><strong>Do not take Viagra® or generic Viagra® if you:</strong></p>
+
+						<ul class="ul-list">
+							<li>take medicines called nitrates (such as nitroglycerin)</li>
+							<li>use street drugs called “poppers” such as amyl nitrate or amyl nitrite, and butyl nitrate</li>
+							<li>take any medicines called guanylate cyclase stimulators such as riociguat (Adempas)</li>
+							<li>are allergic to sildenafil, as contained in Viagra® and Revatio, or any of the ingredients in Viagra®. See the end of this leaflet for a complete list of ingredients in Viagra®.</li>
+						</ul>
+
+						<p><strong>What should I tell my healthcare provider before taking Viagra® or generic Viagra®?</strong></p>
+
+						<p>To make sure Viagra® is safe for you, tell your healthcare provider if you have any of the following before you take Viagra® or generic Viagra®l:</p>
+
+						<ul class="ul-list">
+							<li>Have or have had heart problems such as a heart attack,irregular heartbeat, angina, chest pain, narrowing of the aortic valve, or heart failure</li>
+							<li>Have had heart surgery within the last 6 months</li>
+							<li>Have pulmonary hypertension</li>
+							<li>Have had a stroke</li>
+							<li>Have low blood pressure, or high blood pressure that is not controlled</li>
+							<li>Have a deformed penis shape</li>
+							<li>Have had an erection that lasted for more than 4 hours</li>
+							<li>Have problems with your blood cells such as sickle cell anemia, multiple myeloma, or leukemia</li>
+							<li>Have retinitis pigmentosa, a rare genetic (runs in families) eye disease</li>
+							<li>Have ever had severe vision loss, including an eye problem called NAION</li>
+							<li>Have bleeding problems</li>
+							<li>Have or have had stomach or intestinal ulcers</li>
+							<li>Have liver problems</li>
+							<li>Have kidney problems or are having kidney dialysis</li>
+							<li>Have any other medical conditions</li>
+						</ul>
+
+						<p>Tell your healthcare provider about all the medicines you take, including prescription and over-the-counter medicines, vitamins, and herbal supplements.</p>
+						<p>Viagra® and generic Viagra® may affect the way other medicines work, and other medicines may affect the way Viagra® and generic Viagra® works, causing side effects.</p>
+
+						<h4 class="text-center">Drug Interactions</h4>
+
+						<p>Tell your healthcare provider if you take any of the following because these drugs interact with Viagra® and generic Viagra®:</p>
+
+						<ul class="ul-list">
+							<li>Medicines called nitrates</li>
+							<li>Medicines called guanylate cyclase stimulators such as Adempas® (riociguat)</li>
+							<li>Medicines called alpha-blockers such as Hytrin® (terazosin HCl), Flomax® (tamsulosin HCl), Cardura® (doxazosin mesylate), Minipress® (prazosin HCl), Uroxatral® (alfuzosin HCl), Jalyn® (dutasteride and tamsulosin HCl), or Rapaflo® (silodosin). Alpha-blockers are sometimes prescribed for prostate problems or high blood pressure. In some patients, the use of VIAGRA® or generic VIAGRA® with alpha-blockers can lead to a drop in blood pressure or to fainting</li>
+							<li>Medicines called HIV protease inhibitors, such as ritonavir (Norvir®), indinavir sulfate (Crixivan®), saquinavir (Fortovase® or Invirase®), or atazanavir sulfate (Reyataz®)</li>
+							<li>Oral antifungal medicines, such as ketoconazole (Nizoral®) and itraconazole (Sporanox®)</li>
+							<li>Antibiotics, such as clarithromycin (Biaxin®), telithromycin (Ketek®), or erythromycin</li>
+							<li>Other medicines that treat high blood pressure</li>
+							<li>Other medicines or treatments for ED</li>
+							<li>Viagra® and generic Viagra® contain sildenafil, which is the same medicine found in another drug called Revatio®. Revatio® is used to treat a rare disease called pulmonary arterial hypertension (PAH). Viagra® and generic Viagra® should not be used with Revatio® or with other PAH treatments containing sildenafil or any other PDE5 inhibitors (such as Adcirca [tadalafil])</li>
+						</ul>
+
+						<p>Ask your healthcare provider or pharmacist for a list of these medicines, if you are not sure.</p>
+						<p>Know the medicines you take. Keep a list of them to show to your healthcare provider and pharmacist when you get a new medicine.</p>
+
+						<h4 class="text-center">Drug Interactions</h4>
+
+						<p><strong>What are the possible side effects of Viagra® and generic Viagra®?</strong></p>
+						<p><strong>Viagra® and generic Viagra® can cause serious side effects. Rarely reported side effects include:</strong></p>
+
+						<ul class="ul-list">
+							<li>an erection that will not go away (priapism). If you have an erection that lasts more than 4 hours, get medical help right away. If it is not treated right away, priapism can permanently damage your penis.</li>
+							<li>sudden vision loss in one or both eyes. Sudden vision loss in one or both eyes can be a sign of a serious eye problem called non-arteritic anterior ischemic optic neuropathy (NAION). It is uncertain whether PDE5 inhibitors directly cause the vision loss. Stop taking Viagra® and call your healthcare provider right away if you have sudden vision loss in one or both eyes.</li>
+							<li>sudden hearing decrease or hearing loss. Some people may also have ringing in their ears (tinnitus) or dizziness. If you have these symptoms, stop taking Viagra® or generic Viagra® and contact a doctor right away.</li>
+						</ul>
+
+						<p><strong>The most common side effects of Viagra® and generic Viagra® are:</strong></p>
+
+						<ul class="ul-list">
+							<li>headache</li>
+							<li>flushing</li>
+							<li>upset stomach</li>
+							<li>abnormal vision, such as changes in color vision (such as having a blue color tinge) and blurred vision</li>
+							<li>stuffy or runny nose</li>
+							<li>back pain</li>
+							<li>muscle pain</li>
+							<li>nausea</li>
+							<li>dizziness</li>
+							<li>Rash</li>
+						</ul>
+
+						<p>In addition, heart attack, stroke, irregular heartbeats and death have happened rarely in men taking Viagra®. Most, but not all, of these men had heart problems before taking Viagra®. It is not known if Viagra® caused these problems.</p>
+						<p>Tell your healthcare provider if you have any side effect that bothers you or does not go away.</p>
+						<p>These are not all the possible side effects of Viagra® and generic Viagra®. For more information, ask your healthcare provider or pharmacist.</p>
+						<p>Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088.</p>
+					</div>
 				</div>
 				<h2 class="section-title">Frequently asked <span class="text-danger">questions</span></h2>
-				<div class="accordion">
-					<div class="accordion__head">How can rex MD help if I suffer from erectile dysfunction (ED)?</div>
-					<div class="accordion__body" style="display: none;">
-						<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
-
-						<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
-
+				<div class="link-more-button mt40 visible-iphone">
+					<div class="link-more mb30">
+						<span>See More</span>
 					</div>
-					<div class="accordion__head">What is ED?</div>
-					<div class="accordion__body" style="display: none;">
-						<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
+				</div>
+				<div class="link-more-dropdown hidden-iphone">
+					<div class="accordion">
+						<div class="accordion__head">How can rex MD help if I suffer from erectile dysfunction (ED)?</div>
+						<div class="accordion__body" style="display: none;">
+							<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
 
-						<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
+							<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
 
-					</div>
-					<div class="accordion__head open">Whats the cause of ED?</div>
-					<div class="accordion__body">
-						<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
+						</div>
+						<div class="accordion__head">What is ED?</div>
+						<div class="accordion__body" style="display: none;">
+							<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
 
-						<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
+							<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
 
-					</div>
-					<div class="accordion__head">Why is it important to seek help for ED?</div>
-					<div class="accordion__body" style="display: none;">
-						<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
+						</div>
+						<div class="accordion__head open">Whats the cause of ED?</div>
+						<div class="accordion__body">
+							<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
 
-						<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
+							<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
 
-					</div>
-					<div class="accordion__head">Is it safe to use the ED service?</div>
-					<div class="accordion__body" style="display: none;">
-						<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
+						</div>
+						<div class="accordion__head">Why is it important to seek help for ED?</div>
+						<div class="accordion__body" style="display: none;">
+							<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
 
-						<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
+							<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
 
-					</div>
-					<div class="accordion__head">Why do you need to know my blood pressure?</div>
-					<div class="accordion__body" style="display: none;">
-						<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
+						</div>
+						<div class="accordion__head">Is it safe to use the ED service?</div>
+						<div class="accordion__body" style="display: none;">
+							<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
 
-						<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
+							<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
 
-					</div>
-					<div class="accordion__head">Who can use the ED service?</div>
-					<div class="accordion__body" style="display: none;">
-						<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
+						</div>
+						<div class="accordion__head">Why do you need to know my blood pressure?</div>
+						<div class="accordion__body" style="display: none;">
+							<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
 
-						<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
+							<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
 
-					</div>
-					<div class="accordion__head">Are the medicines you prescribe effective?</div>
-					<div class="accordion__body" style="display: none;">
-						<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
+						</div>
+						<div class="accordion__head">Who can use the ED service?</div>
+						<div class="accordion__body" style="display: none;">
+							<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
 
-						<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
+							<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
 
-					</div>
-					<div class="accordion__head">Why cant I take these medicines with nitrates or nitroglycerin?</div>
-					<div class="accordion__body" style="display: none;">
-						<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
+						</div>
+						<div class="accordion__head">Are the medicines you prescribe effective?</div>
+						<div class="accordion__body" style="display: none;">
+							<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
 
-						<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
+							<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
 
-					</div>
-					<div class="accordion__head">How is rex MD different from other online ED services?</div>
-					<div class="accordion__body" style="display: none;">
-						<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
+						</div>
+						<div class="accordion__head">Why cant I take these medicines with nitrates or nitroglycerin?</div>
+						<div class="accordion__body" style="display: none;">
+							<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
 
-						<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
+							<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
 
+						</div>
+						<div class="accordion__head">How is rex MD different from other online ED services?</div>
+						<div class="accordion__body" style="display: none;">
+							<p>The reason why our online doctor visit is so thorough is because the cause of ED can be complex. While it is most commonly caused by physical conditions, it can also be caused by psychological factors such as depression or anxiety. ED can even result as a combination of various physical and psychological factors.</p>
+
+							<p>ED can even signal the existence of more serious underlying conditions, such as heart failure. It’s important to identify this early such that it can be addressed as quickly as possible. At rex, your health comes first.</p>
+
+						</div>
 					</div>
 				</div>
 			</div>
