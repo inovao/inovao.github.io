@@ -108,6 +108,8 @@ if($('.benefits-step-list').length){
 	    slidesToShow: 1,
 	    slidesToSroll: 1,
 	    arrows: false,
+	    autoplay: true,
+  		autoplaySpeed: 4000,
 	    prevArrow: '<button class="slick-arrow slick-prev"></button>',
 	    nextArrow: '<button class="slick-arrow slick-next"></button>',
 	  }
