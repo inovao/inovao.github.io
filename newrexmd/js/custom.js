@@ -7,6 +7,20 @@ $(window).on('load', function(){
 
 $(function(){
 
+	/* ---------------------------------------------- /*
+	 * Filter
+	/* ---------------------------------------------- */
+	$('.filter .filter-content').hide();
+	$('.filter .filter-content:first').show();
+
+	$('.filter .filter-controls li').click(function() {
+		var data = $(this).data('name');
+
+		$('.filter .filter-controls li').removeClass('active');
+		$(this).addClass('active');
+		$('.filter .filter-content').hide();
+		$('.' + data).show(300);
+	});
 
 	/* ---------------------------------------------- /*
 	 * Slick
@@ -19,6 +33,14 @@ $(function(){
         });
     };
 
+    if($('.filter-slick ul').length){
+        $('.filter-slick ul').slick({
+        	arrows: true,
+        	slidesToShow: 4,
+        	slidesToSroll: 4,
+        	adaptiveHeight: true,
+        });
+    };
     
     $('.accordion__head').on('click', function(){
 		var el = $(this);
