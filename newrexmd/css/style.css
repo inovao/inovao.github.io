@@ -1348,7 +1348,7 @@ button.btn {
     padding: 0 20px;
 }
 .filter-controls li {
-  padding: 5px 15px;
+  padding: 5px 5px;
     background: #eaebec;
     border-radius: 10px;
     font-size: 12px;
@@ -1357,7 +1357,7 @@ button.btn {
     margin-bottom: 3px;
     text-align: center;
 }
-.filter-controls li + li {margin-left: 10px;}
+.filter-controls li {margin: 0 5px;}
 .filter-controls li.active {
   background: #151b2f;
   color: #fff;
@@ -2743,7 +2743,9 @@ button.btn {
   .table td {
     font-size: 1.2rem; }
     .table td img {
-      max-width: 6rem; } }
+      max-width: 6rem; } 
+  .filter-slick {padding: 0 15px;}
+}
 
 @media screen and (max-width: 370px) {
   .btn, a.btn {

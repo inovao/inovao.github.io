@@ -36,9 +36,27 @@ $(function(){
     if($('.filter-slick ul').length){
         $('.filter-slick ul').slick({
         	arrows: true,
-        	slidesToShow: 4,
-        	slidesToSroll: 4,
+        	slidesToShow: 3,
+        	slidesToSroll: 3,
         	adaptiveHeight: true,
+        	responsive: [
+        		{
+			      breakpoint: 625,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 2,
+			        infinite: true,
+			      }
+			    },
+			    {
+			      breakpoint: 420,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1,
+			        infinite: true,
+			      }
+			    },
+        	]
         });
     };
     
