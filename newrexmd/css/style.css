@@ -620,6 +620,43 @@ button.btn {
     padding: 3.5rem 0;
     border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1); }
 
+.sub-menu {
+  width: 100%;
+  padding-bottom: 70px;
+}
+.sub-menu.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 99999;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #151b2f;
+}
+.sub-menu ul {
+  display: flex;
+  justify-content: center;
+}
+.sub-menu ul li a {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 30px;  
+  position: relative;
+}
+.sub-menu ul li a:after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 20px;
+  background: #b31f24;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sub-menu ul li:last-child a:after {display: none;}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;

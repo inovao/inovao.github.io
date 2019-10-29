@@ -8,6 +8,29 @@ $(window).on('load', function(){
 $(function(){
 
 	/* ---------------------------------------------- /*
+	 * Scroll anhor
+	/* ---------------------------------------------- */
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > $('.sub-menu').offset().top) {
+			$('.sub-menu').addClass('fixed');
+		} else if ($(window).scrollTop() < 1672.5) {
+			$('.sub-menu').removeClass('fixed');
+		}
+		console.log($('.sub-menu').offset().top);
+	});
+
+	$('.anhor').click(function(e) {
+		e.preventDefault();
+
+		var pos = $($(this).attr('href')).offset().top;
+
+		$('html, body').animate({
+		    'scrollTop': pos
+		}, 1000);
+	});
+	
+
+	/* ---------------------------------------------- /*
 	 * Filter
 	/* ---------------------------------------------- */
 	$('.filter .filter-content').hide();
