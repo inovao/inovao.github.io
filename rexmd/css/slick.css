@@ -4,8 +4,7 @@
     position: relative;
 
     display: block;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -43,6 +42,9 @@
 .slick-slider .slick-list
 {
     -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
 }
 
@@ -116,23 +118,57 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-.slick-dots {text-align: center; list-style: none;}
-.slick-dots li {
 
-    display: inline-block;
+.slick-dots {
+    list-style:  none;
+    text-align: center;
 }
-.slick-dots li button {display: none;}
-.slick-dots li.slick-active {opacity: 1;}
 .slick-dots li {
-    display: inline-block; 
-    font-size: 0;
-    text-indent: -9999px; 
-    overflow: hidden; 
-    background: #8b9297; 
-    opacity: 0.5;
-    width: 10px; 
-    height: 10px; 
-    border-radius:  50%; 
-    margin:  0 11px; 
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4px;
+    border: 1px solid transparent;
+    border-radius:  50%;
+    padding:  5px;
+}
+.slick-dots li:first-child:last-child {
+    display: none;
+}
+.slick-dots li.slick-active button {background: #b31f24;}
+.slick-dots li.slick-active {
+    border-color:  rgba(255,255,255,0.3);
+
+}
+.slick-dots button {
+    display: block;
+    position: relative;
+    width: 9px;
+    height: 9px;
+    border-radius:  50%;
+    text-indent: -999px;
+    overflow: hidden;
+    padding: 0;
+    background: #fff;
     border:  none;
+   
+}
+
+.slick-arrow {
+    background-color: transparent;
+    border:  none;
+    width: 13px;
+    height: 24px;
+    padding:  0;
+    position: absolute;
+    top:  50%;
+    margin-top: -6px;
+    left:  0;
+}
+.slick-prev {
+    background: transparent url('../img/arrow-left.png') no-repeat center;
+}
+.slick-next {
+    background: transparent url('../img/arrow-right.png') no-repeat center;
+    right: 0;
+    left: auto;
 }
