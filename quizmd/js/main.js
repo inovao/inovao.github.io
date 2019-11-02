@@ -119,14 +119,8 @@
         }, 500);
     }
 
-    function showTestMessSex(radio) {
-        var wrapMessage = '';
-
-        if (radio.find('input').val() == 'Male') {
-            wrapMessage = $('.message-test__male');
-        } else if (radio.find('input').val() == 'Female') {
-            wrapMessage = $('.message-test__female');
-        }
+    function showTestMessMale(radio) {
+        var wrapMessage = $('.message-test__male');
 
         wrapMessage.removeClass('hidden-test-wrap');
 
@@ -139,6 +133,29 @@
             }, 2000);            
         }, 500);
     }
+
+    function showTestMessFemale(radio) {
+        var wrapMessage = $('.message-test__female');
+
+        wrapMessage.removeClass('hidden-test-wrap');
+
+        setTimeout(function() {
+            wrapMessage.find('.message-question').removeClass('hidden-test typing');
+
+            setTimeout(function() {
+                wrapMessage.find('.message-test__controls').removeClass('hidden-test');
+                $('html, body').animate({scrollTop: $(document).height()}, '500');
+            }, 2000);            
+        }, 500);
+    }
+
+    $('.radio-male').click(function() {
+        showTestMessMale();
+    });
+
+    $('.radio-female').click(function() {
+        showTestMessFemale();
+    });
 
     function showTestMessFour(radio) {
         var wrapMessage = $('.message-test__wrap--four');
@@ -175,29 +192,29 @@
         showTest();
     });
 
-    $('.message-test__controls .submit-btn').click(function(e) {
+    $('.message-test__controls .radio').click(function(e) {
         e.preventDefault();
 
         var _this = $(this),
             parent = $(this).closest('.message-test__controls'),
             checked = parent.find('input[type="checkbox"]'),
             radio = parent.find('input[type="radio"]:checked'),
+            rad = parent.find('.radio'),
             numberLbs = parent.find('.message-number input.lbs'),
             numberFt = parent.find('.message-number input.ft'),
             messageWrap = $(this).closest('.message-test__wrap').next(),
             wrap = parent.closest('.message-test__wrap'),
             text = '';
 
+
         if (parent.find('input.lbs').val() === '' || parent.find('input.ft').val() === '' || parent.find('input.rad1').val() === '' || parent.find('input.rad2').val() === '' || parent.find('input.rad3').val() === '') {
             $(this).addClass('error');
         } else {
-            $(this).hide();
+            _this.addClass('active-checked');
             if (radio.closest('.message-checked').hasClass('radio-return')) {
                 showTestMessDiabet();
-            } else if (radio.closest('.message-checked').hasClass('radio-sex')) {
-                showTestMessSex(radio.closest('.message-checked'));
-            } else if (radio.closest('.message-checked').hasClass('radio-four')) {
-                showTestMessFour(radio.closest('.message-checked'));
+            } else if (rad.hasClass('radio-sex')) {
+                showTestMessSex(rad);
             } else {
                 checked.each(function() {
                     if ($(this).prop('checked')) {
@@ -291,4 +308,6 @@
         prev.removeClass('hidden-test-wrap');
         showTest();
     });
+
+    $('.message-test__female .message-checked.last').removeClass('active-checked');
 });
