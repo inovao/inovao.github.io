@@ -1008,7 +1008,7 @@ body:not(.loaded) .tr-boxes--wdes { -webkit-transition-delay: 4.4s; -o-transitio
   .navbar-menu__link { font-size: 1.2rem; }
   .navbar-menu__item { margin-left: 1.5rem; }
   .tr-boxes { display: none; }
-  .banner .wrapper { padding-bottom: 8rem; }
+  .banner .wrapper { padding-bottom: 3rem; }
   .banner__wrap { padding: 0; }
   .banner__title { font-size: 3.2rem; }
   .banner__text { font-size: 1.6rem; }
@@ -1018,7 +1018,6 @@ body:not(.loaded) .tr-boxes--wdes { -webkit-transition-delay: 4.4s; -o-transitio
   .circle:before { width: 19rem !important; height: 19rem !important; top: -4.9rem !important; }
   body:not(.loaded) .circle:before { -webkit-animation-name: none; animation-name: none; }
   .nav-tabs { display: block; margin-top: 0; max-width: none; }
-  .nav-tabs__item { display: block; width: auto; }
   .nav-tabs__item:first-child.active .nav-tabs-dropdown { left: 50%; -webkit-transform: scale(1) translate(-50%, -50%); -ms-transform: scale(1) translate(-50%, -50%); transform: scale(1) translate(-50%, -50%); }
   .nav-tabs__item:last-child.active .nav-tabs-dropdown { left: 50%; right: auto; -webkit-transform: scale(1) translate(-50%, -50%); -ms-transform: scale(1) translate(-50%, -50%); transform: scale(1) translate(-50%, -50%); }
   .nav-tabs-dropdown { max-width: 100%; }
