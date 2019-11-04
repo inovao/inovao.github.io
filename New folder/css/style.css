@@ -660,7 +660,7 @@ body:not(.loaded) .tr-boxes--wdes { -webkit-transition-delay: 4.4s; -o-transitio
 /* ================================================ */
 .footer { position: absolute; left: 0px; bottom: 0px; z-index: 1; width: 100%; min-width: 320px; background-color: #1c1c1c; }
 
-.footer-wrap { padding: 5.4rem 0 3rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin: 0 -2rem; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+.footer-wrap { padding: 6.7rem 0 3rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin: 0 -2rem; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
 .footer-wrap__item { margin-bottom: 2rem; -webkit-box-flex: 0; -webkit-flex: none; -ms-flex: none; flex: none; width: 25%; padding-left: 2rem; padding-right: 2rem; max-width: 28rem; }
 

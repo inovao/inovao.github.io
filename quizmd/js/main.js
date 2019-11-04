@@ -283,7 +283,7 @@
     });
 
     $('.message-back').click(function(e) {
-        var prev = $(this).closest('.message-test__wrap').prev(),
+        var prev = ($(this).hasClass('message-back_first')) ? $('.message-test__wrap').first() : $(this).closest('.message-test__wrap').prev(),
             current = $(this).closest('.message-test__wrap'),
             curInput = current.find('input'),
             prevInput = prev.find('input');
