@@ -206,52 +206,49 @@
             wrap = parent.closest('.message-test__wrap'),
             text = '';
 
+        _this.addClass('active-checked');
+        if (radio.closest('.message-checked').hasClass('radio-return')) {
+            showTestMessDiabet();
+        } else if (rad.hasClass('radio-sex')) {
+            showTestMessSex(rad);
+        } else if (rad.hasClass('radio-four')) {
+            showTestMessFour(rad);
+        } else {console.log('radio test');
+            checked.each(function() {
+                if ($(this).prop('checked')) {
+                    text += $(this).val() + ', ';
+                }
+            });
 
-        if (parent.find('input.lbs').val() === '' || parent.find('input.ft').val() === '' || parent.find('input.rad1').val() === '' || parent.find('input.rad2').val() === '' || parent.find('input.rad3').val() === '') {
-            $(this).addClass('error');
-        } else {
-            _this.addClass('active-checked');
-            if (radio.closest('.message-checked').hasClass('radio-return')) {
-                showTestMessDiabet();
-            } else if (rad.hasClass('radio-sex')) {
-                showTestMessSex(rad);
+            if (!parent.find('.message-btn-info').length) {
+                if (radio.length) {
+                    $(this).parent().append('<button class="message-btn-info"><span>' + radio.val() + '</span></button>');
+                }
+
+                if (checked.length) {
+                    $(this).parent().append('<button class="message-btn-info"><span>' + text.substr(0, text.length - 2) + '</span></button>');
+                }
+
+                if (numberLbs.length) {
+                    $(this).parent().append('<button class="message-btn-info"><span>' + numberLbs.val() + ' lbs</span></button>');
+                }
+                if (numberFt.length) {
+                    $(this).parent().append('<button class="message-btn-info"><span>' + numberFt.val() + ' ft</span></button>');
+                }
+            }
+
+            messageWrap.removeClass('hidden-test-wrap');
+
+            $('.message-test__wrap').each(function() {
+                $(this).removeClass('active-test');
+            });
+
+            messageWrap.addClass('active-test');
+
+            if ($(this).hasClass('submit-btn-end')) {
+                showTestMess();
             } else {
-                checked.each(function() {
-                    if ($(this).prop('checked')) {
-                        text += $(this).val() + ', ';
-                    }
-                });
-
-                if (!parent.find('.message-btn-info').length) {
-                    if (radio.length) {
-                        $(this).parent().append('<button class="message-btn-info"><span>' + radio.val() + '</span></button>');
-                    }
-
-                    if (checked.length) {
-                        $(this).parent().append('<button class="message-btn-info"><span>' + text.substr(0, text.length - 2) + '</span></button>');
-                    }
-
-                    if (numberLbs.length) {
-                        $(this).parent().append('<button class="message-btn-info"><span>' + numberLbs.val() + ' lbs</span></button>');
-                    }
-                    if (numberFt.length) {
-                        $(this).parent().append('<button class="message-btn-info"><span>' + numberFt.val() + ' ft</span></button>');
-                    }
-                }
-
-                messageWrap.removeClass('hidden-test-wrap');
-
-                $('.message-test__wrap').each(function() {
-                    $(this).removeClass('active-test');
-                });
-
-                messageWrap.addClass('active-test');
-
-                if ($(this).hasClass('submit-btn-end')) {
-                    showTestMess();
-                } else {
-                    showTest();
-                }
+                showTest();
             }
         }
     });
@@ -288,9 +285,20 @@
             curInput = current.find('input'),
             prevInput = prev.find('input');
 
+        if ($(this).hasClass('message-back_first')) {
+            $('.message-first .message-checked').each(function() {
+                $(this).removeClass('active-checked');
+            });
+        }
+
+        prev.find('.message-checked').each(function() {
+            $(this).removeClass('active-checked');
+        });
+
         current.addClass('hidden-test-wrap');
         current.find('.message-btn-info').remove();
         current.find('.message-question').addClass('hidden-test typing');
+        current.find('.message-test__controls').addClass('hidden-test');
 
         curInput.each(function() {
             $(this).val('');
@@ -310,4 +318,6 @@
     });
 
     $('.message-test__female .message-checked.last').removeClass('active-checked');
+
+    return false;
 });
