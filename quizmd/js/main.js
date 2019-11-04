@@ -158,6 +158,10 @@
     });
 
     function showTestMessFour(radio) {
+        if (radio.first().hasClass('radio-male')) {
+            $('.message-test__wrap--four').find('.message-back').addClass('message-back-male');
+        }
+
         var wrapMessage = $('.message-test__wrap--four');
 
         wrapMessage.removeClass('hidden-test-wrap');
@@ -280,8 +284,18 @@
     });
 
     $('.message-back').click(function(e) {
-        var prev = ($(this).hasClass('message-back_first')) ? $('.message-test__wrap').first() : $(this).closest('.message-test__wrap').prev(),
-            current = $(this).closest('.message-test__wrap'),
+        e.preventDefault();
+        var prev = null;
+
+        if ($(this).hasClass('message-back-male')) {
+            prev = $('.message-test__male');
+        } else if ($(this).hasClass('message-back_first')) {
+            prev = $('.message-test__wrap').first();
+        } else {
+            prev = $(this).closest('.message-test__wrap').prev();
+        }
+
+        var current = $(this).closest('.message-test__wrap'),
             curInput = current.find('input'),
             prevInput = prev.find('input');
 

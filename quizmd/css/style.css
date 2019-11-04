@@ -386,8 +386,11 @@ p {
     .user-test {margin-right: 0;}
     .header-test .user-heading {margin: 10px 0 20px 0;}
     .message-test__wrap:hover .message-back,
-    .message-test__wrap .message-back {display: none;}
-    .message-test__controls {padding-left: 40px;}
+    .message-test__wrap .message-back {
+        display: block;
+        opacity: 1;
+    }
+    .message-test__controls {padding-left: 80px;}
     .label-group {
         display: flex;
         justify-content: space-between;
