@@ -425,4 +425,18 @@ p {
     .active-test.message-test__wrap:hover .message-back .circle {
         transform: rotate(90deg);
     }
+    .message-back {
+        opacity: 1;
+        position: fixed;
+        left: 15px;
+        bottom: 15px;
+        top: initial;
+    }
+    .message-back .circle {
+        border-radius: 4px;
+        transform: rotate(90deg);
+    }
+    .message-test__wrap:hover .message-back .circle {
+        transform: rotate(90deg);
+    }
 }
