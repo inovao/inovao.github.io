@@ -41,7 +41,7 @@
                     var time = setInterval(function() {
                         if (count <= 0) {
                             clearInterval(time);
-                            window.location.href = 'https://www.watch-may-birthday.com/J_6uOw-4i3jynaLt-Kdr_lCmGthCrWUDRCOmvyagtz6Y3WXr3bn_jDcio6wYMNm_KD1FCzZlabJDGrdQ1eLenA~~/';
+                            window.location.href = 'https://secure.shapiromd.com/shop-natural/';
                         }
 
                         wrapMessage.find('.message-test__controls').removeClass('hidden-test');
@@ -80,7 +80,7 @@
                 var time = setInterval(function() {
                     if (count == 0) {
                         clearInterval(time);
-                        window.location.href = 'https://www.getpurenatural.com/v..1/2/?AFFID=6B9532FF&c1=135&c2=380001&c3=1491814&c4=75422843-3083-4c8c-ba35-150c143cf2b8&c5=link';
+                        window.location.href = 'https://secure.shapiromd.com/shop-natural/';
                     } else {
                         $('.message-timer').removeClass('hidden-test');
                         $('.message-timer-btn').text('Redirecting you in ' + ' ' + count);
@@ -211,8 +211,8 @@
             text = '';
 
         _this.addClass('active-checked');
-        if (radio.closest('.message-checked').hasClass('radio-return')) {
-            showTestMessDiabet();
+        if (rad.hasClass('radio-return')) {
+            window.location.href = 'https://secure.shapiromd.com/shop-natural/';
         } else if (rad.hasClass('radio-sex')) {
             showTestMessSex(rad);
         } else if (rad.hasClass('radio-four')) {
