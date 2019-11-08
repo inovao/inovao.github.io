@@ -15,6 +15,26 @@ $(function(){
         $('.styler').styler();
     };
 
+    $('.form-input').focus(function(){
+        var label = $(this).next('.form-label');
+        var value = $(this).val();
+ 
+        if(value == ''){
+            $(this).parents('.form-field').addClass('focus')
+        } else {
+           
+            
+        }
+    }).blur(function(){
+        var label = $(this).next('.form-label');
+        var value = $(this).val();
+        if(value == ''){
+             $(this).parents('.form-field').removeClass('focus')
+
+        } 
+    });
+
+
 
 	var hf = function(){
 		var h_footer = $('footer').height();
