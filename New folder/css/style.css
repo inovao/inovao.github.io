@@ -937,6 +937,36 @@ body:not(.loaded) .tr-boxes--wdes { -webkit-transition-delay: 4.4s; -o-transitio
 
 .separate { display: block; width: 1px; height: 17px; background-color: #ffffff; }
 
+.section-404 {
+  height: 100vh;
+}
+.section-404 .banner__wrap {
+  max-width: 140rem;
+}
+.section-404 .line--one {
+  left:  15%;
+}
+.section-404 .line--three {
+  right:  15%;
+}
+.section-404 .banner__title {
+  position: relative;
+  z-index:  1;
+}
+.section-404 .banner__title:after {
+  content:  attr(data-title);
+  display: block;
+  position: absolute;
+  z-index:  -1;
+  left:  8%;
+  top: 0;
+  font-size: 27.7rem;
+  line-height: .9;
+  color:  #fff;
+  opacity:  0.1;
+}
+
+
 /* 6. FOOTER */
 /* ================================================ */
 .footer { position: absolute; left: 0px; bottom: 0px; z-index: 1; width: 100%; min-width: 320px; background-color: #1c1c1c; }
@@ -1245,7 +1275,13 @@ body:not(.loaded) .tr-boxes--wdes { -webkit-transition-delay: 4.4s; -o-transitio
   /* Footer ========== */
   .footer-wrap__item { width: 50%; max-width: none; -webkit-box-ordinal-group: 4; -webkit-order: 3; -ms-flex-order: 3; order: 3; }
   .footer-wrap__item--logo { -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; }
-  .footer-wrap__item--contacts { -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; } }
+  .footer-wrap__item--contacts { -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; } 
+  .section-404 .banner__title:after {
+   
+    font-size: 15.7rem;
+   
+  }
+}
 
 @media screen and (max-width: 767px) { .wrapper { padding-left: 2rem; padding-right: 2rem; }
   .btn, a.btn { padding: 0 3rem; }
@@ -1313,6 +1349,8 @@ body:not(.loaded) .tr-boxes--wdes { -webkit-transition-delay: 4.4s; -o-transitio
   .team-column__prof { font-size: 1.2rem; }
   .team-column__footer { font-size: 1.1rem; }
   .skills-list__link { font-size: 1.4rem; } }
+
+  
 
 @media screen and (max-width: 640px) { .team-column__content { min-height: auto; }
   .nav-tabs__item { width: 50%; } 

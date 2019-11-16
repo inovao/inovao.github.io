@@ -593,6 +593,16 @@ button.btn {
   button.btn--block {
     display: block;
     width: 100%; }
+.btn-get__started {
+    padding: 5px 20px;
+    background: #b31f24;
+    border-radius: 10px;
+}
+.page-finateride .banner:after {
+    background: #b4975a;
+    width: 2px;
+}
+.box {padding: 10rem 0;}
 
 /* 4. HEADER */
 /* ================================================ */
@@ -798,7 +808,7 @@ button.btn {
   display: -ms-flexbox;
   display: flex;
 }
-.page-about .banner .banner-text {width: 65%;}
+.banner .banner-text {width: 65%;}
 .page-about .banner .banner-thumb {
   width: 35%;
   text-align: center;
@@ -1987,6 +1997,114 @@ button.btn {
     margin-bottom: 5rem; }
   .king .button .btn {
     min-width: 28.4rem; }
+
+.section-info .wrapper {
+    display: flex;
+}
+.section-info {padding-bottom: 450px;}
+.section-info .wrapper .thumbnail {
+    min-width: 50%;
+}
+.section-info .wrapper .thumbnail img {
+    width: 120%;
+    max-width: inherit;
+}
+.section-info .wrapper .text {padding-top: 95px;}
+.section-info .wrapper .text p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.page-finateride .health-percent {
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+.page-finateride .health-percent .inner p {
+    margin-top: 50px;
+}
+
+.propecia {
+    background: #f8f8f7;
+    padding-top: 0;
+}
+.propecia .wrapper {padding-top: 450px;}
+.propecia .propecia-head {
+    display: flex;
+    align-items: center;
+}
+.propecia .propecia-head h2 {
+    padding-right: 55px;
+    margin-bottom: 0;
+}
+.propecia .propecia-head p {
+    padding-left: 55px;
+    border-left: 1px solid #b4975a;
+    margin-bottom: 0;
+}
+.propecia .propecia-content {
+    display: flex;
+    margin-top: 115px;
+}
+.propecia .propecia-content__heading--item {
+    display: flex;
+    padding-right: 30px;
+}
+.propecia .propecia-content__heading--item h2 {
+    min-width: 200px;
+    text-align: right;
+    margin-right: 40px;
+}
+.propecia .propecia-content__heading {width: 50%;}
+.propecia .propecia-content__danger {
+    background: #b31f24;
+    padding: 70px 70px 70px 70px;
+    color: #fff;
+    position: relative;
+    width: 50%;
+}
+.propecia .propecia-content__danger:after {
+    content: '';
+    display: block;
+    width: 5000px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    background: #b31f24;
+    margin-left: -5px;
+}
+.propecia .propecia-content__danger h2 {margin-bottom: 50px;}
+.icon-list {
+    display: flex;
+}
+.icon-list li {
+    margin-right: 30px;
+    border: 1px solid #ca6366;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-info__bottom {padding-bottom: 10rem;}
+.section-info__bottom .text {
+    width: 50%;
+    padding-top: 45px;
+}
+.section-info__bottom p {
+    font-size: 1.8rem !important;
+    line-height: 2 !important;
+    margin-bottom: 3.6rem !important;
+}
+.section-info__bottom .text h2 {margin-bottom: 50px;}
+.section-info__bottom .thumbnail {width: 50%;}
+.section-info__bottom .thumbnail img {width: 121%;}
 
 /* 6. FOOTER */
 /* ================================================ */
