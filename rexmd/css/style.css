@@ -132,7 +132,9 @@ body {
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   min-height: 100vh; }
-
+.section-footer {
+  border-bottom: 2px solid #b4975a;
+}
 .wrapper {
   min-width: 32rem;
   width: 139.8rem;
@@ -603,6 +605,15 @@ button.btn {
     width: 2px;
 }
 .box {padding: 10rem 0;}
+
+.section-footer p .text-sepia {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.section-footer p .text-sepia:hover {
+    text-decoration: none;
+}
+.section-footer p:last-child {margin-bottom: 0;}
 
 /* 4. HEADER */
 /* ================================================ */
@@ -2085,6 +2096,7 @@ button.btn {
     margin-right: 30px;
     border: 1px solid #ca6366;
     width: 85px;
+    min-width: 85px;
     height: 85px;
     border-radius: 50%;
     display: flex;
@@ -2263,6 +2275,18 @@ button.btn {
   .doctors-row__body {
     padding: 3rem 2.5rem; } 
   .box-brand .box-brand__thumb {left: -21rem;}
+
+  .icon-list {
+      position: relative;
+      z-index: 99;
+  }
+  .icon-list li {
+      width: 50px;
+      min-width: 50px;
+      height: 50px;
+      margin-right: 15px;
+  }
+  .icon-list li img {width: 65%;}
 }
 
 @media screen and (max-width: 1250px) {
@@ -2376,6 +2400,32 @@ button.btn {
   .page-pricing .process {margin-bottom: -26px;}
 }
 @media screen and (max-width: 992px) {
+  .page-finateride .banner .banner-text {
+      width: 100%;
+      text-align: center;
+  }
+  .propecia .propecia-content {
+      flex-direction: column;
+  }
+  .propecia .propecia-content__heading {
+      width: 100%;
+      order: 1;
+      margin-top: 90px;
+  }
+  .propecia .propecia-content__heading--item {
+      padding-right: 0;
+      flex-direction: column;
+  }
+  .propecia .propecia-content__heading--item h2 {
+      min-width: 200px;
+      text-align: left;
+      margin-right: 0;
+  }
+  .propecia .propecia-content__danger {
+      width: 100%;
+  }
+  .propecia .propecia-content__danger:after {display: none;}
+
   .header .logo {margin-top: 0;}
   .menu__sub {
     min-width: 300px;
@@ -2629,6 +2679,94 @@ button.btn {
     display: none !important; } }
 
 @media screen and (max-width: 767px) {
+  .page-finateride .banner {
+      background: url(../img/bg-finasteride-mob.png) no-repeat top right !important;
+      background-size: cover !important;
+  }
+  .section-info .wrapper {
+      flex-direction: column;
+  }
+  .section-info .wrapper .thumbnail {
+      min-width: 100%;
+      text-align: right;
+      margin-right: -20px;
+  }
+  .section-info .wrapper .thumbnail img {
+      width: auto;
+      max-width: inherit;
+      display: inline-block;
+  }
+  .section-info .wrapper .text {
+      padding-top: 0;
+  }
+  .page-finateride .health-percent {
+      padding: 20px;
+      background: #fff;
+  } 
+  
+  .propecia .wrapper {
+      padding-top: 0;
+  }
+  .propecia .propecia-head {
+      flex-direction: column;
+      padding-top: 80px;
+  }
+  .propecia .propecia-head h2 {
+      padding-right: 0;
+      margin-bottom: 0;
+      text-align: center;
+  }
+  .propecia .propecia-head p {
+      padding-left: 0;
+      border-left: none;
+      margin-bottom: 0;
+      text-align: center;
+      margin-top: 30px;
+  }
+
+  .propecia .propecia-content__danger {
+      width: 100%;
+      text-align: center;
+      padding: 45px 0;
+  }
+  .icon-list {
+    justify-content: center;
+  }
+  .icon-list li:last-child {margin-right: 0;}
+  .propecia .propecia-content__danger:after,
+  .propecia .propecia-content__danger:before {
+      content: '';
+      display: block;
+      background: #b31f24;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+  }
+  .propecia .propecia-content__danger:after {left: 100%;}
+  .propecia .propecia-content__danger:before {
+      right: 100%;
+      width: 100%;
+  }
+
+  .section-info__bottom .text {width: 100%;}
+  .section-info__bottom {
+      padding-bottom: 0;
+  }
+
+  .page-finateride .health-percent {
+      position: static;
+      transform: none;
+  }
+  .section-info {
+      padding-bottom: 70px;
+  }
+  
+  .section-footer {padding-top: 0;}
+  .section-footer p {
+      font-size: 12px;
+      line-height: 18px;
+  }
+
   body {
     letter-spacing: 0.05rem; }
   .wrapper {
@@ -2961,6 +3099,18 @@ button.btn {
     .table td img {
       max-width: 6rem; } 
   .filter-slick {padding: 0 15px;}
+
+  .section-info .wrapper .thumbnail img {
+      width: 100%;
+  }
+
+  .section-info__bottom .wrapper .thumbnail img {
+      width: 113%;
+      margin-left: -20px;
+  }
+  .propecia .wrapper {
+      padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 370px) {
