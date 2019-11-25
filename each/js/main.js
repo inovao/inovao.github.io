@@ -20,7 +20,7 @@ $('.home').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	autoplay: true,
-  	autoplaySpeed: 500,
+  	autoplaySpeed: 1500,
   	arrows: false,
   	fade: true,
   	cssEase: 'linear'
