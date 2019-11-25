@@ -20,25 +20,29 @@ $('.home').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	autoplay: true,
-  	autoplaySpeed: 2000,
-  	arrows: false
+  	autoplaySpeed: 500,
+  	arrows: false,
+  	fade: true,
+  	cssEase: 'linear'
 });
 
-$('.home-icons .visible-iphone').slick({
-	infinite: true,
-	slidesToShow: 3,
-	slidesToScroll: 3,
-	autoplay: true,
-  	autoplaySpeed: 2000,
-  	arrows: false,
-  	responsive: [
-  		{
-		    breakpoint: 500,
-		    settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		    }
-	    },
-  	]
-});
+// $('.home-icons .visible-iphone').slick({
+// 	infinite: true,
+// 	slidesToShow: 3,
+// 	slidesToScroll: 3,
+// 	autoplay: true,
+//   	autoplaySpeed: 1500,
+//   	arrows: false,
+//   	fade: true,
+//   	cssEase: 'linear',
+//   	responsive: [
+//   		{
+// 		    breakpoint: 500,
+// 		    settings: {
+// 		        slidesToShow: 2,
+// 		        slidesToScroll: 2
+// 		    }
+// 	    },
+//   	]
+// });
 /* --------------- // SLICK ----------------- */
