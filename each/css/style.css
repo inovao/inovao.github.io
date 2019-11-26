@@ -1069,7 +1069,7 @@ img {
 		bottom: 0;
 		width: 0;
 		overflow: hidden;
-		z-index: 999;
+		z-index: 9999;
 		background: #5b2b7e;
 		transition: all 0.3s ease;
 	}
