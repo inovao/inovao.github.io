@@ -15,54 +15,70 @@
 <body>
 	<!-- HEADER -->
 	<header id="header" class="d-flex">
-	    <div class="account-wrap">
-	        <div class="avatar">
-	            <div>
-	                <img src="img/avatar.jpg" alt="">
-	            </div>
-	            <i class="fas fa-sort-down"></i>
-	        </div>
+		<div class="logo"></div>
 
-	        <div class="account-dropdown">
-	            <div class="account-into">
-	                <p><strong>Serhi</strong></p>
-	                <p>shumjachi@gmail.com</p>
-	                <p><strong>ID 7263294</strong></p>
-	            </div>
+		<div class="account-wrap">
+			<div class="avatar">
+				<div>
+					<img src="img/avatar.jpg" alt="">
+				</div>
+				<i class="fas fa-sort-down"></i>
+			</div>
 
-	            <ul class="gray">
-	                <li><a href="#">Бесплатный тариф</a></li>
-	                <li><a href="">Баланс <strong>0 грн</strong></a></li>
-	            </ul>
+			<div class="account-dropdown">
+				<div class="account-into">
+					<p><strong>Serhi</strong></p>
+					<p>shumjachi@gmail.com</p>
+					<p><strong>ID 7263294</strong></p>
+				</div>
 
-	            <ul class="white">
-	                <li><a href="#"><i class="fas fa-dollar-sign"></i><span>Платежи</span></a></li>
-	                <li><a href="#"><i class="fas fa-cog"></i><span>Настройки аккаунта</span></a></li>
-	                <li><a href="#"><i class="fas fa-bullhorn"></i><span>Тех.поддержка</span></a></li>
-	                <li><a href="#"><i class="fas fa-door-open"></i><span>Выход</span></a></li>
-	            </ul>
-	        </div>
-	    </div>
+				<ul class="gray">
+					<li><a href="#">Бесплатный тариф</a></li>
+					<li><a href="">Баланс <strong>0 грн</strong></a></li>
+				</ul>
+
+				<ul class="white">
+					<li><a href="#"><i class="fas fa-dollar-sign"></i><span>Платежи</span></a></li>
+					<li><a href="#"><i class="fas fa-cog"></i><span>Настройки аккаунта</span></a></li>
+					<li><a href="#"><i class="fas fa-bullhorn"></i><span>Тех.поддержка</span></a></li>
+					<li><a href="#"><i class="fas fa-door-open"></i><span>Выход</span></a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
 	<!-- // HEADER -->
 	
-	<div class="main">
-		<h1 class="title">Сайт добавлен</h1>
-		<p class="site-unlock"><i class="fas fa-unlock"></i><strong>web-shum.com.ua</strong></p>
-		<h3 class="title">ДОБАВЬТЕ КОД ДЛЯ ПОДПИСКИ НА САЙТ</h3>
+	<div class="content d-flex">
+		<!-- SIDEBAR -->
+		<aside class="sidebar">
+			<ul>
+				<li><a href="#">Адресные книги</a></li>
+				<li><a href="#">Мои рассылки</a></li>
+				<li><a href="#">Шаблоны</a></li>
+				<li><a href="#">Авторассылки</a></li>
+			</ul>
+		</aside>
+		<!-- // SIDEBAR -->
 
-		<div class="form-box">
-			<p>Скопируйте и вставьте код на ваш сайт, перед закрывающим тегом <code>&lt;/head&gt;</code></p>
-			<pre id="push-code">&lt;script charset="UTF-8" src="//cdn.sendpulse.com/js/push/6eb0a1597fa5f8a263d9de4d5a7d8156_0.js" async&gt;&lt;/script&gt;</pre>
+		<!-- MAIN -->
+		<div class="main">
+			<h1 class="title">Сайт добавлен</h1>
+			<p class="site-unlock"><i class="fas fa-unlock"></i><strong>web-shum.com.ua</strong></p>
+			<h3 class="title">ДОБАВЬТЕ КОД ДЛЯ ПОДПИСКИ НА САЙТ</h3>
+
+			<div class="form-box">
+				<p>Скопируйте и вставьте код на ваш сайт, перед закрывающим тегом <code>&lt;/head&gt;</code></p>
+				<pre id="push-code">&lt;script charset="UTF-8" src="//cdn.sendpulse.com/js/push/6eb0a1597fa5f8a263d9de4d5a7d8156_0.js" async&gt;&lt;/script&gt;</pre>
+			</div>
+			
+			<div class="btn-group">
+				<button class="submit blue">Проверить настройки</button>
+				<a href="#" class="btn-link">
+	                <small class="dotted small-xs">Перейти в настройки сайта</small>
+	            </a>
+			</div>		
 		</div>
-		
-		<div class="btn-group">
-			<button class="submit blue">Проверить настройки</button>
-			<a href="#" class="btn-link">
-                <small class="dotted small-xs">Перейти в настройки сайта</small>
-            </a>
-		</div>
-		
+		<!-- // MAIN -->
 	</div>
 
 	<!-- JavaScript -->

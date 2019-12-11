@@ -15,668 +15,685 @@
 <body>
 	<!-- HEADER -->
 	<header id="header" class="d-flex">
-	    <div class="account-wrap">
-	        <div class="avatar">
-	            <div>
-	                <img src="img/avatar.jpg" alt="">
-	            </div>
-	            <i class="fas fa-sort-down"></i>
-	        </div>
+		<div class="logo"></div>
 
-	        <div class="account-dropdown">
-	            <div class="account-into">
-	                <p><strong>Serhi</strong></p>
-	                <p>shumjachi@gmail.com</p>
-	                <p><strong>ID 7263294</strong></p>
-	            </div>
+		<div class="account-wrap">
+			<div class="avatar">
+				<div>
+					<img src="img/avatar.jpg" alt="">
+				</div>
+				<i class="fas fa-sort-down"></i>
+			</div>
 
-	            <ul class="gray">
-	                <li><a href="#">Бесплатный тариф</a></li>
-	                <li><a href="">Баланс <strong>0 грн</strong></a></li>
-	            </ul>
+			<div class="account-dropdown">
+				<div class="account-into">
+					<p><strong>Serhi</strong></p>
+					<p>shumjachi@gmail.com</p>
+					<p><strong>ID 7263294</strong></p>
+				</div>
 
-	            <ul class="white">
-	                <li><a href="#"><i class="fas fa-dollar-sign"></i><span>Платежи</span></a></li>
-	                <li><a href="#"><i class="fas fa-cog"></i><span>Настройки аккаунта</span></a></li>
-	                <li><a href="#"><i class="fas fa-bullhorn"></i><span>Тех.поддержка</span></a></li>
-	                <li><a href="#"><i class="fas fa-door-open"></i><span>Выход</span></a></li>
-	            </ul>
-	        </div>
-	    </div>
+				<ul class="gray">
+					<li><a href="#">Бесплатный тариф</a></li>
+					<li><a href="">Баланс <strong>0 грн</strong></a></li>
+				</ul>
+
+				<ul class="white">
+					<li><a href="#"><i class="fas fa-dollar-sign"></i><span>Платежи</span></a></li>
+					<li><a href="#"><i class="fas fa-cog"></i><span>Настройки аккаунта</span></a></li>
+					<li><a href="#"><i class="fas fa-bullhorn"></i><span>Тех.поддержка</span></a></li>
+					<li><a href="#"><i class="fas fa-door-open"></i><span>Выход</span></a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
 	<!-- // HEADER -->
 	
-	<div class="main">
-		<h1 class="title">Настройки сайта</h1>
-		
-		<div class="tabs">
-			<ul class="tabs-control tabs-control-settings d-flex">
-				<li class="active">
-					<a href="#tab-cont-1">Общие настройки</a>
-				</li>
-				<li>
-					<a href="#tab-cont-2">Интеграция с сайтом</a>
-				</li>
-				<li>
-					<a href="#tab-cont-3">Запрос подписки</a>
-				</li>
+	<div class="content d-flex">	
+		<!-- SIDEBAR -->
+		<aside class="sidebar">
+			<ul>
+				<li><a href="#">Адресные книги</a></li>
+				<li><a href="#">Мои рассылки</a></li>
+				<li><a href="#">Шаблоны</a></li>
+				<li><a href="#">Авторассылки</a></li>
 			</ul>
+		</aside>
+		<!-- // SIDEBAR -->
+		
+		<!-- MAIN -->
+		<div class="main">
+			<h1 class="title">Настройки сайта</h1>
+			
+			<div class="tabs">
+				<ul class="tabs-control tabs-control-settings d-flex">
+					<li class="active">
+						<a href="#tab-cont-1">Общие настройки</a>
+					</li>
+					<li>
+						<a href="#tab-cont-2">Интеграция с сайтом</a>
+					</li>
+					<li>
+						<a href="#tab-cont-3">Запрос подписки</a>
+					</li>
+				</ul>
 
-			<div class="tabs-content">
-				<div id="tab-cont-1" class="tab active">
-					<form action="#">
-						<div class="form-box">							
-							<div class="form-box__item d-flex">
-								<p class="form-box__title"><strong>URL сайта:</strong></p>
-								<p>http://web-shum.com.ua</p>
-							</div>
+				<div class="tabs-content">
+					<div id="tab-cont-1" class="tab active">
+						<form action="#">
+							<div class="form-box">							
+								<div class="form-box__item d-flex">
+									<p class="form-box__title"><strong>URL сайта:</strong></p>
+									<p>http://web-shum.com.ua</p>
+								</div>
 
-							<div class="form-box__item d-flex">
-								<p class="form-box__title"><strong>Картинка сайта:</strong></p>
-								<div class="file-upload">
+								<div class="form-box__item d-flex">
+									<p class="form-box__title"><strong>Картинка сайта:</strong></p>
+									<div class="file-upload">
+										<label>
+											<input type="file" name="file">
+											<span class="file">
+												<i class="fas fa-upload"></i>
+											</span>
+										</label>
+
+										<label>
+											<input type="file" name="file">
+											<span class="file-two">Выбрать изображение</span>
+											<p>Рекомендуемый размер: 128×128px<br> JPG, PNG до 200KB</p>
+										</label>
+									</div>
+								</div>
+
+								<div class="form-box__item d-flex">
+									<p class="form-box__title"></p>
 									<label>
-										<input type="file" name="file">
-										<span class="file">
-											<i class="fas fa-upload"></i>
-										</span>
-									</label>
-
-									<label>
-										<input type="file" name="file">
-										<span class="file-two">Выбрать изображение</span>
-										<p>Рекомендуемый размер: 128×128px<br> JPG, PNG до 200KB</p>
-									</label>
-								</div>
+							    		<input type="checkbox">
+							    		<span>Скрывать на мобильных устройствах</span>
+							    	</label>
+								</div>							
 							</div>
-
-							<div class="form-box__item d-flex">
-								<p class="form-box__title"></p>
-								<label>
-						    		<input type="checkbox">
-						    		<span>Скрывать на мобильных устройствах</span>
-						    	</label>
-							</div>							
-						</div>
-					</form>
-
-					<button class="submit">Сохранить</button>
-				</div>
-
-				<div id="tab-cont-2" class="tab">
-					<div class="form-box">
-						<p>Скопируйте и вставьте код на ваш сайт, перед закрывающим тегом <code>&lt;/head&gt;</code></p>
-						<pre id="push-code">&lt;script charset="UTF-8" src="//cdn.sendpulse.com/js/push/6eb0a1597fa5f8a263d9de4d5a7d8156_0.js" async&gt;&lt;/script&gt;</pre>
-					</div>
-
-					<button class="btn-opacity">Перепроверить настройки</button>
-				</div>
-
-				<div id="tab-cont-3" class="tab">
-					<h3 class="title">ОБЩИЕ НАСТРОЙКИ САЙТА</h3>
-					
-					<form action="#">
-						<div class="tabs form-box">
-							<ul class="tabs-control-cont d-flex">
-								<li>
-									<a href="#tab-prompt">
-										<img src="img/push-prompt.png" alt="">
-										<p class="help-block">Стандартный</p>
-									</a>
-								</li>
-								<li>
-									<a href="#tab-modal">
-										<img src="img/push-modal.png" alt="">
-										<p class="help-block">Лайтбокс</p>
-									</a>
-								</li>
-								<li>
-									<a href="#tab-bar">
-										<img src="img/push-bar.png" alt="">
-										<p class="help-block">Панель</p>
-									</a>
-								</li>
-								<li>
-									<a href="#tab-safari">
-										<img src="img/push-safari.png" alt="">
-										<p class="help-block">Стиль Safari</p>
-									</a>
-								</li>
-								<li>
-									<a href="#tab-fab">
-										<img src="img/push-fab.png" alt="">
-										<p class="help-block">Плавающая кнопка</p>
-									</a>
-								</li>
-							</ul>
-
-							<div class="tabs-content">
-								<div id="tab-prompt" class="tab active">
-									<div class="d-flex pupup-functional s-between">
-										<div class="input-group">
-											<label class="text-change-input">
-												<p><strong>Текст запроса</strong></p>
-												<textarea placeholder="Разрешите сайту  отправлять вам уведомления на рабочий стол"></textarea>
-											</label>
-											
-											<div class="d-flex wrap-color">
-												<label class="color-input box-color-bg">
-													<p><strong>Фон блока</strong></p>
-													<input type="text" placeholder="#ffffff">
-													<div class="box-color">
-														<span data-color="#ffffff" style="background: #ffffff;"></span>
-														<span data-color="#333333" style="background: #333333;"></span>
-														<span data-color="#888888" style="background: #888888;"></span>
-														<span data-color="#24b58d" style="background: #24b58d;"></span>
-														<span data-color="#36afb2" style="background: #36afb2;"></span>
-														<span data-color="#03658c" style="background: #03658c;"></span>
-														<span data-color="#ffc55f" style="background: #ffc55f;"></span>
-														<span data-color="#f2594b" style="background: #f2594b;"></span>
-													</div>
-												</label>
-
-												<label class="color-input box-color-text">
-													<p><strong>Цвет текста</strong></p>
-													<input type="text" placeholder="#03658c">
-													<div class="box-color">
-														<span data-color="#ffffff" style="background: #ffffff;"></span>
-														<span data-color="#333333" style="background: #333333;"></span>
-														<span data-color="#888888" style="background: #888888;"></span>
-														<span data-color="#24b58d" style="background: #24b58d;"></span>
-														<span data-color="#36afb2" style="background: #36afb2;"></span>
-														<span data-color="#03658c" style="background: #03658c;"></span>
-														<span data-color="#ffc55f" style="background: #ffc55f;"></span>
-														<span data-color="#f2594b" style="background: #f2594b;"></span>
-													</div>
-												</label>
-
-												<label class="color-input box-color-button">
-													<p><strong>Цвет кнопок</strong></p>
-													<input type="text" placeholder="#31b58e">
-													<div class="box-color">
-														<span data-color="#ffffff" style="background: #ffffff;"></span>
-														<span data-color="#333333" style="background: #333333;"></span>
-														<span data-color="#888888" style="background: #888888;"></span>
-														<span data-color="#24b58d" style="background: #24b58d;"></span>
-														<span data-color="#36afb2" style="background: #36afb2;"></span>
-														<span data-color="#03658c" style="background: #03658c;"></span>
-														<span data-color="#ffc55f" style="background: #ffc55f;"></span>
-														<span data-color="#f2594b" style="background: #f2594b;"></span>
-													</div>
-												</label>
-											</div>
-
-											<h3 class="title">ОБЩИЕ НАСТРОЙКИ САЙТА</h3>
-
-											<div class="btn-group btn-group__number d-flex">
-									    		<label>
-									    			<p><strong>Показ запроса при</strong></p>
-									    			<div class="input-number">
-									    				<input type="number" value="6">
-									    				<span>визите</span>
-									    			</div>					    			
-									    		</label>
-
-									    		<label>
-									    			<p><strong>Задержка появления</strong></p>
-									    			<div class="input-number">
-									    				<input type="number" value="0">
-									    				<span>сек.</span>
-									    			</div>					    			
-									    		</label>
-									    	</div>
-
-									    	<p class="small">Хорошая практика — предлагать подписаться на web push только при повторном визите</p>
-
-									    	<label>
-									    		<input type="checkbox">
-									    		<span>Скрывать на мобильных устройствах</span>
-									    	</label>
-
-									    	<div class="place">
-									    		<p><strong>Расположение</strong></p>
-												
-												<div class="d-flex">
-													<label>
-														<input type="radio" checked name="radio" value="left">
-														<span>Слева</span>
-													</label>
-													<label>
-														<input type="radio" name="radio" value="center">
-														<span>По центру</span>
-													</label>
-													<label>
-														<input type="radio" name="radio" value="right">
-														<span>Справа</span>
-													</label>
-												</div>													
-									    	</div>
-										</div>
-										<div class="view-modal">
-											<div class="view-modal-popup">
-												<a href="#" class="close">x</a>
-												<div class="head">
-													<img src="img/icon.png" alt="">
-													<h3 class="view-mobal__color--text">Разрешите сайту отправлять вам уведомления на рабочий стол</h3>
-												</div>
-												<div class="bottom">
-													<div class="left">
-														<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0iIzAwQTJDMCIvPiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEzLjUwNjQgOC4wOTYzOVY4LjQzMzc0VjguNjAyNDFMMTMuNDkwMiA5SDExLjg1OUg4LjQxNTc5SDguMTIyMDZMOC4wODMyMiA4LjcwNzI1TDcuNTk3NjEgNS4zNDc1NUw1LjM5MDY0IDEzLjc0ODhMNS4zMjQ2NiAxNEg1LjA2NjI2SDMuODQ0MzJIMy41Nzg4OUwzLjUxNzgxIDEzLjc0MDNMMi4zNTA3MyA5SDAuMzM1NTA5SDBWOC43NTE3NVY3LjI2NDU3VjdIMC4zMzU1MDlIMy42MDg4OUgzLjg2MDUyTDMuODk2NjMgNy4xODc1NEw0LjQ5ODkgOS44NTM5N0w2Ljk3NDcyIDAuMjUyNjgyTDcuMDM5ODcgMEg3LjI5OTQ5SDguNTU0MDZIOC44NTExMUw4Ljg4NzEgMC4yOTY0NzdMOS43MjgxNSA3LjAxODg3SDExLjgyODlMMTIuMzE1OSA3LjAxODg2TDEyLjYzMDkgNy4wMTg4N0gxMy40OTAyTDEzLjUwNjQgNy4xODc1NFY3LjM1NjIyVjguMDk2MzlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPiAgICA8cGF0aCBkPSJNMTQuNDEyIDhDMTQuNDEyIDguOTc4MTQgMTMuNjIzMyA5Ljc3MTA4IDEyLjY1MDUgOS43NzEwOEMxMS42Nzc3IDkuNzcxMDggMTAuODg5MSA4Ljk3ODE0IDEwLjg4OTEgOEMxMC44ODkxIDcuMDIxODYgMTEuNjc3NyA2LjIyODkxIDEyLjY1MDUgNi4yMjg5MUMxMy42MjMzIDYuMjI4OTEgMTQuNDEyIDcuMDIxODYgMTQuNDEyIDhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==">
-														<span class="view-mobal__color--text">Предоставлено SendPulse</span>
-													</div>
-
-													<div class="group">
-														<button class="view-mobal__color--button">Запретить</button>
-														<button class="btn view-mobal__color--button">Разрешить</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="tab-modal" class="tab">
-									<div class="d-flex pupup-functional s-between">
-										<div class="input-group">
-											<label class="text-change-heading">
-												<p><strong>Заголовок</strong></p>
-												<input type="text" placeholder="Подписка на уведомления">
-											</label>
-
-											<label class="text-change-input">
-												<p><strong>Текст запроса</strong></p>
-												<textarea placeholder="Разрешите сайту  отправлять вам уведомления на рабочий стол"></textarea>
-											</label>
-											
-											<div class="d-flex wrap-color">
-												<label class="color-input box-color-bg">
-													<p><strong>Фон блока</strong></p>
-													<input type="text" placeholder="#ffffff">
-													<div class="box-color">
-														<span data-color="#ffffff" style="background: #ffffff;"></span>
-														<span data-color="#333333" style="background: #333333;"></span>
-														<span data-color="#888888" style="background: #888888;"></span>
-														<span data-color="#24b58d" style="background: #24b58d;"></span>
-														<span data-color="#36afb2" style="background: #36afb2;"></span>
-														<span data-color="#03658c" style="background: #03658c;"></span>
-														<span data-color="#ffc55f" style="background: #ffc55f;"></span>
-														<span data-color="#f2594b" style="background: #f2594b;"></span>
-													</div>
-												</label>
-
-												<label class="color-input box-color-text">
-													<p><strong>Цвет текста</strong></p>
-													<input type="text" placeholder="#03658c">
-													<div class="box-color">
-														<span data-color="#ffffff" style="background: #ffffff;"></span>
-														<span data-color="#333333" style="background: #333333;"></span>
-														<span data-color="#888888" style="background: #888888;"></span>
-														<span data-color="#24b58d" style="background: #24b58d;"></span>
-														<span data-color="#36afb2" style="background: #36afb2;"></span>
-														<span data-color="#03658c" style="background: #03658c;"></span>
-														<span data-color="#ffc55f" style="background: #ffc55f;"></span>
-														<span data-color="#f2594b" style="background: #f2594b;"></span>
-													</div>
-												</label>
-
-												<label class="color-input box-color-button">
-													<p><strong>Цвет кнопок</strong></p>
-													<input type="text" placeholder="#31b58e">
-													<div class="box-color">
-														<span data-color="#ffffff" style="background: #ffffff;"></span>
-														<span data-color="#333333" style="background: #333333;"></span>
-														<span data-color="#888888" style="background: #888888;"></span>
-														<span data-color="#24b58d" style="background: #24b58d;"></span>
-														<span data-color="#36afb2" style="background: #36afb2;"></span>
-														<span data-color="#03658c" style="background: #03658c;"></span>
-														<span data-color="#ffc55f" style="background: #ffc55f;"></span>
-														<span data-color="#f2594b" style="background: #f2594b;"></span>
-													</div>
-												</label>
-											</div>
-
-											<h3 class="title">ОБЩИЕ НАСТРОЙКИ САЙТА</h3>
-
-											<div class="btn-group btn-group__number d-flex">
-									    		<label>
-									    			<p><strong>Показ запроса при</strong></p>
-									    			<div class="input-number">
-									    				<input type="number" value="6">
-									    				<span>визите</span>
-									    			</div>					    			
-									    		</label>
-
-									    		<label>
-									    			<p><strong>Задержка появления</strong></p>
-									    			<div class="input-number">
-									    				<input type="number" value="0">
-									    				<span>сек.</span>
-									    			</div>					    			
-									    		</label>
-									    	</div>
-
-									    	<p class="small">Хорошая практика — предлагать подписаться на web push только при повторном визите</p>
-
-									    	<label>
-									    		<input type="checkbox">
-									    		<span>Скрывать на мобильных устройствах</span>
-									    	</label>
-										</div>
-										<div class="view-modal">
-											<div class="view-modal-popup popup-laytbox t-center">
-												<a href="#" class="close">x</a>
-
-												<h3 class="view-mobal__color--text">Подписка на уведомления</h3>
-												<h5 class="view-mobal__color--text">Разрешите сайту отправлять вам уведомления на рабочий стол</h5>
-
-												<div class="group">
-													<button class="view-mobal__color--button">Запретить</button>
-													<button class="btn view-mobal__color--button">Разрешить</button>
-												</div>
-
-												<div class="bottom">
-													<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0iIzAwQTJDMCIvPiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEzLjUwNjQgOC4wOTYzOVY4LjQzMzc0VjguNjAyNDFMMTMuNDkwMiA5SDExLjg1OUg4LjQxNTc5SDguMTIyMDZMOC4wODMyMiA4LjcwNzI1TDcuNTk3NjEgNS4zNDc1NUw1LjM5MDY0IDEzLjc0ODhMNS4zMjQ2NiAxNEg1LjA2NjI2SDMuODQ0MzJIMy41Nzg4OUwzLjUxNzgxIDEzLjc0MDNMMi4zNTA3MyA5SDAuMzM1NTA5SDBWOC43NTE3NVY3LjI2NDU3VjdIMC4zMzU1MDlIMy42MDg4OUgzLjg2MDUyTDMuODk2NjMgNy4xODc1NEw0LjQ5ODkgOS44NTM5N0w2Ljk3NDcyIDAuMjUyNjgyTDcuMDM5ODcgMEg3LjI5OTQ5SDguNTU0MDZIOC44NTExMUw4Ljg4NzEgMC4yOTY0NzdMOS43MjgxNSA3LjAxODg3SDExLjgyODlMMTIuMzE1OSA3LjAxODg2TDEyLjYzMDkgNy4wMTg4N0gxMy40OTAyTDEzLjUwNjQgNy4xODc1NFY3LjM1NjIyVjguMDk2MzlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPiAgICA8cGF0aCBkPSJNMTQuNDEyIDhDMTQuNDEyIDguOTc4MTQgMTMuNjIzMyA5Ljc3MTA4IDEyLjY1MDUgOS43NzEwOEMxMS42Nzc3IDkuNzcxMDggMTAuODg5MSA4Ljk3ODE0IDEwLjg4OTEgOEMxMC44ODkxIDcuMDIxODYgMTEuNjc3NyA2LjIyODkxIDEyLjY1MDUgNi4yMjg5MUMxMy42MjMzIDYuMjI4OTEgMTQuNDEyIDcuMDIxODYgMTQuNDEyIDhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==">
-													<span class="view-mobal__color--text">Предоставлено SendPulse</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="tab-bar" class="tab">
-									<div class="pupup-functional pupup-functional-panel">
-										<div class="view-modal">
-											<div class="view-modal-popup popup-panel t-center">
-												<a href="#" class="close">x</a>
-
-												<h3 class="view-mobal__color--text">Подписка на уведомления</h3>
-
-												<div class="group">
-													<button class="view-mobal__color--button">Запретить</button>
-													<button class="btn view-mobal__color--button">Разрешить</button>
-												</div>
-											</div>
-										</div>
-
-										<div class="input-group">
-											<label class="text-change-input">
-												<p><strong>Текст запроса</strong></p>
-												<textarea placeholder="Разрешите сайту  отправлять вам уведомления на рабочий стол"></textarea>
-											</label>
-											
-											<div class="d-flex wrap-color">
-												<label class="color-input box-color-bg">
-													<p><strong>Фон блока</strong></p>
-													<input type="text" placeholder="#ffffff">
-													<div class="box-color">
-														<span data-color="#ffffff" style="background: #ffffff;"></span>
-														<span data-color="#333333" style="background: #333333;"></span>
-														<span data-color="#888888" style="background: #888888;"></span>
-														<span data-color="#24b58d" style="background: #24b58d;"></span>
-														<span data-color="#36afb2" style="background: #36afb2;"></span>
-														<span data-color="#03658c" style="background: #03658c;"></span>
-														<span data-color="#ffc55f" style="background: #ffc55f;"></span>
-														<span data-color="#f2594b" style="background: #f2594b;"></span>
-													</div>
-												</label>
-
-												<label class="color-input box-color-text">
-													<p><strong>Цвет текста</strong></p>
-													<input type="text" placeholder="#03658c">
-													<div class="box-color">
-														<span data-color="#ffffff" style="background: #ffffff;"></span>
-														<span data-color="#333333" style="background: #333333;"></span>
-														<span data-color="#888888" style="background: #888888;"></span>
-														<span data-color="#24b58d" style="background: #24b58d;"></span>
-														<span data-color="#36afb2" style="background: #36afb2;"></span>
-														<span data-color="#03658c" style="background: #03658c;"></span>
-														<span data-color="#ffc55f" style="background: #ffc55f;"></span>
-														<span data-color="#f2594b" style="background: #f2594b;"></span>
-													</div>
-												</label>
-
-												<label class="color-input box-color-button">
-													<p><strong>Цвет кнопок</strong></p>
-													<input type="text" placeholder="#31b58e">
-													<div class="box-color">
-														<span data-color="#ffffff" style="background: #ffffff;"></span>
-														<span data-color="#333333" style="background: #333333;"></span>
-														<span data-color="#888888" style="background: #888888;"></span>
-														<span data-color="#24b58d" style="background: #24b58d;"></span>
-														<span data-color="#36afb2" style="background: #36afb2;"></span>
-														<span data-color="#03658c" style="background: #03658c;"></span>
-														<span data-color="#ffc55f" style="background: #ffc55f;"></span>
-														<span data-color="#f2594b" style="background: #f2594b;"></span>
-													</div>
-												</label>
-											</div>
-
-											<h3 class="title">ОБЩИЕ НАСТРОЙКИ САЙТА</h3>
-
-											<div class="btn-group btn-group__number d-flex">
-									    		<label>
-									    			<p><strong>Показ запроса при</strong></p>
-									    			<div class="input-number">
-									    				<input type="number" value="6">
-									    				<span>визите</span>
-									    			</div>					    			
-									    		</label>
-
-									    		<label>
-									    			<p><strong>Задержка появления</strong></p>
-									    			<div class="input-number">
-									    				<input type="number" value="0">
-									    				<span>сек.</span>
-									    			</div>					    			
-									    		</label>
-									    	</div>
-
-									    	<p class="small">Хорошая практика — предлагать подписаться на web push только при повторном визите</p>
-
-									    	<label>
-									    		<input type="checkbox">
-									    		<span>Скрывать на мобильных устройствах</span>
-									    	</label>
-										</div>											
-									</div>
-								</div>
-
-								<div id="tab-safari" class="tab">
-									<div class="d-flex pupup-functional s-between">
-										<div class="input-group">
-											<label class="text-change-heading">
-												<p><strong>Заголовок</strong></p>
-												<input type="text" placeholder="Подписка на уведомления">
-											</label>
-
-											<label class="text-change-input">
-												<p><strong>Текст запроса</strong></p>
-												<textarea placeholder="Разрешите сайту  отправлять вам уведомления на рабочий стол"></textarea>
-											</label>
-
-											<h3 class="title">УСЛОВИЯ ПОКАЗА ЗАПРОСА</h3>
-
-											<div class="btn-group btn-group__number d-flex">
-									    		<label>
-									    			<p><strong>Показ запроса при</strong></p>
-									    			<div class="input-number">
-									    				<input type="number" value="6">
-									    				<span>визите</span>
-									    			</div>					    			
-									    		</label>
-
-									    		<label>
-									    			<p><strong>Задержка появления</strong></p>
-									    			<div class="input-number">
-									    				<input type="number" value="0">
-									    				<span>сек.</span>
-									    			</div>					    			
-									    		</label>
-									    	</div>
-
-									    	<p class="small">Хорошая практика — предлагать подписаться на web push только при повторном визите</p>
-
-									    	<label>
-									    		<input type="checkbox">
-									    		<span>Скрывать на мобильных устройствах</span>
-									    	</label>
-										</div>
-										<div class="view-modal t-center">
-											<div class="view-modal-popup popup-safari">
-												<a href="#" class="close">x</a>
-												<div class="head">
-													<img src="img/icon.png" alt="">
-													<div>
-														<h3 class="view-mobal__color--text">Подписка на уведомления</h3>
-														<h5 class="view-mobal__color--text">Разрешите сайту отправлять вам уведомления на рабочий стол</h5>
-													</div>														
-												</div>
-												<div class="bottom">
-													<div class="left">
-														<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0iIzAwQTJDMCIvPiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEzLjUwNjQgOC4wOTYzOVY4LjQzMzc0VjguNjAyNDFMMTMuNDkwMiA5SDExLjg1OUg4LjQxNTc5SDguMTIyMDZMOC4wODMyMiA4LjcwNzI1TDcuNTk3NjEgNS4zNDc1NUw1LjM5MDY0IDEzLjc0ODhMNS4zMjQ2NiAxNEg1LjA2NjI2SDMuODQ0MzJIMy41Nzg4OUwzLjUxNzgxIDEzLjc0MDNMMi4zNTA3MyA5SDAuMzM1NTA5SDBWOC43NTE3NVY3LjI2NDU3VjdIMC4zMzU1MDlIMy42MDg4OUgzLjg2MDUyTDMuODk2NjMgNy4xODc1NEw0LjQ5ODkgOS44NTM5N0w2Ljk3NDcyIDAuMjUyNjgyTDcuMDM5ODcgMEg3LjI5OTQ5SDguNTU0MDZIOC44NTExMUw4Ljg4NzEgMC4yOTY0NzdMOS43MjgxNSA3LjAxODg3SDExLjgyODlMMTIuMzE1OSA3LjAxODg2TDEyLjYzMDkgNy4wMTg4N0gxMy40OTAyTDEzLjUwNjQgNy4xODc1NFY3LjM1NjIyVjguMDk2MzlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPiAgICA8cGF0aCBkPSJNMTQuNDEyIDhDMTQuNDEyIDguOTc4MTQgMTMuNjIzMyA5Ljc3MTA4IDEyLjY1MDUgOS43NzEwOEMxMS42Nzc3IDkuNzcxMDggMTAuODg5MSA4Ljk3ODE0IDEwLjg4OTEgOEMxMC44ODkxIDcuMDIxODYgMTEuNjc3NyA2LjIyODkxIDEyLjY1MDUgNi4yMjg5MUMxMy42MjMzIDYuMjI4OTEgMTQuNDEyIDcuMDIxODYgMTQuNDEyIDhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==">
-														<span class="view-mobal__color--text">Предоставлено SendPulse</span>
-													</div>
-
-													<div class="group">
-														<button class="view-mobal__color--button">Запретить</button>
-														<button class="btn view-mobal__color--button">Разрешить</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="tab-fab" class="tab">5
-									<div class="d-flex pupup-functional s-between">
-										<div class="input-group">
-											<label class="text-change-input">
-												<p><strong>Текст запроса</strong></p>
-												<textarea placeholder="Разрешите сайту  отправлять вам уведомления на рабочий стол"></textarea>
-											</label>
-											
-											<div class="d-flex wrap-color">
-												<label class="color-input box-color-bg">
-													<p><strong>Фон блока</strong></p>
-													<input type="text" placeholder="#ffffff">
-													<div class="box-color">
-														<span data-color="#ffffff" style="background: #ffffff;"></span>
-														<span data-color="#333333" style="background: #333333;"></span>
-														<span data-color="#888888" style="background: #888888;"></span>
-														<span data-color="#24b58d" style="background: #24b58d;"></span>
-														<span data-color="#36afb2" style="background: #36afb2;"></span>
-														<span data-color="#03658c" style="background: #03658c;"></span>
-														<span data-color="#ffc55f" style="background: #ffc55f;"></span>
-														<span data-color="#f2594b" style="background: #f2594b;"></span>
-													</div>
-												</label>
-
-												<label class="color-input box-color-text">
-													<p><strong>Цвет текста</strong></p>
-													<input type="text" placeholder="#03658c">
-													<div class="box-color">
-														<span data-color="#ffffff" style="background: #ffffff;"></span>
-														<span data-color="#333333" style="background: #333333;"></span>
-														<span data-color="#888888" style="background: #888888;"></span>
-														<span data-color="#24b58d" style="background: #24b58d;"></span>
-														<span data-color="#36afb2" style="background: #36afb2;"></span>
-														<span data-color="#03658c" style="background: #03658c;"></span>
-														<span data-color="#ffc55f" style="background: #ffc55f;"></span>
-														<span data-color="#f2594b" style="background: #f2594b;"></span>
-													</div>
-												</label>
-
-												<label class="color-input box-color-button">
-													<p><strong>Цвет кнопок</strong></p>
-													<input type="text" placeholder="#31b58e">
-													<div class="box-color">
-														<span data-color="#ffffff" style="background: #ffffff;"></span>
-														<span data-color="#333333" style="background: #333333;"></span>
-														<span data-color="#888888" style="background: #888888;"></span>
-														<span data-color="#24b58d" style="background: #24b58d;"></span>
-														<span data-color="#36afb2" style="background: #36afb2;"></span>
-														<span data-color="#03658c" style="background: #03658c;"></span>
-														<span data-color="#ffc55f" style="background: #ffc55f;"></span>
-														<span data-color="#f2594b" style="background: #f2594b;"></span>
-													</div>
-												</label>
-											</div>
-
-											<h3 class="title">ОБЩИЕ НАСТРОЙКИ САЙТА</h3>
-
-											<div class="btn-group btn-group__number d-flex">
-									    		<label>
-									    			<p><strong>Показ запроса при</strong></p>
-									    			<div class="input-number">
-									    				<input type="number" value="6">
-									    				<span>визите</span>
-									    			</div>					    			
-									    		</label>
-
-									    		<label>
-									    			<p><strong>Задержка появления</strong></p>
-									    			<div class="input-number">
-									    				<input type="number" value="0">
-									    				<span>сек.</span>
-									    			</div>					    			
-									    		</label>
-									    	</div>
-
-									    	<p class="small">Хорошая практика — предлагать подписаться на web push только при повторном визите</p>
-
-									    	<label>
-									    		<input type="checkbox">
-									    		<span>Скрывать на мобильных устройствах</span>
-									    	</label>
-
-									    	<div class="place">
-									    		<p><strong>Расположение</strong></p>
-												
-												<div class="d-flex">
-													<label>
-														<input type="radio" checked name="radio" value="left">
-														<span>Слева</span>
-													</label>
-													<label>
-														<input type="radio" name="radio" value="center">
-														<span>По центру</span>
-													</label>
-													<label>
-														<input type="radio" name="radio" value="right">
-														<span>Справа</span>
-													</label>
-												</div>													
-									    	</div>
-										</div>
-										<div class="view-modal">
-											<div class="view-modal-popup">
-												<a href="#" class="close">x</a>
-												<div class="head">
-													<img src="img/icon.png" alt="">
-													<h3 class="view-mobal__color--text">Разрешите сайту отправлять вам уведомления на рабочий стол</h3>
-												</div>
-												<div class="bottom">
-													<div class="left">
-														<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0iIzAwQTJDMCIvPiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEzLjUwNjQgOC4wOTYzOVY4LjQzMzc0VjguNjAyNDFMMTMuNDkwMiA5SDExLjg1OUg4LjQxNTc5SDguMTIyMDZMOC4wODMyMiA4LjcwNzI1TDcuNTk3NjEgNS4zNDc1NUw1LjM5MDY0IDEzLjc0ODhMNS4zMjQ2NiAxNEg1LjA2NjI2SDMuODQ0MzJIMy41Nzg4OUwzLjUxNzgxIDEzLjc0MDNMMi4zNTA3MyA5SDAuMzM1NTA5SDBWOC43NTE3NVY3LjI2NDU3VjdIMC4zMzU1MDlIMy42MDg4OUgzLjg2MDUyTDMuODk2NjMgNy4xODc1NEw0LjQ5ODkgOS44NTM5N0w2Ljk3NDcyIDAuMjUyNjgyTDcuMDM5ODcgMEg3LjI5OTQ5SDguNTU0MDZIOC44NTExMUw4Ljg4NzEgMC4yOTY0NzdMOS43MjgxNSA3LjAxODg3SDExLjgyODlMMTIuMzE1OSA3LjAxODg2TDEyLjYzMDkgNy4wMTg4N0gxMy40OTAyTDEzLjUwNjQgNy4xODc1NFY3LjM1NjIyVjguMDk2MzlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPiAgICA8cGF0aCBkPSJNMTQuNDEyIDhDMTQuNDEyIDguOTc4MTQgMTMuNjIzMyA5Ljc3MTA4IDEyLjY1MDUgOS43NzEwOEMxMS42Nzc3IDkuNzcxMDggMTAuODg5MSA4Ljk3ODE0IDEwLjg4OTEgOEMxMC44ODkxIDcuMDIxODYgMTEuNjc3NyA2LjIyODkxIDEyLjY1MDUgNi4yMjg5MUMxMy42MjMzIDYuMjI4OTEgMTQuNDEyIDcuMDIxODYgMTQuNDEyIDhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==">
-														<span class="view-mobal__color--text">Предоставлено SendPulse</span>
-													</div>
-
-													<div class="group">
-														<button class="view-mobal__color--button">Запретить</button>
-														<button class="btn view-mobal__color--button">Разрешить</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						</form>
 
 						<button class="submit">Сохранить</button>
-					</form>
+					</div>
+
+					<div id="tab-cont-2" class="tab">
+						<div class="form-box">
+							<p>Скопируйте и вставьте код на ваш сайт, перед закрывающим тегом <code>&lt;/head&gt;</code></p>
+							<pre id="push-code">&lt;script charset="UTF-8" src="//cdn.sendpulse.com/js/push/6eb0a1597fa5f8a263d9de4d5a7d8156_0.js" async&gt;&lt;/script&gt;</pre>
+						</div>
+
+						<button class="btn-opacity">Перепроверить настройки</button>
+					</div>
+
+					<div id="tab-cont-3" class="tab">
+						<h3 class="title">ОБЩИЕ НАСТРОЙКИ САЙТА</h3>
+						
+						<form action="#">
+							<div class="tabs form-box">
+								<ul class="tabs-control-cont d-flex">
+									<li>
+										<a href="#tab-prompt">
+											<img src="img/push-prompt.png" alt="">
+											<p class="help-block">Стандартный</p>
+										</a>
+									</li>
+									<li>
+										<a href="#tab-modal">
+											<img src="img/push-modal.png" alt="">
+											<p class="help-block">Лайтбокс</p>
+										</a>
+									</li>
+									<li>
+										<a href="#tab-bar">
+											<img src="img/push-bar.png" alt="">
+											<p class="help-block">Панель</p>
+										</a>
+									</li>
+									<li>
+										<a href="#tab-safari">
+											<img src="img/push-safari.png" alt="">
+											<p class="help-block">Стиль Safari</p>
+										</a>
+									</li>
+									<li>
+										<a href="#tab-fab">
+											<img src="img/push-fab.png" alt="">
+											<p class="help-block">Плавающая кнопка</p>
+										</a>
+									</li>
+								</ul>
+
+								<div class="tabs-content">
+									<div id="tab-prompt" class="tab active">
+										<div class="d-flex pupup-functional s-between">
+											<div class="input-group">
+												<label class="text-change-input">
+													<p><strong>Текст запроса</strong></p>
+													<textarea placeholder="Разрешите сайту  отправлять вам уведомления на рабочий стол"></textarea>
+												</label>
+												
+												<div class="d-flex wrap-color">
+													<label class="color-input box-color-bg">
+														<p><strong>Фон блока</strong></p>
+														<input type="text" placeholder="#ffffff">
+														<div class="box-color">
+															<span data-color="#ffffff" style="background: #ffffff;"></span>
+															<span data-color="#333333" style="background: #333333;"></span>
+															<span data-color="#888888" style="background: #888888;"></span>
+															<span data-color="#24b58d" style="background: #24b58d;"></span>
+															<span data-color="#36afb2" style="background: #36afb2;"></span>
+															<span data-color="#03658c" style="background: #03658c;"></span>
+															<span data-color="#ffc55f" style="background: #ffc55f;"></span>
+															<span data-color="#f2594b" style="background: #f2594b;"></span>
+														</div>
+													</label>
+
+													<label class="color-input box-color-text">
+														<p><strong>Цвет текста</strong></p>
+														<input type="text" placeholder="#03658c">
+														<div class="box-color">
+															<span data-color="#ffffff" style="background: #ffffff;"></span>
+															<span data-color="#333333" style="background: #333333;"></span>
+															<span data-color="#888888" style="background: #888888;"></span>
+															<span data-color="#24b58d" style="background: #24b58d;"></span>
+															<span data-color="#36afb2" style="background: #36afb2;"></span>
+															<span data-color="#03658c" style="background: #03658c;"></span>
+															<span data-color="#ffc55f" style="background: #ffc55f;"></span>
+															<span data-color="#f2594b" style="background: #f2594b;"></span>
+														</div>
+													</label>
+
+													<label class="color-input box-color-button">
+														<p><strong>Цвет кнопок</strong></p>
+														<input type="text" placeholder="#31b58e">
+														<div class="box-color">
+															<span data-color="#ffffff" style="background: #ffffff;"></span>
+															<span data-color="#333333" style="background: #333333;"></span>
+															<span data-color="#888888" style="background: #888888;"></span>
+															<span data-color="#24b58d" style="background: #24b58d;"></span>
+															<span data-color="#36afb2" style="background: #36afb2;"></span>
+															<span data-color="#03658c" style="background: #03658c;"></span>
+															<span data-color="#ffc55f" style="background: #ffc55f;"></span>
+															<span data-color="#f2594b" style="background: #f2594b;"></span>
+														</div>
+													</label>
+												</div>
+
+												<h3 class="title">ОБЩИЕ НАСТРОЙКИ САЙТА</h3>
+
+												<div class="btn-group btn-group__number d-flex">
+										    		<label>
+										    			<p><strong>Показ запроса при</strong></p>
+										    			<div class="input-number">
+										    				<input type="number" value="6">
+										    				<span>визите</span>
+										    			</div>					    			
+										    		</label>
+
+										    		<label>
+										    			<p><strong>Задержка появления</strong></p>
+										    			<div class="input-number">
+										    				<input type="number" value="0">
+										    				<span>сек.</span>
+										    			</div>					    			
+										    		</label>
+										    	</div>
+
+										    	<p class="small">Хорошая практика — предлагать подписаться на web push только при повторном визите</p>
+
+										    	<label>
+										    		<input type="checkbox">
+										    		<span>Скрывать на мобильных устройствах</span>
+										    	</label>
+
+										    	<div class="place">
+										    		<p><strong>Расположение</strong></p>
+													
+													<div class="d-flex">
+														<label>
+															<input type="radio" checked name="radio" value="left">
+															<span>Слева</span>
+														</label>
+														<label>
+															<input type="radio" name="radio" value="center">
+															<span>По центру</span>
+														</label>
+														<label>
+															<input type="radio" name="radio" value="right">
+															<span>Справа</span>
+														</label>
+													</div>													
+										    	</div>
+											</div>
+											<div class="view-modal">
+												<div class="view-modal-popup">
+													<a href="#" class="close">x</a>
+													<div class="head">
+														<img src="img/icon.png" alt="">
+														<h3 class="view-mobal__color--text">Разрешите сайту отправлять вам уведомления на рабочий стол</h3>
+													</div>
+													<div class="bottom">
+														<div class="left">
+															<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0iIzAwQTJDMCIvPiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEzLjUwNjQgOC4wOTYzOVY4LjQzMzc0VjguNjAyNDFMMTMuNDkwMiA5SDExLjg1OUg4LjQxNTc5SDguMTIyMDZMOC4wODMyMiA4LjcwNzI1TDcuNTk3NjEgNS4zNDc1NUw1LjM5MDY0IDEzLjc0ODhMNS4zMjQ2NiAxNEg1LjA2NjI2SDMuODQ0MzJIMy41Nzg4OUwzLjUxNzgxIDEzLjc0MDNMMi4zNTA3MyA5SDAuMzM1NTA5SDBWOC43NTE3NVY3LjI2NDU3VjdIMC4zMzU1MDlIMy42MDg4OUgzLjg2MDUyTDMuODk2NjMgNy4xODc1NEw0LjQ5ODkgOS44NTM5N0w2Ljk3NDcyIDAuMjUyNjgyTDcuMDM5ODcgMEg3LjI5OTQ5SDguNTU0MDZIOC44NTExMUw4Ljg4NzEgMC4yOTY0NzdMOS43MjgxNSA3LjAxODg3SDExLjgyODlMMTIuMzE1OSA3LjAxODg2TDEyLjYzMDkgNy4wMTg4N0gxMy40OTAyTDEzLjUwNjQgNy4xODc1NFY3LjM1NjIyVjguMDk2MzlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPiAgICA8cGF0aCBkPSJNMTQuNDEyIDhDMTQuNDEyIDguOTc4MTQgMTMuNjIzMyA5Ljc3MTA4IDEyLjY1MDUgOS43NzEwOEMxMS42Nzc3IDkuNzcxMDggMTAuODg5MSA4Ljk3ODE0IDEwLjg4OTEgOEMxMC44ODkxIDcuMDIxODYgMTEuNjc3NyA2LjIyODkxIDEyLjY1MDUgNi4yMjg5MUMxMy42MjMzIDYuMjI4OTEgMTQuNDEyIDcuMDIxODYgMTQuNDEyIDhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==">
+															<span class="view-mobal__color--text">Предоставлено SendPulse</span>
+														</div>
+
+														<div class="group">
+															<button class="view-mobal__color--button">Запретить</button>
+															<button class="btn view-mobal__color--button">Разрешить</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div id="tab-modal" class="tab">
+										<div class="d-flex pupup-functional s-between">
+											<div class="input-group">
+												<label class="text-change-heading">
+													<p><strong>Заголовок</strong></p>
+													<input type="text" placeholder="Подписка на уведомления">
+												</label>
+
+												<label class="text-change-input">
+													<p><strong>Текст запроса</strong></p>
+													<textarea placeholder="Разрешите сайту  отправлять вам уведомления на рабочий стол"></textarea>
+												</label>
+												
+												<div class="d-flex wrap-color">
+													<label class="color-input box-color-bg">
+														<p><strong>Фон блока</strong></p>
+														<input type="text" placeholder="#ffffff">
+														<div class="box-color">
+															<span data-color="#ffffff" style="background: #ffffff;"></span>
+															<span data-color="#333333" style="background: #333333;"></span>
+															<span data-color="#888888" style="background: #888888;"></span>
+															<span data-color="#24b58d" style="background: #24b58d;"></span>
+															<span data-color="#36afb2" style="background: #36afb2;"></span>
+															<span data-color="#03658c" style="background: #03658c;"></span>
+															<span data-color="#ffc55f" style="background: #ffc55f;"></span>
+															<span data-color="#f2594b" style="background: #f2594b;"></span>
+														</div>
+													</label>
+
+													<label class="color-input box-color-text">
+														<p><strong>Цвет текста</strong></p>
+														<input type="text" placeholder="#03658c">
+														<div class="box-color">
+															<span data-color="#ffffff" style="background: #ffffff;"></span>
+															<span data-color="#333333" style="background: #333333;"></span>
+															<span data-color="#888888" style="background: #888888;"></span>
+															<span data-color="#24b58d" style="background: #24b58d;"></span>
+															<span data-color="#36afb2" style="background: #36afb2;"></span>
+															<span data-color="#03658c" style="background: #03658c;"></span>
+															<span data-color="#ffc55f" style="background: #ffc55f;"></span>
+															<span data-color="#f2594b" style="background: #f2594b;"></span>
+														</div>
+													</label>
+
+													<label class="color-input box-color-button">
+														<p><strong>Цвет кнопок</strong></p>
+														<input type="text" placeholder="#31b58e">
+														<div class="box-color">
+															<span data-color="#ffffff" style="background: #ffffff;"></span>
+															<span data-color="#333333" style="background: #333333;"></span>
+															<span data-color="#888888" style="background: #888888;"></span>
+															<span data-color="#24b58d" style="background: #24b58d;"></span>
+															<span data-color="#36afb2" style="background: #36afb2;"></span>
+															<span data-color="#03658c" style="background: #03658c;"></span>
+															<span data-color="#ffc55f" style="background: #ffc55f;"></span>
+															<span data-color="#f2594b" style="background: #f2594b;"></span>
+														</div>
+													</label>
+												</div>
+
+												<h3 class="title">ОБЩИЕ НАСТРОЙКИ САЙТА</h3>
+
+												<div class="btn-group btn-group__number d-flex">
+										    		<label>
+										    			<p><strong>Показ запроса при</strong></p>
+										    			<div class="input-number">
+										    				<input type="number" value="6">
+										    				<span>визите</span>
+										    			</div>					    			
+										    		</label>
+
+										    		<label>
+										    			<p><strong>Задержка появления</strong></p>
+										    			<div class="input-number">
+										    				<input type="number" value="0">
+										    				<span>сек.</span>
+										    			</div>					    			
+										    		</label>
+										    	</div>
+
+										    	<p class="small">Хорошая практика — предлагать подписаться на web push только при повторном визите</p>
+
+										    	<label>
+										    		<input type="checkbox">
+										    		<span>Скрывать на мобильных устройствах</span>
+										    	</label>
+											</div>
+											<div class="view-modal">
+												<div class="view-modal-popup popup-laytbox t-center">
+													<a href="#" class="close">x</a>
+
+													<h3 class="view-mobal__color--text">Подписка на уведомления</h3>
+													<h5 class="view-mobal__color--text">Разрешите сайту отправлять вам уведомления на рабочий стол</h5>
+
+													<div class="group">
+														<button class="view-mobal__color--button">Запретить</button>
+														<button class="btn view-mobal__color--button">Разрешить</button>
+													</div>
+
+													<div class="bottom">
+														<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0iIzAwQTJDMCIvPiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEzLjUwNjQgOC4wOTYzOVY4LjQzMzc0VjguNjAyNDFMMTMuNDkwMiA5SDExLjg1OUg4LjQxNTc5SDguMTIyMDZMOC4wODMyMiA4LjcwNzI1TDcuNTk3NjEgNS4zNDc1NUw1LjM5MDY0IDEzLjc0ODhMNS4zMjQ2NiAxNEg1LjA2NjI2SDMuODQ0MzJIMy41Nzg4OUwzLjUxNzgxIDEzLjc0MDNMMi4zNTA3MyA5SDAuMzM1NTA5SDBWOC43NTE3NVY3LjI2NDU3VjdIMC4zMzU1MDlIMy42MDg4OUgzLjg2MDUyTDMuODk2NjMgNy4xODc1NEw0LjQ5ODkgOS44NTM5N0w2Ljk3NDcyIDAuMjUyNjgyTDcuMDM5ODcgMEg3LjI5OTQ5SDguNTU0MDZIOC44NTExMUw4Ljg4NzEgMC4yOTY0NzdMOS43MjgxNSA3LjAxODg3SDExLjgyODlMMTIuMzE1OSA3LjAxODg2TDEyLjYzMDkgNy4wMTg4N0gxMy40OTAyTDEzLjUwNjQgNy4xODc1NFY3LjM1NjIyVjguMDk2MzlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPiAgICA8cGF0aCBkPSJNMTQuNDEyIDhDMTQuNDEyIDguOTc4MTQgMTMuNjIzMyA5Ljc3MTA4IDEyLjY1MDUgOS43NzEwOEMxMS42Nzc3IDkuNzcxMDggMTAuODg5MSA4Ljk3ODE0IDEwLjg4OTEgOEMxMC44ODkxIDcuMDIxODYgMTEuNjc3NyA2LjIyODkxIDEyLjY1MDUgNi4yMjg5MUMxMy42MjMzIDYuMjI4OTEgMTQuNDEyIDcuMDIxODYgMTQuNDEyIDhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==">
+														<span class="view-mobal__color--text">Предоставлено SendPulse</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div id="tab-bar" class="tab">
+										<div class="pupup-functional pupup-functional-panel">
+											<div class="view-modal">
+												<div class="view-modal-popup popup-panel t-center">
+													<a href="#" class="close">x</a>
+
+													<h3 class="view-mobal__color--text">Подписка на уведомления</h3>
+
+													<div class="group">
+														<button class="view-mobal__color--button">Запретить</button>
+														<button class="btn view-mobal__color--button">Разрешить</button>
+													</div>
+												</div>
+											</div>
+
+											<div class="input-group">
+												<label class="text-change-input">
+													<p><strong>Текст запроса</strong></p>
+													<textarea placeholder="Разрешите сайту  отправлять вам уведомления на рабочий стол"></textarea>
+												</label>
+												
+												<div class="d-flex wrap-color">
+													<label class="color-input box-color-bg">
+														<p><strong>Фон блока</strong></p>
+														<input type="text" placeholder="#ffffff">
+														<div class="box-color">
+															<span data-color="#ffffff" style="background: #ffffff;"></span>
+															<span data-color="#333333" style="background: #333333;"></span>
+															<span data-color="#888888" style="background: #888888;"></span>
+															<span data-color="#24b58d" style="background: #24b58d;"></span>
+															<span data-color="#36afb2" style="background: #36afb2;"></span>
+															<span data-color="#03658c" style="background: #03658c;"></span>
+															<span data-color="#ffc55f" style="background: #ffc55f;"></span>
+															<span data-color="#f2594b" style="background: #f2594b;"></span>
+														</div>
+													</label>
+
+													<label class="color-input box-color-text">
+														<p><strong>Цвет текста</strong></p>
+														<input type="text" placeholder="#03658c">
+														<div class="box-color">
+															<span data-color="#ffffff" style="background: #ffffff;"></span>
+															<span data-color="#333333" style="background: #333333;"></span>
+															<span data-color="#888888" style="background: #888888;"></span>
+															<span data-color="#24b58d" style="background: #24b58d;"></span>
+															<span data-color="#36afb2" style="background: #36afb2;"></span>
+															<span data-color="#03658c" style="background: #03658c;"></span>
+															<span data-color="#ffc55f" style="background: #ffc55f;"></span>
+															<span data-color="#f2594b" style="background: #f2594b;"></span>
+														</div>
+													</label>
+
+													<label class="color-input box-color-button">
+														<p><strong>Цвет кнопок</strong></p>
+														<input type="text" placeholder="#31b58e">
+														<div class="box-color">
+															<span data-color="#ffffff" style="background: #ffffff;"></span>
+															<span data-color="#333333" style="background: #333333;"></span>
+															<span data-color="#888888" style="background: #888888;"></span>
+															<span data-color="#24b58d" style="background: #24b58d;"></span>
+															<span data-color="#36afb2" style="background: #36afb2;"></span>
+															<span data-color="#03658c" style="background: #03658c;"></span>
+															<span data-color="#ffc55f" style="background: #ffc55f;"></span>
+															<span data-color="#f2594b" style="background: #f2594b;"></span>
+														</div>
+													</label>
+												</div>
+
+												<h3 class="title">ОБЩИЕ НАСТРОЙКИ САЙТА</h3>
+
+												<div class="btn-group btn-group__number d-flex">
+										    		<label>
+										    			<p><strong>Показ запроса при</strong></p>
+										    			<div class="input-number">
+										    				<input type="number" value="6">
+										    				<span>визите</span>
+										    			</div>					    			
+										    		</label>
+
+										    		<label>
+										    			<p><strong>Задержка появления</strong></p>
+										    			<div class="input-number">
+										    				<input type="number" value="0">
+										    				<span>сек.</span>
+										    			</div>					    			
+										    		</label>
+										    	</div>
+
+										    	<p class="small">Хорошая практика — предлагать подписаться на web push только при повторном визите</p>
+
+										    	<label>
+										    		<input type="checkbox">
+										    		<span>Скрывать на мобильных устройствах</span>
+										    	</label>
+											</div>											
+										</div>
+									</div>
+
+									<div id="tab-safari" class="tab">
+										<div class="d-flex pupup-functional s-between">
+											<div class="input-group">
+												<label class="text-change-heading">
+													<p><strong>Заголовок</strong></p>
+													<input type="text" placeholder="Подписка на уведомления">
+												</label>
+
+												<label class="text-change-input">
+													<p><strong>Текст запроса</strong></p>
+													<textarea placeholder="Разрешите сайту  отправлять вам уведомления на рабочий стол"></textarea>
+												</label>
+
+												<h3 class="title">УСЛОВИЯ ПОКАЗА ЗАПРОСА</h3>
+
+												<div class="btn-group btn-group__number d-flex">
+										    		<label>
+										    			<p><strong>Показ запроса при</strong></p>
+										    			<div class="input-number">
+										    				<input type="number" value="6">
+										    				<span>визите</span>
+										    			</div>					    			
+										    		</label>
+
+										    		<label>
+										    			<p><strong>Задержка появления</strong></p>
+										    			<div class="input-number">
+										    				<input type="number" value="0">
+										    				<span>сек.</span>
+										    			</div>					    			
+										    		</label>
+										    	</div>
+
+										    	<p class="small">Хорошая практика — предлагать подписаться на web push только при повторном визите</p>
+
+										    	<label>
+										    		<input type="checkbox">
+										    		<span>Скрывать на мобильных устройствах</span>
+										    	</label>
+											</div>
+											<div class="view-modal t-center">
+												<div class="view-modal-popup popup-safari">
+													<a href="#" class="close">x</a>
+													<div class="head">
+														<img src="img/icon.png" alt="">
+														<div>
+															<h3 class="view-mobal__color--text">Подписка на уведомления</h3>
+															<h5 class="view-mobal__color--text">Разрешите сайту отправлять вам уведомления на рабочий стол</h5>
+														</div>														
+													</div>
+													<div class="bottom">
+														<div class="left">
+															<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0iIzAwQTJDMCIvPiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEzLjUwNjQgOC4wOTYzOVY4LjQzMzc0VjguNjAyNDFMMTMuNDkwMiA5SDExLjg1OUg4LjQxNTc5SDguMTIyMDZMOC4wODMyMiA4LjcwNzI1TDcuNTk3NjEgNS4zNDc1NUw1LjM5MDY0IDEzLjc0ODhMNS4zMjQ2NiAxNEg1LjA2NjI2SDMuODQ0MzJIMy41Nzg4OUwzLjUxNzgxIDEzLjc0MDNMMi4zNTA3MyA5SDAuMzM1NTA5SDBWOC43NTE3NVY3LjI2NDU3VjdIMC4zMzU1MDlIMy42MDg4OUgzLjg2MDUyTDMuODk2NjMgNy4xODc1NEw0LjQ5ODkgOS44NTM5N0w2Ljk3NDcyIDAuMjUyNjgyTDcuMDM5ODcgMEg3LjI5OTQ5SDguNTU0MDZIOC44NTExMUw4Ljg4NzEgMC4yOTY0NzdMOS43MjgxNSA3LjAxODg3SDExLjgyODlMMTIuMzE1OSA3LjAxODg2TDEyLjYzMDkgNy4wMTg4N0gxMy40OTAyTDEzLjUwNjQgNy4xODc1NFY3LjM1NjIyVjguMDk2MzlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPiAgICA8cGF0aCBkPSJNMTQuNDEyIDhDMTQuNDEyIDguOTc4MTQgMTMuNjIzMyA5Ljc3MTA4IDEyLjY1MDUgOS43NzEwOEMxMS42Nzc3IDkuNzcxMDggMTAuODg5MSA4Ljk3ODE0IDEwLjg4OTEgOEMxMC44ODkxIDcuMDIxODYgMTEuNjc3NyA2LjIyODkxIDEyLjY1MDUgNi4yMjg5MUMxMy42MjMzIDYuMjI4OTEgMTQuNDEyIDcuMDIxODYgMTQuNDEyIDhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==">
+															<span class="view-mobal__color--text">Предоставлено SendPulse</span>
+														</div>
+
+														<div class="group">
+															<button class="view-mobal__color--button">Запретить</button>
+															<button class="btn view-mobal__color--button">Разрешить</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div id="tab-fab" class="tab">5
+										<div class="d-flex pupup-functional s-between">
+											<div class="input-group">
+												<label class="text-change-input">
+													<p><strong>Текст запроса</strong></p>
+													<textarea placeholder="Разрешите сайту  отправлять вам уведомления на рабочий стол"></textarea>
+												</label>
+												
+												<div class="d-flex wrap-color">
+													<label class="color-input box-color-bg">
+														<p><strong>Фон блока</strong></p>
+														<input type="text" placeholder="#ffffff">
+														<div class="box-color">
+															<span data-color="#ffffff" style="background: #ffffff;"></span>
+															<span data-color="#333333" style="background: #333333;"></span>
+															<span data-color="#888888" style="background: #888888;"></span>
+															<span data-color="#24b58d" style="background: #24b58d;"></span>
+															<span data-color="#36afb2" style="background: #36afb2;"></span>
+															<span data-color="#03658c" style="background: #03658c;"></span>
+															<span data-color="#ffc55f" style="background: #ffc55f;"></span>
+															<span data-color="#f2594b" style="background: #f2594b;"></span>
+														</div>
+													</label>
+
+													<label class="color-input box-color-text">
+														<p><strong>Цвет текста</strong></p>
+														<input type="text" placeholder="#03658c">
+														<div class="box-color">
+															<span data-color="#ffffff" style="background: #ffffff;"></span>
+															<span data-color="#333333" style="background: #333333;"></span>
+															<span data-color="#888888" style="background: #888888;"></span>
+															<span data-color="#24b58d" style="background: #24b58d;"></span>
+															<span data-color="#36afb2" style="background: #36afb2;"></span>
+															<span data-color="#03658c" style="background: #03658c;"></span>
+															<span data-color="#ffc55f" style="background: #ffc55f;"></span>
+															<span data-color="#f2594b" style="background: #f2594b;"></span>
+														</div>
+													</label>
+
+													<label class="color-input box-color-button">
+														<p><strong>Цвет кнопок</strong></p>
+														<input type="text" placeholder="#31b58e">
+														<div class="box-color">
+															<span data-color="#ffffff" style="background: #ffffff;"></span>
+															<span data-color="#333333" style="background: #333333;"></span>
+															<span data-color="#888888" style="background: #888888;"></span>
+															<span data-color="#24b58d" style="background: #24b58d;"></span>
+															<span data-color="#36afb2" style="background: #36afb2;"></span>
+															<span data-color="#03658c" style="background: #03658c;"></span>
+															<span data-color="#ffc55f" style="background: #ffc55f;"></span>
+															<span data-color="#f2594b" style="background: #f2594b;"></span>
+														</div>
+													</label>
+												</div>
+
+												<h3 class="title">ОБЩИЕ НАСТРОЙКИ САЙТА</h3>
+
+												<div class="btn-group btn-group__number d-flex">
+										    		<label>
+										    			<p><strong>Показ запроса при</strong></p>
+										    			<div class="input-number">
+										    				<input type="number" value="6">
+										    				<span>визите</span>
+										    			</div>					    			
+										    		</label>
+
+										    		<label>
+										    			<p><strong>Задержка появления</strong></p>
+										    			<div class="input-number">
+										    				<input type="number" value="0">
+										    				<span>сек.</span>
+										    			</div>					    			
+										    		</label>
+										    	</div>
+
+										    	<p class="small">Хорошая практика — предлагать подписаться на web push только при повторном визите</p>
+
+										    	<label>
+										    		<input type="checkbox">
+										    		<span>Скрывать на мобильных устройствах</span>
+										    	</label>
+
+										    	<div class="place">
+										    		<p><strong>Расположение</strong></p>
+													
+													<div class="d-flex">
+														<label>
+															<input type="radio" checked name="radio" value="left">
+															<span>Слева</span>
+														</label>
+														<label>
+															<input type="radio" name="radio" value="center">
+															<span>По центру</span>
+														</label>
+														<label>
+															<input type="radio" name="radio" value="right">
+															<span>Справа</span>
+														</label>
+													</div>													
+										    	</div>
+											</div>
+											<div class="view-modal">
+												<div class="view-modal-popup">
+													<a href="#" class="close">x</a>
+													<div class="head">
+														<img src="img/icon.png" alt="">
+														<h3 class="view-mobal__color--text">Разрешите сайту отправлять вам уведомления на рабочий стол</h3>
+													</div>
+													<div class="bottom">
+														<div class="left">
+															<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0iIzAwQTJDMCIvPiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEzLjUwNjQgOC4wOTYzOVY4LjQzMzc0VjguNjAyNDFMMTMuNDkwMiA5SDExLjg1OUg4LjQxNTc5SDguMTIyMDZMOC4wODMyMiA4LjcwNzI1TDcuNTk3NjEgNS4zNDc1NUw1LjM5MDY0IDEzLjc0ODhMNS4zMjQ2NiAxNEg1LjA2NjI2SDMuODQ0MzJIMy41Nzg4OUwzLjUxNzgxIDEzLjc0MDNMMi4zNTA3MyA5SDAuMzM1NTA5SDBWOC43NTE3NVY3LjI2NDU3VjdIMC4zMzU1MDlIMy42MDg4OUgzLjg2MDUyTDMuODk2NjMgNy4xODc1NEw0LjQ5ODkgOS44NTM5N0w2Ljk3NDcyIDAuMjUyNjgyTDcuMDM5ODcgMEg3LjI5OTQ5SDguNTU0MDZIOC44NTExMUw4Ljg4NzEgMC4yOTY0NzdMOS43MjgxNSA3LjAxODg3SDExLjgyODlMMTIuMzE1OSA3LjAxODg2TDEyLjYzMDkgNy4wMTg4N0gxMy40OTAyTDEzLjUwNjQgNy4xODc1NFY3LjM1NjIyVjguMDk2MzlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPiAgICA8cGF0aCBkPSJNMTQuNDEyIDhDMTQuNDEyIDguOTc4MTQgMTMuNjIzMyA5Ljc3MTA4IDEyLjY1MDUgOS43NzEwOEMxMS42Nzc3IDkuNzcxMDggMTAuODg5MSA4Ljk3ODE0IDEwLjg4OTEgOEMxMC44ODkxIDcuMDIxODYgMTEuNjc3NyA2LjIyODkxIDEyLjY1MDUgNi4yMjg5MUMxMy42MjMzIDYuMjI4OTEgMTQuNDEyIDcuMDIxODYgMTQuNDEyIDhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==">
+															<span class="view-mobal__color--text">Предоставлено SendPulse</span>
+														</div>
+
+														<div class="group">
+															<button class="view-mobal__color--button">Запретить</button>
+															<button class="btn view-mobal__color--button">Разрешить</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="submit">Сохранить</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
+		<!-- // MAIN -->
 	</div>
 
 	<!-- JavaScript -->

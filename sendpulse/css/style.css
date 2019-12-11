@@ -40,6 +40,8 @@ p.small {
 	margin-top: 10px;
 }
 
+.content {overflow: hidden;}
+
 .small-xs, small.small-xs {
     font-size: 65%;
 }
@@ -134,7 +136,10 @@ p.small {
     transform: translateY(-50%);
 }
 
-.main {padding: 30px;}
+.main {
+	padding: 30px;
+	width: 100%;
+}
 
 .http {
 	border-radius: 2px;
@@ -288,11 +293,20 @@ pre {
 
 /* ---------------------- HEADER ---------------------- */
 #header {
-	justify-content: flex-end;
+	justify-content: space-between;
 	background: #fff;
-	padding: 15px 25px;
 }
-#header .account-wrap {position: relative;}
+#header .logo {
+	max-width: 230px;
+	width: 100%;
+	background: #0097b7;
+	padding: 15px 30px;
+	border: 1px solid #0493b1;
+}
+#header .account-wrap {
+	position: relative;
+	padding: 15px 30px;
+}
 #header .avatar {
 	display: flex;
     align-items: center;
@@ -373,6 +387,42 @@ pre {
 	color: #34aabd;
 	margin-right: 10px;
 }
+
+/* ---------------------- // HEADER ---------------------- */
+
+/* ---------------------- SIDEBAR ---------------------- */
+.sidebar {
+	height: 100vh;
+	min-width: 230px;
+	background: #0097b7;
+	position: relative;
+}
+.sidebar:after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2000px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background: #0097b7;
+}
+.sidebar ul li a {
+	padding: 14px 20px 14px 20px;
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	display: block;
+	font-weight: 700;
+	transition: all 0.3s ease;
+}
+.sidebar ul li a:hover {
+	background: rgba(255,255,255,.07);
+}
+/* ---------------------- // SIDEBAR ---------------------- */
+
+/* ---------------------- MAIN ---------------------- */
 
 /* tabs */
 .tabs-content .tab {display: none;}
@@ -600,6 +650,8 @@ pre {
 .popup-safari {
 
 }
+
+/* ---------------------- // MAIN ---------------------- */
 
 /* ---------------------------- SITE ADD ----------------------------- */
 .site-unlock {text-transform: uppercase;}
