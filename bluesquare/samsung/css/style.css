@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue.eot');
+    src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeue.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue.woff') format('woff'),
+        url('../fonts/HelveticaNeue.ttf') format('truetype'),
+        url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-Bold.eot');
+    src: url('../fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-Bold.woff') format('woff'),
+        url('../fonts/HelveticaNeue-Bold.ttf') format('truetype'),
+        url('../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+	color: #fff;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.banner-cust {
+	padding-top: 03em;
+	background: url(../img/bg-banner.jpg) no-repeat right top;
+	background-size: cover;
+	position: relative;
+	max-width: 75em;
+	margin: 0 auto;
+}
+
+.banner-cust .descr {
+	padding: 0 7em;
+}
+
+.banner-cust .logo {
+	max-width: 300px;
+	display: block;
+}
+
+.banner-cust h1 {
+	font: bold 1.7em 'Helvetica Neue', sans-serif;
+}
+
+.banner-cust .descr ul {margin-left: -1.3em;}
+.banner-cust .descr ul li {
+	font: 1.6em 'Helvetica Neue', sans-serif;
+	position: relative;
+	margin-top: 0.5em;
+	padding-left: 1em;
+}
+.banner-cust .descr ul li:before {
+	content: '';
+    display: block;
+    width: 0.3em;
+    height: 0.3em;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0.4em;
+    left: 0;
+}
+
+.banner-cust address {
+	font: bold 2.5em 'Helvetica Neue', sans-serif;
+	margin-top: 0.3em;
+}
+
+.banner-cust .footer {
+	background: #202b3d;
+	padding: 1.5em 7em 1.5em 7em;	
+	margin-top: 2em;
+}
+.banner-cust .footer ul {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.banner-cust .footer ul li {
+	padding: 0 0.5em;
+	text-align: center;	
+}
+.banner-cust .footer ul li img {
+	margin-bottom: 0.5em;
+}
+.banner-cust .footer p {
+	font: 1em 'Helvetica Neue', sans-serif;
+}
+.banner-cust .footer ul li:last-child p:last-child {
+
+}
+
+@media screen and (max-width: 991px) {
+	.banner-cust .footer ul {
+		flex-wrap: wrap;
+	}
+	.banner-cust .footer ul li {
+		width: 33.33%;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.banner-cust .descr {
+	    padding: 0 35px;
+	}
+	.banner-cust .footer {
+	    padding: 35px 15px 15px 15px;
+	}
+	.banner-cust {background-position: left center;}
+}
+
+@media screen and (max-width: 400px) {
+	.banner-cust .footer ul li {width: 50%;}
+	.banner-cust .footer ul li:nth-child(5n),
+	.banner-cust .footer ul li:nth-child(6n) {
+		width: 100%;
+	}
+	.banner-cust h1 {font-size: 22px;}
+	.banner-cust .descr ul li {font-size: 20px;}
+	.banner-cust address {font-size: 30px;}
+}
