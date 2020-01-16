@@ -40,6 +40,10 @@ img {
 	height: auto;
 }
 
+.hidden-desktop {
+	display: none;
+}
+
 .banner-cust {
 	padding-top: 03em;
 	background: url(../img/bg-banner.jpg) no-repeat right top;
@@ -123,21 +127,49 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+	.hidden-iphone {display: none;}
+	.visible-iphone {display: block;}
+
+	.banner-cust .logo {margin: 0 auto;}
+
+	.banner-cust h1 {margin-top: 0.3em;}
+	
+	.banner-cust {
+		background: none;
+		padding-top: 0;
+	}
 	.banner-cust .descr {
-	    padding: 0 35px;
+		min-height: 681px;
+		background: url(../img/bg-mobile.jpg) no-repeat right top;
+		background-size: cover;
+		padding: 1em 1em 1em 1em;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
 	}
+
+	.banner-cust .descr p {
+		font: bold 1.3em 'Helvetica Neue', sans-serif;
+	}
+	.banner-cust .descr p:last-child {
+		font: normal 1.3em 'Helvetica Neue', sans-serif;
+	}
+
+	.banner-cust address {margin-top: auto;}
+
 	.banner-cust .footer {
-	    padding: 35px 15px 15px 15px;
+		margin-top: 0;
+		padding: 1.5em 1em 1.5em 1em;
 	}
-	.banner-cust {background-position: left center;}
+
+	.banner-cust .footer ul li:nth-child(1),
+	.banner-cust .footer ul li:nth-child(2) {
+		width: 50%;
+	}
 }
 
 @media screen and (max-width: 400px) {
-	.banner-cust .footer ul li {width: 50%;}
-	.banner-cust .footer ul li:nth-child(5n),
-	.banner-cust .footer ul li:nth-child(6n) {
-		width: 100%;
-	}
+	
 	.banner-cust h1 {font-size: 22px;}
 	.banner-cust .descr ul li {font-size: 20px;}
 	.banner-cust address {font-size: 30px;}
