@@ -89,6 +89,11 @@ img {
 	font: bold 2.5em 'Helvetica Neue', sans-serif;
 	margin-top: 0.3em;
 }
+.banner-cust address span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.banner-cust address i {display: none;}
 
 .banner-cust .footer {
 	background: #202b3d;
@@ -112,6 +117,17 @@ img {
 }
 .banner-cust .footer ul li:last-child p:last-child {
 
+}
+
+.ic-phone {
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/phone.svg) no-repeat;
+	background-size: 25px 25px;
+	fill: #fff;
+	width: 25px;
+	height: 25px;
+	margin-right: 9px;
 }
 
 @media screen and (max-width: 991px) {
@@ -139,10 +155,10 @@ img {
 		padding-top: 0;
 	}
 	.banner-cust .descr {
-		min-height: 681px;
-		background: url(../img/bg-mobile.jpg) no-repeat right top;
+		min-height: 700px;
+		background: url(../img/bg-mobile.jpg) no-repeat right center;
 		background-size: cover;
-		padding: 1em 1em 1em 1em;
+		padding: 3em 1em 1em 1em;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -166,6 +182,23 @@ img {
 	.banner-cust .footer ul li:nth-child(2) {
 		width: 50%;
 	}
+
+	.banner-cust address {
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.banner-cust address i {display: inline-block;}
+}
+
+@media screen and (max-width: 414px) {
+	.banner-cust .descr {
+		min-height: 681px;
+		background: url(../img/iphone-414.jpg) no-repeat right top;
+		background-size: cover;
+	}
+
+	.banner-cust .descr p {font-size: 1em;}
 }
 
 @media screen and (max-width: 400px) {
@@ -173,4 +206,36 @@ img {
 	.banner-cust h1 {font-size: 22px;}
 	.banner-cust .descr ul li {font-size: 20px;}
 	.banner-cust address {font-size: 30px;}
+}
+
+@media screen and (max-width: 375px) {
+	.banner-cust .descr {
+		min-height: 527px;
+		background: url(../img/iphone-375.png) no-repeat right top;
+		background-size: cover;
+	}
+	.banner-cust .footer p {
+		font-size: 0.7em;
+	}
+	.banner-cust .footer ul li {
+		padding: 0.3em 0.3em;
+	}
+	.banner-cust .descr p {font-size: 0.8em;}
+	.banner-cust .descr p:last-child {
+		font-size: 1em;
+	}
+
+	.ic-phone {
+		background-size: 20px 20px;
+	    width: 20px;
+	    height: 20px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.banner-cust .descr {
+		min-height: 423px;
+		background: url(../img/iphone-320.png) no-repeat right top;
+		background-size: cover;
+	}
 }
