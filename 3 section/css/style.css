@@ -29,6 +29,10 @@ body {
 	padding: 0 30px;
 	max-width: 300px;
 }
+.kiosk-item img {
+	max-height: 150px;
+	margin-bottom: 15px;
+}
 .kiosk-item h3 {
 	text-transform: uppercase;
 	margin-bottom: 10px;
