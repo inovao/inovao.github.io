@@ -477,7 +477,7 @@ p.sub-title {
 	display: block;
 	width: 100%;
 }
-.product-img__item a {
+.product-img__item p {
 	position: absolute;
     left: 0;
     right: 0;
@@ -491,7 +491,7 @@ p.sub-title {
     line-height: 24px;
     color: #fff;
 }
-.product-img__item a:after {
+.product-img__item p:after {
 	content: '';
 	border-right: 10px solid transparent;
 	border-left: 10px solid transparent;
@@ -583,6 +583,7 @@ p.sub-title {
 	line-height: 24px;
 	color: #202b3d;
 	margin-top: 10px;
+	text-transform: uppercase;
 }
 .client-item p.info {
 	font-size: 12px;
